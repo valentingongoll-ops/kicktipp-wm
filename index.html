@@ -502,8 +502,13 @@ function init(json) {
   namen.forEach((n,i) => { colorMap[n] = COLORS[i % COLORS.length]; activeP[n] = true; });
 
   document.getElementById("top-community").textContent = `· ${D.community || ""}`;
-  document.getElementById("top-updated").textContent =
-    (D.zuletzt_aktualisiert||"").slice(0,16).replace("T"," ");
+  const ts = D.zuletzt_aktualisiert || "";
+  if (ts) {
+    const d = new Date(ts);
+    const pad = n => String(n).padStart(2,"0");
+    document.getElementById("top-updated").textContent =
+      `Stand: ${pad(d.getDate())}.${pad(d.getMonth()+1)}. ${pad(d.getHours())}:${pad(d.getMinutes())} Uhr`;
+  }
 
   const totalSpiele = D.spieltage.reduce((a,st) => a + st.spiele.filter(s=>s.abgeschlossen).length, 0);
   document.getElementById("m-spiele").textContent     = totalSpiele;
