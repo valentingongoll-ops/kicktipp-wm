@@ -48,6 +48,8 @@ def hole_saison_id(session):
 def hole_spieltage(html):
     soup = BeautifulSoup(html, "html.parser")
     seen, result = set(), []
+
+    # Alle Links mit spieltagIndex (normale Spieltage)
     for a in soup.find_all("a", href=re.compile(r"spieltagIndex=\d+")):
         href = a.get("href", "")
         if "bonus" in href:
@@ -58,6 +60,27 @@ def hole_spieltage(html):
             if idx not in seen:
                 seen.add(idx)
                 result.append((idx, a.get_text(strip=True)))
+
+    # Aktiven Spieltag auch erfassen (hat keinen normalen Link, steht als Text)
+    # Kicktipp zeigt den aktuellen Spieltag oft ohne href
+    for el in soup.find_all(class_=re.compile(r"active-true")):
+        m_href = re.search(r"spieltagIndex=(\d+)", str(el))
+        if not m_href:
+            # Suche nach Index in benachbarten Links
+            prev = el.find_previous("a", href=re.compile(r"spieltagIndex=\d+"))
+            next_ = el.find_next("a", href=re.compile(r"spieltagIndex=\d+"))
+            if prev and next_:
+                prev_idx = int(re.search(r"spieltagIndex=(\d+)", prev["href"]).group(1))
+                next_idx = int(re.search(r"spieltagIndex=(\d+)", next_["href"]).group(1))
+                active_idx = str(prev_idx + 1) if next_idx == prev_idx + 2 else None
+                if active_idx and active_idx not in seen:
+                    name = el.get_text(strip=True)
+                    if name and "bonus" not in name.lower():
+                        seen.add(active_idx)
+                        result.append((active_idx, name))
+
+    # Sortieren nach Index
+    result.sort(key=lambda x: int(x[0]))
     return result
 
 
@@ -146,8 +169,10 @@ def scrape(session, saison_id, html_first):
 
     import time
     time.sleep(2)  # kurze Pause nach Login bevor Requests starten
+    print(f"  Spieltage-Liste: {spieltage_list}")
     for st_idx, st_name in spieltage_list:
         if not st_name.strip():
+            print(f"  ! Index {st_idx}: leerer Name, überspringe")
             continue
         url = f"{base_url}?tippsaisonId={saison_id}&spieltagIndex={st_idx}"
         try:
@@ -209,7 +234,7 @@ def main():
     total = sum(len([s for s in st["spiele"] if s["abgeschlossen"]]) for st in daten["spieltage"])
 
     # Sicherheitsprüfung: nie eine leere JSON speichern
-    if False and not daten["spieltage"]:
+    if not daten["spieltage"]:
         print("✗ Keine Spieltage gescraped – alte JSON wird nicht überschrieben")
         # Versuche Timestamp in alter JSON zu aktualisieren
         try:
