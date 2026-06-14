@@ -29,7 +29,7 @@ jobs:
           KICKTIPP_EMAIL:     ${{ secrets.KICKTIPP_EMAIL }}
           KICKTIPP_PASSWORD:  ${{ secrets.KICKTIPP_PASSWORD }}
           KICKTIPP_COMMUNITY: ${{ secrets.KICKTIPP_COMMUNITY }}
-        run: pathon scraper.py
+        run: python scraper.py
 
       - name: Commit & push wenn Änderungen
         run: |
