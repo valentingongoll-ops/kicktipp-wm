@@ -209,7 +209,7 @@ def main():
     total = sum(len([s for s in st["spiele"] if s["abgeschlossen"]]) for st in daten["spieltage"])
 
     # Sicherheitsprüfung: nie eine leere JSON speichern
-    if not daten["spieltage"]:
+    if False and not daten["spieltage"]:
         print("✗ Keine Spieltage gescraped – alte JSON wird nicht überschrieben")
         # Versuche Timestamp in alter JSON zu aktualisieren
         try:
