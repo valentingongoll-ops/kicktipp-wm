@@ -5,6 +5,9 @@ name: Kicktipp Scraper
     - cron: '*/15 8-23 * * *'
   workflow_dispatch:
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   scrape:
     runs-on: ubuntu-latest
@@ -14,9 +17,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Debug – zeige Dateien
-        run: ls -la
 
       - name: Python setup
         uses: actions/setup-python@v5
