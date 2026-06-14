@@ -145,18 +145,25 @@ def scrape(session, saison_id, html_first):
     base_url = f"{BASE_URL}/{COMMUNITY}/tippuebersicht"
 
     import time
+    time.sleep(2)  # kurze Pause nach Login bevor Requests starten
     for st_idx, st_name in spieltage_list:
         if not st_name.strip():
-            continue  # leeren Spieltag-Namen überspringen
+            continue
         url = f"{base_url}?tippsaisonId={saison_id}&spieltagIndex={st_idx}"
         try:
-            r = session.get(url, headers=HEADERS, timeout=15)
+            r = session.get(url, headers=HEADERS, timeout=20)
         except Exception as e:
-            print(f"  ! {st_name}: Verbindungsfehler ({e}), überspringe")
-            continue
+            print(f"  ! {st_name}: Verbindungsfehler ({e}), versuche nochmal...")
+            time.sleep(3)
+            try:
+                r = session.get(url, headers=HEADERS, timeout=20)
+            except Exception as e2:
+                print(f"  ! {st_name}: Zweiter Versuch fehlgeschlagen, ueberspringe")
+                continue
         if r.status_code != 200:
+            print(f"  ! {st_name}: HTTP {r.status_code}")
             continue
-        time.sleep(1.5)  # kurze Pause damit Kicktipp nicht abbricht
+        time.sleep(2)  # Pause zwischen Requests
         soup    = BeautifulSoup(r.text, "html.parser")
         spiele  = parse_spiele_header(soup)
         spieler = parse_spieler_zeilen(soup, spiele)
@@ -209,14 +216,27 @@ def main():
         daten_copy = {k: v for k, v in daten.items() if k != "zuletzt_aktualisiert"}
         changed = json.dumps(old, sort_keys=True) != json.dumps(daten_copy, sort_keys=True)
 
-    # Timestamp immer aktualisieren damit das Leaderboard die Scrape-Zeit korrekt anzeigt
+    total = sum(len([s for s in st["spiele"] if s["abgeschlossen"]]) for st in daten["spieltage"])
+
+    # Sicherheitsprüfung: nie eine leere JSON speichern
+    if not daten["spieltage"]:
+        print("✗ Keine Spieltage gescraped – behalte alte JSON um Datenverlust zu vermeiden")
+        # Timestamp trotzdem aktualisieren in der alten JSON
+        if os.path.exists(OUTPUT_FILE):
+            with open(OUTPUT_FILE, encoding="utf-8") as f:
+                alte = json.load(f)
+            alte["zuletzt_aktualisiert"] = daten["zuletzt_aktualisiert"]
+            with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+                json.dump(alte, f, ensure_ascii=False, indent=2)
+            print("✓ Timestamp in alter JSON aktualisiert")
+        return
+
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(daten, f, ensure_ascii=False, indent=2)
-    total = sum(len([s for s in st["spiele"] if s["abgeschlossen"]]) for st in daten["spieltage"])
     if changed:
-        print(f"✓ {OUTPUT_FILE} gespeichert · {total} Spiele abgeschlossen (Änderungen gefunden)")
+        print(f"✓ {OUTPUT_FILE} gespeichert · {total} Spiele (Änderungen)")
     else:
-        print(f"✓ {OUTPUT_FILE} gespeichert · Timestamp aktualisiert (keine Spieldaten-Änderungen)")
+        print(f"✓ {OUTPUT_FILE} gespeichert · Timestamp aktualisiert")
 
 if __name__ == "__main__":
     main()
