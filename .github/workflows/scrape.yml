@@ -1,1 +1,41 @@
+name: Kicktipp Scraper
 
+"on":
+  schedule:
+    - cron: '*/15 8-23 * * *'
+  workflow_dispatch:
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Python setup
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+
+      - name: Run scraper
+        env:
+          KICKTIPP_EMAIL:     ${{ secrets.KICKTIPP_EMAIL }}
+          KICKTIPP_PASSWORD:  ${{ secrets.KICKTIPP_PASSWORD }}
+          KICKTIPP_COMMUNITY: ${{ secrets.KICKTIPP_COMMUNITY }}
+        run: python scraper.py
+
+      - name: Commit & push wenn Änderungen
+        run: |
+          git config user.name  "kicktipp-bot"
+          git config user.email "bot@kicktipp-wm"
+          git add kicktipp_daten.json
+          git diff --cached --quiet || git commit -m "🔄 Daten aktualisiert $(date -u +'%H:%M UTC')"
+          git push
+          
