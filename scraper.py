@@ -171,9 +171,9 @@ def scrape(session, saison_id, html_first):
     time.sleep(2)  # kurze Pause nach Login bevor Requests starten
     print(f"  Spieltage-Liste: {spieltage_list}")
     for st_idx, st_name in spieltage_list:
+        # Leerer Name = aktiver Tab, Name direkt von der Seite holen
         if not st_name.strip():
-            print(f"  ! Index {st_idx}: leerer Name, überspringe")
-            continue
+            st_name = f"Spieltag {st_idx}"
         url = f"{base_url}?tippsaisonId={saison_id}&spieltagIndex={st_idx}"
         try:
             r = session.get(url, headers=HEADERS, timeout=20)
@@ -194,6 +194,13 @@ def scrape(session, saison_id, html_first):
         spieler = parse_spieler_zeilen(soup, spiele)
         if not spieler:
             continue
+        # Echten Namen aus Seiteninhalt lesen falls leer
+        if not st_name or st_name.startswith("Spieltag "):
+            title_el = soup.find("div", class_="prevnextTitle")
+            if title_el:
+                st_name = title_el.get_text(strip=True)
+            elif soup.find("h1", id="title"):
+                st_name = soup.find("h1", id="title").get_text(strip=True).split("•")[-1].strip()
         abgeschl = [s for s in spiele if s["abgeschlossen"]]
         print(f"  ✓ {st_name}: {len(spieler)} Spieler · {len(abgeschl)}/{len(spiele)} Spiele")
         allein = {p["name"]: 0 for p in spieler}
