@@ -144,11 +144,19 @@ def scrape(session, saison_id, html_first):
     result = {"community": COMMUNITY, "zuletzt_aktualisiert": datetime.now().isoformat(), "spieltage": []}
     base_url = f"{BASE_URL}/{COMMUNITY}/tippuebersicht"
 
+    import time
     for st_idx, st_name in spieltage_list:
+        if not st_name.strip():
+            continue  # leeren Spieltag-Namen überspringen
         url = f"{base_url}?tippsaisonId={saison_id}&spieltagIndex={st_idx}"
-        r   = session.get(url, headers=HEADERS)
+        try:
+            r = session.get(url, headers=HEADERS, timeout=15)
+        except Exception as e:
+            print(f"  ! {st_name}: Verbindungsfehler ({e}), überspringe")
+            continue
         if r.status_code != 200:
             continue
+        time.sleep(1.5)  # kurze Pause damit Kicktipp nicht abbricht
         soup    = BeautifulSoup(r.text, "html.parser")
         spiele  = parse_spiele_header(soup)
         spieler = parse_spieler_zeilen(soup, spiele)
@@ -201,13 +209,14 @@ def main():
         daten_copy = {k: v for k, v in daten.items() if k != "zuletzt_aktualisiert"}
         changed = json.dumps(old, sort_keys=True) != json.dumps(daten_copy, sort_keys=True)
 
+    # Timestamp immer aktualisieren damit das Leaderboard die Scrape-Zeit korrekt anzeigt
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+        json.dump(daten, f, ensure_ascii=False, indent=2)
+    total = sum(len([s for s in st["spiele"] if s["abgeschlossen"]]) for st in daten["spieltage"])
     if changed:
-        with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-            json.dump(daten, f, ensure_ascii=False, indent=2)
-        total = sum(len([s for s in st["spiele"] if s["abgeschlossen"]]) for st in daten["spieltage"])
-        print(f"✓ {OUTPUT_FILE} gespeichert · {total} Spiele abgeschlossen")
+        print(f"✓ {OUTPUT_FILE} gespeichert · {total} Spiele abgeschlossen (Änderungen gefunden)")
     else:
-        print("→ Keine Änderungen, kein Commit nötig")
+        print(f"✓ {OUTPUT_FILE} gespeichert · Timestamp aktualisiert (keine Spieldaten-Änderungen)")
 
 if __name__ == "__main__":
     main()
