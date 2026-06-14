@@ -373,7 +373,7 @@
   </div>
 
   <!-- Upload -->
-  <div class="card" id="upload-card" style="display:none">
+  <div class="card" id="upload-card">
     <div class="card-title">Datei laden</div>
     <div class="upload-zone" id="drop-zone" onclick="document.getElementById('file-input').click()">
       <div class="upload-icon">📂</div>
@@ -976,26 +976,29 @@ function closeModal(e) {
 }
 
 // ── Auto-load von kicktipp_daten.json (GitHub Pages) ────────────
-async function autoLoad() {
+async function autoLoad(isRefresh) {
   try {
     const r = await fetch("kicktipp_daten.json?t=" + Date.now());
     if (!r.ok) throw new Error("HTTP " + r.status);
     const json = await r.json();
+    // Nur laden wenn echte Daten vorhanden
+    if (!json.spieltage || json.spieltage.length === 0) throw new Error("Keine Spieltage");
     document.getElementById("upload-card").style.display = "none";
     init(json);
     // Alle 5 Minuten neu laden
-    setTimeout(autoLoad, 5 * 60 * 1000);
+    setTimeout(() => autoLoad(true), 5 * 60 * 1000);
   } catch(e) {
-    // Kein JSON verfügbar → Upload-Zone zeigen
-    showUpload();
+    console.log("autoLoad Fehler:", e.message);
+    if (!isRefresh) {
+      // Beim ersten Laden: Upload-Zone zeigen
+      document.getElementById("upload-card").style.display = "block";
+    }
+    // Nach 30 Sekunden nochmal versuchen
+    setTimeout(() => autoLoad(isRefresh), 30 * 1000);
   }
 }
 
-function showUpload() {
-  document.getElementById("upload-card").style.display = "block";
-}
-
-autoLoad();
+autoLoad(false);
 
 // ── Manueller File Upload (Fallback) ─────────────────────────────
 function loadFile(file) {
