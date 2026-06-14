@@ -511,7 +511,11 @@ function init(json) {
   document.getElementById("m-teilnehmer").textContent = namen.length;
   document.getElementById("meta-bar").style.display   = "flex";
 
-  stIdx = D.spieltage.length - 1;
+  // Letzter Spieltag mit mind. einem abgeschlossenen Spiel
+  stIdx = 0;
+  for (let i = 0; i < D.spieltage.length; i++) {
+    if (D.spieltage[i].spiele.some(s => s.abgeschlossen)) stIdx = i;
+  }
 
   document.getElementById("upload-card").style.display = "none";
   document.getElementById("main").style.display        = "block";
