@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Kicktipp · STB-Tipprunde</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+  <style>
+    /* ── Kicktipp CI ──────────────────────────────────────────── */
+    :root {
+      --kt-red:    #c01c00;
+      --kt-red2:   #e02200;
+      --kt-dark:   #1a1a1a;
+      --kt-darker: #111111;
+      --kt-card:   #242424;
+      --kt-card2:  #2e2e2e;
+      --kt-border: #383838;
+      --kt-text:   #f0f0f0;
+      --kt-muted:  #888;
+      --kt-muted2: #555;
+      --kt-white:  #ffffff;
+      --kt-gold:   #f59e0b;
+      --kt-silver: #9ca3af;
+      --kt-bronze: #b45309;
+      --kt-green:  #22c55e;
+      --kt-yellow: #eab308;
+      --r:         8px;
+      --r2:        12px;
+      --mono: "SF Mono","Fira Code","Consolas",monospace;
+      --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--kt-darker);
+      color: var(--kt-text);
+      font-family: var(--sans);
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Topbar ── */
+    .topbar {
+      background: var(--kt-red);
+      padding: 0 16px;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 8px rgba(0,0,0,.5);
+    }
+    .topbar-logo {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: -.02em;
+      text-transform: lowercase;
+    }
+    .topbar-logo span { opacity: .7; }
+    .topbar-community {
+      font-size: .78rem;
+      color: rgba(255,255,255,.65);
+      margin-left: 4px;
+    }
+    .topbar-right {
+      margin-left: auto;
+      font-size: .72rem;
+      color: rgba(255,255,255,.5);
+      font-family: var(--mono);
+    }
+
+    /* ── Content ── */
+    .content { padding: 14px 14px 80px; max-width: 900px; margin: 0 auto; }
+
+    /* ── Cards ── */
+    .card {
+      background: var(--kt-card);
+      border: 1px solid var(--kt-border);
+      border-radius: var(--r2);
+      padding: 16px;
+      margin-bottom: 14px;
+    }
+    .card-title {
+      font-size: .62rem;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      color: var(--kt-muted);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .card-title::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--kt-border);
+    }
+
+    /* ── Mode Tabs ── */
+    .tabs {
+      display: flex;
+      background: var(--kt-darker);
+      border-radius: var(--r);
+      padding: 3px;
+      gap: 2px;
+      margin-bottom: 12px;
+      width: fit-content;
+    }
+    .tab-btn {
+      background: none;
+      border: none;
+      color: var(--kt-muted);
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-size: .78rem;
+      font-family: var(--sans);
+      cursor: pointer;
+      transition: all .15s;
+      white-space: nowrap;
+    }
+    .tab-btn.active {
+      background: var(--kt-red);
+      color: #fff;
+      font-weight: 600;
+    }
+
+    /* ── Player chips ── */
+    .chips { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px; }
+    .chip {
+      display: flex; align-items: center; gap: 5px;
+      padding: 4px 10px;
+      border-radius: 20px;
+      border: 1.5px solid var(--kt-border);
+      background: var(--kt-darker);
+      color: var(--kt-muted);
+      font-size: .72rem;
+      cursor: pointer;
+      transition: all .2s;
+      opacity: 0.38;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .chip .dot { width: 7px; height: 7px; border-radius: 50%; }
+    .chip.on {
+      background: color-mix(in srgb, var(--pc) 18%, transparent);
+      border-color: var(--pc);
+      color: var(--pc);
+      opacity: 1;
+    }
+
+    /* ── Chart ── */
+    .chart-wrap { position: relative; height: 260px; }
+    @media(min-width: 600px) { .chart-wrap { height: 340px; } }
+
+    /* ── Grid ── */
+    .g2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    @media(max-width: 640px) { .g2 { grid-template-columns: 1fr; } }
+    .g3 { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; }
+    @media(max-width: 600px) { .g3 { grid-template-columns: 1fr 1fr; } }
+    @media(max-width: 380px) { .g3 { grid-template-columns: 1fr; } }
+
+    /* ── Rangliste nav ── */
+    .st-nav {
+      display: flex; align-items: center; gap: 8px; margin-bottom: 10px;
+    }
+    .nav-btn {
+      background: var(--kt-card2);
+      border: 1px solid var(--kt-border);
+      color: var(--kt-text);
+      width: 32px; height: 32px;
+      border-radius: 6px;
+      font-size: .85rem;
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      transition: background .15s;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .nav-btn:active { background: var(--kt-red); }
+    .nav-btn:disabled { opacity: .3; cursor: default; }
+    .st-label {
+      flex: 1; text-align: center;
+      font-size: .8rem; font-weight: 600;
+      color: var(--kt-text);
+    }
+
+    /* ── Ranking rows ── */
+    .rl-row {
+      display: flex; align-items: center; gap: 10px;
+      padding: 9px 10px;
+      background: var(--kt-card2);
+      border-radius: var(--r);
+      margin-bottom: 5px;
+      border-left: 3px solid transparent;
+      cursor: pointer;
+      transition: border-color .15s, background .15s;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .rl-row:active { background: var(--kt-border); }
+    .rl-row.highlight { border-left-color: var(--kt-red); background: color-mix(in srgb,var(--kt-red) 10%,var(--kt-card2)); }
+    .rank { font-family: var(--mono); font-size: .7rem; color: var(--kt-muted); width: 18px; text-align: right; flex-shrink: 0; }
+    .rank.g { color: var(--kt-gold); font-weight: 700; }
+    .rank.s { color: var(--kt-silver); font-weight: 700; }
+    .rank.b { color: var(--kt-bronze); font-weight: 700; }
+    .cdot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+    .pname { flex: 1; font-size: .85rem; font-weight: 500; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .pts { font-family: var(--mono); font-size: .88rem; font-weight: 700; flex-shrink: 0; }
+    .delta {
+      font-family: var(--mono); font-size: .68rem;
+      padding: 2px 5px; border-radius: 4px;
+      min-width: 32px; text-align: center; flex-shrink: 0;
+    }
+    .delta.up { background: rgba(34,197,94,.15); color: var(--kt-green); }
+    .delta.dn { background: rgba(192,28,0,.15);  color: #f87171; }
+    .delta.eq { color: var(--kt-muted); }
+
+    /* ── Fun stat cards ── */
+    .stat-card {
+      background: var(--kt-card2);
+      border: 1px solid var(--kt-border);
+      border-radius: var(--r);
+      padding: 12px;
+      cursor: default;
+    }
+    .stat-icon { font-size: 1.4rem; margin-bottom: 6px; }
+    .stat-label { font-size: .6rem; text-transform: uppercase; letter-spacing: .1em; color: var(--kt-muted); margin-bottom: 4px; }
+    .stat-name { font-size: .95rem; font-weight: 700; }
+    .stat-value { font-family: var(--mono); font-size: .72rem; color: var(--kt-red2); margin-top: 3px; }
+    .stat-sub { font-size: .68rem; color: var(--kt-muted); margin-top: 2px; }
+
+    /* ── Führungswechsel ── */
+    .fw-row {
+      display: flex; align-items: center; gap: 8px;
+      padding: 7px 10px;
+      background: var(--kt-card2);
+      border-radius: var(--r);
+      margin-bottom: 5px;
+    }
+    .fw-from { font-size: .68rem; color: var(--kt-muted); font-family: var(--mono); flex: 1; }
+
+    /* ── Spieler-Detail Modal ── */
+    .modal-overlay {
+      display: none;
+      position: fixed; inset: 0;
+      background: rgba(0,0,0,.75);
+      z-index: 200;
+      backdrop-filter: blur(4px);
+    }
+    .modal-overlay.open { display: flex; align-items: flex-end; }
+    @media(min-width:600px){ .modal-overlay.open { align-items: center; justify-content: center; } }
+    .modal {
+      background: var(--kt-card);
+      border: 1px solid var(--kt-border);
+      border-radius: var(--r2) var(--r2) 0 0;
+      padding: 20px 16px 32px;
+      width: 100%;
+      max-height: 85vh;
+      overflow-y: auto;
+    }
+    @media(min-width:600px){
+      .modal { border-radius: var(--r2); max-width: 480px; max-height: 80vh; }
+    }
+    .modal-header {
+      display: flex; align-items: center; gap: 10px; margin-bottom: 16px;
+    }
+    .modal-name { font-size: 1.1rem; font-weight: 700; flex: 1; }
+    .modal-close {
+      background: var(--kt-card2); border: 1px solid var(--kt-border);
+      color: var(--kt-text); width: 30px; height: 30px;
+      border-radius: 50%; font-size: 1rem; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .modal-stat {
+      background: var(--kt-card2); border-radius: var(--r);
+      padding: 10px 12px; margin-bottom: 8px;
+    }
+    .modal-stat-label { font-size: .62rem; text-transform: uppercase; letter-spacing: .08em; color: var(--kt-muted); margin-bottom: 2px; }
+    .modal-stat-value { font-size: .95rem; font-weight: 700; }
+    .modal-stat-value.red { color: var(--kt-red2); }
+    .sternstunde {
+      background: linear-gradient(135deg, color-mix(in srgb,var(--kt-gold) 20%,var(--kt-card2)), var(--kt-card2));
+      border: 1px solid color-mix(in srgb,var(--kt-gold) 40%,var(--kt-border));
+      border-radius: var(--r);
+      padding: 12px;
+      margin-bottom: 8px;
+    }
+    .sternstunde-label { font-size: .62rem; text-transform: uppercase; letter-spacing: .08em; color: var(--kt-gold); margin-bottom: 4px; }
+    .sternstunde-value { font-size: 1rem; font-weight: 700; color: var(--kt-gold); }
+    .sternstunde-sub { font-size: .75rem; color: var(--kt-muted); margin-top: 2px; }
+    .spiel-list { display: flex; flex-direction: column; gap: 4px; }
+    .spiel-row {
+      display: flex; align-items: center; gap: 8px;
+      background: var(--kt-darker); border-radius: 6px;
+      padding: 6px 10px; font-size: .78rem;
+    }
+    .spiel-row .sl { flex: 1; color: var(--kt-muted); }
+    .spiel-row .sp { font-family: var(--mono); font-weight: 700; min-width: 24px; text-align: right; }
+    .spiel-row .sp.good { color: var(--kt-green); }
+    .spiel-row .sp.exakt { color: var(--kt-gold); }
+    .spiel-row .sp.zero { color: var(--kt-muted2); }
+
+    /* ── Upload ── */
+    .upload-zone {
+      border: 2px dashed var(--kt-border);
+      border-radius: var(--r2);
+      padding: 44px 20px;
+      text-align: center;
+      cursor: pointer;
+      transition: all .15s;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .upload-zone:active, .upload-zone.drag {
+      border-color: var(--kt-red); background: rgba(192,28,0,.06);
+    }
+    .upload-icon { font-size: 2rem; margin-bottom: 10px; }
+    .upload-text { color: var(--kt-muted); font-size: .85rem; line-height: 1.5; }
+    .upload-text strong { color: var(--kt-text); }
+    #file-input { display: none; }
+
+    /* ── Meta badges ── */
+    .meta { display: flex; gap: 8px; flex-wrap: wrap; padding: 10px 14px; }
+    .badge {
+      background: var(--kt-card);
+      border: 1px solid var(--kt-border);
+      border-radius: 6px;
+      padding: 3px 9px;
+      font-size: .68rem;
+      color: var(--kt-muted);
+      font-family: var(--mono);
+    }
+    .badge span { color: var(--kt-text); font-weight: 600; }
+
+    /* ── Prize / Grill badges ── */
+    .rl-prize {
+      font-size: .68rem;
+      font-family: var(--mono);
+      padding: 2px 6px;
+      border-radius: 4px;
+      flex-shrink: 0;
+      opacity: 0.55;
+      font-weight: 600;
+    }
+    .rl-prize.win  { background: rgba(245,158,11,.12); color: var(--kt-gold); }
+    .rl-prize.grill { background: rgba(239,68,68,.10); color: #f87171; font-family: var(--sans); }
+
+    /* ── Scrollbar ── */
+    ::-webkit-scrollbar { width: 4px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: var(--kt-border); border-radius: 2px; }
+  </style>
+</head>
+<body>
+
+<!-- Topbar -->
+<div class="topbar">
+  <div class="topbar-logo">kick<span>tipp</span></div>
+  <div class="topbar-community" id="top-community">· Lade Daten...</div>
+  <div class="topbar-right" id="top-updated"></div>
+</div>
+
+<!-- Content -->
+<div class="content">
+
+  <!-- Meta -->
+  <div class="meta" id="meta-bar" style="display:none;padding:0;margin-bottom:14px">
+    <div class="badge">Spiele: <span id="m-spiele">—</span></div>
+    <div class="badge">Spieltage: <span id="m-spieltage">—</span></div>
+    <div class="badge">Teilnehmer: <span id="m-teilnehmer">—</span></div>
+  </div>
+
+  <!-- Upload -->
+  <div class="card" id="upload-card" style="display:none">
+    <div class="card-title">Datei laden</div>
+    <div class="upload-zone" id="drop-zone" onclick="document.getElementById('file-input').click()">
+      <div class="upload-icon">📂</div>
+      <div class="upload-text">
+        <strong>kicktipp_daten.json</strong> hierher ziehen<br>oder tippen zum Auswählen
+      </div>
+    </div>
+    <input type="file" id="file-input" accept=".json">
+  </div>
+
+  <!-- Main -->
+  <div id="main" style="display:none">
+
+    <!-- Chart card -->
+    <div class="card">
+      <div class="card-title">Punkteverlauf</div>
+      <div class="tabs">
+        <button class="tab-btn active" id="btn-spiel"    onclick="setMode('spiel')">Pro Spiel</button>
+        <button class="tab-btn"        id="btn-spieltag" onclick="setMode('spieltag')">Pro Spieltag</button>
+      </div>
+      <div class="chips" id="chips"></div>
+      <div class="chart-wrap"><canvas id="chart"></canvas></div>
+    </div>
+
+    <!-- Rangliste + Führung -->
+    <div class="g2">
+      <div class="card">
+        <div class="st-nav">
+          <button class="nav-btn" id="prev-btn" onclick="navSt(-1)">◀</button>
+          <div class="st-label" id="st-label">—</div>
+          <button class="nav-btn" id="next-btn" onclick="navSt(+1)">▶</button>
+        </div>
+        <div class="card-title">Rangliste <span style="color:var(--kt-muted2);font-size:.6rem;letter-spacing:0;text-transform:none">· tippen für Details</span></div>
+        <div id="rangliste"></div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Führungswechsel</div>
+        <div id="fuehrung"></div>
+      </div>
+    </div>
+
+    <!-- Fun Stats -->
+    <div class="card">
+      <div class="card-title">Fun Stats</div>
+      <div class="g3" id="fun-stats"></div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Spieler-Detail Modal -->
+<div class="modal-overlay" id="modal-overlay" onclick="closeModal(event)">
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div class="cdot" id="modal-dot" style="width:12px;height:12px;border-radius:50%"></div>
+      <div class="modal-name" id="modal-name"></div>
+      <button class="modal-close" onclick="closeModal()">✕</button>
+    </div>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<script>
+// ── Farben (Kicktipp-feel: kräftig, klar) ───────────────────────
+const COLORS = [
+  "#c01c00","#3b82f6","#f59e0b","#22c55e","#8b5cf6",
+  "#ec4899","#06b6d4","#f97316","#84cc16","#6366f1",
+  "#ef4444","#14b8a6","#a78bfa","#fb923c","#4ade80"
+];
+
+// ── State ────────────────────────────────────────────────────────
+let D = null;
+let colorMap = {};
+let activeP  = {};
+let mode     = "spiel";
+let stIdx    = 0;
+let chartObj = null;
+
+// ── Helpers ──────────────────────────────────────────────────────
+const alleNamen = () => {
+  const s = new Set();
+  D.spieltage.forEach(st => st.spieler.forEach(p => s.add(p.name)));
+  return [...s];
+};
+
+const flatSpiele = () => {
+  const out = [];
+  D.spieltage.forEach(st =>
+    st.spiele.filter(s => s.abgeschlossen).forEach(s =>
+      out.push({ spieltag: st.name, stObj: st, col: s.col_idx, label: s.label, ergebnis: s.ergebnis })
+    )
+  );
+  return out;
+};
+
+const ptsInSpiel = (name, st, col) => {
+  const p = st.spieler.find(x => x.name === name);
+  return p ? (p.punkte_pro_spiel[String(col)] ?? 0) : 0;
+};
+
+const kumulBisFlat = (name, upTo, flat) => {
+  let s = 0;
+  for (let i = 0; i <= upTo; i++) s += ptsInSpiel(name, flat[i].stObj, flat[i].col);
+  return s;
+};
+
+const kumulBisSt = (name, upTo) => {
+  let s = 0;
+  for (let i = 0; i <= upTo; i++) {
+    const st = D.spieltage[i];
+    st.spiele.filter(sp => sp.abgeschlossen).forEach(sp =>
+      s += ptsInSpiel(name, st, sp.col_idx)
+    );
+  }
+  return s;
+};
+
+const maxBy = (arr, fn) => arr.reduce((a,b) => fn(a) >= fn(b) ? a : b);
+const minBy = (arr, fn) => arr.reduce((a,b) => fn(a) <= fn(b) ? a : b);
+
+// ── Init ─────────────────────────────────────────────────────────
+function init(json) {
+  D = json;
+  const namen = alleNamen();
+  namen.forEach((n,i) => { colorMap[n] = COLORS[i % COLORS.length]; activeP[n] = true; });
+
+  document.getElementById("top-community").textContent = `· ${D.community || ""}`;
+  document.getElementById("top-updated").textContent =
+    (D.zuletzt_aktualisiert||"").slice(0,16).replace("T"," ");
+
+  const totalSpiele = D.spieltage.reduce((a,st) => a + st.spiele.filter(s=>s.abgeschlossen).length, 0);
+  document.getElementById("m-spiele").textContent     = totalSpiele;
+  document.getElementById("m-spieltage").textContent  = D.spieltage.length;
+  document.getElementById("m-teilnehmer").textContent = namen.length;
+  document.getElementById("meta-bar").style.display   = "flex";
+
+  stIdx = D.spieltage.length - 1;
+
+  document.getElementById("upload-card").style.display = "none";
+  document.getElementById("main").style.display        = "block";
+
+  renderChips();
+  renderChart();
+  renderRangliste();
+  renderFuehrung();
+  renderFunStats();
+}
+
+// ── Chips ────────────────────────────────────────────────────────
+// highlighted = Set der hervorgehobenen Spieler (leer = alle gleich)
+let highlighted = new Set();
+
+function renderChips() {
+  const c = document.getElementById("chips");
+  c.innerHTML = "";
+  highlighted.clear();
+  alleNamen().forEach(name => {
+    const b = document.createElement("button");
+    b.id = `chip-${name}`;
+    b.className = "chip"; // start: alle neutral (kein .on)
+    b.style.setProperty("--pc", colorMap[name]);
+    b.innerHTML = `<span class="dot" style="background:${colorMap[name]}"></span>${name}`;
+    b.onclick = () => toggleChip(name);
+    c.appendChild(b);
+  });
+  alleNamen().forEach(n => activeP[n] = true);
+}
+
+function toggleChip(name) {
+  const namen = alleNamen();
+
+  if (highlighted.has(name)) {
+    // Zweiter Klick auf denselben → Reset
+    highlighted.clear();
+  } else {
+    // Erster Klick → hervorheben (weitere Chips addieren sich)
+    highlighted.add(name);
+  }
+
+  // Alle Linien bleiben sichtbar
+  namen.forEach(n => activeP[n] = true);
+
+  // Chips visuell
+  namen.forEach(n => {
+    const chip = document.getElementById(`chip-${n}`);
+    if (!chip) return;
+    if (highlighted.size === 0) {
+      chip.classList.remove("on");
+    } else {
+      chip.classList.toggle("on", highlighted.has(n));
+    }
+  });
+
+  syncChartToActive();
+}
+
+function syncChartToActive() {
+  if (!chartObj) return;
+  const isHighlighting = highlighted.size > 0;
+  chartObj.data.datasets.forEach(ds => {
+    ds.hidden = false;
+    if (!isHighlighting) {
+      // Ausgangszustand: alle gleich
+      ds.borderWidth = 2;
+      ds.borderColor = colorMap[ds.label];
+      ds.borderDash = [];
+    } else if (highlighted.has(ds.label)) {
+      // Hervorgehoben: dick und voll
+      ds.borderWidth = 3.5;
+      ds.borderColor = colorMap[ds.label];
+      ds.borderDash = [];
+    } else {
+      // Andere: dünn und transparent
+      ds.borderWidth = 1;
+      ds.borderColor = colorMap[ds.label] + "28";
+      ds.borderDash = [];
+    }
+  });
+  chartObj.update("none");
+}
+
+// ── Chart ────────────────────────────────────────────────────────
+function setMode(m) {
+  mode = m;
+  document.getElementById("btn-spiel").classList.toggle("active", m==="spiel");
+  document.getElementById("btn-spieltag").classList.toggle("active", m==="spieltag");
+  renderChart();
+}
+
+function renderChart() {
+  const namen = alleNamen();
+  let labels, datasets;
+
+  if (mode === "spiel") {
+    const flat = flatSpiele();
+    labels = flat.map(f => `${f.label} ${f.ergebnis||""}`);
+    datasets = namen.map(name => ({
+      label: name,
+      data: flat.map((_,i) => kumulBisFlat(name, i, flat)),
+      borderColor: colorMap[name],
+      backgroundColor: colorMap[name]+"25",
+      borderWidth: 2,
+      pointRadius: flat.length > 40 ? 1.5 : 3,
+      pointHoverRadius: 5,
+      tension: 0.25, fill: false, hidden: !activeP[name],
+    }));
+  } else {
+    const stsMit = D.spieltage.filter(st => st.spiele.some(s=>s.abgeschlossen));
+    labels = stsMit.map(st => st.name);
+    const idxMap = stsMit.map(st => D.spieltage.indexOf(st));
+    datasets = namen.map(name => ({
+      label: name,
+      data: idxMap.map(i => kumulBisSt(name, i)),
+      borderColor: colorMap[name],
+      backgroundColor: colorMap[name]+"25",
+      borderWidth: 2,
+      pointRadius: 4, pointHoverRadius: 6,
+      tension: 0.3, fill: false, hidden: !activeP[name],
+    }));
+  }
+
+  if (chartObj) chartObj.destroy();
+  chartObj = new Chart(document.getElementById("chart").getContext("2d"), {
+    type: "line",
+    data: { labels, datasets },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      interaction: { mode:"index", intersect:false },
+      plugins: {
+        legend: { display:false },
+        tooltip: {
+          backgroundColor:"#1a1a1a", borderColor:"#383838", borderWidth:1,
+          titleColor:"#f0f0f0", bodyColor:"#888", padding:10, titleFont:{size:11},
+          callbacks: {
+            afterBody(items) { items.sort((a,b) => b.parsed.y - a.parsed.y); return ""; }
+          }
+        }
+      },
+      scales: {
+        x: { grid:{color:"#2e2e2e"}, ticks:{color:"#666",font:{size:9},maxRotation:50}, border:{color:"#383838"} },
+        y: { grid:{color:"#2e2e2e"}, ticks:{color:"#666",font:{size:10}},              border:{color:"#383838"} }
+      },
+      animation: { duration:250 }
+    }
+  });
+}
+
+function updateVis() { syncChartToActive(); }
+
+// ── Rangliste ────────────────────────────────────────────────────
+function navSt(d) {
+  stIdx = Math.max(0, Math.min(D.spieltage.length-1, stIdx+d));
+  renderRangliste();
+}
+
+function renderRangliste() {
+  const namen = alleNamen();
+  document.getElementById("st-label").textContent = D.spieltage[stIdx].name;
+  document.getElementById("prev-btn").disabled = stIdx===0;
+  document.getElementById("next-btn").disabled = stIdx===D.spieltage.length-1;
+
+  const aktuell = namen.map(n=>({name:n,pts:kumulBisSt(n,stIdx)})).sort((a,b)=>b.pts-a.pts);
+  const vorher  = stIdx>0 ? namen.map(n=>({name:n,pts:kumulBisSt(n,stIdx-1)})) : null;
+
+  const n = aktuell.length;
+  const einsatz = 20;
+  const topf = n * einsatz;
+  // Gewinn pro Platz
+  const gewinn = pl => pl===1 ? topf*0.5 : pl===2 ? topf*0.3 : pl===3 ? topf*0.2 : null;
+  // Grill-Pflicht: die letzten 3
+  const grillPlaetze = new Set([n, n-1, n-2].filter(x => x > 3));
+
+  const c = document.getElementById("rangliste");
+  c.innerHTML = "";
+  aktuell.forEach((p,i) => {
+    const pl = i+1, rc = pl===1?"g":pl===2?"s":pl===3?"b":"";
+    const prev = vorher?.find(x=>x.name===p.name);
+    const diff = prev ? p.pts-prev.pts : null;
+    const dH = diff!==null
+      ? `<span class="delta ${diff>0?"up":diff<0?"dn":"eq"}">${diff>0?"+":""}${diff}</span>`
+      : "";
+    const win = gewinn(pl);
+    const isGrill = grillPlaetze.has(pl);
+    const extraHtml = win
+      ? `<span class="rl-prize win">+${win}€</span>`
+      : isGrill
+      ? `<span class="rl-prize grill">🔥 Grill</span>`
+      : "";
+    const row = document.createElement("div");
+    row.className = "rl-row";
+    row.innerHTML = `
+      <span class="rank ${rc}">${pl}.</span>
+      <span class="cdot" style="background:${colorMap[p.name]}"></span>
+      <span class="pname">${p.name}</span>
+      ${dH}
+      ${extraHtml}
+      <span class="pts">${p.pts}</span>`;
+    row.onclick = () => openModal(p.name);
+    c.appendChild(row);
+  });
+}
+
+// ── Führungswechsel ──────────────────────────────────────────────
+function renderFuehrung() {
+  const flat  = flatSpiele();
+  const namen = alleNamen();
+  const c     = document.getElementById("fuehrung");
+  c.innerHTML = "";
+  let letzter = null;
+  flat.forEach((f,i) => {
+    const leader = namen.map(n=>({name:n,pts:kumulBisFlat(n,i,flat)})).sort((a,b)=>b.pts-a.pts)[0];
+    if (leader.name !== letzter) {
+      const row = document.createElement("div");
+      row.className = "fw-row";
+      row.innerHTML = `
+        <span class="cdot" style="background:${colorMap[leader.name]}"></span>
+        <span class="pname" style="color:${colorMap[leader.name]};font-size:.85rem;font-weight:600">${leader.name}</span>
+        <span class="fw-from">${f.label}</span>
+        <span class="pts" style="font-size:.78rem;color:var(--kt-muted)">${leader.pts}P</span>`;
+      c.appendChild(row);
+      letzter = leader.name;
+    }
+  });
+  if (!c.children.length)
+    c.innerHTML = `<div style="color:var(--kt-muted);font-size:.8rem;padding:6px">Noch keine Daten</div>`;
+}
+
+// ── Fun Stats ────────────────────────────────────────────────────
+function renderFunStats() {
+  const flat  = flatSpiele();
+  const namen = alleNamen();
+
+  // Exakte Ergebnisse (nur abgeschlossene Spiele)
+  const exakt = Object.fromEntries(namen.map(n=>[n,0]));
+  D.spieltage.forEach(st =>
+    st.spiele.filter(s=>s.abgeschlossen).forEach(s =>
+      st.spieler.forEach(p => {
+        if (p.exakt_pro_spiel?.[String(s.col_idx)]) exakt[p.name]++;
+      })
+    )
+  );
+
+  // Kontra-Tipper (allein gepunktet, nur abgeschlossene Spiele)
+  const allein = Object.fromEntries(namen.map(n=>[n,0]));
+  D.spieltage.forEach(st =>
+    st.spiele.filter(s=>s.abgeschlossen).forEach(s => {
+      const col = String(s.col_idx);
+      const mit = st.spieler.filter(p=>(p.punkte_pro_spiel?.[col]||0)>0);
+      if (mit.length===1) allein[mit[0].name]++;
+    })
+  );
+
+  // Metronom – wer hat bei den meisten abgeschlossenen Spielen mind. 1 Punkt geholt
+  const spieleMitPunkten = Object.fromEntries(namen.map(n=>[n,0]));
+  let totalAbgeschl = 0;
+  D.spieltage.forEach(st => {
+    st.spiele.filter(s=>s.abgeschlossen).forEach(s => {
+      totalAbgeschl++;
+      const col = String(s.col_idx);
+      st.spieler.forEach(p => {
+        if ((p.punkte_pro_spiel?.[col] ?? 0) > 0) spieleMitPunkten[p.name]++;
+      });
+    });
+  });
+  const metronom = maxBy(namen, n => spieleMitPunkten[n]);
+
+  // Pechvogel – Nullen NUR bei abgeschlossenen Spielen
+  const nullen = Object.fromEntries(namen.map(n=>[n,0]));
+  D.spieltage.forEach(st =>
+    st.spiele.filter(s=>s.abgeschlossen).forEach(s => {
+      const col = String(s.col_idx);
+      st.spieler.forEach(p => {
+        if ((p.punkte_pro_spiel?.[col]??0)===0) nullen[p.name]++;
+      });
+    })
+  );
+
+  // Aufholer – größter Rückstand, nach dem man danach mind. einen Spieler überholt hat
+  // Pro Spieler: für jeden Punkt im Verlauf den Rang merken.
+  // Aufholer-Score = max(Rückstand zu Zeitpunkt X) wobei nach X irgendwann Rang besser als an X.
+  const aufholerScore = Object.fromEntries(namen.map(n => [n, 0]));
+  const aufholerRueck = Object.fromEntries(namen.map(n => [n, 0]));
+
+  if (flat.length > 1) {
+    // Rang-Verlauf für jeden Spieler berechnen
+    const rangVerlauf = flat.map((_, i) => {
+      const pts = Object.fromEntries(namen.map(n => [n, kumulBisFlat(n, i, flat)]));
+      const sorted = [...namen].sort((a, b) => pts[b] - pts[a]);
+      const rang = Object.fromEntries(sorted.map((n, r) => [n, r + 1]));
+      return { pts, rang };
+    });
+
+    namen.forEach(name => {
+      let bestScore = 0;
+      let bestRueck = 0;
+      for (let i = 0; i < flat.length - 1; i++) {
+        const rangHier = rangVerlauf[i].rang[name];
+        const ptsHier  = rangVerlauf[i].pts[name];
+        // Rückstand auf den Spieler direkt vor mir (oder Führenden)
+        const ptsVorne = Object.values(rangVerlauf[i].pts)
+          .filter(p => p > ptsHier);
+        if (ptsVorne.length === 0) continue; // bereits Führender
+        const naechster = Math.min(...ptsVorne);
+        const rueck = naechster - ptsHier;
+
+        // Hat dieser Spieler danach (irgendwann nach i) einen besseren Rang erreicht?
+        const spaetertBesser = rangVerlauf.slice(i + 1).some(rv => rv.rang[name] < rangHier);
+
+        if (spaetertBesser && rueck > bestScore) {
+          bestScore = rueck;
+          bestRueck = rueck;
+        }
+      }
+      aufholerScore[name] = bestScore;
+      aufholerRueck[name] = bestRueck;
+    });
+  }
+
+  const aufholerKand = namen.filter(n => aufholerScore[n] > 0);
+  const aufholer = aufholerKand.length > 0
+    ? maxBy(aufholerKand, n => aufholerScore[n])
+    : maxBy(namen, n => kumulBisFlat(n, flat.length - 1, flat)); // Fallback: aktuell Bester
+
+  const stats = [
+    { icon:"🎯", label:"Punktlandung",  name: maxBy(namen,n=>exakt[n]),
+      value:`${exakt[maxBy(namen,n=>exakt[n])]}× exaktes Ergebnis`, sub:"Meiste Volltreffer" },
+    { icon:"🦅", label:"Kontra-Tipper", name: maxBy(namen,n=>allein[n]),
+      value:`${allein[maxBy(namen,n=>allein[n])]}× allein gepunktet`, sub:"Punkte wenn alle anderen 0 hatten" },
+    { icon:"🧘", label:"Metronom",      name: metronom,
+      value:`${spieleMitPunkten[metronom]} von ${totalAbgeschl} Spielen gepunktet`, sub:"Meiste Spiele mit mind. 1 Punkt" },
+    { icon:"🚀", label:"Aufholer",      name: aufholer,
+      value: aufholerKand.length > 0 ? `${aufholerScore[aufholer]} Pkt Rückstand aufgeholt` : "Noch zu früh",
+      sub:"Größter Rückstand, nach dem jemand überholt wurde" },
+    { icon:"🌧️", label:"Pechvogel",    name: maxBy(namen,n=>nullen[n]),
+      value:`${nullen[maxBy(namen,n=>nullen[n])]}× null Punkte`, sub:"Meiste Nieten (nur gespielte Spiele)" },
+    { icon:"👻", label:"Mitläufer",     name: minBy(namen,n=>allein[n]),
+      value:`${allein[minBy(namen,n=>allein[n])]}× allein gepunktet`, sub:"Tippt immer was alle tippen" },
+  ];
+
+  const c = document.getElementById("fun-stats");
+  c.innerHTML = "";
+  stats.forEach(s => {
+    const div = document.createElement("div");
+    div.className = "stat-card";
+    div.innerHTML = `
+      <div class="stat-icon">${s.icon}</div>
+      <div class="stat-label">${s.label}</div>
+      <div class="stat-name" style="color:${colorMap[s.name]||"var(--kt-red2)"}">${s.name}</div>
+      <div class="stat-value">${s.value}</div>
+      <div class="stat-sub">${s.sub}</div>`;
+    c.appendChild(div);
+  });
+}
+
+// ── Spieler Modal ────────────────────────────────────────────────
+function openModal(name) {
+  const flat  = flatSpiele();
+  const namen = alleNamen();
+  const color = colorMap[name];
+
+  // Gesamtpunkte aktuell
+  const totalPts = kumulBisFlat(name, flat.length-1, flat);
+
+  // Aktueller Rang (letzter Datenpunkt)
+  const finalRank = namen
+    .map(n=>({name:n,pts:kumulBisFlat(n,flat.length-1,flat)}))
+    .sort((a,b)=>b.pts-a.pts)
+    .findIndex(x=>x.name===name)+1;
+
+  // Punkte pro Spieltag (nur abgeschlossene Spiele)
+  const ptsPrStTag = D.spieltage.map(st => {
+    let s = 0;
+    st.spiele.filter(sp=>sp.abgeschlossen).forEach(sp =>
+      s += ptsInSpiel(name, st, sp.col_idx)
+    );
+    return { name: st.name, pts: s, abgeschl: st.spiele.filter(sp=>sp.abgeschlossen).length };
+  }).filter(x => x.abgeschl > 0);
+
+  // Sternstunde – Spieltag mit meisten Punkten
+  const sternstunde = ptsPrStTag.length > 0
+    ? ptsPrStTag.reduce((a,b) => b.pts>a.pts?b:a)
+    : null;
+
+  // Alle Spiele mit Punkten
+  const spieleDetails = [];
+  D.spieltage.forEach(st =>
+    st.spiele.filter(sp=>sp.abgeschlossen).forEach(sp => {
+      const p  = st.spieler.find(x=>x.name===name);
+      const pts = p ? (p.punkte_pro_spiel?.[String(sp.col_idx)]??0) : 0;
+      const ex  = p ? (p.exakt_pro_spiel?.[String(sp.col_idx)]??false) : false;
+      spieleDetails.push({ label:`${sp.label} ${sp.ergebnis||""}`, pts, exakt: ex });
+    })
+  );
+
+  // Exakte Ergebnisse gesamt
+  const exaktTotal = spieleDetails.filter(s=>s.exakt).length;
+  const nullenTotal = spieleDetails.filter(s=>s.pts===0).length;
+
+  document.getElementById("modal-dot").style.background = color;
+  document.getElementById("modal-name").textContent = name;
+  document.getElementById("modal-name").style.color = color;
+
+  const body = document.getElementById("modal-body");
+  body.innerHTML = `
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:10px">
+      <div class="modal-stat">
+        <div class="modal-stat-label">Gesamtpunkte</div>
+        <div class="modal-stat-value red">${totalPts}</div>
+      </div>
+      <div class="modal-stat">
+        <div class="modal-stat-label">Aktueller Rang</div>
+        <div class="modal-stat-value">${finalRank}.</div>
+      </div>
+      <div class="modal-stat">
+        <div class="modal-stat-label">Volltreffer</div>
+        <div class="modal-stat-value" style="color:var(--kt-gold)">${exaktTotal}×</div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px">
+      <div class="modal-stat">
+        <div class="modal-stat-label">Nieten (0 Punkte)</div>
+        <div class="modal-stat-value">${nullenTotal}×</div>
+      </div>
+      <div class="modal-stat">
+        <div class="modal-stat-label">Ø pro Spiel</div>
+        <div class="modal-stat-value red">${spieleDetails.length>0?(totalPts/spieleDetails.length).toFixed(1):"-"}</div>
+      </div>
+    </div>
+    ${sternstunde ? `
+    <div class="sternstunde">
+      <div class="sternstunde-label">⭐ Sternstunde</div>
+      <div class="sternstunde-value">${sternstunde.name}</div>
+      <div class="sternstunde-sub">${sternstunde.pts} Punkte · bestes Spieltag-Ergebnis</div>
+    </div>` : ""}
+    <div class="card-title" style="margin-top:10px">Alle Spiele</div>
+    <div class="spiel-list">
+      ${spieleDetails.map(s => `
+        <div class="spiel-row">
+          <span class="sl">${s.label}</span>
+          <span class="sp ${s.exakt?"exakt":s.pts>0?"good":"zero"}">${s.pts}</span>
+        </div>`).join("")}
+    </div>`;
+
+  document.getElementById("modal-overlay").classList.add("open");
+}
+
+function closeModal(e) {
+  if (!e || e.target === document.getElementById("modal-overlay"))
+    document.getElementById("modal-overlay").classList.remove("open");
+}
+
+// ── Auto-load von kicktipp_daten.json (GitHub Pages) ────────────
+async function autoLoad() {
+  try {
+    const r = await fetch("kicktipp_daten.json?t=" + Date.now());
+    if (!r.ok) throw new Error("HTTP " + r.status);
+    const json = await r.json();
+    document.getElementById("upload-card").style.display = "none";
+    init(json);
+    // Alle 5 Minuten neu laden
+    setTimeout(autoLoad, 5 * 60 * 1000);
+  } catch(e) {
+    // Kein JSON verfügbar → Upload-Zone zeigen
+    showUpload();
+  }
+}
+
+function showUpload() {
+  document.getElementById("upload-card").style.display = "block";
+}
+
+autoLoad();
+
+// ── Manueller File Upload (Fallback) ─────────────────────────────
+function loadFile(file) {
+  const r = new FileReader();
+  r.onload = ev => {
+    try { init(JSON.parse(ev.target.result)); }
+    catch(e) { alert("Ungültige JSON-Datei:\n" + e.message); }
+  };
+  r.readAsText(file);
+}
+document.getElementById("file-input").addEventListener("change", e => {
+  if (e.target.files[0]) loadFile(e.target.files[0]);
+});
+const dz = document.getElementById("drop-zone");
+dz.addEventListener("dragover", e => { e.preventDefault(); dz.classList.add("drag"); });
+dz.addEventListener("dragleave", () => dz.classList.remove("drag"));
+dz.addEventListener("drop", e => {
+  e.preventDefault(); dz.classList.remove("drag");
+  if (e.dataTransfer.files[0]) loadFile(e.dataTransfer.files[0]);
+});
+</script>
+</body>
+</html>
