@@ -7,7 +7,7 @@ Credentials kommen aus Umgebungsvariablen (GitHub Secrets).
 import requests
 from bs4 import BeautifulSoup
 import json, re, os
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 
 EMAIL      = os.environ.get("KICKTIPP_EMAIL",     "")
 PASSWORD   = os.environ.get("KICKTIPP_PASSWORD",  "")
@@ -164,7 +164,7 @@ def parse_spieler_zeilen(soup, spiele):
 def scrape(session, saison_id, html_first):
     spieltage_list = hole_spieltage(html_first)
     print(f"  {len(spieltage_list)} Spieltage gefunden")
-    result = {"community": COMMUNITY, "zuletzt_aktualisiert": datetime.now().isoformat(), "spieltage": []}
+    result = {"community": COMMUNITY, "zuletzt_aktualisiert": datetime.now(timezone(timedelta(hours=2))).strftime("%Y-%m-%dT%H:%M:%S"), "spieltage": []}
     base_url = f"{BASE_URL}/{COMMUNITY}/tippuebersicht"
 
     import time
