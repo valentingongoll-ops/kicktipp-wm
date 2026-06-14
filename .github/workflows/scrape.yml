@@ -1,4 +1,4 @@
-name: Scraper
+name: Kicktipp Scraper
 
 "on":
   schedule:
@@ -15,11 +15,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Debug – zeige Dateien
+        run: ls -la
+
       - name: Python setup
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-          cache: 'pip'
 
       - name: Install dependencies
         run: pip install requests beautifulsoup4
@@ -36,6 +38,5 @@ jobs:
           git config user.name  "kicktipp-bot"
           git config user.email "bot@kicktipp-wm"
           git add kicktipp_daten.json
-          git diff --cached --quiet || git commit -m "🔄 Daten aktualisiert $(date -u +'%H:%M UTC')"
+          git diff --cached --quiet || git commit -m "Daten aktualisiert $(date -u +'%H:%M UTC')"
           git push
-          
