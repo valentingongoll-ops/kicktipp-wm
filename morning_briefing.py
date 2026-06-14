@@ -103,6 +103,13 @@ def erstelle_kontext(daten):
         spieltag_name = ""
         tagessieger = None
 
+    # Turnierfortschritt berechnen
+    total_spiele_gesamt   = sum(len(st["spiele"]) for st in daten["spieltage"])
+    total_spiele_gespielt = sum(
+        len([sp for sp in st["spiele"] if sp["abgeschlossen"]])
+        for st in daten["spieltage"]
+    )
+
     kontext = f"""
 AKTUELLE RANGLISTE ({COMMUNITY}):
 """ + "\n".join(f"{i+1}. {r['name']} – {r['pts']} Punkte" for i, r in enumerate(rangliste))
@@ -123,14 +130,67 @@ AKTUELLE RANGLISTE ({COMMUNITY}):
     kontext += f"\n  3. Platz: {int(topf*0.2)}€ → {rangliste[2]['name']}"
     kontext += f"\n  Grill-Pflicht: {rangliste[-3]['name']}, {rangliste[-2]['name']}, {rangliste[-1]['name']}"
 
-    return kontext
+    kontext += f"""
+
+TURNIERFORTSCHRITT:
+Gespielte Spiele: {total_spiele_gespielt} von {total_spiele_gesamt} ({round(total_spiele_gespielt / total_spiele_gesamt * 100) if total_spiele_gesamt > 0 else 0}% des Turniers)"""
+
+    return kontext, total_spiele_gesamt, total_spiele_gespielt
 
 
-def claude_generiere_mail(kontext):
-    """Ruft Claude API auf und lässt das Briefing generieren."""
+def claude_api_call(payload_dict):
+    """Generischer Claude API Aufruf, gibt response dict zurück."""
     import json as _json
     import http.client
     import ssl
+
+    payload = _json.dumps(payload_dict)
+    ctx  = ssl.create_default_context()
+    conn = http.client.HTTPSConnection("api.anthropic.com", context=ctx)
+    conn.request(
+        "POST", "/v1/messages",
+        body=payload,
+        headers={
+            "Content-Type": "application/json",
+            "x-api-key": ANTHROPIC_API_KEY,
+            "anthropic-version": "2023-06-01",
+        }
+    )
+    resp = conn.getresponse()
+    raw  = resp.read().decode("utf-8")
+    conn.close()
+    if resp.status != 200:
+        print(f"API Fehler {resp.status}: {raw[:500]}")
+        raise Exception(f"Claude API Fehler: {resp.status}")
+    return _json.loads(raw)
+
+
+def hole_wm_news():
+    """Sucht aktuelle WM-News der letzten 24h via Claude web_search."""
+    import json as _json
+
+    heute = datetime.now(timezone(timedelta(hours=2)))
+    datum = heute.strftime("%d.%m.%Y")
+
+    result = claude_api_call({
+        "model": "claude-sonnet-4-6",
+        "max_tokens": 800,
+        "tools": [{"type": "web_search_20250305", "name": "web_search"}],
+        "messages": [{
+            "role": "user",
+            "content": f"Suche nach den aktuellen WM 2026 Nachrichten und Ergebnissen der letzten 24 Stunden (heute ist {datum}). Fasse die 3 interessantesten Ereignisse kurz auf Deutsch zusammen: Überraschungsergebnisse, besondere Spielerleistungen, Tore, Aufreger. Nur die Facts, kein HTML, max. 150 Wörter."
+        }]
+    })
+
+    # Antwort aus text-blocks extrahieren (web_search gibt mix aus tool_use + text)
+    import json as _json
+    text_parts = [b["text"] for b in result.get("content", []) if b.get("type") == "text"]
+    return "\n".join(text_parts).strip() or "Keine aktuellen WM-News gefunden."
+
+
+def claude_generiere_mail(kontext, wm_news, total_spiele_gesamt=104, total_spiele_gespielt=0):
+    """Ruft Claude API auf und lässt das Briefing generieren."""
+    import json as _json
 
     heute = datetime.now(timezone(timedelta(hours=2)))
     datum = heute.strftime("%A, %d. %B %Y").replace(
@@ -147,47 +207,48 @@ def claude_generiere_mail(kontext):
     prompt = f"""Du bist der Moderator der Kicktipp-Tipprunde "STB-Tipprunde" bei der Fussball-WM 2026.
 Schreibe ein taegliches Morning Briefing fuer die Gruppe. Heute ist {datum}.
 
-Hier sind die aktuellen Daten der Tipprunde:
+AKTUELLE WM-NEWS DER LETZTEN 24 STUNDEN:
+{wm_news}
+
+TIPPRUNDEN-DATEN:
 {kontext}
 
-Schreibe eine lockere, witzige, motivierende Nachricht auf Deutsch.
-Nutze Emojis. Hebe Highlights hervor, mache Witze ueber schlechte Tipper,
-lobe gute Tipper, kommentiere die Tabellensituation dramatisch.
-Erwaehne das Preisgeld und die Grill-Pflicht.
+Schreibe eine lockere, witzige, motivierende Nachricht auf Deutsch mit Emojis.
 
-Gib NUR valides HTML zurueck - einen E-Mail-Body-Inhalt ohne html/head Tags.
-Nutze Inline-CSS. Dunkles Design: Hintergrund #111, Text #f0f0f0, Akzent #c01c00.
-Max. 400 Woerter. Struktur: Begruessung, Tabelle, Highlights, Ausblick, Spruch.
-Schreibe am Ende schoene Gruesse von Bot-Valentin. Fuge danach KEINE Links ein - die werden automatisch angehaengt."""
+KONTEXT ZUM STAND DES TURNIERS:
+Gesamtspiele im Turnier: {total_spiele_gesamt}
+Bereits gespielte Spiele: {total_spiele_gespielt}
+Noch ausstehende Spiele: {total_spiele_gesamt - total_spiele_gespielt}
+Fortschritt: {round(total_spiele_gespielt / total_spiele_gesamt * 100) if total_spiele_gesamt > 0 else 0}% des Turniers gespielt
 
-    payload = _json.dumps({
+WICHTIGE REGELN fuer den Ton:
+- Wir stehen erst am Anfang des Turniers. Verzichte auf definitive Aussagen wie "XX gewinnt die 110 Euro" oder "XX muss grillen". Nutze stattdessen vorsichtige Formulierungen wie "zur Zeit auf Kurs fuer..." oder "wenn es so bleibt..."
+- Je naeher wir am Ende (>80%), desto dramatischer und konkreter darf der Ton werden.
+- KEINE Gedankenstriche (weder - noch --) im Text verwenden. Nutze stattdessen Kommas, Punkte oder neue Saetze.
+- Nutze keine Aufzaehlungszeichen mit Strich.
+
+Struktur (in dieser Reihenfolge):
+1. Kurze Begruessung
+2. WM-News Zusammenfassung: Ueberraschungen, Highlights, besondere Momente der letzten 24h
+3. Tipprunden-Tabelle mit aktuellem Stand
+4. Wer hat gestern am besten getippt, wer am schlechtesten (mit Kommentar)
+5. Ausblick auf die heutigen Spiele
+6. Motivierender Abschlussspruch passend zum Turnierstand
+7. Schoene Gruesse von Bot-Valentin (immer am Ende, nie weglassen)
+
+Gib NUR valides HTML zurueck ohne html/head Tags.
+Nutze Inline-CSS. Dunkles Design: Hintergrund #1a1a1a, Text #f0f0f0, Akzent #c01c00.
+Abschnitte mit farbigen Ueberschriften trennen. Max. 500 Woerter.
+KEINE Links einfuegen - kommen automatisch."""
+
+    result = claude_api_call({
         "model": "claude-sonnet-4-6",
-        "max_tokens": 1500,
+        "max_tokens": 2000,
         "messages": [{"role": "user", "content": prompt}]
     })
 
-    ctx = ssl.create_default_context()
-    conn = http.client.HTTPSConnection("api.anthropic.com", context=ctx)
-    conn.request(
-        "POST",
-        "/v1/messages",
-        body=payload,
-        headers={
-            "Content-Type": "application/json",
-            "x-api-key": ANTHROPIC_API_KEY,
-            "anthropic-version": "2023-06-01",
-        }
-    )
-    resp = conn.getresponse()
-    raw  = resp.read().decode("utf-8")
-    conn.close()
-
-    if resp.status != 200:
-        print(f"API Fehler {resp.status}: {raw[:500]}")
-        raise Exception(f"Claude API Fehler: {resp.status}")
-
-    result = _json.loads(raw)
-    return result["content"][0]["text"]
+    text_parts = [b["text"] for b in result.get("content", []) if b.get("type") == "text"]
+    return "\n".join(text_parts).strip()
 
 
 def sende_mail(html_body):
@@ -245,12 +306,16 @@ def main():
     print("=" * 40)
 
     daten   = lade_kicktipp_daten()
-    kontext = erstelle_kontext(daten)
+    kontext, total_spiele_gesamt, total_spiele_gespielt = erstelle_kontext(daten)
     print("Kontext erstellt:")
     print(kontext[:500] + "...")
 
+    print("\nHole WM-News via Web Search...")
+    wm_news = hole_wm_news()
+    print(f"✓ WM-News: {wm_news[:100]}...")
+
     print("\nGeneriere Briefing via Claude...")
-    html = claude_generiere_mail(kontext)
+    html = claude_generiere_mail(kontext, wm_news, total_spiele_gesamt, total_spiele_gespielt)
     print("✓ Briefing generiert")
 
     sende_mail(html)
