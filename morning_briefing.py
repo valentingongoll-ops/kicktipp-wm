@@ -124,7 +124,11 @@ AKTUELLE RANGLISTE ({COMMUNITY}):
 
 def claude_generiere_mail(kontext):
     """Ruft Claude API auf und lässt das Briefing generieren."""
-    heute = datetime.now(timezone(timedelta(hours=2)))  # MESZ
+    import json as _json
+    import http.client
+    import ssl
+
+    heute = datetime.now(timezone(timedelta(hours=2)))
     datum = heute.strftime("%A, %d. %B %Y").replace(
         "Monday","Montag").replace("Tuesday","Dienstag").replace(
         "Wednesday","Mittwoch").replace("Thursday","Donnerstag").replace(
@@ -136,40 +140,48 @@ def claude_generiere_mail(kontext):
         "September","September").replace("October","Oktober").replace(
         "November","November").replace("December","Dezember")
 
-    prompt = f"""Du bist der Moderator der Kicktipp-Tipprunde "STB-Tipprunde" bei der Fußball-WM 2026.
-Schreibe ein tägliches Morning Briefing für die Gruppe. Heute ist {datum}.
+    prompt = f"""Du bist der Moderator der Kicktipp-Tipprunde "STB-Tipprunde" bei der Fussball-WM 2026.
+Schreibe ein taegliches Morning Briefing fuer die Gruppe. Heute ist {datum}.
 
 Hier sind die aktuellen Daten der Tipprunde:
 {kontext}
 
 Schreibe eine lockere, witzige, motivierende Nachricht auf Deutsch.
-Nutze Emojis. Hebe Highlights hervor, mache Witze über schlechte Tipper,
+Nutze Emojis. Hebe Highlights hervor, mache Witze ueber schlechte Tipper,
 lobe gute Tipper, kommentiere die Tabellensituation dramatisch.
-Erwähne das Preisgeld und die Grill-Pflicht.
+Erwaehne das Preisgeld und die Grill-Pflicht.
 
-Gib NUR valides HTML zurück – einen kompletten E-Mail-Body (kein <html>/<head>, nur den <body>-Inhalt).
-Nutze Inline-CSS. Dunkles Design: Hintergrund #111, Text #f0f0f0, Akzent #c01c00 (Kicktipp-Rot).
-Max. 400 Wörter. Struktur: Begrüßung → Tabelle → Highlights → Ausblick → Spruch."""
+Gib NUR valides HTML zurueck - einen E-Mail-Body-Inhalt ohne html/head Tags.
+Nutze Inline-CSS. Dunkles Design: Hintergrund #111, Text #f0f0f0, Akzent #c01c00.
+Max. 400 Woerter. Struktur: Begruessung, Tabelle, Highlights, Ausblick, Spruch."""
 
-    import json as _json
-    body = _json.dumps({
+    payload = _json.dumps({
         "model": "claude-sonnet-4-6",
         "max_tokens": 1500,
         "messages": [{"role": "user", "content": prompt}]
-    }).encode()
+    })
 
-    req = Request(
-        "https://api.anthropic.com/v1/messages",
-        data=body,
+    ctx = ssl.create_default_context()
+    conn = http.client.HTTPSConnection("api.anthropic.com", context=ctx)
+    conn.request(
+        "POST",
+        "/v1/messages",
+        body=payload,
         headers={
             "Content-Type": "application/json",
             "x-api-key": ANTHROPIC_API_KEY,
             "anthropic-version": "2023-06-01",
-        },
-        method="POST"
+        }
     )
-    with urlopen(req) as resp:
-        result = _json.loads(resp.read())
+    resp = conn.getresponse()
+    raw  = resp.read().decode("utf-8")
+    conn.close()
+
+    if resp.status != 200:
+        print(f"API Fehler {resp.status}: {raw[:500]}")
+        raise Exception(f"Claude API Fehler: {resp.status}")
+
+    result = _json.loads(raw)
     return result["content"][0]["text"]
 
 
