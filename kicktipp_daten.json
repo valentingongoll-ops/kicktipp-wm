@@ -1,1 +1,2268 @@
-{"community":"stb-tipprunde","zuletzt_aktualisiert":"","spieltage":[]}
+{
+  "community": "stb-tipprunde",
+  "zuletzt_aktualisiert": "2026-06-14T09:19:52.351892",
+  "spieltage": [
+    {
+      "name": "",
+      "index": 2,
+      "spiele": [
+        {
+          "col_idx": 0,
+          "label": "DEU–CUR",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 1,
+          "label": "NIE–JPN",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 2,
+          "label": "CIV–ECU",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 3,
+          "label": "SWE–TUN",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 4,
+          "label": "SPA–CPV",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 5,
+          "label": "BEL–EGY",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 6,
+          "label": "SAR–URU",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 7,
+          "label": "IRN–NZL",
+          "abgeschlossen": false,
+          "ergebnis": null
+        }
+      ],
+      "spieler": [
+        {
+          "platz": 1,
+          "name": "KNALLentin",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 1,
+          "name": "SR",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 1,
+          "name": "Nalewaja",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 1,
+          "name": "Benjamin",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 5,
+          "name": "Lukas",
+          "gesamt": 10,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 5,
+          "name": "Henning",
+          "gesamt": 10,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 7,
+          "name": "Senge",
+          "gesamt": 9,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 7,
+          "name": "Rosellen",
+          "gesamt": 9,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 9,
+          "name": "Pechnic90",
+          "gesamt": 8,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 10,
+          "name": "Kolle",
+          "gesamt": 7,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 11,
+          "name": "Chris",
+          "gesamt": 4,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        }
+      ]
+    },
+    {
+      "name": "1. Spieltag",
+      "index": 1,
+      "spiele": [
+        {
+          "col_idx": 0,
+          "label": "MEX–SAFR",
+          "abgeschlossen": true,
+          "ergebnis": "2:0"
+        },
+        {
+          "col_idx": 1,
+          "label": "SKOR–CZE",
+          "abgeschlossen": true,
+          "ergebnis": "2:1"
+        },
+        {
+          "col_idx": 2,
+          "label": "KAN–BIH",
+          "abgeschlossen": true,
+          "ergebnis": "1:1"
+        },
+        {
+          "col_idx": 3,
+          "label": "USA–PAR",
+          "abgeschlossen": true,
+          "ergebnis": "4:1"
+        },
+        {
+          "col_idx": 4,
+          "label": "QAT–CH",
+          "abgeschlossen": true,
+          "ergebnis": "1:1"
+        },
+        {
+          "col_idx": 5,
+          "label": "BRA–MAR",
+          "abgeschlossen": true,
+          "ergebnis": "1:1"
+        },
+        {
+          "col_idx": 6,
+          "label": "HAI–SCO",
+          "abgeschlossen": true,
+          "ergebnis": "0:1"
+        },
+        {
+          "col_idx": 7,
+          "label": "AUS–TUR",
+          "abgeschlossen": true,
+          "ergebnis": "2:0"
+        }
+      ],
+      "spieler": [
+        {
+          "platz": 1,
+          "name": "KNALLentin",
+          "gesamt": 12,
+          "punkte_pro_spiel": {
+            "0": 2,
+            "1": 0,
+            "2": 0,
+            "3": 2,
+            "4": 0,
+            "5": 4,
+            "6": 4,
+            "7": 0
+          },
+          "exakt_pro_spiel": {
+            "0": false,
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false,
+            "5": true,
+            "6": true,
+            "7": false
+          },
+          "allein_punkte": 0
+        },
+        {
+          "platz": 1,
+          "name": "SR",
+          "gesamt": 12,
+          "punkte_pro_spiel": {
+            "0": 2,
+            "1": 0,
+            "2": 0,
+            "3": 2,
+            "4": 4,
+            "5": 0,
+            "6": 2,
+            "7": 2
+          },
+          "exakt_pro_spiel": {
+            "0": false,
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": true,
+            "5": false,
+            "6": false,
+            "7": false
+          },
+          "allein_punkte": 2
+        },
+        {
+          "platz": 1,
+          "name": "Nalewaja",
+          "gesamt": 12,
+          "punkte_pro_spiel": {
+            "0": 4,
+            "1": 4,
+            "2": 0,
+            "3": 2,
+            "4": 0,
+            "5": 0,
+            "6": 2,
+            "7": 0
+          },
+          "exakt_pro_spiel": {
+            "0": true,
+            "1": true,
+            "2": false,
+            "3": false,
+            "4": false,
+            "5": false,
+            "6": false,
+            "7": false
+          },
+          "allein_punkte": 0
+        },
+        {
+          "platz": 1,
+          "name": "Benjamin",
+          "gesamt": 12,
+          "punkte_pro_spiel": {
+            "0": 4,
+            "1": 0,
+            "2": 4,
+            "3": 2,
+            "4": 0,
+            "5": 0,
+            "6": 2,
+            "7": 0
+          },
+          "exakt_pro_spiel": {
+            "0": true,
+            "1": false,
+            "2": true,
+            "3": false,
+            "4": false,
+            "5": false,
+            "6": false,
+            "7": false
+          },
+          "allein_punkte": 0
+        },
+        {
+          "platz": 5,
+          "name": "Lukas",
+          "gesamt": 10,
+          "punkte_pro_spiel": {
+            "0": 2,
+            "1": 0,
+            "2": 4,
+            "3": 2,
+            "4": 0,
+            "5": 0,
+            "6": 2,
+            "7": 0
+          },
+          "exakt_pro_spiel": {
+            "0": false,
+            "1": false,
+            "2": true,
+            "3": false,
+            "4": false,
+            "5": false,
+            "6": false,
+            "7": false
+          },
+          "allein_punkte": 0
+        },
+        {
+          "platz": 5,
+          "name": "Henning",
+          "gesamt": 10,
+          "punkte_pro_spiel": {
+            "0": 2,
+            "1": 3,
+            "2": 0,
+            "3": 2,
+            "4": 0,
+            "5": 0,
+            "6": 3,
+            "7": 0
+          },
+          "exakt_pro_spiel": {
+            "0": false,
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false,
+            "5": false,
+            "6": false,
+            "7": false
+          },
+          "allein_punkte": 0
+        },
+        {
+          "platz": 7,
+          "name": "Senge",
+          "gesamt": 9,
+          "punkte_pro_spiel": {
+            "0": 2,
+            "1": 4,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 3,
+            "7": 0
+          },
+          "exakt_pro_spiel": {
+            "0": false,
+            "1": true,
+            "2": false,
+            "3": false,
+            "4": false,
+            "5": false,
+            "6": false,
+            "7": false
+          },
+          "allein_punkte": 0
+        },
+        {
+          "platz": 7,
+          "name": "Rosellen",
+          "gesamt": 9,
+          "punkte_pro_spiel": {
+            "0": 2,
+            "1": 2,
+            "2": 0,
+            "3": 3,
+            "4": 0,
+            "5": 0,
+            "6": 2,
+            "7": 0
+          },
+          "exakt_pro_spiel": {
+            "0": false,
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false,
+            "5": false,
+            "6": false,
+            "7": false
+          },
+          "allein_punkte": 0
+        },
+        {
+          "platz": 9,
+          "name": "Pechnic90",
+          "gesamt": 8,
+          "punkte_pro_spiel": {
+            "0": 2,
+            "1": 0,
+            "2": 0,
+            "3": 2,
+            "4": 0,
+            "5": 2,
+            "6": 2,
+            "7": 0
+          },
+          "exakt_pro_spiel": {
+            "0": false,
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false,
+            "5": false,
+            "6": false,
+            "7": false
+          },
+          "allein_punkte": 0
+        },
+        {
+          "platz": 10,
+          "name": "Kolle",
+          "gesamt": 7,
+          "punkte_pro_spiel": {
+            "0": 2,
+            "1": 0,
+            "2": 0,
+            "3": 2,
+            "4": 0,
+            "5": 0,
+            "6": 3,
+            "7": 0
+          },
+          "exakt_pro_spiel": {
+            "0": false,
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false,
+            "5": false,
+            "6": false,
+            "7": false
+          },
+          "allein_punkte": 0
+        },
+        {
+          "platz": 11,
+          "name": "Chris",
+          "gesamt": 4,
+          "punkte_pro_spiel": {
+            "0": 2,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 2,
+            "7": 0
+          },
+          "exakt_pro_spiel": {
+            "0": false,
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false,
+            "5": false,
+            "6": false,
+            "7": false
+          },
+          "allein_punkte": 0
+        }
+      ]
+    },
+    {
+      "name": "3. Spieltag",
+      "index": 3,
+      "spiele": [
+        {
+          "col_idx": 0,
+          "label": "FRA–SEN",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 1,
+          "label": "IRK–NOR",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 2,
+          "label": "ARG–ALG",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 3,
+          "label": "AUT–JOR",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 4,
+          "label": "POR–COD",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 5,
+          "label": "ENG–KRO",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 6,
+          "label": "GHA–PAN",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 7,
+          "label": "UZB–KOL",
+          "abgeschlossen": false,
+          "ergebnis": null
+        }
+      ],
+      "spieler": [
+        {
+          "platz": 1,
+          "name": "KNALLentin",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 1,
+          "name": "SR",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 1,
+          "name": "Nalewaja",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 1,
+          "name": "Benjamin",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 5,
+          "name": "Lukas",
+          "gesamt": 10,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 5,
+          "name": "Henning",
+          "gesamt": 10,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 7,
+          "name": "Senge",
+          "gesamt": 9,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 7,
+          "name": "Rosellen",
+          "gesamt": 9,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 9,
+          "name": "Pechnic90",
+          "gesamt": 8,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 10,
+          "name": "Kolle",
+          "gesamt": 7,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 11,
+          "name": "Chris",
+          "gesamt": 4,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        }
+      ]
+    },
+    {
+      "name": "4. Spieltag",
+      "index": 4,
+      "spiele": [
+        {
+          "col_idx": 0,
+          "label": "CZE–SAFR",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 1,
+          "label": "CH–BIH",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 2,
+          "label": "KAN–QAT",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 3,
+          "label": "MEX–SKOR",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 4,
+          "label": "USA–AUS",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 5,
+          "label": "SCO–MAR",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 6,
+          "label": "BRA–HAI",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 7,
+          "label": "TUR–PAR",
+          "abgeschlossen": false,
+          "ergebnis": null
+        }
+      ],
+      "spieler": [
+        {
+          "platz": 1,
+          "name": "KNALLentin",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 1,
+          "name": "SR",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 1,
+          "name": "Nalewaja",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 1,
+          "name": "Benjamin",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 5,
+          "name": "Lukas",
+          "gesamt": 10,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 5,
+          "name": "Henning",
+          "gesamt": 10,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 7,
+          "name": "Senge",
+          "gesamt": 9,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 7,
+          "name": "Rosellen",
+          "gesamt": 9,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 9,
+          "name": "Pechnic90",
+          "gesamt": 8,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 10,
+          "name": "Kolle",
+          "gesamt": 7,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 11,
+          "name": "Chris",
+          "gesamt": 4,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        }
+      ]
+    },
+    {
+      "name": "5. Spieltag",
+      "index": 5,
+      "spiele": [
+        {
+          "col_idx": 0,
+          "label": "NIE–SWE",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 1,
+          "label": "DEU–CIV",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 2,
+          "label": "ECU–CUR",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 3,
+          "label": "TUN–JPN",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 4,
+          "label": "SPA–SAR",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 5,
+          "label": "BEL–IRN",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 6,
+          "label": "URU–CPV",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 7,
+          "label": "NZL–EGY",
+          "abgeschlossen": false,
+          "ergebnis": null
+        }
+      ],
+      "spieler": [
+        {
+          "platz": 1,
+          "name": "KNALLentin",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 1,
+          "name": "SR",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 1,
+          "name": "Nalewaja",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 1,
+          "name": "Benjamin",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 5,
+          "name": "Lukas",
+          "gesamt": 10,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 5,
+          "name": "Henning",
+          "gesamt": 10,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 7,
+          "name": "Senge",
+          "gesamt": 9,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 7,
+          "name": "Rosellen",
+          "gesamt": 9,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 9,
+          "name": "Pechnic90",
+          "gesamt": 8,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 10,
+          "name": "Kolle",
+          "gesamt": 7,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 11,
+          "name": "Chris",
+          "gesamt": 4,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        }
+      ]
+    },
+    {
+      "name": "6. Spieltag",
+      "index": 6,
+      "spiele": [
+        {
+          "col_idx": 0,
+          "label": "ARG–AUT",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 1,
+          "label": "FRA–IRK",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 2,
+          "label": "NOR–SEN",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 3,
+          "label": "JOR–ALG",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 4,
+          "label": "POR–UZB",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 5,
+          "label": "ENG–GHA",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 6,
+          "label": "PAN–KRO",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 7,
+          "label": "KOL–COD",
+          "abgeschlossen": false,
+          "ergebnis": null
+        }
+      ],
+      "spieler": [
+        {
+          "platz": 1,
+          "name": "KNALLentin",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 1,
+          "name": "SR",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 1,
+          "name": "Nalewaja",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 1,
+          "name": "Benjamin",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 5,
+          "name": "Lukas",
+          "gesamt": 10,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 5,
+          "name": "Henning",
+          "gesamt": 10,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 7,
+          "name": "Senge",
+          "gesamt": 9,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 7,
+          "name": "Rosellen",
+          "gesamt": 9,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 9,
+          "name": "Pechnic90",
+          "gesamt": 8,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 10,
+          "name": "Kolle",
+          "gesamt": 7,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 11,
+          "name": "Chris",
+          "gesamt": 4,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        }
+      ]
+    },
+    {
+      "name": "7. Spieltag",
+      "index": 7,
+      "spiele": [
+        {
+          "col_idx": 0,
+          "label": "BIH–QAT",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 1,
+          "label": "CH–KAN",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 2,
+          "label": "MAR–HAI",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 3,
+          "label": "SCO–BRA",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 4,
+          "label": "SAFR–SKOR",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 5,
+          "label": "CZE–MEX",
+          "abgeschlossen": false,
+          "ergebnis": null
+        }
+      ],
+      "spieler": [
+        {
+          "platz": 1,
+          "name": "KNALLentin",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 1,
+          "name": "SR",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 1,
+          "name": "Nalewaja",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 1,
+          "name": "Benjamin",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 5,
+          "name": "Lukas",
+          "gesamt": 10,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 5,
+          "name": "Henning",
+          "gesamt": 10,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 7,
+          "name": "Senge",
+          "gesamt": 9,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 7,
+          "name": "Rosellen",
+          "gesamt": 9,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 9,
+          "name": "Pechnic90",
+          "gesamt": 8,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 10,
+          "name": "Kolle",
+          "gesamt": 7,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 11,
+          "name": "Chris",
+          "gesamt": 4,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        }
+      ]
+    },
+    {
+      "name": "8. Spieltag",
+      "index": 8,
+      "spiele": [
+        {
+          "col_idx": 0,
+          "label": "CUR–CIV",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 1,
+          "label": "ECU–DEU",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 2,
+          "label": "JPN–SWE",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 3,
+          "label": "TUN–NIE",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 4,
+          "label": "PAR–AUS",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 5,
+          "label": "TUR–USA",
+          "abgeschlossen": false,
+          "ergebnis": null
+        }
+      ],
+      "spieler": [
+        {
+          "platz": 1,
+          "name": "KNALLentin",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 1,
+          "name": "SR",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 1,
+          "name": "Nalewaja",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 1,
+          "name": "Benjamin",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 5,
+          "name": "Lukas",
+          "gesamt": 10,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 5,
+          "name": "Henning",
+          "gesamt": 10,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 7,
+          "name": "Senge",
+          "gesamt": 9,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 7,
+          "name": "Rosellen",
+          "gesamt": 9,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 9,
+          "name": "Pechnic90",
+          "gesamt": 8,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 10,
+          "name": "Kolle",
+          "gesamt": 7,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 11,
+          "name": "Chris",
+          "gesamt": 4,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        }
+      ]
+    },
+    {
+      "name": "9. Spieltag",
+      "index": 9,
+      "spiele": [
+        {
+          "col_idx": 0,
+          "label": "NOR–FRA",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 1,
+          "label": "SEN–IRK",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 2,
+          "label": "URU–SPA",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 3,
+          "label": "CPV–SAR",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 4,
+          "label": "NZL–BEL",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 5,
+          "label": "EGY–IRN",
+          "abgeschlossen": false,
+          "ergebnis": null
+        }
+      ],
+      "spieler": [
+        {
+          "platz": 1,
+          "name": "KNALLentin",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 1,
+          "name": "SR",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 1,
+          "name": "Nalewaja",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 1,
+          "name": "Benjamin",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 5,
+          "name": "Lukas",
+          "gesamt": 10,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 5,
+          "name": "Henning",
+          "gesamt": 10,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 7,
+          "name": "Senge",
+          "gesamt": 9,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 7,
+          "name": "Rosellen",
+          "gesamt": 9,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 9,
+          "name": "Pechnic90",
+          "gesamt": 8,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 10,
+          "name": "Kolle",
+          "gesamt": 7,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 11,
+          "name": "Chris",
+          "gesamt": 4,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        }
+      ]
+    },
+    {
+      "name": "10. Spieltag",
+      "index": 10,
+      "spiele": [
+        {
+          "col_idx": 0,
+          "label": "KRO–GHA",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 1,
+          "label": "PAN–ENG",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 2,
+          "label": "COD–UZB",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 3,
+          "label": "KOL–POR",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 4,
+          "label": "ALG–AUT",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 5,
+          "label": "JOR–ARG",
+          "abgeschlossen": false,
+          "ergebnis": null
+        }
+      ],
+      "spieler": [
+        {
+          "platz": 1,
+          "name": "KNALLentin",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 1,
+          "name": "SR",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 1,
+          "name": "Nalewaja",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 1,
+          "name": "Benjamin",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 5,
+          "name": "Lukas",
+          "gesamt": 10,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 5,
+          "name": "Henning",
+          "gesamt": 10,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 7,
+          "name": "Senge",
+          "gesamt": 9,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 7,
+          "name": "Rosellen",
+          "gesamt": 9,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 9,
+          "name": "Pechnic90",
+          "gesamt": 8,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 10,
+          "name": "Kolle",
+          "gesamt": 7,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 11,
+          "name": "Chris",
+          "gesamt": 4,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        }
+      ]
+    },
+    {
+      "name": "Sechzehntelfinale",
+      "index": 11,
+      "spiele": [
+        {
+          "col_idx": 0,
+          "label": "---–---",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 1,
+          "label": "---–---",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 2,
+          "label": "---–---",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 3,
+          "label": "---–---",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 4,
+          "label": "---–---",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 5,
+          "label": "---–---",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 6,
+          "label": "---–---",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 7,
+          "label": "---–---",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 8,
+          "label": "---–---",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 9,
+          "label": "---–---",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 10,
+          "label": "---–---",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 11,
+          "label": "---–---",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 12,
+          "label": "---–---",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 13,
+          "label": "---–---",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 14,
+          "label": "---–---",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 15,
+          "label": "---–---",
+          "abgeschlossen": false,
+          "ergebnis": null
+        }
+      ],
+      "spieler": [
+        {
+          "platz": 1,
+          "name": "KNALLentin",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 1,
+          "name": "SR",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 1,
+          "name": "Nalewaja",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 1,
+          "name": "Benjamin",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 5,
+          "name": "Lukas",
+          "gesamt": 10,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 5,
+          "name": "Henning",
+          "gesamt": 10,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 7,
+          "name": "Senge",
+          "gesamt": 9,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 7,
+          "name": "Rosellen",
+          "gesamt": 9,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 9,
+          "name": "Pechnic90",
+          "gesamt": 8,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 10,
+          "name": "Kolle",
+          "gesamt": 7,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 11,
+          "name": "Chris",
+          "gesamt": 4,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        }
+      ]
+    },
+    {
+      "name": "Achtelfinale",
+      "index": 12,
+      "spiele": [
+        {
+          "col_idx": 0,
+          "label": "---–---",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 1,
+          "label": "---–---",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 2,
+          "label": "---–---",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 3,
+          "label": "---–---",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 4,
+          "label": "---–---",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 5,
+          "label": "---–---",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 6,
+          "label": "---–---",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 7,
+          "label": "---–---",
+          "abgeschlossen": false,
+          "ergebnis": null
+        }
+      ],
+      "spieler": [
+        {
+          "platz": 1,
+          "name": "KNALLentin",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 1,
+          "name": "SR",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 1,
+          "name": "Nalewaja",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 1,
+          "name": "Benjamin",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 5,
+          "name": "Lukas",
+          "gesamt": 10,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 5,
+          "name": "Henning",
+          "gesamt": 10,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 7,
+          "name": "Senge",
+          "gesamt": 9,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 7,
+          "name": "Rosellen",
+          "gesamt": 9,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 9,
+          "name": "Pechnic90",
+          "gesamt": 8,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 10,
+          "name": "Kolle",
+          "gesamt": 7,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 11,
+          "name": "Chris",
+          "gesamt": 4,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        }
+      ]
+    },
+    {
+      "name": "Viertelfinale",
+      "index": 13,
+      "spiele": [
+        {
+          "col_idx": 0,
+          "label": "---–---",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 1,
+          "label": "---–---",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 2,
+          "label": "---–---",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 3,
+          "label": "---–---",
+          "abgeschlossen": false,
+          "ergebnis": null
+        }
+      ],
+      "spieler": [
+        {
+          "platz": 1,
+          "name": "KNALLentin",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 1,
+          "name": "SR",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 1,
+          "name": "Nalewaja",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 1,
+          "name": "Benjamin",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 5,
+          "name": "Lukas",
+          "gesamt": 10,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 5,
+          "name": "Henning",
+          "gesamt": 10,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 7,
+          "name": "Senge",
+          "gesamt": 9,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 7,
+          "name": "Rosellen",
+          "gesamt": 9,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 9,
+          "name": "Pechnic90",
+          "gesamt": 8,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 10,
+          "name": "Kolle",
+          "gesamt": 7,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 11,
+          "name": "Chris",
+          "gesamt": 4,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        }
+      ]
+    },
+    {
+      "name": "Halbfinale",
+      "index": 14,
+      "spiele": [
+        {
+          "col_idx": 0,
+          "label": "---–---",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 1,
+          "label": "---–---",
+          "abgeschlossen": false,
+          "ergebnis": null
+        }
+      ],
+      "spieler": [
+        {
+          "platz": 1,
+          "name": "KNALLentin",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 1,
+          "name": "SR",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 1,
+          "name": "Nalewaja",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 1,
+          "name": "Benjamin",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 5,
+          "name": "Lukas",
+          "gesamt": 10,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 5,
+          "name": "Henning",
+          "gesamt": 10,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 7,
+          "name": "Senge",
+          "gesamt": 9,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 7,
+          "name": "Rosellen",
+          "gesamt": 9,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 9,
+          "name": "Pechnic90",
+          "gesamt": 8,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 10,
+          "name": "Kolle",
+          "gesamt": 7,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 11,
+          "name": "Chris",
+          "gesamt": 4,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        }
+      ]
+    },
+    {
+      "name": "Finale",
+      "index": 15,
+      "spiele": [
+        {
+          "col_idx": 0,
+          "label": "---–---",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 1,
+          "label": "---–---",
+          "abgeschlossen": false,
+          "ergebnis": null
+        }
+      ],
+      "spieler": [
+        {
+          "platz": 1,
+          "name": "KNALLentin",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 1,
+          "name": "SR",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 1,
+          "name": "Nalewaja",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 1,
+          "name": "Benjamin",
+          "gesamt": 12,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 5,
+          "name": "Lukas",
+          "gesamt": 10,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 5,
+          "name": "Henning",
+          "gesamt": 10,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 7,
+          "name": "Senge",
+          "gesamt": 9,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 7,
+          "name": "Rosellen",
+          "gesamt": 9,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 9,
+          "name": "Pechnic90",
+          "gesamt": 8,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 10,
+          "name": "Kolle",
+          "gesamt": 7,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        },
+        {
+          "platz": 11,
+          "name": "Chris",
+          "gesamt": 4,
+          "punkte_pro_spiel": {},
+          "exakt_pro_spiel": {},
+          "allein_punkte": 0
+        }
+      ]
+    }
+  ]
+}
