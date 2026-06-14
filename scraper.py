@@ -206,37 +206,28 @@ def main():
         raise SystemExit(1)
     daten = scrape(session, saison_id, html)
 
-    # Vorherige JSON laden um zu prüfen ob sich was geändert hat
-    changed = True
-    if os.path.exists(OUTPUT_FILE):
-        with open(OUTPUT_FILE) as f:
-            old = json.load(f)
-        # Zeitstempel ignorieren beim Vergleich
-        old.pop("zuletzt_aktualisiert", None)
-        daten_copy = {k: v for k, v in daten.items() if k != "zuletzt_aktualisiert"}
-        changed = json.dumps(old, sort_keys=True) != json.dumps(daten_copy, sort_keys=True)
-
     total = sum(len([s for s in st["spiele"] if s["abgeschlossen"]]) for st in daten["spieltage"])
 
     # Sicherheitsprüfung: nie eine leere JSON speichern
     if not daten["spieltage"]:
-        print("✗ Keine Spieltage gescraped – behalte alte JSON um Datenverlust zu vermeiden")
-        # Timestamp trotzdem aktualisieren in der alten JSON
-        if os.path.exists(OUTPUT_FILE):
-            with open(OUTPUT_FILE, encoding="utf-8") as f:
-                alte = json.load(f)
-            alte["zuletzt_aktualisiert"] = daten["zuletzt_aktualisiert"]
-            with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-                json.dump(alte, f, ensure_ascii=False, indent=2)
-            print("✓ Timestamp in alter JSON aktualisiert")
+        print("✗ Keine Spieltage gescraped – alte JSON wird nicht überschrieben")
+        # Versuche Timestamp in alter JSON zu aktualisieren
+        try:
+            if os.path.exists(OUTPUT_FILE):
+                with open(OUTPUT_FILE, encoding="utf-8") as f:
+                    alte = json.load(f)
+                if alte.get("spieltage"):  # nur wenn alte JSON gültig ist
+                    alte["zuletzt_aktualisiert"] = daten["zuletzt_aktualisiert"]
+                    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+                        json.dump(alte, f, ensure_ascii=False, indent=2)
+                    print("✓ Timestamp in alter JSON aktualisiert")
+        except Exception as e:
+            print(f"✗ Konnte alte JSON nicht laden: {e}")
         return
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(daten, f, ensure_ascii=False, indent=2)
-    if changed:
-        print(f"✓ {OUTPUT_FILE} gespeichert · {total} Spiele (Änderungen)")
-    else:
-        print(f"✓ {OUTPUT_FILE} gespeichert · Timestamp aktualisiert")
+    print(f"✓ {OUTPUT_FILE} gespeichert · {total} Spiele abgeschlossen")
 
 if __name__ == "__main__":
     main()
