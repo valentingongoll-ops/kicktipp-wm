@@ -162,6 +162,11 @@ def scrape(session, saison_id, html_first):
             mit  = [p["name"] for p in spieler if p["punkte_pro_spiel"].get(cidx, 0) > 0]
             if len(mit) == 1:
                 allein[mit[0]] += 1
+        # Nur Spieltage mit mind. einem abgeschlossenen Spiel speichern
+        if not abgeschl:
+            print(f"  – {st_name}: übersprungen (keine abgeschlossenen Spiele)")
+            continue
+
         result["spieltage"].append({
             "name": st_name, "index": int(st_idx), "spiele": spiele,
             "spieler": [{"platz": p["platz"], "name": p["name"], "gesamt": p["gesamt"],
