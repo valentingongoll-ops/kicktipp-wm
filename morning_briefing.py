@@ -157,7 +157,8 @@ Erwaehne das Preisgeld und die Grill-Pflicht.
 
 Gib NUR valides HTML zurueck - einen E-Mail-Body-Inhalt ohne html/head Tags.
 Nutze Inline-CSS. Dunkles Design: Hintergrund #111, Text #f0f0f0, Akzent #c01c00.
-Max. 400 Woerter. Struktur: Begruessung, Tabelle, Highlights, Ausblick, Spruch."""
+Max. 400 Woerter. Struktur: Begruessung, Tabelle, Highlights, Ausblick, Spruch.
+Schreibe am Ende schoene Gruesse von Bot-Valentin. Fuge danach KEINE Links ein - die werden automatisch angehaengt."""
 
     payload = _json.dumps({
         "model": "claude-sonnet-4-6",
@@ -208,8 +209,20 @@ def sende_mail(html_body):
       <span style="font-size:1.2rem;font-weight:800;color:#fff;letter-spacing:-.02em;">kicktipp</span>
       <span style="color:rgba(255,255,255,.6);font-size:.85rem;">· STB-Tipprunde · WM 2026</span>
     </div>
-    <div style="background:#1a1a1a;border:1px solid #333;border-top:none;border-radius:0 0 10px 10px;padding:24px;">
+    <div style="background:#1a1a1a;border:1px solid #333;border-top:none;padding:24px;">
       {html_body}
+    </div>
+    <div style="background:#1a1a1a;border:1px solid #333;border-top:none;border-radius:0 0 10px 10px;padding:20px 24px;display:flex;gap:12px;">
+      <a href="https://valentingongoll-ops.github.io/kicktipp-wm/"
+         style="flex:1;display:block;text-align:center;background:#c01c00;color:#fff;text-decoration:none;
+                padding:12px 16px;border-radius:8px;font-weight:700;font-size:.85rem;">
+        📊 Interaktives Leaderboard
+      </a>
+      <a href="https://www.kicktipp.de"
+         style="flex:1;display:block;text-align:center;background:#2a2a2a;color:#f0f0f0;text-decoration:none;
+                border:1px solid #444;padding:12px 16px;border-radius:8px;font-weight:700;font-size:.85rem;">
+        ⚽ Tipps abgeben
+      </a>
     </div>
     <div style="text-align:center;padding:16px;color:#555;font-size:.72rem;">
       Automatisch generiert · kicktipp-wm · {datum}
