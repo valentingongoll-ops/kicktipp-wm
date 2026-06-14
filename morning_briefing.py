@@ -51,6 +51,10 @@ def erstelle_kontext(daten):
         return "Noch keine Daten verfügbar."
 
     spieltage = daten["spieltage"]
+    # Nur Spieltage mit mind. einem abgeschlossenen Spiel
+    spieltage = [st for st in spieltage if any(sp["abgeschlossen"] for sp in st["spiele"])]
+    if not spieltage:
+        return "Noch keine abgeschlossenen Spiele."
     namen = list({p["name"] for st in spieltage for p in st["spieler"]})
     letzter_idx = len(spieltage) - 1
 
