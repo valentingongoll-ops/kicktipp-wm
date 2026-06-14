@@ -1,325 +1,264 @@
 #!/usr/bin/env python3
 """
-Kicktipp Morning Briefing
-Läuft täglich um 8:00 Uhr via GitHub Actions.
-Generiert eine HTML-Mail mit WM-News + Tipprunden-Highlights per Claude API.
+Kicktipp Morning Briefing – token-effizient
+Täglich 8:00 Uhr via GitHub Actions.
 """
 
-import json, os, smtplib, re
+import json, os, smtplib, http.client, ssl
 from datetime import datetime, timezone, timedelta
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-from urllib.request import urlopen, Request
-from urllib.parse import urlencode
-from urllib.error import URLError
 
-# ── Konfiguration aus GitHub Secrets ────────────────────────────
 ANTHROPIC_API_KEY = os.environ["ANTHROPIC_API_KEY"]
-GMAIL_USER        = os.environ["GMAIL_USER"]        # deine@gmail.com
-GMAIL_APP_PW      = os.environ["GMAIL_APP_PW"]      # 16-stelliges App-Passwort
-# Komma-getrennte Empfänger
+GMAIL_USER        = os.environ["GMAIL_USER"]
+GMAIL_APP_PW      = os.environ["GMAIL_APP_PW"]
 EMPFAENGER        = os.environ["BRIEFING_EMPFAENGER"].split(",")
 COMMUNITY         = os.environ.get("KICKTIPP_COMMUNITY", "stb-tipprunde")
 DATEN_FILE        = "kicktipp_daten.json"
 
-
-def lade_kicktipp_daten():
-    if not os.path.exists(DATEN_FILE):
-        return None
-    with open(DATEN_FILE, encoding="utf-8") as f:
-        return json.load(f)
+MESZ = timezone(timedelta(hours=2))
 
 
-def kumuliert(daten, name, bis_st_idx):
-    """Punkte eines Spielers bis einschließlich Spieltag-Index."""
+# ── Hilfsfunktionen ─────────────────────────────────────────────
+
+def api_call(payload):
+    body = json.dumps(payload).encode()
+    ctx  = ssl.create_default_context()
+    conn = http.client.HTTPSConnection("api.anthropic.com", context=ctx)
+    conn.request("POST", "/v1/messages", body=body, headers={
+        "Content-Type": "application/json",
+        "x-api-key": ANTHROPIC_API_KEY,
+        "anthropic-version": "2023-06-01",
+    })
+    resp = conn.getresponse()
+    raw  = resp.read().decode()
+    conn.close()
+    if resp.status != 200:
+        raise Exception(f"API {resp.status}: {raw[:300]}")
+    return json.loads(raw)
+
+
+def text_aus_response(result):
+    return "\n".join(b["text"] for b in result.get("content", []) if b.get("type") == "text").strip()
+
+
+def kumuliert(spieltage, name, bis_idx):
     total = 0
-    for i, st in enumerate(daten["spieltage"]):
-        if i > bis_st_idx:
-            break
+    for st in spieltage[:bis_idx + 1]:
+        p = next((x for x in st["spieler"] if x["name"] == name), None)
+        if not p:
+            continue
         for sp in st["spiele"]:
-            if not sp["abgeschlossen"]:
-                continue
-            p = next((x for x in st["spieler"] if x["name"] == name), None)
-            if p:
+            if sp["abgeschlossen"]:
                 total += p["punkte_pro_spiel"].get(str(sp["col_idx"]), 0)
     return total
 
 
-def erstelle_kontext(daten):
-    """Bereitet die Kicktipp-Daten als Text-Kontext für Claude auf."""
-    if not daten or not daten.get("spieltage"):
-        return "Noch keine Daten verfügbar."
+# ── Kontext aufbereiten ─────────────────────────────────────────
 
-    spieltage = daten["spieltage"]
-    # Nur Spieltage mit mind. einem abgeschlossenen Spiel
-    spieltage = [st for st in spieltage if any(sp["abgeschlossen"] for sp in st["spiele"])]
-    if not spieltage:
-        return "Noch keine abgeschlossenen Spiele."
-    namen = list({p["name"] for st in spieltage for p in st["spieler"]})
-    letzter_idx = len(spieltage) - 1
+def erstelle_kontext():
+    if not os.path.exists(DATEN_FILE):
+        return None, 0, 0
 
-    # Aktuelle Rangliste
-    rangliste = sorted(
-        [{"name": n, "pts": kumuliert(daten, n, letzter_idx)} for n in namen],
+    with open(DATEN_FILE, encoding="utf-8") as f:
+        daten = json.load(f)
+
+    alle_st   = daten.get("spieltage", [])
+    aktive_st = [st for st in alle_st if any(sp["abgeschlossen"] for sp in st["spiele"])]
+    if not aktive_st:
+        return None, 0, 0
+
+    namen = sorted({p["name"] for st in aktive_st for p in st["spieler"]})
+    letzter_idx = len(aktive_st) - 1
+    letzter_st  = aktive_st[letzter_idx]
+
+    # Rangliste
+    rang = sorted(
+        [{"name": n, "pts": kumuliert(aktive_st, n, letzter_idx)} for n in namen],
         key=lambda x: -x["pts"]
     )
 
-    # Spiele der letzten 24h
-    heute = datetime.now(timezone.utc)
-    gestern_spiele = []
-    for st in spieltage:
-        for sp in st["spiele"]:
-            if not sp["abgeschlossen"]:
-                continue
-            # Alle abgeschlossenen Spiele des letzten Spieltags nehmen
-            # (Timestamp nicht verfügbar, nehmen letzten Spieltag)
-            gestern_spiele.append({
-                "label": sp["label"],
-                "ergebnis": sp["ergebnis"],
-                "spieltag": st["name"],
-            })
-
-    # Nur Spiele des aktuellsten Spieltags
-    if spieltage:
-        letzter_st = spieltage[letzter_idx]
-        neueste_spiele = [
-            {"label": sp["label"], "ergebnis": sp["ergebnis"]}
+    # Spieltag-Punkte (letzter Spieltag)
+    st_pts = {}
+    for p in letzter_st["spieler"]:
+        pts = sum(
+            p["punkte_pro_spiel"].get(str(sp["col_idx"]), 0)
             for sp in letzter_st["spiele"] if sp["abgeschlossen"]
-        ]
-        spieltag_name = letzter_st["name"]
+        )
+        st_pts[p["name"]] = pts
 
-        # Spieltagssieger
-        spieltag_punkte = []
-        for sp_data in letzter_st["spieler"]:
-            pts = sum(
-                sp_data["punkte_pro_spiel"].get(str(sp["col_idx"]), 0)
-                for sp in letzter_st["spiele"] if sp["abgeschlossen"]
-            )
-            spieltag_punkte.append({"name": sp_data["name"], "pts": pts})
-        spieltag_punkte.sort(key=lambda x: -x["pts"])
-        tagessieger = spieltag_punkte[0] if spieltag_punkte else None
-    else:
-        neueste_spiele = []
-        spieltag_name = ""
-        tagessieger = None
+    st_sorted = sorted(st_pts.items(), key=lambda x: -x[1])
 
-    # Turnierfortschritt berechnen
-    total_spiele_gesamt   = sum(len(st["spiele"]) for st in daten["spieltage"])
-    total_spiele_gespielt = sum(
-        len([sp for sp in st["spiele"] if sp["abgeschlossen"]])
-        for st in daten["spieltage"]
-    )
+    # Besondere Tipps im letzten Spieltag
+    spezial = []
+    for sp in letzter_st["spiele"]:
+        if not sp["abgeschlossen"]:
+            continue
+        col = str(sp["col_idx"])
+        treffer = [(p["name"], p["punkte_pro_spiel"].get(col, 0))
+                   for p in letzter_st["spieler"]
+                   if p["punkte_pro_spiel"].get(col, 0) > 0]
+        gesamt  = len(letzter_st["spieler"])
+        if len(treffer) == 1:
+            spezial.append(f"{sp['label']} {sp['ergebnis']}: nur {treffer[0][0]} hat gepunktet ({treffer[0][1]}P)")
+        elif len(treffer) == 0:
+            spezial.append(f"{sp['label']} {sp['ergebnis']}: niemand hat gepunktet")
 
-    kontext = f"""
-AKTUELLE RANGLISTE ({COMMUNITY}):
-""" + "\n".join(f"{i+1}. {r['name']} – {r['pts']} Punkte" for i, r in enumerate(rangliste))
+    # Tabellenveränderungen (aktuell vs. vorletzter Spieltag)
+    bewegung = []
+    if letzter_idx > 0:
+        prev_rang = sorted(
+            [{"name": n, "pts": kumuliert(aktive_st, n, letzter_idx - 1)} for n in namen],
+            key=lambda x: -x["pts"]
+        )
+        prev_pos = {r["name"]: i+1 for i, r in enumerate(prev_rang)}
+        curr_pos = {r["name"]: i+1 for i, r in enumerate(rang)}
+        for n in namen:
+            delta = prev_pos.get(n, 0) - curr_pos.get(n, 0)
+            if abs(delta) >= 2:
+                bewegung.append(f"{n}: {'hoch' if delta > 0 else 'runter'} {abs(delta)} Plaetze")
 
-    kontext += f"\n\nLETZTER SPIELTAG: {spieltag_name}"
-    kontext += "\nSPIELE:\n" + "\n".join(
-        f"  {s['label']} → {s['ergebnis']}" for s in neueste_spiele
-    )
+    # Turnierfortschritt
+    total_ges  = sum(len(st["spiele"]) for st in alle_st)
+    total_gesp = sum(sp["abgeschlossen"] for st in alle_st for sp in st["spiele"])
+    prozent    = round(total_gesp / total_ges * 100) if total_ges else 0
+    n          = len(namen)
+    topf       = n * 20
 
-    if tagessieger:
-        kontext += f"\n\nSPIELTAGSSIEGER: {tagessieger['name']} mit {tagessieger['pts']} Punkten"
+    lines = [
+        f"SPIELTAG: {letzter_st['name']}",
+        "SPIELE: " + ", ".join(f"{s['label']} {s['ergebnis']}" for s in letzter_st["spiele"] if s["abgeschlossen"]),
+        "",
+        "RANGLISTE:",
+        *[f"{i+1}. {r['name']} {r['pts']}P" for i, r in enumerate(rang)],
+        "",
+        f"SPIELTAG-PUNKTE: {', '.join(f'{n} {p}P' for n,p in st_sorted)}",
+    ]
+    if spezial:
+        lines += ["", "BESONDERE TIPPS:", *spezial]
+    if bewegung:
+        lines += ["", "TABELLENBEWEGUNG:", *bewegung]
+    lines += [
+        "",
+        f"PREISGELD: {topf}E Topf",
+        f"Aktuell vorne: {rang[0]['name']} ({int(topf*0.5)}E), {rang[1]['name']} ({int(topf*0.3)}E), {rang[2]['name']} ({int(topf*0.2)}E)",
+        f"Aktuell hinten (Grillpflicht): {rang[-3]['name']}, {rang[-2]['name']}, {rang[-1]['name']}",
+        "",
+        f"TURNIERSTAND: {total_gesp}/{total_ges} Spiele ({prozent}%)",
+        f"TON-HINWEIS: {'Noch frueh im Turnier, vorsichtige Formulierungen verwenden.' if prozent < 30 else 'Turnier fortgeschritten, kann dramatischer werden.' if prozent < 80 else 'Endphase, volle Dramatik erlaubt.'}",
+    ]
 
-    n = len(namen)
-    topf = n * 20
-    kontext += f"\n\nPREISGELD: {topf}€ Topf ({n} Spieler × 20€)"
-    kontext += f"\n  1. Platz: {int(topf*0.5)}€ → {rangliste[0]['name']}"
-    kontext += f"\n  2. Platz: {int(topf*0.3)}€ → {rangliste[1]['name']}"
-    kontext += f"\n  3. Platz: {int(topf*0.2)}€ → {rangliste[2]['name']}"
-    kontext += f"\n  Grill-Pflicht: {rangliste[-3]['name']}, {rangliste[-2]['name']}, {rangliste[-1]['name']}"
-
-    kontext += f"""
-
-TURNIERFORTSCHRITT:
-Gespielte Spiele: {total_spiele_gespielt} von {total_spiele_gesamt} ({round(total_spiele_gespielt / total_spiele_gesamt * 100) if total_spiele_gesamt > 0 else 0}% des Turniers)"""
-
-    return kontext, total_spiele_gesamt, total_spiele_gespielt
+    return "\n".join(lines), total_ges, total_gesp
 
 
-def claude_api_call(payload_dict):
-    """Generischer Claude API Aufruf, gibt response dict zurück."""
-    import json as _json
-    import http.client
-    import ssl
-
-    payload = _json.dumps(payload_dict)
-    ctx  = ssl.create_default_context()
-    conn = http.client.HTTPSConnection("api.anthropic.com", context=ctx)
-    conn.request(
-        "POST", "/v1/messages",
-        body=payload,
-        headers={
-            "Content-Type": "application/json",
-            "x-api-key": ANTHROPIC_API_KEY,
-            "anthropic-version": "2023-06-01",
-        }
-    )
-    resp = conn.getresponse()
-    raw  = resp.read().decode("utf-8")
-    conn.close()
-    if resp.status != 200:
-        print(f"API Fehler {resp.status}: {raw[:500]}")
-        raise Exception(f"Claude API Fehler: {resp.status}")
-    return _json.loads(raw)
-
+# ── WM-News ─────────────────────────────────────────────────────
 
 def hole_wm_news():
-    """Sucht aktuelle WM-News der letzten 24h via Claude web_search."""
-    import json as _json
-
-    heute = datetime.now(timezone(timedelta(hours=2)))
-    datum = heute.strftime("%d.%m.%Y")
-
-    result = claude_api_call({
+    datum = datetime.now(MESZ).strftime("%d.%m.%Y")
+    result = api_call({
         "model": "claude-sonnet-4-6",
-        "max_tokens": 800,
+        "max_tokens": 400,
         "tools": [{"type": "web_search_20250305", "name": "web_search"}],
-        "messages": [{
-            "role": "user",
-            "content": f"Suche nach den aktuellen WM 2026 Nachrichten und Ergebnissen der letzten 24 Stunden (heute ist {datum}). Fasse die 3 interessantesten Ereignisse kurz auf Deutsch zusammen: Überraschungsergebnisse, besondere Spielerleistungen, Tore, Aufreger. Nur die Facts, kein HTML, max. 150 Wörter."
+        "messages": [{"role": "user", "content":
+            f"WM 2026 Neuigkeiten letzte 24h ({datum}): Gib mir maximal 4 kurze Stichpunkte auf Deutsch. Tore, Ueberraschungen, Aufreger, besondere Spieler. Nur Text, keine Formatierung, max 100 Woerter."
         }]
     })
-
-    # Antwort aus text-blocks extrahieren (web_search gibt mix aus tool_use + text)
-    import json as _json
-    text_parts = [b["text"] for b in result.get("content", []) if b.get("type") == "text"]
-    return "\n".join(text_parts).strip() or "Keine aktuellen WM-News gefunden."
+    return text_aus_response(result) or "Keine aktuellen WM-News."
 
 
-def claude_generiere_mail(kontext, wm_news, total_spiele_gesamt=104, total_spiele_gespielt=0):
-    """Ruft Claude API auf und lässt das Briefing generieren."""
-    import json as _json
+# ── Mail generieren ─────────────────────────────────────────────
 
-    heute = datetime.now(timezone(timedelta(hours=2)))
-    datum = heute.strftime("%A, %d. %B %Y").replace(
-        "Monday","Montag").replace("Tuesday","Dienstag").replace(
-        "Wednesday","Mittwoch").replace("Thursday","Donnerstag").replace(
-        "Friday","Freitag").replace("Saturday","Samstag").replace(
-        "Sunday","Sonntag").replace("January","Januar").replace(
-        "February","Februar").replace("March","März").replace(
-        "April","April").replace("May","Mai").replace("June","Juni").replace(
-        "July","Juli").replace("August","August").replace(
-        "September","September").replace("October","Oktober").replace(
-        "November","November").replace("December","Dezember")
+def generiere_html(kontext, wm_news):
+    datum = datetime.now(MESZ).strftime("%A %d. %B %Y").replace(
+        "Monday","Montag").replace("Tuesday","Dienstag").replace("Wednesday","Mittwoch").replace(
+        "Thursday","Donnerstag").replace("Friday","Freitag").replace("Saturday","Samstag").replace(
+        "Sunday","Sonntag").replace("January","Januar").replace("February","Februar").replace(
+        "March","Maerz").replace("April","April").replace("May","Mai").replace("June","Juni").replace(
+        "July","Juli").replace("August","August").replace("September","September").replace(
+        "October","Oktober").replace("November","November").replace("December","Dezember")
 
-    prompt = f"""Du bist der Moderator der Kicktipp-Tipprunde "STB-Tipprunde" bei der Fussball-WM 2026.
-Schreibe ein taegliches Morning Briefing fuer die Gruppe. Heute ist {datum}.
+    prompt = f"""Morning Briefing STB-Tipprunde WM 2026, {datum}.
 
-AKTUELLE WM-NEWS DER LETZTEN 24 STUNDEN:
+WM-NEWS:
 {wm_news}
 
-TIPPRUNDEN-DATEN:
+TIPPRUNDE:
 {kontext}
 
-Schreibe eine lockere, witzige, motivierende Nachricht auf Deutsch mit Emojis.
+Schreibe lockeres, witziges Briefing auf Deutsch mit Emojis. Struktur:
+1. Kurze Begruessung (1-2 Saetze)
+2. WM-Highlights gestern (3-4 Saetze, die interessantesten Fakten)
+3. Tipprunden-Stand (Tabelle + wer hat gestern gut/schlecht getippt + besondere Tipps + Tabellenbewegungen)
+4. Ausblick heutige Spiele (1-2 Saetze)
+5. Gruesse von Bot-Valentin (Pflicht, immer am Ende)
 
-KONTEXT ZUM STAND DES TURNIERS:
-Gesamtspiele im Turnier: {total_spiele_gesamt}
-Bereits gespielte Spiele: {total_spiele_gespielt}
-Noch ausstehende Spiele: {total_spiele_gesamt - total_spiele_gespielt}
-Fortschritt: {round(total_spiele_gespielt / total_spiele_gesamt * 100) if total_spiele_gesamt > 0 else 0}% des Turniers gespielt
+Regeln: Keine Gedankenstriche. Keine Aufzaehlungen mit Strich. Ton laut TONHINWEIS im Kontext anpassen. Kein abschliessender Spruch oder Zitat. Keine Links.
+Ausgabe: NUR HTML-Body-Inhalt mit Inline-CSS. Dunkel: bg #1a1a1a, text #f0f0f0, akzent #c01c00. Max 350 Woerter."""
 
-WICHTIGE REGELN fuer den Ton:
-- Wir stehen erst am Anfang des Turniers. Verzichte auf definitive Aussagen wie "XX gewinnt die 110 Euro" oder "XX muss grillen". Nutze stattdessen vorsichtige Formulierungen wie "zur Zeit auf Kurs fuer..." oder "wenn es so bleibt..."
-- Je naeher wir am Ende (>80%), desto dramatischer und konkreter darf der Ton werden.
-- KEINE Gedankenstriche (weder - noch --) im Text verwenden. Nutze stattdessen Kommas, Punkte oder neue Saetze.
-- Nutze keine Aufzaehlungszeichen mit Strich.
-
-Struktur (in dieser Reihenfolge):
-1. Kurze Begruessung
-2. WM-News Zusammenfassung: Ueberraschungen, Highlights, besondere Momente der letzten 24h
-3. Tipprunden-Tabelle mit aktuellem Stand
-4. Wer hat gestern am besten getippt, wer am schlechtesten (mit Kommentar)
-5. Ausblick auf die heutigen Spiele
-6. Motivierender Abschlussspruch passend zum Turnierstand
-7. Schoene Gruesse von Bot-Valentin (immer am Ende, nie weglassen)
-
-Gib NUR valides HTML zurueck ohne html/head Tags.
-Nutze Inline-CSS. Dunkles Design: Hintergrund #1a1a1a, Text #f0f0f0, Akzent #c01c00.
-Abschnitte mit farbigen Ueberschriften trennen. Max. 500 Woerter.
-KEINE Links einfuegen - kommen automatisch."""
-
-    result = claude_api_call({
+    result = api_call({
         "model": "claude-sonnet-4-6",
-        "max_tokens": 2000,
+        "max_tokens": 1200,
         "messages": [{"role": "user", "content": prompt}]
     })
+    return text_aus_response(result)
 
-    text_parts = [b["text"] for b in result.get("content", []) if b.get("type") == "text"]
-    return "\n".join(text_parts).strip()
 
+# ── Mail senden ─────────────────────────────────────────────────
 
 def sende_mail(html_body):
-    heute = datetime.now(timezone(timedelta(hours=2)))
-    datum = heute.strftime("%d.%m.%Y")
-
+    datum = datetime.now(MESZ).strftime("%d.%m.%Y")
     msg = MIMEMultipart("alternative")
-    msg["Subject"] = f"☀️ Kicktipp Morning Briefing – {datum}"
+    msg["Subject"] = f"Kicktipp Morning Briefing {datum}"
     msg["From"]    = f"Kicktipp Bot <{GMAIL_USER}>"
     msg["To"]      = ", ".join(EMPFAENGER)
 
-    # Komplette HTML-Mail
-    html_full = f"""<!DOCTYPE html>
-<html lang="de">
+    html = f"""<!DOCTYPE html><html lang="de">
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head>
 <body style="margin:0;padding:0;background:#111;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;">
-  <div style="max-width:600px;margin:0 auto;padding:20px;">
-    <div style="background:#c01c00;border-radius:10px 10px 0 0;padding:16px 20px;display:flex;align-items:center;gap:10px;">
-      <span style="font-size:1.2rem;font-weight:800;color:#fff;letter-spacing:-.02em;">kicktipp</span>
-      <span style="color:rgba(255,255,255,.6);font-size:.85rem;">· STB-Tipprunde · WM 2026</span>
-    </div>
-    <div style="background:#1a1a1a;border:1px solid #333;border-top:none;padding:24px;">
-      {html_body}
-    </div>
-    <div style="background:#1a1a1a;border:1px solid #333;border-top:none;border-radius:0 0 10px 10px;padding:20px 24px;display:flex;gap:12px;">
-      <a href="https://valentingongoll-ops.github.io/kicktipp-wm/"
-         style="flex:1;display:block;text-align:center;background:#c01c00;color:#fff;text-decoration:none;
-                padding:12px 16px;border-radius:8px;font-weight:700;font-size:.85rem;">
-        📊 Interaktives Leaderboard
-      </a>
-      <a href="https://www.kicktipp.de"
-         style="flex:1;display:block;text-align:center;background:#2a2a2a;color:#f0f0f0;text-decoration:none;
-                border:1px solid #444;padding:12px 16px;border-radius:8px;font-weight:700;font-size:.85rem;">
-        ⚽ Tipps abgeben
-      </a>
-    </div>
-    <div style="text-align:center;padding:16px;color:#555;font-size:.72rem;">
-      Automatisch generiert · kicktipp-wm · {datum}
-    </div>
+<div style="max-width:600px;margin:0 auto;padding:16px;">
+  <div style="background:#c01c00;border-radius:10px 10px 0 0;padding:14px 20px;">
+    <span style="font-size:1.1rem;font-weight:800;color:#fff;">kicktipp</span>
+    <span style="color:rgba(255,255,255,.55);font-size:.8rem;"> STB-Tipprunde WM 2026</span>
   </div>
-</body>
-</html>"""
+  <div style="background:#1a1a1a;border:1px solid #333;border-top:none;padding:20px;">
+    {html_body}
+  </div>
+  <div style="background:#1a1a1a;border:1px solid #333;border-top:1px solid #2a2a2a;border-radius:0 0 10px 10px;padding:16px 20px;display:flex;gap:10px;">
+    <a href="https://valentingongoll-ops.github.io/kicktipp-wm/" style="flex:1;display:block;text-align:center;background:#c01c00;color:#fff;text-decoration:none;padding:11px;border-radius:7px;font-weight:700;font-size:.82rem;">📊 Leaderboard</a>
+    <a href="https://www.kicktipp.de" style="flex:1;display:block;text-align:center;background:#2a2a2a;color:#f0f0f0;text-decoration:none;border:1px solid #444;padding:11px;border-radius:7px;font-weight:700;font-size:.82rem;">⚽ Tipps abgeben</a>
+  </div>
+  <div style="text-align:center;padding:12px;color:#444;font-size:.68rem;">Automatisch generiert {datum}</div>
+</div>
+</body></html>"""
 
-    msg.attach(MIMEText(html_full, "html", "utf-8"))
-
+    msg.attach(MIMEText(html, "html", "utf-8"))
     with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp:
         smtp.login(GMAIL_USER, GMAIL_APP_PW)
         smtp.sendmail(GMAIL_USER, EMPFAENGER, msg.as_bytes())
+    print(f"Mail gesendet an {len(EMPFAENGER)} Empfaenger")
 
-    print(f"✓ Mail gesendet an {len(EMPFAENGER)} Empfänger")
 
+# ── Main ─────────────────────────────────────────────────────────
 
 def main():
-    print("☀️  Kicktipp Morning Briefing")
-    print("=" * 40)
+    print("Morning Briefing Start")
 
-    daten   = lade_kicktipp_daten()
-    kontext, total_spiele_gesamt, total_spiele_gespielt = erstelle_kontext(daten)
-    print("Kontext erstellt:")
-    print(kontext[:500] + "...")
+    kontext, total_ges, total_gesp = erstelle_kontext()
+    if not kontext:
+        print("Keine Daten verfuegbar")
+        return
+    print(f"Kontext: {len(kontext)} Zeichen, {total_gesp}/{total_ges} Spiele")
 
-    print("\nHole WM-News via Web Search...")
+    print("Hole WM-News...")
     wm_news = hole_wm_news()
-    print(f"✓ WM-News: {wm_news[:100]}...")
+    print(f"News: {wm_news[:80]}...")
 
-    print("\nGeneriere Briefing via Claude...")
-    html = claude_generiere_mail(kontext, wm_news, total_spiele_gesamt, total_spiele_gespielt)
-    print("✓ Briefing generiert")
+    print("Generiere Mail...")
+    html = generiere_html(kontext, wm_news)
+    print(f"HTML: {len(html)} Zeichen")
 
     sende_mail(html)
-    print("✓ Fertig!")
+    print("Fertig!")
 
 
 if __name__ == "__main__":
