@@ -139,10 +139,7 @@ def erstelle_kontext():
         lines += ["", "TABELLENBEWEGUNG:", *bewegung]
     lines += [
         "",
-        f"PREISGELD: {topf}E Topf",
-        f"Aktuell vorne: {rang[0]['name']} ({int(topf*0.5)}E), {rang[1]['name']} ({int(topf*0.3)}E), {rang[2]['name']} ({int(topf*0.2)}E)",
-        f"Aktuell hinten (Grillpflicht): {rang[-3]['name']}, {rang[-2]['name']}, {rang[-1]['name']}",
-        "",
+
         f"TURNIERSTAND: {total_gesp}/{total_ges} Spiele ({prozent}%)",
         f"TON-HINWEIS: {'Noch frueh im Turnier, vorsichtige Formulierungen verwenden.' if prozent < 30 else 'Turnier fortgeschritten, kann dramatischer werden.' if prozent < 80 else 'Endphase, volle Dramatik erlaubt.'}",
     ]
@@ -202,7 +199,7 @@ Strenge Regeln:
 Inline-CSS verwenden. Dunkel: bg #1a1a1a, text #f0f0f0, akzent #c01c00. Max 300 Woerter."""
 
     result = api_call({
-       "model": "claude-haiku-4-5-20251001",
+        "model": "claude-haiku-4-5-20251001",
         "max_tokens": 1200,
         "messages": [{"role": "user", "content": prompt}]
     })
