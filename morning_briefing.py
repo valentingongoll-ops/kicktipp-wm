@@ -260,7 +260,7 @@ def main():
     if not kontext:
         print("Keine Daten verfuegbar")
         return
-    print(f"Kontext: {len(kontext)} Zeichen, {total_gesp}/{total_ges} Spiele")
+    print(f"Kontext: {len(kontext)} Zeichen, {total_gesp}/104 Spiele")
 
     print("Hole WM-News...")
     wm_news = hole_wm_news()
