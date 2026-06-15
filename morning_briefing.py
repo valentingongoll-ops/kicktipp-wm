@@ -155,7 +155,7 @@ def erstelle_kontext():
 def hole_wm_news():
     datum = datetime.now(MESZ).strftime("%d.%m.%Y")
     result = api_call({
-        "model": "claude-sonnet-4-6",
+        "model": "claude-haiku-4-5-20251001",
         "max_tokens": 400,
         "tools": [{"type": "web_search_20250305", "name": "web_search"}],
         "messages": [{"role": "user", "content":
@@ -202,7 +202,7 @@ Strenge Regeln:
 Inline-CSS verwenden. Dunkel: bg #1a1a1a, text #f0f0f0, akzent #c01c00. Max 300 Woerter."""
 
     result = api_call({
-        "model": "claude-sonnet-4-6",
+       "model": "claude-haiku-4-5-20251001",
         "max_tokens": 1200,
         "messages": [{"role": "user", "content": prompt}]
     })
