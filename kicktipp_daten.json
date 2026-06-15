@@ -1,6 +1,6 @@
 {
   "community": "stb-tipprunde",
-  "zuletzt_aktualisiert": "2026-06-15T22:17:27",
+  "zuletzt_aktualisiert": "2026-06-15T22:30:15",
   "spieltage": [
     {
       "name": "1. Spieltag",
@@ -420,6 +420,28 @@
         },
         {
           "platz": 2,
+          "name": "KNALLentin",
+          "gesamt": 18,
+          "punkte_pro_spiel": {
+            "0": 2,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 4
+          },
+          "exakt_pro_spiel": {
+            "0": false,
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false,
+            "5": true
+          },
+          "allein_punkte": 0
+        },
+        {
+          "platz": 3,
           "name": "SR",
           "gesamt": 16,
           "punkte_pro_spiel": {
@@ -439,7 +461,7 @@
           "allein_punkte": 0
         },
         {
-          "platz": 2,
+          "platz": 3,
           "name": "Benjamin",
           "gesamt": 16,
           "punkte_pro_spiel": {
@@ -459,7 +481,7 @@
           "allein_punkte": 0
         },
         {
-          "platz": 4,
+          "platz": 5,
           "name": "Senge",
           "gesamt": 16,
           "punkte_pro_spiel": {
@@ -467,26 +489,6 @@
             "1": 0,
             "2": 3,
             "3": 2,
-            "4": 0
-          },
-          "exakt_pro_spiel": {
-            "0": false,
-            "1": false,
-            "2": false,
-            "3": false,
-            "4": false
-          },
-          "allein_punkte": 0
-        },
-        {
-          "platz": 5,
-          "name": "KNALLentin",
-          "gesamt": 14,
-          "punkte_pro_spiel": {
-            "0": 2,
-            "1": 0,
-            "2": 0,
-            "3": 0,
             "4": 0
           },
           "exakt_pro_spiel": {
