@@ -147,6 +147,35 @@ def erstelle_kontext():
     return "\n".join(lines), 104, total_gesp
 
 
+# ── Ranglisten-Tabelle als HTML ─────────────────────────────────
+
+def erstelle_tabelle_html(rang):
+    rows = ""
+    medals = {1: "🥇", 2: "🥈", 3: "🥉"}
+    for i, r in enumerate(rang):
+        pl = i + 1
+        medal = medals.get(pl, f"{pl}.")
+        grill = " 🔥" if pl > len(rang) - 3 else ""
+        bg = "#2a2a2a" if i % 2 == 0 else "#222"
+        rows += (
+            f'<tr style="background:{bg}">'
+            f'<td style="padding:6px 10px;text-align:center">{medal}</td>'
+            f'<td style="padding:6px 10px;font-weight:600">{r["name"]}{grill}</td>'
+            f'<td style="padding:6px 10px;text-align:right;font-family:monospace;'
+            f'color:#c01c00;font-weight:700">{r["pts"]}</td>'
+            f'</tr>'
+        )
+    return (
+        '<table style="width:100%;border-collapse:collapse;margin:10px 0;font-size:.85rem">'
+        '<thead><tr style="background:#333">'
+        '<th style="padding:7px 10px;text-align:center;color:#888;font-weight:500">Platz</th>'
+        '<th style="padding:7px 10px;text-align:left;color:#888;font-weight:500">Name</th>'
+        '<th style="padding:7px 10px;text-align:right;color:#888;font-weight:500">Punkte</th>'
+        '</tr></thead>'
+        f'<tbody>{rows}</tbody></table>'
+    )
+
+
 # ── WM-News ─────────────────────────────────────────────────────
 
 def hole_wm_news():
@@ -164,7 +193,7 @@ def hole_wm_news():
 
 # ── Mail generieren ─────────────────────────────────────────────
 
-def generiere_html(kontext, wm_news):
+def generiere_html(kontext, wm_news, tabelle_html=""):
     datum = datetime.now(MESZ).strftime("%A %d. %B %Y").replace(
         "Monday","Montag").replace("Tuesday","Dienstag").replace("Wednesday","Mittwoch").replace(
         "Thursday","Donnerstag").replace("Friday","Freitag").replace("Saturday","Samstag").replace(
@@ -186,7 +215,7 @@ TIPPRUNDE:
 Struktur:
 1. Begruessung im Charakter (1-2 Saetze, direkt, pointiert)
 2. WM-Highlights (max 2-3 Saetze, Basler-Style: kurz, trocken, auf den Punkt)
-3. Tipprunden-Stand: HTML-Tabelle (Platz, Name, Punkte) gefolgt von 2-3 Saetzen mit zugespitzten Kommentaren zu einzelnen Tippern. Wer war gestern gut? Wer hat wieder versagt? Besondere Tipps oder Tabellenbewegungen mit Meinung kommentieren.
+3. Tipprunden-Stand: Schreibe exakt den Platzhalter ##TABELLE## (wird automatisch ersetzt) gefolgt von 2-3 Saetzen mit zugespitzten Kommentaren zu einzelnen Tippern. Wer war gestern gut? Wer hat wieder versagt? Besondere Tipps oder Tabellenbewegungen mit Meinung kommentieren.
 4. Ausblick heutige Spiele (1 Satz, Prognose im Basler-Ton)
 5. Signatur: "Bot-Valentin" (Pflicht, immer am Ende)
 
@@ -213,7 +242,10 @@ Dunkel: bg #1a1a1a, text #f0f0f0, akzent #c01c00. Max 300 Woerter."""
         html = lines[-1] if len(lines) > 1 else html
     if html.endswith("```"):
         html = html[:html.rfind("```")]
-    return html.strip()
+    html = html.strip()
+    # Platzhalter durch echte Python-generierte Tabelle ersetzen
+    html = html.replace("##TABELLE##", tabelle_html)
+    return html
 
 
 # ── Mail senden ─────────────────────────────────────────────────
@@ -266,8 +298,27 @@ def main():
     wm_news = hole_wm_news()
     print(f"News: {wm_news[:80]}...")
 
+    # Tabelle direkt in Python generieren (nicht von Claude, damit alle Eintraege sicher drin sind)
+    kontext_obj, _, _ = erstelle_kontext()  # reload for rang
+    with open(DATEN_FILE, encoding="utf-8") as f:
+        daten = json.load(f)
+    alle_st   = daten.get("spieltage", [])
+    aktive_st = [st for st in alle_st if any(sp["abgeschlossen"] for sp in st["spiele"])]
+    namen     = sorted({p["name"] for st in aktive_st for p in st["spieler"]})
+    letzter_idx = len(aktive_st) - 1
+    rang = sorted(
+        [{"name": n, "pts": sum(
+            p["punkte_pro_spiel"].get(str(sp["col_idx"]), 0)
+            for st in aktive_st[:letzter_idx+1]
+            for sp in st["spiele"] if sp["abgeschlossen"]
+            for p in st["spieler"] if p["name"] == n
+        )} for n in namen],
+        key=lambda x: -x["pts"]
+    )
+    tabelle_html = erstelle_tabelle_html(rang)
+
     print("Generiere Mail...")
-    html = generiere_html(kontext, wm_news)
+    html = generiere_html(kontext, wm_news, tabelle_html)
     print(f"HTML: {len(html)} Zeichen")
 
     sende_mail(html)
