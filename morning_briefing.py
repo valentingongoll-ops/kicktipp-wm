@@ -144,7 +144,7 @@ def erstelle_kontext():
         f"TON-HINWEIS: {'Noch frueh im Turnier, vorsichtige Formulierungen verwenden.' if prozent < 30 else 'Turnier fortgeschritten, kann dramatischer werden.' if prozent < 80 else 'Endphase, volle Dramatik erlaubt.'}",
     ]
 
-    return "\n".join(lines), total_ges, total_gesp
+    return "\n".join(lines), 104, total_gesp
 
 
 # ── WM-News ─────────────────────────────────────────────────────
@@ -173,7 +173,9 @@ def generiere_html(kontext, wm_news):
         "July","Juli").replace("August","August").replace("September","September").replace(
         "October","Oktober").replace("November","November").replace("December","Dezember")
 
-    prompt = f"""Morning Briefing STB-Tipprunde WM 2026, {datum}.
+    prompt = f"""Du bist Bot-Valentin, der tägliche Kommentator der STB-Tipprunde WM 2026. {datum}.
+
+Dein Charakter: Irgendwo zwischen Mario Basler (zynisch, direkt, kein Blatt vor den Mund) und einem 11-Freunde-Autor (fussballverliebter Stil, echter Enthusiasmus fuer das Spiel). Du kennst jeden Tipper persoenlich und nimmst kein Blatt vor den Mund. Immer mit Augenzwinkern, nie boshaft. Du liebst Fussball zu sehr um ueber schlechte Tipps hinwegzusehen.
 
 WM-NEWS:
 {wm_news}
@@ -181,12 +183,12 @@ WM-NEWS:
 TIPPRUNDE:
 {kontext}
 
-Schreibe lockeres, witziges Briefing auf Deutsch mit Emojis. Struktur:
-1. Kurze Begruessung (1-2 Saetze)
-2. WM-Highlights (max 2-3 Saetze, nur die spannendsten Fakten, kurz und knackig)
-3. Tipprunden-Stand als HTML-Tabelle mit Spalten: Platz, Name, Punkte. Danach 2-3 Saetze zu Highlights: wer hat gestern gut/schlecht getippt, besondere Tipps, Tabellenbewegungen.
-4. Ausblick heutige Spiele (1-2 Saetze)
-5. Gruesse von Bot-Valentin (Pflicht, immer am Ende, nie weglassen)
+Struktur:
+1. Begruessung im Charakter (1-2 Saetze, direkt, pointiert)
+2. WM-Highlights (max 2-3 Saetze, Basler-Style: kurz, trocken, auf den Punkt)
+3. Tipprunden-Stand: HTML-Tabelle (Platz, Name, Punkte) gefolgt von 2-3 Saetzen mit zugespitzten Kommentaren zu einzelnen Tippern. Wer war gestern gut? Wer hat wieder versagt? Besondere Tipps oder Tabellenbewegungen mit Meinung kommentieren.
+4. Ausblick heutige Spiele (1 Satz, Prognose im Basler-Ton)
+5. Signatur: "Bot-Valentin" (Pflicht, immer am Ende)
 
 Strenge Regeln:
 - KEIN Preisgeld erwaehnen
@@ -195,8 +197,8 @@ Strenge Regeln:
 - Ton laut TONHINWEIS anpassen
 - Kein abschliessender Spruch oder Zitat
 - Keine Links
-- WICHTIG: Ausgabe MUSS direkt mit einem HTML-Tag beginnen (z.B. <p> oder <h2>). KEIN ```html davor, KEIN Markdown, NUR reines HTML.
-Inline-CSS verwenden. Dunkel: bg #1a1a1a, text #f0f0f0, akzent #c01c00. Max 300 Woerter."""
+- WICHTIG: Ausgabe MUSS direkt mit einem HTML-Tag beginnen. KEIN ```html, KEIN Markdown, NUR reines HTML mit Inline-CSS.
+Dunkel: bg #1a1a1a, text #f0f0f0, akzent #c01c00. Max 300 Woerter."""
 
     result = api_call({
         "model": "claude-haiku-4-5-20251001",
@@ -254,7 +256,7 @@ def sende_mail(html_body):
 def main():
     print("Morning Briefing Start")
 
-    kontext, total_ges, total_gesp = erstelle_kontext()
+    kontext, _, total_gesp = erstelle_kontext()
     if not kontext:
         print("Keine Daten verfuegbar")
         return
