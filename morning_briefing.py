@@ -118,12 +118,11 @@ def erstelle_kontext():
             if abs(delta) >= 2:
                 bewegung.append(f"{n}: {'hoch' if delta > 0 else 'runter'} {abs(delta)} Plaetze")
 
-    # Turnierfortschritt
-    total_ges  = sum(len(st["spiele"]) for st in alle_st)
-    total_gesp = sum(sp["abgeschlossen"] for st in alle_st for sp in st["spiele"])
-    prozent    = round(total_gesp / total_ges * 100) if total_ges else 0
+    # Turnierfortschritt: 104 Spiele total (fix), nur tatsächlich gespielte zählen
+    TOTAL_WM_SPIELE = 104
+    total_gesp = sum(1 for st in alle_st for sp in st["spiele"] if sp["abgeschlossen"])
+    prozent    = round(total_gesp / TOTAL_WM_SPIELE * 100)
     n          = len(namen)
-    topf       = n * 20
 
     lines = [
         f"SPIELTAG: {letzter_st['name']}",
@@ -187,20 +186,35 @@ TIPPRUNDE:
 
 Schreibe lockeres, witziges Briefing auf Deutsch mit Emojis. Struktur:
 1. Kurze Begruessung (1-2 Saetze)
-2. WM-Highlights gestern (3-4 Saetze, die interessantesten Fakten)
-3. Tipprunden-Stand (Tabelle + wer hat gestern gut/schlecht getippt + besondere Tipps + Tabellenbewegungen)
+2. WM-Highlights (max 2-3 Saetze, nur die spannendsten Fakten, kurz und knackig)
+3. Tipprunden-Stand als HTML-Tabelle mit Spalten: Platz, Name, Punkte. Danach 2-3 Saetze zu Highlights: wer hat gestern gut/schlecht getippt, besondere Tipps, Tabellenbewegungen.
 4. Ausblick heutige Spiele (1-2 Saetze)
-5. Gruesse von Bot-Valentin (Pflicht, immer am Ende)
+5. Gruesse von Bot-Valentin (Pflicht, immer am Ende, nie weglassen)
 
-Regeln: Keine Gedankenstriche. Keine Aufzaehlungen mit Strich. Ton laut TONHINWEIS im Kontext anpassen. Kein abschliessender Spruch oder Zitat. Keine Links.
-Ausgabe: NUR HTML-Body-Inhalt mit Inline-CSS. Dunkel: bg #1a1a1a, text #f0f0f0, akzent #c01c00. Max 350 Woerter."""
+Strenge Regeln:
+- KEIN Preisgeld erwaehnen
+- KEINE Gedankenstriche (weder - noch --)
+- KEINE Aufzaehlungen mit Bindestrich
+- Ton laut TONHINWEIS anpassen
+- Kein abschliessender Spruch oder Zitat
+- Keine Links
+- WICHTIG: Ausgabe MUSS direkt mit einem HTML-Tag beginnen (z.B. <p> oder <h2>). KEIN ```html davor, KEIN Markdown, NUR reines HTML.
+Inline-CSS verwenden. Dunkel: bg #1a1a1a, text #f0f0f0, akzent #c01c00. Max 300 Woerter."""
 
     result = api_call({
         "model": "claude-sonnet-4-6",
         "max_tokens": 1200,
         "messages": [{"role": "user", "content": prompt}]
     })
-    return text_aus_response(result)
+    html = text_aus_response(result)
+    # Markdown-Fences entfernen falls Claude sie trotzdem schreibt
+    html = html.strip()
+    if html.startswith("```"):
+        lines = html.split("\n", 1)
+        html = lines[-1] if len(lines) > 1 else html
+    if html.endswith("```"):
+        html = html[:html.rfind("```")]
+    return html.strip()
 
 
 # ── Mail senden ─────────────────────────────────────────────────
