@@ -140,7 +140,7 @@ def erstelle_kontext():
     lines += [
         "",
 
-        f"TURNIERSTAND: {total_gesp}/{total_ges} Spiele ({prozent}%)",
+        f"TURNIERSTAND: {total_gesp}/104 Spiele ({prozent}%)",
         f"TON-HINWEIS: {'Noch frueh im Turnier, vorsichtige Formulierungen verwenden.' if prozent < 30 else 'Turnier fortgeschritten, kann dramatischer werden.' if prozent < 80 else 'Endphase, volle Dramatik erlaubt.'}",
     ]
 
