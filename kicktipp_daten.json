@@ -1,6 +1,6 @@
 {
   "community": "stb-tipprunde",
-  "zuletzt_aktualisiert": "2026-06-16T23:00:23",
+  "zuletzt_aktualisiert": "2026-06-16T23:15:24",
   "spieltage": [
     {
       "name": "1. Spieltag",
@@ -681,6 +681,194 @@
             "5": false,
             "6": false,
             "7": false
+          },
+          "allein_punkte": 0
+        }
+      ]
+    },
+    {
+      "name": "3. Spieltag",
+      "index": 3,
+      "spiele": [
+        {
+          "col_idx": 0,
+          "label": "FRA–SEN",
+          "abgeschlossen": true,
+          "ergebnis": "3:1"
+        },
+        {
+          "col_idx": 1,
+          "label": "IRK–NOR",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 2,
+          "label": "ARG–ALG",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 3,
+          "label": "AUT–JOR",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 4,
+          "label": "POR–COD",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 5,
+          "label": "ENG–KRO",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 6,
+          "label": "GHA–PAN",
+          "abgeschlossen": false,
+          "ergebnis": null
+        },
+        {
+          "col_idx": 7,
+          "label": "UZB–KOL",
+          "abgeschlossen": false,
+          "ergebnis": null
+        }
+      ],
+      "spieler": [
+        {
+          "platz": 1,
+          "name": "Nalewaja",
+          "gesamt": 26,
+          "punkte_pro_spiel": {
+            "0": 4
+          },
+          "exakt_pro_spiel": {
+            "0": true
+          },
+          "allein_punkte": 0
+        },
+        {
+          "platz": 2,
+          "name": "KNALLentin",
+          "gesamt": 21,
+          "punkte_pro_spiel": {
+            "0": 3
+          },
+          "exakt_pro_spiel": {
+            "0": false
+          },
+          "allein_punkte": 0
+        },
+        {
+          "platz": 3,
+          "name": "SR",
+          "gesamt": 19,
+          "punkte_pro_spiel": {
+            "0": 3
+          },
+          "exakt_pro_spiel": {
+            "0": false
+          },
+          "allein_punkte": 0
+        },
+        {
+          "platz": 4,
+          "name": "Lukas",
+          "gesamt": 18,
+          "punkte_pro_spiel": {
+            "0": 4
+          },
+          "exakt_pro_spiel": {
+            "0": true
+          },
+          "allein_punkte": 0
+        },
+        {
+          "platz": 5,
+          "name": "Benjamin",
+          "gesamt": 18,
+          "punkte_pro_spiel": {
+            "0": 2
+          },
+          "exakt_pro_spiel": {
+            "0": false
+          },
+          "allein_punkte": 0
+        },
+        {
+          "platz": 6,
+          "name": "Senge",
+          "gesamt": 18,
+          "punkte_pro_spiel": {
+            "0": 2
+          },
+          "exakt_pro_spiel": {
+            "0": false
+          },
+          "allein_punkte": 0
+        },
+        {
+          "platz": 7,
+          "name": "Henning",
+          "gesamt": 16,
+          "punkte_pro_spiel": {
+            "0": 2
+          },
+          "exakt_pro_spiel": {
+            "0": false
+          },
+          "allein_punkte": 0
+        },
+        {
+          "platz": 7,
+          "name": "Rosellen",
+          "gesamt": 16,
+          "punkte_pro_spiel": {
+            "0": 3
+          },
+          "exakt_pro_spiel": {
+            "0": false
+          },
+          "allein_punkte": 0
+        },
+        {
+          "platz": 9,
+          "name": "Chris",
+          "gesamt": 15,
+          "punkte_pro_spiel": {
+            "0": 4
+          },
+          "exakt_pro_spiel": {
+            "0": true
+          },
+          "allein_punkte": 0
+        },
+        {
+          "platz": 10,
+          "name": "Pechnic90",
+          "gesamt": 14,
+          "punkte_pro_spiel": {
+            "0": 2
+          },
+          "exakt_pro_spiel": {
+            "0": false
+          },
+          "allein_punkte": 0
+        },
+        {
+          "platz": 11,
+          "name": "Kolle",
+          "gesamt": 13,
+          "punkte_pro_spiel": {
+            "0": 2
+          },
+          "exakt_pro_spiel": {
+            "0": false
           },
           "allein_punkte": 0
         }
