@@ -1,6 +1,6 @@
 {
   "community": "stb-tipprunde",
-  "zuletzt_aktualisiert": "2026-06-16T05:00:17",
+  "zuletzt_aktualisiert": "2026-06-16T05:15:12",
   "spieltage": [
     {
       "name": "1. Spieltag",
@@ -393,8 +393,8 @@
         {
           "col_idx": 7,
           "label": "IRN–NZL",
-          "abgeschlossen": false,
-          "ergebnis": null
+          "abgeschlossen": true,
+          "ergebnis": "2:2"
         }
       ],
       "spieler": [
@@ -422,7 +422,7 @@
             "6": false,
             "7": false
           },
-          "allein_punkte": 0
+          "allein_punkte": 1
         },
         {
           "platz": 2,
@@ -435,7 +435,8 @@
             "3": 0,
             "4": 0,
             "5": 4,
-            "6": 0
+            "6": 0,
+            "7": 0
           },
           "exakt_pro_spiel": {
             "0": false,
@@ -444,7 +445,8 @@
             "3": false,
             "4": false,
             "5": true,
-            "6": false
+            "6": false,
+            "7": false
           },
           "allein_punkte": 1
         },
@@ -459,7 +461,8 @@
             "3": 2,
             "4": 0,
             "5": 0,
-            "6": 0
+            "6": 0,
+            "7": 0
           },
           "exakt_pro_spiel": {
             "0": false,
@@ -468,7 +471,8 @@
             "3": false,
             "4": false,
             "5": false,
-            "6": false
+            "6": false,
+            "7": false
           },
           "allein_punkte": 0
         },
@@ -483,7 +487,8 @@
             "3": 2,
             "4": 0,
             "5": 0,
-            "6": 0
+            "6": 0,
+            "7": 0
           },
           "exakt_pro_spiel": {
             "0": false,
@@ -492,7 +497,8 @@
             "3": false,
             "4": false,
             "5": false,
-            "6": false
+            "6": false,
+            "7": false
           },
           "allein_punkte": 0
         },
@@ -507,7 +513,8 @@
             "3": 2,
             "4": 0,
             "5": 0,
-            "6": 0
+            "6": 0,
+            "7": 0
           },
           "exakt_pro_spiel": {
             "0": false,
@@ -516,7 +523,8 @@
             "3": false,
             "4": false,
             "5": false,
-            "6": false
+            "6": false,
+            "7": false
           },
           "allein_punkte": 0
         },
@@ -531,7 +539,8 @@
             "3": 2,
             "4": 0,
             "5": 0,
-            "6": 0
+            "6": 0,
+            "7": 0
           },
           "exakt_pro_spiel": {
             "0": false,
@@ -540,7 +549,8 @@
             "3": false,
             "4": false,
             "5": false,
-            "6": false
+            "6": false,
+            "7": false
           },
           "allein_punkte": 0
         },
@@ -555,7 +565,8 @@
             "3": 2,
             "4": 0,
             "5": 0,
-            "6": 0
+            "6": 0,
+            "7": 0
           },
           "exakt_pro_spiel": {
             "0": false,
@@ -564,7 +575,8 @@
             "3": false,
             "4": false,
             "5": false,
-            "6": false
+            "6": false,
+            "7": false
           },
           "allein_punkte": 0
         },
@@ -579,7 +591,8 @@
             "3": 2,
             "4": 0,
             "5": 0,
-            "6": 0
+            "6": 0,
+            "7": 0
           },
           "exakt_pro_spiel": {
             "0": false,
@@ -588,7 +601,8 @@
             "3": false,
             "4": false,
             "5": false,
-            "6": false
+            "6": false,
+            "7": false
           },
           "allein_punkte": 0
         },
@@ -603,7 +617,8 @@
             "3": 2,
             "4": 0,
             "5": 0,
-            "6": 0
+            "6": 0,
+            "7": 0
           },
           "exakt_pro_spiel": {
             "0": false,
@@ -612,7 +627,8 @@
             "3": false,
             "4": false,
             "5": false,
-            "6": false
+            "6": false,
+            "7": false
           },
           "allein_punkte": 0
         },
@@ -627,7 +643,8 @@
             "3": 2,
             "4": 0,
             "5": 0,
-            "6": 0
+            "6": 0,
+            "7": 0
           },
           "exakt_pro_spiel": {
             "0": false,
@@ -636,7 +653,8 @@
             "3": false,
             "4": false,
             "5": false,
-            "6": false
+            "6": false,
+            "7": false
           },
           "allein_punkte": 0
         },
@@ -651,7 +669,8 @@
             "3": 2,
             "4": 0,
             "5": 0,
-            "6": 0
+            "6": 0,
+            "7": 0
           },
           "exakt_pro_spiel": {
             "0": false,
@@ -660,7 +679,8 @@
             "3": false,
             "4": false,
             "5": false,
-            "6": false
+            "6": false,
+            "7": false
           },
           "allein_punkte": 0
         }
