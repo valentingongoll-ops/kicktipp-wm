@@ -801,51 +801,59 @@ function renderFunStats() {
     })
   );
 
-  // Aufholer – größter Rückstand, nach dem man danach mind. einen Spieler überholt hat
-  // Pro Spieler: für jeden Punkt im Verlauf den Rang merken.
-  // Aufholer-Score = max(Rückstand zu Zeitpunkt X) wobei nach X irgendwann Rang besser als an X.
-  const aufholerScore = Object.fromEntries(namen.map(n => [n, 0]));
-  const aufholerRueck = Object.fromEntries(namen.map(n => [n, 0]));
+  // Vollblut-Zocker – größte Schwankung zwischen bestem und schlechtestem Einzelspiel
+  // (hohe Risikofreude: mal Volltreffer, mal Totalausfall)
+  const spanne = Object.fromEntries(namen.map(n => [n, 0]));
+  namen.forEach(name => {
+    const vals = [];
+    D.spieltage.forEach(st =>
+      st.spiele.filter(s => s.abgeschlossen).forEach(s => {
+        const p = st.spieler.find(x => x.name === name);
+        vals.push(p ? (p.punkte_pro_spiel?.[String(s.col_idx)] ?? 0) : 0);
+      })
+    );
+    if (vals.length > 0) spanne[name] = Math.max(...vals) - Math.min(...vals);
+  });
+  const zocker = maxBy(namen, n => spanne[n]);
 
-  if (flat.length > 1) {
-    // Rang-Verlauf für jeden Spieler berechnen
-    const rangVerlauf = flat.map((_, i) => {
-      const pts = Object.fromEntries(namen.map(n => [n, kumulBisFlat(n, i, flat)]));
-      const sorted = [...namen].sort((a, b) => pts[b] - pts[a]);
-      const rang = Object.fromEntries(sorted.map((n, r) => [n, r + 1]));
-      return { pts, rang };
-    });
-
+  // In Form – größte Verbesserung der letzten 5 Spiele ggü. den 5 davor
+  const schlussspurt = Object.fromEntries(namen.map(n => [n, 0]));
+  if (flat.length >= 4) {
+    const fenster = Math.min(5, Math.floor(flat.length / 2));
     namen.forEach(name => {
-      let bestScore = 0;
-      let bestRueck = 0;
-      for (let i = 0; i < flat.length - 1; i++) {
-        const rangHier = rangVerlauf[i].rang[name];
-        const ptsHier  = rangVerlauf[i].pts[name];
-        // Rückstand auf den Spieler direkt vor mir (oder Führenden)
-        const ptsVorne = Object.values(rangVerlauf[i].pts)
-          .filter(p => p > ptsHier);
-        if (ptsVorne.length === 0) continue; // bereits Führender
-        const naechster = Math.min(...ptsVorne);
-        const rueck = naechster - ptsHier;
-
-        // Hat dieser Spieler danach (irgendwann nach i) einen besseren Rang erreicht?
-        const spaetertBesser = rangVerlauf.slice(i + 1).some(rv => rv.rang[name] < rangHier);
-
-        if (spaetertBesser && rueck > bestScore) {
-          bestScore = rueck;
-          bestRueck = rueck;
-        }
-      }
-      aufholerScore[name] = bestScore;
-      aufholerRueck[name] = bestRueck;
+      const letzteN = flat.slice(-fenster).reduce((sum, f) =>
+        sum + ptsInSpiel(name, f.stObj, f.col), 0);
+      const davorN = flat.slice(-2 * fenster, -fenster).reduce((sum, f) =>
+        sum + ptsInSpiel(name, f.stObj, f.col), 0);
+      schlussspurt[name] = letzteN - davorN;
     });
   }
+  const spurt = maxBy(namen, n => schlussspurt[n]);
 
-  const aufholerKand = namen.filter(n => aufholerScore[n] > 0);
-  const aufholer = aufholerKand.length > 0
-    ? maxBy(aufholerKand, n => aufholerScore[n])
-    : maxBy(namen, n => kumulBisFlat(n, flat.length - 1, flat)); // Fallback: aktuell Bester
+  // Buchmacher & Paradiesvogel – basierend auf Vielfalt der getippten Tipps
+  // Buchmacher: wenige unterschiedliche Tipp-Ergebnisse (vorsichtig, vorhersehbar)
+  // Paradiesvogel: viele unterschiedliche, mutige Tipp-Ergebnisse
+  const tippVielfalt = Object.fromEntries(namen.map(n => [n, new Set()]));
+  const tippAnzahl   = Object.fromEntries(namen.map(n => [n, 0]));
+  D.spieltage.forEach(st =>
+    st.spieler.forEach(p => {
+      Object.values(p.tipp_pro_spiel || {}).forEach(tipp => {
+        if (tipp && tipp.includes(":")) {
+          tippVielfalt[p.name].add(tipp);
+          tippAnzahl[p.name]++;
+        }
+      });
+    })
+  );
+  // Nur Spieler mit genug Tipps berücksichtigen (mind. 3) um Verzerrung zu vermeiden
+  const tippKandidaten = namen.filter(n => tippAnzahl[n] >= 3);
+  const quoteVielfalt = n => tippAnzahl[n] > 0 ? tippVielfalt[n].size / tippAnzahl[n] : 0;
+  const buchmacher = tippKandidaten.length > 0
+    ? minBy(tippKandidaten, n => quoteVielfalt(n))
+    : namen[0];
+  const paradiesvogel = tippKandidaten.length > 0
+    ? maxBy(tippKandidaten, n => quoteVielfalt(n))
+    : namen[0];
 
   const stats = [
     { icon:"🎯", label:"Punktlandung",  name: maxBy(namen,n=>exakt[n]),
@@ -854,9 +862,13 @@ function renderFunStats() {
       value:`${allein[maxBy(namen,n=>allein[n])]}× allein gepunktet`, sub:"Punkte wenn alle anderen 0 hatten" },
     { icon:"🧘", label:"Metronom",      name: metronom,
       value:`${spieleMitPunkten[metronom]} von ${totalAbgeschl} Spielen gepunktet`, sub:"Meiste Spiele mit mind. 1 Punkt" },
-    { icon:"🚀", label:"Aufholer",      name: aufholer,
-      value: aufholerKand.length > 0 ? `${aufholerScore[aufholer]} Pkt Rückstand aufgeholt` : "Noch zu früh",
-      sub:"Größter Rückstand, nach dem jemand überholt wurde" },
+    { icon:"📈", label:"In Form",       name: spurt,
+      value: schlussspurt[spurt] > 0 ? `+${schlussspurt[spurt]} Pkt im Vergleich` : "Noch zu frueh",
+      sub:"Staerkste Verbesserung in den letzten Spielen" },
+    { icon:"🎩", label:"Buchmacher",     name: buchmacher,
+      value:`${Math.round(quoteVielfalt(buchmacher)*100)}% einzigartige Tipps`, sub:"Tippt am vorsichtigsten, wenig Risiko" },
+    { icon:"🦄", label:"Paradiesvogel",  name: paradiesvogel,
+      value:`${Math.round(quoteVielfalt(paradiesvogel)*100)}% einzigartige Tipps`, sub:"Mutigster und kreativster Tipper" },
     { icon:"🌧️", label:"Pechvogel",    name: maxBy(namen,n=>nullen[n]),
       value:`${nullen[maxBy(namen,n=>nullen[n])]}× null Punkte`, sub:"Meiste Nieten (nur gespielte Spiele)" },
     { icon:"👻", label:"Mitläufer",     name: minBy(namen,n=>allein[n]),
