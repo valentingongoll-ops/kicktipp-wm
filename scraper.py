@@ -134,7 +134,7 @@ def parse_spieler_zeilen(soup, spiele):
             gesamt = int(ges_td.get_text(strip=True))
         except ValueError:
             continue
-        punkte_pro_spiel, exakt_pro_spiel = {}, {}
+        punkte_pro_spiel, exakt_pro_spiel, tipp_pro_spiel = {}, {}, {}
         for td in row.find_all("td", class_=re.compile(r"ereignis\d+")):
             classes = " ".join(td.get("class", []))
             m = re.search(r"ereignis(\d+)", classes)
@@ -143,6 +143,15 @@ def parse_spieler_zeilen(soup, spiele):
             cidx = int(m.group(1))
             if cidx not in col_indices:
                 continue
+            # Tipp-Text lesen (z.B. "1:0"), Punkte-Sub-Tag entfernen für sauberen Text
+            td_copy = td.__copy__()
+            sub_in_copy = td_copy.find("sub", class_="p")
+            if sub_in_copy:
+                sub_in_copy.extract()
+            tipp_text = td_copy.get_text(strip=True)
+            if tipp_text:
+                tipp_pro_spiel[cidx] = tipp_text
+
             sub = td.find("sub", class_="p")
             if sub:
                 try:
@@ -157,7 +166,8 @@ def parse_spieler_zeilen(soup, spiele):
                 exakt_pro_spiel[cidx]  = False
         spieler.append({"platz": platz, "name": name, "gesamt": gesamt,
                          "punkte_pro_spiel": punkte_pro_spiel,
-                         "exakt_pro_spiel":  exakt_pro_spiel})
+                         "exakt_pro_spiel":  exakt_pro_spiel,
+                         "tipp_pro_spiel":   tipp_pro_spiel})
     return spieler
 
 
@@ -219,6 +229,7 @@ def scrape(session, saison_id, html_first):
             "spieler": [{"platz": p["platz"], "name": p["name"], "gesamt": p["gesamt"],
                           "punkte_pro_spiel": {str(k): v for k, v in p["punkte_pro_spiel"].items()},
                           "exakt_pro_spiel":  {str(k): v for k, v in p["exakt_pro_spiel"].items()},
+                          "tipp_pro_spiel":   {str(k): v for k, v in p.get("tipp_pro_spiel", {}).items()},
                           "allein_punkte":    allein.get(p["name"], 0)}
                          for p in spieler]
         })
