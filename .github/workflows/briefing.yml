@@ -12,7 +12,7 @@ jobs:
   briefing:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
 
     steps:
       - name: Checkout
@@ -41,3 +41,11 @@ jobs:
           BRIEFING_EMPFAENGER:  ${{ secrets.BRIEFING_EMPFAENGER }}
           KICKTIPP_COMMUNITY:   ${{ secrets.KICKTIPP_COMMUNITY }}
         run: python morning_briefing.py
+
+      - name: Marker committen & pushen
+        run: |
+          git config user.name  "kicktipp-bot"
+          git config user.email "bot@kicktipp-wm"
+          git add briefing_gesendet.txt kicktipp_daten.json
+          git diff --cached --quiet || git commit -m "Briefing gesendet $(date -u +'%Y-%m-%d')"
+          git push
