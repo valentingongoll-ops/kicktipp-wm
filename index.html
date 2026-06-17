@@ -816,10 +816,11 @@ function renderFunStats() {
   });
   const zocker = maxBy(namen, n => spanne[n]);
 
-  // In Form – größte Verbesserung der letzten 5 Spiele ggü. den 5 davor
+  // In Form – größte Verbesserung der letzten X Spiele ggü. den X davor
   const schlussspurt = Object.fromEntries(namen.map(n => [n, 0]));
+  let fenster = 0;
   if (flat.length >= 4) {
-    const fenster = Math.min(5, Math.floor(flat.length / 2));
+    fenster = Math.min(5, Math.floor(flat.length / 2));
     namen.forEach(name => {
       const letzteN = flat.slice(-fenster).reduce((sum, f) =>
         sum + ptsInSpiel(name, f.stObj, f.col), 0);
@@ -829,6 +830,25 @@ function renderFunStats() {
     });
   }
   const spurt = maxBy(namen, n => schlussspurt[n]);
+
+  // Wackelkandidat – meiste Tabellenplatz-Wechsel insgesamt (egal hoch oder runter)
+  const wechsel = Object.fromEntries(namen.map(n => [n, 0]));
+  if (flat.length > 1) {
+    let letzteRaenge = null;
+    flat.forEach((_, i) => {
+      const sorted = namen
+        .map(n => ({ name: n, pts: kumulBisFlat(n, i, flat) }))
+        .sort((a, b) => b.pts - a.pts);
+      const raenge = Object.fromEntries(sorted.map((r, idx) => [r.name, idx + 1]));
+      if (letzteRaenge) {
+        namen.forEach(n => {
+          if (raenge[n] !== letzteRaenge[n]) wechsel[n]++;
+        });
+      }
+      letzteRaenge = raenge;
+    });
+  }
+  const wackelkandidat = maxBy(namen, n => wechsel[n]);
 
   // Buchmacher & Paradiesvogel – basierend auf Vielfalt der getippten Tipps
   // Buchmacher: wenige unterschiedliche Tipp-Ergebnisse (vorsichtig, vorhersehbar)
@@ -864,7 +884,7 @@ function renderFunStats() {
       value:`${spieleMitPunkten[metronom]} von ${totalAbgeschl} Spielen gepunktet`, sub:"Meiste Spiele mit mind. 1 Punkt" },
     { icon:"📈", label:"In Form",       name: spurt,
       value: schlussspurt[spurt] > 0 ? `+${schlussspurt[spurt]} Pkt im Vergleich` : "Noch zu frueh",
-      sub:"Staerkste Verbesserung in den letzten Spielen" },
+      sub: fenster > 0 ? `Verbesserung der letzten ${fenster} Spiele ggue. den ${fenster} davor` : "Noch zu wenig Spiele" },
     { icon:"🎩", label:"Buchmacher",     name: buchmacher,
       value:`${Math.round(quoteVielfalt(buchmacher)*100)}% einzigartige Tipps`, sub:"Tippt am vorsichtigsten, wenig Risiko" },
     { icon:"🦄", label:"Paradiesvogel",  name: paradiesvogel,
@@ -873,6 +893,8 @@ function renderFunStats() {
       value:`${nullen[maxBy(namen,n=>nullen[n])]}× null Punkte`, sub:"Meiste Nieten (nur gespielte Spiele)" },
     { icon:"👻", label:"Mitläufer",     name: minBy(namen,n=>allein[n]),
       value:`${allein[minBy(namen,n=>allein[n])]}× allein gepunktet`, sub:"Tippt immer was alle tippen" },
+    { icon:"🎢", label:"Wackelkandidat", name: wackelkandidat,
+      value:`${wechsel[wackelkandidat]}× Tabellenplatz gewechselt`, sub:"Sorgt fuer das meiste Drama in der Rangliste" },
   ];
 
   const c = document.getElementById("fun-stats");
