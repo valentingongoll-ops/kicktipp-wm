@@ -868,7 +868,7 @@ function renderFunStats() {
   const schlussspurt = Object.fromEntries(namen.map(n => [n, 0]));
   let fenster = 0;
   if (flat.length >= 4) {
-    fenster = Math.min(5, Math.floor(flat.length / 2));
+    fenster = Math.min(4, Math.floor(flat.length / 2));
     namen.forEach(name => {
       const letzteN = flat.slice(-fenster).reduce((sum, f) =>
         sum + ptsInSpiel(name, f.stObj, f.col), 0);
@@ -931,8 +931,8 @@ function renderFunStats() {
     { icon:"🧘", label:"Metronom",      name: metronom,
       value:`${spieleMitPunkten[metronom]} von ${totalAbgeschl} Spielen gepunktet`, sub:"Meiste Spiele mit mind. 1 Punkt" },
     { icon:"📈", label:"In Form",       name: spurt,
-      value: schlussspurt[spurt] > 0 ? `+${schlussspurt[spurt]} Pkt im Vergleich` : "Noch zu frueh",
-      sub: fenster > 0 ? `Verbesserung der letzten ${fenster} Spiele ggue. den ${fenster} davor` : "Noch zu wenig Spiele" },
+      value: schlussspurt[spurt] > 0 ? `+${schlussspurt[spurt]} Pkt im Vergleich` : "Noch zu früh",
+      sub: fenster > 0 ? `Verbesserung der letzten ${fenster} Spiele ggü. den ${fenster} davor` : "Noch zu wenig Spiele" },
     { icon:"🎩", label:"Buchmacher",     name: buchmacher,
       value:`${Math.round(quoteVielfalt(buchmacher)*100)}% einzigartige Tipps`, sub:"Tippt am vorsichtigsten, wenig Risiko" },
     { icon:"🦄", label:"Paradiesvogel",  name: paradiesvogel,
@@ -942,7 +942,7 @@ function renderFunStats() {
     { icon:"👻", label:"Mitläufer",     name: minBy(namen,n=>allein[n]),
       value:`${allein[minBy(namen,n=>allein[n])]}× allein gepunktet`, sub:"Tippt immer was alle tippen" },
     { icon:"🎢", label:"Wackelkandidat", name: wackelkandidat,
-      value:`${wechsel[wackelkandidat]}× Tabellenplatz gewechselt`, sub:"Sorgt fuer das meiste Drama in der Rangliste" },
+      value:`${wechsel[wackelkandidat]}× Tabellenplatz gewechselt`, sub:"Sorgt für das meiste Drama in der Rangliste" },
   ];
 
   const c = document.getElementById("fun-stats");
