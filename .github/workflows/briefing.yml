@@ -48,4 +48,8 @@ jobs:
           git config user.email "bot@kicktipp-wm"
           git add briefing_gesendet.txt kicktipp_daten.json
           git diff --cached --quiet || git commit -m "Briefing gesendet $(date -u +'%Y-%m-%d')"
-          git push
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push && break
+            echo "Push fehlgeschlagen, Versuch $i, warte und versuche erneut..."
+            sleep 5
+          done
