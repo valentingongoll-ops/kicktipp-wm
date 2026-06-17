@@ -1,6 +1,6 @@
 {
   "community": "stb-tipprunde",
-  "zuletzt_aktualisiert": "2026-06-17T04:30:13",
+  "zuletzt_aktualisiert": "2026-06-17T04:45:12",
   "spieltage": [
     {
       "name": "1. Spieltag",
@@ -743,11 +743,11 @@
         {
           "platz": 1,
           "name": "Nalewaja",
-          "gesamt": 30,
+          "gesamt": 31,
           "punkte_pro_spiel": {
             "0": 4,
             "1": 2,
-            "2": 2
+            "2": 3
           },
           "exakt_pro_spiel": {
             "0": true,
@@ -759,11 +759,11 @@
         {
           "platz": 2,
           "name": "KNALLentin",
-          "gesamt": 27,
+          "gesamt": 26,
           "punkte_pro_spiel": {
             "0": 3,
             "1": 3,
-            "2": 3
+            "2": 2
           },
           "exakt_pro_spiel": {
             "0": false,
@@ -775,64 +775,64 @@
         {
           "platz": 3,
           "name": "SR",
-          "gesamt": 25,
+          "gesamt": 23,
           "punkte_pro_spiel": {
             "0": 3,
             "1": 2,
-            "2": 4
+            "2": 2
           },
           "exakt_pro_spiel": {
             "0": false,
             "1": false,
-            "2": true
+            "2": false
           },
           "allein_punkte": 0
         },
         {
           "platz": 4,
-          "name": "Lukas",
-          "gesamt": 24,
+          "name": "Benjamin",
+          "gesamt": 22,
           "punkte_pro_spiel": {
-            "0": 4,
+            "0": 2,
             "1": 2,
-            "2": 4
+            "2": 2
           },
           "exakt_pro_spiel": {
-            "0": true,
+            "0": false,
             "1": false,
-            "2": true
+            "2": false
           },
           "allein_punkte": 0
         },
         {
           "platz": 5,
-          "name": "Benjamin",
-          "gesamt": 24,
+          "name": "Senge",
+          "gesamt": 22,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
-            "2": 4
+            "2": 2
           },
           "exakt_pro_spiel": {
             "0": false,
             "1": false,
-            "2": true
+            "2": false
           },
           "allein_punkte": 0
         },
         {
-          "platz": 6,
-          "name": "Senge",
-          "gesamt": 24,
+          "platz": 5,
+          "name": "Lukas",
+          "gesamt": 22,
           "punkte_pro_spiel": {
-            "0": 2,
+            "0": 4,
             "1": 2,
-            "2": 4
+            "2": 2
           },
           "exakt_pro_spiel": {
-            "0": false,
+            "0": true,
             "1": false,
-            "2": true
+            "2": false
           },
           "allein_punkte": 0
         },
