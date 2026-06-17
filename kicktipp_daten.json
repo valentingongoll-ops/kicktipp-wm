@@ -1,6 +1,6 @@
 {
   "community": "stb-tipprunde",
-  "zuletzt_aktualisiert": "2026-06-17T04:45:12",
+  "zuletzt_aktualisiert": "2026-06-17T05:00:10",
   "spieltage": [
     {
       "name": "1. Spieltag",
@@ -705,8 +705,8 @@
         {
           "col_idx": 2,
           "label": "ARG–ALG",
-          "abgeschlossen": false,
-          "ergebnis": null
+          "abgeschlossen": true,
+          "ergebnis": "3:0"
         },
         {
           "col_idx": 3,
