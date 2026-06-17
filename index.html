@@ -153,8 +153,23 @@
     }
 
     /* ── Chart ── */
-    .chart-wrap { position: relative; height: 260px; }
+    .chart-wrap { position: relative; height: 260px; overflow-x: auto; overflow-y: hidden; -webkit-overflow-scrolling: touch; }
     @media(min-width: 600px) { .chart-wrap { height: 340px; } }
+    #chart-inner { position: relative; height: 100%; }
+
+    .scope-row { display: flex; gap: 6px; margin-bottom: 10px; }
+    .scope-btn {
+      background: var(--kt-darker);
+      border: 1px solid var(--kt-border);
+      color: var(--kt-muted);
+      padding: 5px 12px;
+      border-radius: 6px;
+      font-size: .72rem;
+      cursor: pointer;
+      transition: all .15s;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .scope-btn.active { background: var(--kt-red); border-color: var(--kt-red); color: #fff; font-weight: 600; }
 
     /* ── Grid ── */
     .g2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
@@ -395,7 +410,11 @@
         <button class="tab-btn"        id="btn-spieltag" onclick="setMode('spieltag')">Pro Spieltag</button>
       </div>
       <div class="chips" id="chips"></div>
-      <div class="chart-wrap"><canvas id="chart"></canvas></div>
+      <div class="scope-row">
+        <button class="scope-btn active" id="btn-scope-recent" onclick="setScope('recent')">Letzte 12</button>
+        <button class="scope-btn" id="btn-scope-all" onclick="setScope('all')">Gesamter Verlauf</button>
+      </div>
+      <div class="chart-wrap" id="chart-wrap"><div id="chart-inner"><canvas id="chart"></canvas></div></div>
     </div>
 
     <!-- Rangliste + Führung -->
@@ -450,6 +469,7 @@ let D = null;
 let colorMap = {};
 let activeP  = {};
 let mode     = "spiel";
+let scope    = "recent"; // "recent" = letzte 12, "all" = voller Verlauf scrollbar
 let stIdx    = 0;
 let chartObj = null;
 
@@ -613,40 +633,63 @@ function setMode(m) {
   renderChart();
 }
 
+function setScope(s) {
+  scope = s;
+  document.getElementById("btn-scope-recent").classList.toggle("active", s==="recent");
+  document.getElementById("btn-scope-all").classList.toggle("active", s==="all");
+  renderChart();
+}
+
+const RECENT_COUNT = 12;
+const PX_PER_POINT  = 46; // Breite pro Datenpunkt im "Gesamter Verlauf" Modus
+
 function renderChart() {
   const namen = alleNamen();
-  let labels, datasets;
+  let allLabels, allDataFn;
 
   if (mode === "spiel") {
     const flat = flatSpiele();
-    labels = flat.map(f => `${f.label} ${f.ergebnis||""}`);
-    datasets = namen.map(name => ({
-      label: name,
-      data: flat.map((_,i) => kumulBisFlat(name, i, flat)),
-      borderColor: colorMap[name],
-      backgroundColor: colorMap[name]+"25",
-      borderWidth: 2,
-      pointRadius: flat.length > 40 ? 1.5 : 3,
-      pointHoverRadius: 5,
-      tension: 0.25, fill: false, hidden: !activeP[name],
-    }));
+    allLabels = flat.map(f => `${f.label} ${f.ergebnis||""}`);
+    allDataFn = name => flat.map((_,i) => kumulBisFlat(name, i, flat));
   } else {
     const stsMit = D.spieltage.filter(st => st.spiele.some(s=>s.abgeschlossen));
-    labels = stsMit.map(st => st.name);
     const idxMap = stsMit.map(st => D.spieltage.indexOf(st));
-    datasets = namen.map(name => ({
+    allLabels = stsMit.map(st => st.name);
+    allDataFn = name => idxMap.map(i => kumulBisSt(name, i));
+  }
+
+  // Scope anwenden: "recent" zeigt nur die letzten N Punkte
+  const total = allLabels.length;
+  const startIdx = (scope === "recent" && total > RECENT_COUNT) ? total - RECENT_COUNT : 0;
+  const labels = allLabels.slice(startIdx);
+
+  const datasets = namen.map(name => {
+    const fullData = allDataFn(name);
+    return {
       label: name,
-      data: idxMap.map(i => kumulBisSt(name, i)),
+      data: fullData.slice(startIdx),
       borderColor: colorMap[name],
       backgroundColor: colorMap[name]+"25",
       borderWidth: 2,
-      pointRadius: 4, pointHoverRadius: 6,
-      tension: 0.3, fill: false, hidden: !activeP[name],
-    }));
+      pointRadius: labels.length > 30 ? 1.5 : 3,
+      pointHoverRadius: 5,
+      tension: 0.25, fill: false, hidden: !activeP[name],
+    };
+  });
+
+  // Canvas-Breite anpassen: bei "all" + vielen Punkten wird's breiter als der Container (scrollbar)
+  const canvas = document.getElementById("chart");
+  const wrap   = document.getElementById("chart-wrap");
+  const inner  = document.getElementById("chart-inner");
+  if (scope === "all" && total > RECENT_COUNT) {
+    const minWidth = total * PX_PER_POINT;
+    inner.style.width = minWidth + "px";
+  } else {
+    inner.style.width = "100%";
   }
 
   if (chartObj) chartObj.destroy();
-  chartObj = new Chart(document.getElementById("chart").getContext("2d"), {
+  chartObj = new Chart(canvas.getContext("2d"), {
     type: "line",
     data: { labels, datasets },
     options: {
@@ -669,6 +712,11 @@ function renderChart() {
       animation: { duration:250 }
     }
   });
+
+  // Bei "all" Modus automatisch ans Ende scrollen (neueste Spiele sichtbar)
+  if (scope === "all" && total > RECENT_COUNT) {
+    requestAnimationFrame(() => { wrap.scrollLeft = wrap.scrollWidth; });
+  }
 }
 
 function updateVis() { syncChartToActive(); }
