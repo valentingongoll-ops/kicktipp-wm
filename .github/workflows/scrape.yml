@@ -1,15 +1,15 @@
-name: Morning Briefing
+name: Kicktipp Scraper
 
 "on":
   schedule:
-    - cron: '0 6 * * *'
+    - cron: '*/15 8-23 * * *'
   workflow_dispatch:
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
-  briefing:
+  scrape:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -26,30 +26,21 @@ jobs:
       - name: Install dependencies
         run: pip install requests beautifulsoup4
 
-      - name: Scraper zuerst ausführen (aktuelle Daten)
+      - name: Run scraper
         env:
           KICKTIPP_EMAIL:     ${{ secrets.KICKTIPP_EMAIL }}
           KICKTIPP_PASSWORD:  ${{ secrets.KICKTIPP_PASSWORD }}
           KICKTIPP_COMMUNITY: ${{ secrets.KICKTIPP_COMMUNITY }}
         run: python scraper.py
 
-      - name: Morning Briefing generieren & senden
-        env:
-          ANTHROPIC_API_KEY:    ${{ secrets.ANTHROPIC_API_KEY }}
-          GMAIL_USER:           ${{ secrets.GMAIL_USER }}
-          GMAIL_APP_PW:         ${{ secrets.GMAIL_APP_PW }}
-          BRIEFING_EMPFAENGER:  ${{ secrets.BRIEFING_EMPFAENGER }}
-          KICKTIPP_COMMUNITY:   ${{ secrets.KICKTIPP_COMMUNITY }}
-        run: python morning_briefing.py
-
-      - name: Marker committen & pushen
+      - name: Commit & push wenn Änderungen
         run: |
           git config user.name  "kicktipp-bot"
           git config user.email "bot@kicktipp-wm"
-          git add briefing_gesendet.txt kicktipp_daten.json
-          git diff --cached --quiet || git commit -m "Briefing gesendet $(date -u +'%Y-%m-%d')"
+          git add kicktipp_daten.json
+          git diff --cached --quiet || git commit -m "Daten aktualisiert $(date -u +'%H:%M UTC')"
           for i in 1 2 3 4 5; do
             git pull --rebase origin main && git push && break
             echo "Push fehlgeschlagen, Versuch $i, warte und versuche erneut..."
             sleep 5
-          don
+          done
