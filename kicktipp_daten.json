@@ -1,6 +1,6 @@
 {
   "community": "stb-tipprunde",
-  "zuletzt_aktualisiert": "2026-06-18T00:00:11",
+  "zuletzt_aktualisiert": "2026-06-18T00:15:12",
   "spieltage": [
     {
       "name": "1. Spieltag",
@@ -943,8 +943,8 @@
         {
           "col_idx": 5,
           "label": "ENG–KRO",
-          "abgeschlossen": false,
-          "ergebnis": null
+          "abgeschlossen": true,
+          "ergebnis": "4:2"
         },
         {
           "col_idx": 6,
@@ -1129,14 +1129,16 @@
             "1": 2,
             "2": 2,
             "3": 2,
-            "4": 0
+            "4": 0,
+            "5": 0
           },
           "exakt_pro_spiel": {
             "0": false,
             "1": false,
             "2": false,
             "3": false,
-            "4": false
+            "4": false,
+            "5": false
           },
           "tipp_pro_spiel": {
             "0": "2:0",
@@ -1159,14 +1161,16 @@
             "1": 2,
             "2": 2,
             "3": 3,
-            "4": 0
+            "4": 0,
+            "5": 0
           },
           "exakt_pro_spiel": {
             "0": false,
             "1": false,
             "2": false,
             "3": false,
-            "4": false
+            "4": false,
+            "5": false
           },
           "tipp_pro_spiel": {
             "0": "3:0",
@@ -1253,14 +1257,16 @@
             "1": 2,
             "2": 2,
             "3": 2,
-            "4": 0
+            "4": 0,
+            "5": 0
           },
           "exakt_pro_spiel": {
             "0": true,
             "1": false,
             "2": false,
             "3": false,
-            "4": false
+            "4": false,
+            "5": false
           },
           "tipp_pro_spiel": {
             "0": "3:1",
@@ -1283,14 +1289,16 @@
             "1": 2,
             "2": 2,
             "3": 2,
-            "4": 0
+            "4": 0,
+            "5": 0
           },
           "exakt_pro_spiel": {
             "0": false,
             "1": false,
             "2": false,
             "3": false,
-            "4": false
+            "4": false,
+            "5": false
           },
           "tipp_pro_spiel": {
             "0": "2:1",
