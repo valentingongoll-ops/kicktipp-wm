@@ -285,27 +285,10 @@ def sende_mail(html_body):
 
 # ── Main ─────────────────────────────────────────────────────────
 
-MARKER_FILE = "briefing_gesendet.txt"
 
-def bereits_heute_gesendet():
-    """Prüft ob heute schon ein Briefing gesendet wurde (Marker im Repo selbst)."""
-    heute = datetime.now(MESZ).strftime("%Y-%m-%d")
-    try:
-        with open(MARKER_FILE) as f:
-            return f.read().strip() == heute
-    except FileNotFoundError:
-        return False
-
-def markiere_als_gesendet():
-    heute = datetime.now(MESZ).strftime("%Y-%m-%d")
-    with open(MARKER_FILE, "w") as f:
-        f.write(heute)
 
 def main():
     print("Morning Briefing Start")
-    if bereits_heute_gesendet():
-        print("Heute bereits gesendet, überspringe.")
-        return
 
     kontext, _, total_gesp = erstelle_kontext()
     if not kontext:
@@ -341,7 +324,6 @@ def main():
     print(f"HTML: {len(html)} Zeichen")
 
     sende_mail(html)
-    markiere_als_gesendet()
     print("Fertig!")
 
 
