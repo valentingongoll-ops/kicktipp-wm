@@ -1,6 +1,6 @@
 {
   "community": "stb-tipprunde",
-  "zuletzt_aktualisiert": "2026-06-18T03:00:18",
+  "zuletzt_aktualisiert": "2026-06-18T03:15:16",
   "spieltage": [
     {
       "name": "1. Spieltag",
@@ -949,8 +949,8 @@
         {
           "col_idx": 6,
           "label": "GHA–PAN",
-          "abgeschlossen": false,
-          "ergebnis": null
+          "abgeschlossen": true,
+          "ergebnis": "1:0"
         },
         {
           "col_idx": 7,
@@ -1004,7 +1004,8 @@
             "2": 2,
             "3": 3,
             "4": 0,
-            "5": 2
+            "5": 2,
+            "6": 0
           },
           "exakt_pro_spiel": {
             "0": false,
@@ -1012,7 +1013,8 @@
             "2": false,
             "3": false,
             "4": false,
-            "5": false
+            "5": false,
+            "6": false
           },
           "tipp_pro_spiel": {
             "0": "2:0",
@@ -1138,7 +1140,8 @@
             "2": 2,
             "3": 2,
             "4": 0,
-            "5": 2
+            "5": 2,
+            "6": 0
           },
           "exakt_pro_spiel": {
             "0": true,
@@ -1146,7 +1149,8 @@
             "2": false,
             "3": false,
             "4": false,
-            "5": false
+            "5": false,
+            "6": false
           },
           "tipp_pro_spiel": {
             "0": "3:1",
@@ -1170,7 +1174,8 @@
             "2": 2,
             "3": 3,
             "4": 0,
-            "5": 2
+            "5": 2,
+            "6": 0
           },
           "exakt_pro_spiel": {
             "0": false,
@@ -1178,7 +1183,8 @@
             "2": false,
             "3": false,
             "4": false,
-            "5": false
+            "5": false,
+            "6": false
           },
           "tipp_pro_spiel": {
             "0": "2:0",
@@ -1202,7 +1208,8 @@
             "2": 2,
             "3": 3,
             "4": 0,
-            "5": 0
+            "5": 0,
+            "6": 0
           },
           "exakt_pro_spiel": {
             "0": false,
@@ -1210,7 +1217,8 @@
             "2": false,
             "3": false,
             "4": false,
-            "5": false
+            "5": false,
+            "6": false
           },
           "tipp_pro_spiel": {
             "0": "3:0",
@@ -1234,7 +1242,8 @@
             "2": 2,
             "3": 2,
             "4": 0,
-            "5": 2
+            "5": 2,
+            "6": 0
           },
           "exakt_pro_spiel": {
             "0": false,
@@ -1242,7 +1251,8 @@
             "2": false,
             "3": false,
             "4": false,
-            "5": false
+            "5": false,
+            "6": false
           },
           "tipp_pro_spiel": {
             "0": "2:1",
