@@ -18,15 +18,31 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Zeitfenster prüfen (nur 6-10 UTC erlaubt)
+        id: check_time
+        run: |
+          HOUR=$(date -u +"%H")
+          echo "Aktuelle UTC-Stunde: $HOUR"
+          if [ "$HOUR" -ge 6 ] && [ "$HOUR" -lt 10 ]; then
+            echo "allowed=true" >> $GITHUB_OUTPUT
+            echo "Zeitfenster OK, Briefing wird gesendet"
+          else
+            echo "allowed=false" >> $GITHUB_OUTPUT
+            echo "Ausserhalb des Zeitfensters (6-10 UTC), überspringe"
+          fi
+
       - name: Python setup
+        if: steps.check_time.outputs.allowed == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
       - name: Install dependencies
+        if: steps.check_time.outputs.allowed == 'true'
         run: pip install requests beautifulsoup4
 
-      - name: Scraper zuerst ausführen (aktuelle Daten)
+      - name: Scraper ausführen
+        if: steps.check_time.outputs.allowed == 'true'
         env:
           KICKTIPP_EMAIL:     ${{ secrets.KICKTIPP_EMAIL }}
           KICKTIPP_PASSWORD:  ${{ secrets.KICKTIPP_PASSWORD }}
@@ -34,6 +50,7 @@ jobs:
         run: python scraper.py
 
       - name: Morning Briefing generieren & senden
+        if: steps.check_time.outputs.allowed == 'true'
         env:
           ANTHROPIC_API_KEY:    ${{ secrets.ANTHROPIC_API_KEY }}
           GMAIL_USER:           ${{ secrets.GMAIL_USER }}
@@ -42,14 +59,14 @@ jobs:
           KICKTIPP_COMMUNITY:   ${{ secrets.KICKTIPP_COMMUNITY }}
         run: python morning_briefing.py
 
-      - name: Marker committen & pushen
+      - name: Daten committen & pushen
+        if: steps.check_time.outputs.allowed == 'true'
         run: |
           git config user.name  "kicktipp-bot"
           git config user.email "bot@kicktipp-wm"
-          git add briefing_gesendet.txt kicktipp_daten.json
-          git diff --cached --quiet || git commit -m "Briefing gesendet $(date -u +'%Y-%m-%d')"
+          git add kicktipp_daten.json
+          git diff --cached --quiet || git commit -m "Briefing + Daten $(date -u +'%Y-%m-%d')"
           for i in 1 2 3 4 5; do
             git pull --rebase origin main && git push && break
-            echo "Push fehlgeschlagen, Versuch $i, warte und versuche erneut..."
             sleep 5
           done
