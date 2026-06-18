@@ -1,6 +1,6 @@
 {
   "community": "stb-tipprunde",
-  "zuletzt_aktualisiert": "2026-06-18T22:45:17",
+  "zuletzt_aktualisiert": "2026-06-18T23:00:17",
   "spieltage": [
     {
       "name": "1. Spieltag",
@@ -1371,8 +1371,8 @@
         {
           "col_idx": 1,
           "label": "CH–BIH",
-          "abgeschlossen": false,
-          "ergebnis": null
+          "abgeschlossen": true,
+          "ergebnis": "4:1"
         },
         {
           "col_idx": 2,
@@ -1417,10 +1417,12 @@
           "name": "Nalewaja",
           "gesamt": 39,
           "punkte_pro_spiel": {
-            "0": 0
+            "0": 0,
+            "1": 0
           },
           "exakt_pro_spiel": {
-            "0": false
+            "0": false,
+            "1": false
           },
           "tipp_pro_spiel": {
             "0": "2:1",
@@ -1487,10 +1489,12 @@
           "name": "KNALLentin",
           "gesamt": 34,
           "punkte_pro_spiel": {
-            "0": 0
+            "0": 0,
+            "1": 0
           },
           "exakt_pro_spiel": {
-            "0": false
+            "0": false,
+            "1": false
           },
           "tipp_pro_spiel": {
             "0": "2:0",
@@ -1505,16 +1509,16 @@
           "allein_punkte": 0
         },
         {
-          "platz": 4,
+          "platz": 5,
           "name": "SR",
-          "gesamt": 34,
+          "gesamt": 32,
           "punkte_pro_spiel": {
             "0": 0,
-            "1": 4
+            "1": 2
           },
           "exakt_pro_spiel": {
             "0": false,
-            "1": true
+            "1": false
           },
           "tipp_pro_spiel": {
             "0": "2:1",
@@ -1529,14 +1533,16 @@
           "allein_punkte": 0
         },
         {
-          "platz": 6,
+          "platz": 5,
           "name": "Benjamin",
           "gesamt": 32,
           "punkte_pro_spiel": {
-            "0": 0
+            "0": 0,
+            "1": 0
           },
           "exakt_pro_spiel": {
-            "0": false
+            "0": false,
+            "1": false
           },
           "tipp_pro_spiel": {
             "0": "1:0",
