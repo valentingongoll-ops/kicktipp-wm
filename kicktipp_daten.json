@@ -1,6 +1,6 @@
 {
   "community": "stb-tipprunde",
-  "zuletzt_aktualisiert": "2026-06-19T04:45:11",
+  "zuletzt_aktualisiert": "2026-06-19T05:00:15",
   "spieltage": [
     {
       "name": "1. Spieltag",
@@ -1383,8 +1383,8 @@
         {
           "col_idx": 3,
           "label": "MEX–SKOR",
-          "abgeschlossen": false,
-          "ergebnis": null
+          "abgeschlossen": true,
+          "ergebnis": "1:0"
         },
         {
           "col_idx": 4,
@@ -1587,12 +1587,14 @@
           "punkte_pro_spiel": {
             "0": 0,
             "1": 0,
-            "2": 2
+            "2": 2,
+            "3": 0
           },
           "exakt_pro_spiel": {
             "0": false,
             "1": false,
-            "2": false
+            "2": false,
+            "3": false
           },
           "tipp_pro_spiel": {
             "0": "2:0",
@@ -1613,12 +1615,14 @@
           "punkte_pro_spiel": {
             "0": 0,
             "1": 2,
-            "2": 2
+            "2": 2,
+            "3": 0
           },
           "exakt_pro_spiel": {
             "0": false,
             "1": false,
-            "2": false
+            "2": false,
+            "3": false
           },
           "tipp_pro_spiel": {
             "0": "2:0",
@@ -1639,12 +1643,14 @@
           "punkte_pro_spiel": {
             "0": 0,
             "1": 2,
-            "2": 2
+            "2": 2,
+            "3": 0
           },
           "exakt_pro_spiel": {
             "0": false,
             "1": false,
-            "2": false
+            "2": false,
+            "3": false
           },
           "tipp_pro_spiel": {
             "0": "2:1",
@@ -1665,12 +1671,14 @@
           "punkte_pro_spiel": {
             "0": 0,
             "1": 2,
-            "2": 2
+            "2": 2,
+            "3": 0
           },
           "exakt_pro_spiel": {
             "0": false,
             "1": false,
-            "2": false
+            "2": false,
+            "3": false
           },
           "tipp_pro_spiel": {
             "0": "2:0",
@@ -1691,12 +1699,14 @@
           "punkte_pro_spiel": {
             "0": 0,
             "1": 2,
-            "2": 2
+            "2": 2,
+            "3": 0
           },
           "exakt_pro_spiel": {
             "0": false,
             "1": false,
-            "2": false
+            "2": false,
+            "3": false
           },
           "tipp_pro_spiel": {
             "0": "2:0",
