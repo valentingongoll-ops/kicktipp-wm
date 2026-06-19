@@ -1,6 +1,6 @@
 {
   "community": "stb-tipprunde",
-  "zuletzt_aktualisiert": "2026-06-19T23:00:16",
+  "zuletzt_aktualisiert": "2026-06-19T23:15:15",
   "spieltage": [
     {
       "name": "1. Spieltag",
@@ -1389,8 +1389,8 @@
         {
           "col_idx": 4,
           "label": "USA–AUS",
-          "abgeschlossen": false,
-          "ergebnis": null
+          "abgeschlossen": true,
+          "ergebnis": "2:0"
         },
         {
           "col_idx": 5,
