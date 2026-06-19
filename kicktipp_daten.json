@@ -1,6 +1,6 @@
 {
   "community": "stb-tipprunde",
-  "zuletzt_aktualisiert": "2026-06-19T02:00:13",
+  "zuletzt_aktualisiert": "2026-06-19T02:15:13",
   "spieltage": [
     {
       "name": "1. Spieltag",
@@ -1377,8 +1377,8 @@
         {
           "col_idx": 2,
           "label": "KAN–QAT",
-          "abgeschlossen": false,
-          "ergebnis": null
+          "abgeschlossen": true,
+          "ergebnis": "6:0"
         },
         {
           "col_idx": 3,
