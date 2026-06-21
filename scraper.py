@@ -171,6 +171,38 @@ def parse_spieler_zeilen(soup, spiele):
     return spieler
 
 
+def parse_bonus(session, base_url, saison_id, st_idx):
+    """Liest die Bonuspunkte der Spieler für einen Spieltag."""
+    url = f"{base_url}?tippsaisonId={saison_id}&bonus=true&spieltagIndex={st_idx}"
+    try:
+        r = session.get(url, headers=HEADERS, timeout=20)
+        if r.status_code != 200:
+            return {}
+    except Exception:
+        return {}
+
+    soup  = BeautifulSoup(r.text, "html.parser")
+    table = soup.find("table", {"id": "ranking"})
+    if not table:
+        return {}
+
+    bonus = {}
+    for row in table.find("tbody").find_all("tr"):
+        name_div = row.find("div", class_="mg_name")
+        # Bonus-Spalte: td.bonus
+        bonus_td = row.find("td", class_=re.compile(r"\bbonus\b"))
+        if not name_div or not bonus_td:
+            continue
+        name = name_div.get_text(strip=True)
+        try:
+            b = int(bonus_td.get_text(strip=True))
+            if b > 0:
+                bonus[name] = b
+        except ValueError:
+            pass
+    return bonus
+
+
 def scrape(session, saison_id, html_first):
     spieltage_list = hole_spieltage(html_first)
     print(f"  {len(spieltage_list)} Spieltage gefunden")
@@ -224,13 +256,20 @@ def scrape(session, saison_id, html_first):
             print(f"  – {st_name}: übersprungen (keine abgeschlossenen Spiele)")
             continue
 
+        # Bonuspunkte laden
+        bonus = parse_bonus(session, base_url, saison_id, st_idx)
+        if bonus:
+            print(f"    Bonus: {bonus}")
+        time.sleep(1)
+
         result["spieltage"].append({
             "name": st_name, "index": int(st_idx), "spiele": spiele,
             "spieler": [{"platz": p["platz"], "name": p["name"], "gesamt": p["gesamt"],
                           "punkte_pro_spiel": {str(k): v for k, v in p["punkte_pro_spiel"].items()},
                           "exakt_pro_spiel":  {str(k): v for k, v in p["exakt_pro_spiel"].items()},
                           "tipp_pro_spiel":   {str(k): v for k, v in p.get("tipp_pro_spiel", {}).items()},
-                          "allein_punkte":    allein.get(p["name"], 0)}
+                          "allein_punkte":    allein.get(p["name"], 0),
+                          "bonus":            bonus.get(p["name"], 0)}
                          for p in spieler]
         })
     return result
