@@ -1,6 +1,6 @@
 {
   "community": "stb-tipprunde",
-  "zuletzt_aktualisiert": "2026-06-21T03:45:13",
+  "zuletzt_aktualisiert": "2026-06-21T04:00:13",
   "spieltage": [
     {
       "name": "1. Spieltag",
@@ -1829,8 +1829,8 @@
         {
           "col_idx": 2,
           "label": "ECU–CUR",
-          "abgeschlossen": false,
-          "ergebnis": null
+          "abgeschlossen": true,
+          "ergebnis": "0:0"
         },
         {
           "col_idx": 3,
@@ -1870,11 +1870,13 @@
           "gesamt": 61,
           "punkte_pro_spiel": {
             "0": 2,
-            "1": 2
+            "1": 2,
+            "2": 0
           },
           "exakt_pro_spiel": {
             "0": false,
-            "1": false
+            "1": false,
+            "2": false
           },
           "tipp_pro_spiel": {
             "0": "2:1",
@@ -1894,11 +1896,13 @@
           "gesamt": 61,
           "punkte_pro_spiel": {
             "0": 2,
-            "1": 2
+            "1": 2,
+            "2": 0
           },
           "exakt_pro_spiel": {
             "0": false,
-            "1": false
+            "1": false,
+            "2": false
           },
           "tipp_pro_spiel": {
             "0": "2:0",
@@ -1918,11 +1922,13 @@
           "gesamt": 58,
           "punkte_pro_spiel": {
             "0": 2,
-            "1": 3
+            "1": 3,
+            "2": 0
           },
           "exakt_pro_spiel": {
             "0": false,
-            "1": false
+            "1": false,
+            "2": false
           },
           "tipp_pro_spiel": {
             "0": "2:0",
@@ -1942,11 +1948,13 @@
           "gesamt": 57,
           "punkte_pro_spiel": {
             "0": 2,
-            "1": 2
+            "1": 2,
+            "2": 0
           },
           "exakt_pro_spiel": {
             "0": false,
-            "1": false
+            "1": false,
+            "2": false
           },
           "tipp_pro_spiel": {
             "0": "2:1",
@@ -1966,11 +1974,13 @@
           "gesamt": 56,
           "punkte_pro_spiel": {
             "0": 2,
-            "1": 2
+            "1": 2,
+            "2": 0
           },
           "exakt_pro_spiel": {
             "0": false,
-            "1": false
+            "1": false,
+            "2": false
           },
           "tipp_pro_spiel": {
             "0": "2:1",
@@ -1990,11 +2000,13 @@
           "gesamt": 54,
           "punkte_pro_spiel": {
             "0": 2,
-            "1": 2
+            "1": 2,
+            "2": 0
           },
           "exakt_pro_spiel": {
             "0": false,
-            "1": false
+            "1": false,
+            "2": false
           },
           "tipp_pro_spiel": {
             "0": "2:1",
@@ -2014,11 +2026,13 @@
           "gesamt": 52,
           "punkte_pro_spiel": {
             "0": 2,
-            "1": 4
+            "1": 4,
+            "2": 0
           },
           "exakt_pro_spiel": {
             "0": false,
-            "1": true
+            "1": true,
+            "2": false
           },
           "tipp_pro_spiel": {
             "0": "3:2",
@@ -2038,11 +2052,13 @@
           "gesamt": 48,
           "punkte_pro_spiel": {
             "0": 2,
-            "1": 2
+            "1": 2,
+            "2": 0
           },
           "exakt_pro_spiel": {
             "0": false,
-            "1": false
+            "1": false,
+            "2": false
           },
           "tipp_pro_spiel": {
             "0": "2:1",
@@ -2062,11 +2078,13 @@
           "gesamt": 45,
           "punkte_pro_spiel": {
             "0": 0,
-            "1": 2
+            "1": 2,
+            "2": 0
           },
           "exakt_pro_spiel": {
             "0": false,
-            "1": false
+            "1": false,
+            "2": false
           },
           "tipp_pro_spiel": {
             "0": "0:1",
@@ -2086,11 +2104,13 @@
           "gesamt": 44,
           "punkte_pro_spiel": {
             "0": 0,
-            "1": 2
+            "1": 2,
+            "2": 0
           },
           "exakt_pro_spiel": {
             "0": false,
-            "1": false
+            "1": false,
+            "2": false
           },
           "tipp_pro_spiel": {
             "0": "1:1",
@@ -2110,11 +2130,13 @@
           "gesamt": 37,
           "punkte_pro_spiel": {
             "0": 0,
-            "1": 4
+            "1": 4,
+            "2": 0
           },
           "exakt_pro_spiel": {
             "0": false,
-            "1": true
+            "1": true,
+            "2": false
           },
           "tipp_pro_spiel": {
             "0": "2:2",
