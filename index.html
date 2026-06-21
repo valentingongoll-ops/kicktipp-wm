@@ -482,21 +482,32 @@ const alleNamen = () => {
 
 const flatSpiele = () => {
   const out = [];
-  D.spieltage.forEach(st =>
-    st.spiele.filter(s => s.abgeschlossen).forEach(s =>
-      out.push({ spieltag: st.name, stObj: st, col: s.col_idx, label: s.label, ergebnis: s.ergebnis })
-    )
-  );
+  D.spieltage.forEach(st => {
+    const abgeschl = st.spiele.filter(s => s.abgeschlossen);
+    abgeschl.forEach(s =>
+      out.push({ spieltag: st.name, stObj: st, col: s.col_idx, label: s.label, ergebnis: s.ergebnis, isBonus: false })
+    );
+    // Bonus-Datenpunkt nach dem letzten Spiel des Spieltags einfügen
+    const hatBonus = st.spieler.some(p => (p.bonus ?? 0) > 0);
+    if (abgeschl.length > 0 && hatBonus) {
+      const fragenLabel = (st.bonus_fragen || []).join(", ") || "Bonus";
+      out.push({ spieltag: st.name, stObj: st, col: null, label: `🎯 Bonus`, ergebnis: fragenLabel, isBonus: true });
+    }
+  });
   return out;
 };
 
 const ptsInSpiel = (name, st, col) => {
+  if (col === null) {
+    // Bonus-Datenpunkt
+    const p = st.spieler.find(x => x.name === name);
+    return p ? (p.bonus ?? 0) : 0;
+  }
   const p = st.spieler.find(x => x.name === name);
   return p ? (p.punkte_pro_spiel[String(col)] ?? 0) : 0;
 };
 
 const getBonusBisSt = (name, upTo) => {
-  // Summe aller Bonuspunkte bis einschließlich Spieltag upTo
   let b = 0;
   for (let i = 0; i <= upTo; i++) {
     const st = D.spieltage[i];
@@ -507,29 +518,9 @@ const getBonusBisSt = (name, upTo) => {
 };
 
 const kumulBisFlat = (name, upTo, flat) => {
-  // Spielpunkte bis Spiel upTo + alle Bonuspunkte der bereits abgeschlossenen Spieltage
+  // Einfach alle Punkte summieren – ptsInSpiel gibt bei Bonus-Datenpunkten (col=null) die Bonuspunkte zurück
   let s = 0;
-  const stObjAtUpTo = flat[upTo].stObj;
-  const stIdxAtUpTo = D.spieltage.indexOf(stObjAtUpTo);
-
-  // Spielpunkte bis und mit diesem Spiel
   for (let i = 0; i <= upTo; i++) s += ptsInSpiel(name, flat[i].stObj, flat[i].col);
-
-  // Bonuspunkte aller Spieltage die VOR dem aktuellen Spieltag vollständig abgeschlossen sind
-  for (let i = 0; i < stIdxAtUpTo; i++) {
-    const st = D.spieltage[i];
-    const p  = st.spieler.find(x => x.name === name);
-    if (p) s += p.bonus ?? 0;
-  }
-
-  // Bonus des aktuellen Spieltags: nur wenn alle Spiele des Spieltags schon durch
-  const alleDurch = stObjAtUpTo.spiele.every(sp => !sp.abgeschlossen ||
-    flat.slice(0, upTo + 1).some(f => f.stObj === stObjAtUpTo && f.col === sp.col_idx));
-  if (alleDurch) {
-    const p = stObjAtUpTo.spieler.find(x => x.name === name);
-    if (p) s += p.bonus ?? 0;
-  }
-
   return s;
 };
 
@@ -1018,6 +1009,17 @@ function openModal(name) {
     ? ptsPrStTag.reduce((a,b) => b.pts>a.pts?b:a)
     : null;
 
+  // Bonuspunkte pro Spieltag
+  const bonusBlocks = [];
+  D.spieltage.forEach(st => {
+    const p = st.spieler.find(x => x.name === name);
+    if (!p || (p.bonus ?? 0) === 0) return;
+    const details = Object.entries(p.bonus_detail || {}).map(([frage, d]) => ({
+      frage, tipp: d.tipp, punkte: d.punkte
+    })).filter(d => d.punkte > 0);
+    bonusBlocks.push({ spieltag: st.name, pts: p.bonus, details });
+  });
+
   // Alle Spiele mit Punkten
   const spieleDetails = [];
   D.spieltage.forEach(st =>
@@ -1076,7 +1078,18 @@ function openModal(name) {
           <span class="sl">${s.label}</span>
           <span class="sp ${s.exakt?"exakt":s.pts>0?"good":"zero"}">${s.pts}</span>
         </div>`).join("")}
-    </div>`;
+    </div>
+    ${bonusBlocks.length > 0 ? `
+    <div class="card-title" style="margin-top:12px">🎯 Bonuspunkte</div>
+    <div class="spiel-list">
+      ${bonusBlocks.map(b => `
+        <div class="spiel-row">
+          <span class="sl">${b.spieltag}</span>
+          <div style="flex:1"></div>
+          ${b.details.map(d => `<span class="sl" style="color:#888;font-size:.72rem">${d.frage}: ${d.tipp}</span>`).join("")}
+          <span class="sp ${b.pts>0?"good":"zero"}">${b.pts}</span>
+        </div>`).join("")}
+    </div>` : ""}`;
 
   document.getElementById("modal-overlay").classList.add("open");
 }
