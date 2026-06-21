@@ -413,6 +413,7 @@
       <div class="scope-row">
         <button class="scope-btn active" id="btn-scope-recent" onclick="setScope('recent')">Letzte 12</button>
         <button class="scope-btn" id="btn-scope-all" onclick="setScope('all')">Gesamter Verlauf</button>
+        <button class="scope-btn" id="btn-bonus" onclick="toggleBonus()" style="margin-left:auto">🎯 Bonus</button>
       </div>
       <div class="chart-wrap" id="chart-wrap"><div id="chart-inner"><canvas id="chart"></canvas></div></div>
     </div>
@@ -470,6 +471,7 @@ let colorMap = {};
 let activeP  = {};
 let mode     = "spiel";
 let scope    = "recent"; // "recent" = letzte 12, "all" = voller Verlauf scrollbar
+let showBonus = false; // Bonus-Datenpunkte im Graph ein/ausblenden
 let stIdx    = 0;
 let chartObj = null;
 
@@ -480,31 +482,34 @@ const alleNamen = () => {
   return [...s];
 };
 
-const flatSpiele = () => {
-  const out = [];
+// Alle aufgelösten Bonusfragen gesammelt (dedupliziert, einmalig am Ende)
+// bonusFlat = [{frage, stObj (letzter Spieltag der diese Frage enthält), bonusKey}]
+const buildBonusFlat = () => {
+  const seen = new Map(); // frage -> letzter stObj der sie kennt
   D.spieltage.forEach(st => {
-    const abgeschl = st.spiele.filter(s => s.abgeschlossen);
-    // Normale Spiele
-    abgeschl.forEach(s =>
-      out.push({ spieltag: st.name, stObj: st, col: s.col_idx, label: s.label, ergebnis: s.ergebnis, isBonus: false, bonusKey: null })
-    );
-    // Einzelne Bonus-Datenpunkte pro Bonusfrage (nur wenn mind. 1 Spieler Punkte hat)
-    const fragen = st.bonus_fragen || [];
-    fragen.forEach(frage => {
+    (st.bonus_fragen || []).forEach(frage => {
       const hatPunkte = st.spieler.some(p => (p.bonus_detail?.[frage]?.punkte ?? 0) > 0);
-      if (hatPunkte) {
-        out.push({
-          spieltag: st.name,
-          stObj:    st,
-          col:      null,
-          label:    `🎯 ${frage}`,
-          ergebnis: null,
-          isBonus:  true,
-          bonusKey: frage
-        });
-      }
+      if (hatPunkte) seen.set(frage, st);
     });
   });
+  return [...seen.entries()].map(([frage, stObj]) => ({
+    frage, stObj, bonusKey: frage
+  }));
+};
+
+const flatSpiele = (includBonus) => {
+  const out = [];
+  D.spieltage.forEach(st => {
+    st.spiele.filter(s => s.abgeschlossen).forEach(s =>
+      out.push({ spieltag: st.name, stObj: st, col: s.col_idx, label: s.label, ergebnis: s.ergebnis, isBonus: false, bonusKey: null })
+    );
+  });
+  // Bonus-Datenpunkte nur wenn eingeblendet – alle am Ende, ein Punkt pro Frage
+  if (includBonus) {
+    buildBonusFlat().forEach(b =>
+      out.push({ spieltag: "Bonus", stObj: b.stObj, col: null, label: `🎯 ${b.frage}`, ergebnis: null, isBonus: true, bonusKey: b.bonusKey })
+    );
+  }
   return out;
 };
 
@@ -668,6 +673,13 @@ function setMode(m) {
   renderChart();
 }
 
+function toggleBonus() {
+  showBonus = !showBonus;
+  const btn = document.getElementById("btn-bonus");
+  if (btn) btn.classList.toggle("active", showBonus);
+  renderChart();
+}
+
 function setScope(s) {
   scope = s;
   document.getElementById("btn-scope-recent").classList.toggle("active", s==="recent");
@@ -683,7 +695,7 @@ function renderChart() {
   let allLabels, allDataFn;
 
   if (mode === "spiel") {
-    const flat = flatSpiele();
+    const flat = flatSpiele(showBonus);
     allLabels = flat.map(f => `${f.label} ${f.ergebnis||""}`);
     allDataFn = name => flat.map((_,i) => kumulBisFlat(name, i, flat));
   } else {
@@ -811,7 +823,7 @@ function renderRangliste() {
 
 // ── Führungswechsel ──────────────────────────────────────────────
 function renderFuehrung() {
-  const flat  = flatSpiele();
+  const flat  = flatSpiele(false);
   const namen = alleNamen();
   const c     = document.getElementById("fuehrung");
   c.innerHTML = "";
@@ -836,7 +848,7 @@ function renderFuehrung() {
 
 // ── Fun Stats ────────────────────────────────────────────────────
 function renderFunStats() {
-  const flat  = flatSpiele();
+  const flat  = flatSpiele(false);
   const namen = alleNamen();
 
   // Exakte Ergebnisse (nur abgeschlossene Spiele)
@@ -997,7 +1009,7 @@ function renderFunStats() {
 
 // ── Spieler Modal ────────────────────────────────────────────────
 function openModal(name) {
-  const flat  = flatSpiele();
+  const flat  = flatSpiele(false);
   const namen = alleNamen();
   const color = colorMap[name];
 
@@ -1024,15 +1036,22 @@ function openModal(name) {
     ? ptsPrStTag.reduce((a,b) => b.pts>a.pts?b:a)
     : null;
 
-  // Bonuspunkte pro Spieltag
-  const bonusBlocks = [];
+  // Bonuspunkte: alle Fragen flach gesammelt (ohne Spieltag-Gruppierung)
+  const bonusFragen = [];
+  let bonusTotal = 0;
+  const seenFragen = new Set();
   D.spieltage.forEach(st => {
     const p = st.spieler.find(x => x.name === name);
-    if (!p || (p.bonus ?? 0) === 0) return;
-    const details = Object.entries(p.bonus_detail || {}).map(([frage, d]) => ({
-      frage, tipp: d.tipp, punkte: d.punkte
-    })).filter(d => d.punkte > 0);
-    bonusBlocks.push({ spieltag: st.name, pts: p.bonus, details });
+    if (!p) return;
+    (st.bonus_fragen || []).forEach(frage => {
+      if (seenFragen.has(frage)) return;
+      const detail = p.bonus_detail?.[frage];
+      if (detail) {
+        seenFragen.add(frage);
+        bonusFragen.push({ frage, tipp: detail.tipp, punkte: detail.punkte });
+        bonusTotal += detail.punkte;
+      }
+    });
   });
 
   // Alle Spiele mit Punkten
@@ -1094,15 +1113,14 @@ function openModal(name) {
           <span class="sp ${s.exakt?"exakt":s.pts>0?"good":"zero"}">${s.pts}</span>
         </div>`).join("")}
     </div>
-    ${bonusBlocks.length > 0 ? `
-    <div class="card-title" style="margin-top:12px">🎯 Bonuspunkte</div>
+    ${bonusFragen.length > 0 ? `
+    <div class="card-title" style="margin-top:12px">🎯 Bonuspunkte · ${bonusTotal} Pkt gesamt</div>
     <div class="spiel-list">
-      ${bonusBlocks.map(b => `
+      ${bonusFragen.map(b => `
         <div class="spiel-row">
-          <span class="sl">${b.spieltag}</span>
-          <div style="flex:1"></div>
-          ${b.details.map(d => `<span class="sl" style="color:#888;font-size:.72rem">${d.frage}: ${d.tipp}</span>`).join("")}
-          <span class="sp ${b.pts>0?"good":"zero"}">${b.pts}</span>
+          <span class="sl">${b.frage}</span>
+          <span class="sl" style="color:#888;font-size:.72rem;flex:0 0 auto;margin:0 8px">${b.tipp || "–"}</span>
+          <span class="sp ${b.punkte>0?"exakt":"zero"}">${b.punkte}</span>
         </div>`).join("")}
     </div>` : ""}`;
 
