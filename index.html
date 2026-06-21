@@ -413,7 +413,8 @@
       <div class="scope-row">
         <button class="scope-btn active" id="btn-scope-recent" onclick="setScope('recent')">Letzte 12</button>
         <button class="scope-btn" id="btn-scope-all" onclick="setScope('all')">Gesamter Verlauf</button>
-        <button class="scope-btn" id="btn-bonus" onclick="toggleBonus()" style="margin-left:auto">🎯 Bonus</button>
+        <button class="scope-btn active" id="btn-bonus" onclick="toggleBonus()" style="margin-left:auto">🎯 Bonus</button>
+        <button class="scope-btn" id="btn-bonus-expand" onclick="toggleBonusExpand()" title="Einzelne Bonusfragen">＋</button>
       </div>
       <div class="chart-wrap" id="chart-wrap"><div id="chart-inner"><canvas id="chart"></canvas></div></div>
     </div>
@@ -471,7 +472,8 @@ let colorMap = {};
 let activeP  = {};
 let mode     = "spiel";
 let scope    = "recent"; // "recent" = letzte 12, "all" = voller Verlauf scrollbar
-let showBonus = false; // Bonus-Datenpunkte im Graph ein/ausblenden
+let showBonus   = true;  // Bonus im Graph anzeigen
+let bonusExpand = false; // true = einzelne Fragen, false = ein Summenpunkt
 let stIdx    = 0;
 let chartObj = null;
 
@@ -504,21 +506,31 @@ const flatSpiele = (includBonus) => {
       out.push({ spieltag: st.name, stObj: st, col: s.col_idx, label: s.label, ergebnis: s.ergebnis, isBonus: false, bonusKey: null })
     );
   });
-  // Bonus-Datenpunkte nur wenn eingeblendet – alle am Ende, ein Punkt pro Frage
+  // Bonus-Datenpunkte am Ende
   if (includBonus) {
-    buildBonusFlat().forEach(b =>
-      out.push({ spieltag: "Bonus", stObj: b.stObj, col: null, label: `🎯 ${b.frage}`, ergebnis: null, isBonus: true, bonusKey: b.bonusKey })
-    );
+    const bonusFlat = buildBonusFlat();
+    if (bonusFlat.length > 0) {
+      if (includBonus === "expand") {
+        // Aufgeklappt: ein Punkt pro Frage
+        bonusFlat.forEach(b =>
+          out.push({ spieltag: "Bonus", stObj: b.stObj, col: null, label: `🎯 ${b.frage}`, ergebnis: null, isBonus: true, bonusKey: b.bonusKey })
+        );
+      } else {
+        // Zugeklappt: ein einziger Summenpunkt
+        const lastSt = bonusFlat[bonusFlat.length - 1].stObj;
+        out.push({ spieltag: "Bonus", stObj: lastSt, col: null, label: "🎯 Bonus", ergebnis: null, isBonus: true, bonusKey: "__sum__" });
+      }
+    }
   }
   return out;
 };
 
 const ptsInSpiel = (name, st, col, bonusKey) => {
   if (col === null) {
-    // Einzelne Bonusfrage
     const p = st.spieler.find(x => x.name === name);
     if (!p) return 0;
-    if (bonusKey) return p.bonus_detail?.[bonusKey]?.punkte ?? 0;
+    if (bonusKey === "__sum__") return p.bonus ?? 0;       // Summe aller Bonus
+    if (bonusKey) return p.bonus_detail?.[bonusKey]?.punkte ?? 0; // Einzelfrage
     return p.bonus ?? 0;
   }
   const p = st.spieler.find(x => x.name === name);
@@ -587,6 +599,9 @@ function init(json) {
 
   renderChips();
   renderChart();
+  // Bonus-Buttons initial korrekt setzen
+  document.getElementById("btn-bonus")?.classList.toggle("active", showBonus);
+  document.getElementById("btn-bonus-expand")?.classList.toggle("active", bonusExpand);
   renderRangliste();
   renderFuehrung();
   renderFunStats();
@@ -675,8 +690,15 @@ function setMode(m) {
 
 function toggleBonus() {
   showBonus = !showBonus;
-  const btn = document.getElementById("btn-bonus");
-  if (btn) btn.classList.toggle("active", showBonus);
+  document.getElementById("btn-bonus")?.classList.toggle("active", showBonus);
+  document.getElementById("btn-bonus-expand")?.style.setProperty("display", showBonus ? "" : "none");
+  renderChart();
+}
+
+function toggleBonusExpand() {
+  bonusExpand = !bonusExpand;
+  document.getElementById("btn-bonus-expand").textContent = bonusExpand ? "－" : "＋";
+  document.getElementById("btn-bonus-expand").classList.toggle("active", bonusExpand);
   renderChart();
 }
 
@@ -695,7 +717,7 @@ function renderChart() {
   let allLabels, allDataFn;
 
   if (mode === "spiel") {
-    const flat = flatSpiele(showBonus);
+    const flat = flatSpiele(showBonus ? (bonusExpand ? 'expand' : true) : false);
     allLabels = flat.map(f => `${f.label} ${f.ergebnis||""}`);
     allDataFn = name => flat.map((_,i) => kumulBisFlat(name, i, flat));
   } else {
