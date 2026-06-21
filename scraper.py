@@ -172,35 +172,64 @@ def parse_spieler_zeilen(soup, spiele):
 
 
 def parse_bonus(session, base_url, saison_id, st_idx):
-    """Liest die Bonuspunkte der Spieler für einen Spieltag."""
+    """Liest die Bonuspunkte der Spieler für einen Spieltag inkl. Bonusfragen-Labels."""
     url = f"{base_url}?tippsaisonId={saison_id}&bonus=true&spieltagIndex={st_idx}"
     try:
         r = session.get(url, headers=HEADERS, timeout=20)
         if r.status_code != 200:
-            return {}
+            return {}, []
     except Exception:
-        return {}
+        return {}, []
 
     soup  = BeautifulSoup(r.text, "html.parser")
     table = soup.find("table", {"id": "ranking"})
     if not table:
-        return {}
+        return {}, []
 
-    bonus = {}
+    # Bonusfragen-Labels aus dem Header lesen
+    fragen = []
+    thead = table.find("thead")
+    if thead:
+        for th in thead.find_all("th", class_=re.compile(r"ereignis\d+")):
+            label = th.get_text(strip=True)
+            if label:
+                fragen.append(label)
+
+    # Punkte pro Spieler und pro Bonusfrage
+    bonus_gesamt = {}
+    bonus_detail = {}  # {name: {frage_label: punkte}}
     for row in table.find("tbody").find_all("tr"):
         name_div = row.find("div", class_="mg_name")
-        # Bonus-Spalte: td.bonus
         bonus_td = row.find("td", class_=re.compile(r"\bbonus\b"))
         if not name_div or not bonus_td:
             continue
         name = name_div.get_text(strip=True)
         try:
             b = int(bonus_td.get_text(strip=True))
-            if b > 0:
-                bonus[name] = b
+            bonus_gesamt[name] = b if b > 0 else 0
         except ValueError:
-            pass
-    return bonus
+            bonus_gesamt[name] = 0
+
+        # Einzelne Bonusfragen-Punkte
+        detail = {}
+        ereignis_tds = row.find_all("td", class_=re.compile(r"ereignis\d+"))
+        for i, td in enumerate(ereignis_tds):
+            if i < len(fragen):
+                sub = td.find("sub", class_="p")
+                pts = 0
+                if sub:
+                    try:
+                        pts = int(sub.get_text(strip=True))
+                    except ValueError:
+                        pass
+                tipp_text = td.__copy__()
+                if tipp_text.find("sub"):
+                    tipp_text.find("sub").extract()
+                tipp = tipp_text.get_text(strip=True)
+                detail[fragen[i]] = {"tipp": tipp, "punkte": pts}
+        bonus_detail[name] = detail
+
+    return bonus_gesamt, fragen, bonus_detail
 
 
 def scrape(session, saison_id, html_first):
@@ -257,19 +286,21 @@ def scrape(session, saison_id, html_first):
             continue
 
         # Bonuspunkte laden
-        bonus = parse_bonus(session, base_url, saison_id, st_idx)
-        if bonus:
-            print(f"    Bonus: {bonus}")
+        bonus_gesamt, bonus_fragen, bonus_detail = parse_bonus(session, base_url, saison_id, st_idx)
+        if bonus_gesamt:
+            print(f"    Bonus: {bonus_gesamt}")
         time.sleep(1)
 
         result["spieltage"].append({
             "name": st_name, "index": int(st_idx), "spiele": spiele,
+            "bonus_fragen": bonus_fragen,
             "spieler": [{"platz": p["platz"], "name": p["name"], "gesamt": p["gesamt"],
                           "punkte_pro_spiel": {str(k): v for k, v in p["punkte_pro_spiel"].items()},
                           "exakt_pro_spiel":  {str(k): v for k, v in p["exakt_pro_spiel"].items()},
                           "tipp_pro_spiel":   {str(k): v for k, v in p.get("tipp_pro_spiel", {}).items()},
                           "allein_punkte":    allein.get(p["name"], 0),
-                          "bonus":            bonus.get(p["name"], 0)}
+                          "bonus":            bonus_gesamt.get(p["name"], 0),
+                          "bonus_detail":     bonus_detail.get(p["name"], {})}
                          for p in spieler]
         })
     return result
