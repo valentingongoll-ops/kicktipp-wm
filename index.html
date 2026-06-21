@@ -495,21 +495,50 @@ const ptsInSpiel = (name, st, col) => {
   return p ? (p.punkte_pro_spiel[String(col)] ?? 0) : 0;
 };
 
+const getBonusBisSt = (name, upTo) => {
+  // Summe aller Bonuspunkte bis einschließlich Spieltag upTo
+  let b = 0;
+  for (let i = 0; i <= upTo; i++) {
+    const st = D.spieltage[i];
+    const p  = st.spieler.find(x => x.name === name);
+    if (p) b += p.bonus ?? 0;
+  }
+  return b;
+};
+
 const kumulBisFlat = (name, upTo, flat) => {
+  // Spielpunkte bis Spiel upTo + alle Bonuspunkte der bereits abgeschlossenen Spieltage
   let s = 0;
+  const stObjAtUpTo = flat[upTo].stObj;
+  const stIdxAtUpTo = D.spieltage.indexOf(stObjAtUpTo);
+
+  // Spielpunkte bis und mit diesem Spiel
   for (let i = 0; i <= upTo; i++) s += ptsInSpiel(name, flat[i].stObj, flat[i].col);
+
+  // Bonuspunkte aller Spieltage die VOR dem aktuellen Spieltag vollständig abgeschlossen sind
+  for (let i = 0; i < stIdxAtUpTo; i++) {
+    const st = D.spieltage[i];
+    const p  = st.spieler.find(x => x.name === name);
+    if (p) s += p.bonus ?? 0;
+  }
+
+  // Bonus des aktuellen Spieltags: nur wenn alle Spiele des Spieltags schon durch
+  const alleDurch = stObjAtUpTo.spiele.every(sp => !sp.abgeschlossen ||
+    flat.slice(0, upTo + 1).some(f => f.stObj === stObjAtUpTo && f.col === sp.col_idx));
+  if (alleDurch) {
+    const p = stObjAtUpTo.spieler.find(x => x.name === name);
+    if (p) s += p.bonus ?? 0;
+  }
+
   return s;
 };
 
 const kumulBisSt = (name, upTo) => {
-  let s = 0;
-  for (let i = 0; i <= upTo; i++) {
-    const st = D.spieltage[i];
-    st.spiele.filter(sp => sp.abgeschlossen).forEach(sp =>
-      s += ptsInSpiel(name, st, sp.col_idx)
-    );
-  }
-  return s;
+  if (upTo < 0) return 0;
+  // Direkt den von Kicktipp berechneten Gesamtstand nehmen (inkl. Bonus)
+  const st = D.spieltage[upTo];
+  const p  = st.spieler.find(x => x.name === name);
+  return p ? (p.gesamt ?? 0) : 0;
 };
 
 const maxBy = (arr, fn) => arr.reduce((a,b) => fn(a) >= fn(b) ? a : b);
