@@ -1,6 +1,6 @@
 {
   "community": "stb-tipprunde",
-  "zuletzt_aktualisiert": "2026-06-21T07:45:12",
+  "zuletzt_aktualisiert": "2026-06-21T08:00:10",
   "spieltage": [
     {
       "name": "1. Spieltag",
@@ -1835,8 +1835,8 @@
         {
           "col_idx": 3,
           "label": "TUN–JPN",
-          "abgeschlossen": false,
-          "ergebnis": null
+          "abgeschlossen": true,
+          "ergebnis": "0:4"
         },
         {
           "col_idx": 4,
