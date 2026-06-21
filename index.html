@@ -484,24 +484,37 @@ const flatSpiele = () => {
   const out = [];
   D.spieltage.forEach(st => {
     const abgeschl = st.spiele.filter(s => s.abgeschlossen);
+    // Normale Spiele
     abgeschl.forEach(s =>
-      out.push({ spieltag: st.name, stObj: st, col: s.col_idx, label: s.label, ergebnis: s.ergebnis, isBonus: false })
+      out.push({ spieltag: st.name, stObj: st, col: s.col_idx, label: s.label, ergebnis: s.ergebnis, isBonus: false, bonusKey: null })
     );
-    // Bonus-Datenpunkt nach dem letzten Spiel des Spieltags einfügen
-    const hatBonus = st.spieler.some(p => (p.bonus ?? 0) > 0);
-    if (abgeschl.length > 0 && hatBonus) {
-      const fragenLabel = (st.bonus_fragen || []).join(", ") || "Bonus";
-      out.push({ spieltag: st.name, stObj: st, col: null, label: `🎯 Bonus`, ergebnis: fragenLabel, isBonus: true });
-    }
+    // Einzelne Bonus-Datenpunkte pro Bonusfrage (nur wenn mind. 1 Spieler Punkte hat)
+    const fragen = st.bonus_fragen || [];
+    fragen.forEach(frage => {
+      const hatPunkte = st.spieler.some(p => (p.bonus_detail?.[frage]?.punkte ?? 0) > 0);
+      if (hatPunkte) {
+        out.push({
+          spieltag: st.name,
+          stObj:    st,
+          col:      null,
+          label:    `🎯 ${frage}`,
+          ergebnis: null,
+          isBonus:  true,
+          bonusKey: frage
+        });
+      }
+    });
   });
   return out;
 };
 
-const ptsInSpiel = (name, st, col) => {
+const ptsInSpiel = (name, st, col, bonusKey) => {
   if (col === null) {
-    // Bonus-Datenpunkt
+    // Einzelne Bonusfrage
     const p = st.spieler.find(x => x.name === name);
-    return p ? (p.bonus ?? 0) : 0;
+    if (!p) return 0;
+    if (bonusKey) return p.bonus_detail?.[bonusKey]?.punkte ?? 0;
+    return p.bonus ?? 0;
   }
   const p = st.spieler.find(x => x.name === name);
   return p ? (p.punkte_pro_spiel[String(col)] ?? 0) : 0;
@@ -518,9 +531,11 @@ const getBonusBisSt = (name, upTo) => {
 };
 
 const kumulBisFlat = (name, upTo, flat) => {
-  // Einfach alle Punkte summieren – ptsInSpiel gibt bei Bonus-Datenpunkten (col=null) die Bonuspunkte zurück
   let s = 0;
-  for (let i = 0; i <= upTo; i++) s += ptsInSpiel(name, flat[i].stObj, flat[i].col);
+  for (let i = 0; i <= upTo; i++) {
+    const f = flat[i];
+    s += ptsInSpiel(name, f.stObj, f.col, f.bonusKey);
+  }
   return s;
 };
 
@@ -891,9 +906,9 @@ function renderFunStats() {
     fenster = Math.min(4, Math.floor(flat.length / 2));
     namen.forEach(name => {
       const letzteN = flat.slice(-fenster).reduce((sum, f) =>
-        sum + ptsInSpiel(name, f.stObj, f.col), 0);
+        sum + ptsInSpiel(name, f.stObj, f.col, f.bonusKey), 0);
       const davorN = flat.slice(-2 * fenster, -fenster).reduce((sum, f) =>
-        sum + ptsInSpiel(name, f.stObj, f.col), 0);
+        sum + ptsInSpiel(name, f.stObj, f.col, f.bonusKey), 0);
       schlussspurt[name] = letzteN - davorN;
     });
   }
@@ -999,7 +1014,7 @@ function openModal(name) {
   const ptsPrStTag = D.spieltage.map(st => {
     let s = 0;
     st.spiele.filter(sp=>sp.abgeschlossen).forEach(sp =>
-      s += ptsInSpiel(name, st, sp.col_idx)
+      s += ptsInSpiel(name, st, sp.col_idx, null)
     );
     return { name: st.name, pts: s, abgeschl: st.spiele.filter(sp=>sp.abgeschlossen).length };
   }).filter(x => x.abgeschl > 0);
