@@ -1,6 +1,6 @@
 {
   "community": "stb-tipprunde",
-  "zuletzt_aktualisiert": "2026-06-22T05:00:12",
+  "zuletzt_aktualisiert": "2026-06-22T05:15:11",
   "spieltage": [
     {
       "name": "1. Spieltag",
@@ -4711,8 +4711,8 @@
         {
           "col_idx": 7,
           "label": "NZL–EGY",
-          "abgeschlossen": false,
-          "ergebnis": null
+          "abgeschlossen": true,
+          "ergebnis": "1:3"
         }
       ],
       "bonus_fragen": [
@@ -5242,7 +5242,8 @@
             "3": 2,
             "4": 2,
             "5": 0,
-            "6": 0
+            "6": 0,
+            "7": 0
           },
           "exakt_pro_spiel": {
             "0": false,
@@ -5251,7 +5252,8 @@
             "3": false,
             "4": false,
             "5": false,
-            "6": false
+            "6": false,
+            "7": false
           },
           "tipp_pro_spiel": {
             "0": "2:1",
