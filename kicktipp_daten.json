@@ -1,6 +1,6 @@
 {
   "community": "stb-tipprunde",
-  "zuletzt_aktualisiert": "2026-06-23T19:15:19",
+  "zuletzt_aktualisiert": "2026-06-23T19:30:22",
   "spieltage": [
     {
       "name": "1. Spieltag",
@@ -5904,20 +5904,20 @@
         {
           "platz": 1,
           "name": "Nalewaja",
-          "gesamt": 89,
+          "gesamt": 90,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
             "2": 2,
             "3": 4,
-            "4": 3
+            "4": 4
           },
           "exakt_pro_spiel": {
             "0": false,
             "1": false,
             "2": false,
             "3": true,
-            "4": false
+            "4": true
           },
           "tipp_pro_spiel": {
             "0": "2:1",
@@ -6740,20 +6740,20 @@
         {
           "platz": 10,
           "name": "Henning",
-          "gesamt": 70,
+          "gesamt": 71,
           "punkte_pro_spiel": {
             "0": 0,
             "1": 2,
             "2": 0,
             "3": 0,
-            "4": 3
+            "4": 4
           },
           "exakt_pro_spiel": {
             "0": false,
             "1": false,
             "2": false,
             "3": false,
-            "4": false
+            "4": true
           },
           "tipp_pro_spiel": {
             "0": "1:1",
