@@ -1,6 +1,6 @@
 {
   "community": "stb-tipprunde",
-  "zuletzt_aktualisiert": "2026-06-24T00:00:16",
+  "zuletzt_aktualisiert": "2026-06-24T00:07:55",
   "spieltage": [
     {
       "name": "1. Spieltag",
@@ -5864,8 +5864,8 @@
         {
           "col_idx": 5,
           "label": "ENG–GHA",
-          "abgeschlossen": false,
-          "ergebnis": null
+          "abgeschlossen": true,
+          "ergebnis": "0:0"
         },
         {
           "col_idx": 6,
@@ -5910,14 +5910,16 @@
             "1": 2,
             "2": 3,
             "3": 3,
-            "4": 2
+            "4": 2,
+            "5": 0
           },
           "exakt_pro_spiel": {
             "0": false,
             "1": false,
             "2": false,
             "3": false,
-            "4": false
+            "4": false,
+            "5": false
           },
           "tipp_pro_spiel": {
             "0": "3:1",
@@ -6003,14 +6005,16 @@
             "1": 2,
             "2": 2,
             "3": 4,
-            "4": 2
+            "4": 2,
+            "5": 0
           },
           "exakt_pro_spiel": {
             "0": false,
             "1": false,
             "2": false,
             "3": true,
-            "4": false
+            "4": false,
+            "5": false
           },
           "tipp_pro_spiel": {
             "0": "2:1",
@@ -6096,14 +6100,16 @@
             "1": 2,
             "2": 0,
             "3": 4,
-            "4": 2
+            "4": 2,
+            "5": 0
           },
           "exakt_pro_spiel": {
             "0": false,
             "1": false,
             "2": false,
             "3": true,
-            "4": false
+            "4": false,
+            "5": false
           },
           "tipp_pro_spiel": {
             "0": "3:1",
@@ -6189,14 +6195,16 @@
             "1": 4,
             "2": 0,
             "3": 2,
-            "4": 2
+            "4": 2,
+            "5": 0
           },
           "exakt_pro_spiel": {
             "0": false,
             "1": true,
             "2": false,
             "3": false,
-            "4": false
+            "4": false,
+            "5": false
           },
           "tipp_pro_spiel": {
             "0": "2:1",
@@ -6282,14 +6290,16 @@
             "1": 2,
             "2": 3,
             "3": 2,
-            "4": 2
+            "4": 2,
+            "5": 0
           },
           "exakt_pro_spiel": {
             "0": false,
             "1": false,
             "2": false,
             "3": false,
-            "4": false
+            "4": false,
+            "5": false
           },
           "tipp_pro_spiel": {
             "0": "3:1",
@@ -6375,14 +6385,16 @@
             "1": 2,
             "2": 0,
             "3": 3,
-            "4": 2
+            "4": 2,
+            "5": 0
           },
           "exakt_pro_spiel": {
             "0": false,
             "1": false,
             "2": false,
             "3": false,
-            "4": false
+            "4": false,
+            "5": false
           },
           "tipp_pro_spiel": {
             "0": "1:1",
@@ -6468,14 +6480,16 @@
             "1": 2,
             "2": 0,
             "3": 4,
-            "4": 2
+            "4": 2,
+            "5": 0
           },
           "exakt_pro_spiel": {
             "0": false,
             "1": false,
             "2": false,
             "3": true,
-            "4": false
+            "4": false,
+            "5": false
           },
           "tipp_pro_spiel": {
             "1": "4:0",
@@ -6560,14 +6574,16 @@
             "1": 2,
             "2": 3,
             "3": 2,
-            "4": 2
+            "4": 2,
+            "5": 0
           },
           "exakt_pro_spiel": {
             "0": false,
             "1": false,
             "2": false,
             "3": false,
-            "4": false
+            "4": false,
+            "5": false
           },
           "tipp_pro_spiel": {
             "0": "2:1",
@@ -6653,14 +6669,16 @@
             "1": 2,
             "2": 3,
             "3": 3,
-            "4": 2
+            "4": 2,
+            "5": 0
           },
           "exakt_pro_spiel": {
             "0": false,
             "1": false,
             "2": false,
             "3": false,
-            "4": false
+            "4": false,
+            "5": false
           },
           "tipp_pro_spiel": {
             "0": "3:1",
@@ -6746,14 +6764,16 @@
             "1": 2,
             "2": 0,
             "3": 0,
-            "4": 2
+            "4": 2,
+            "5": 0
           },
           "exakt_pro_spiel": {
             "0": false,
             "1": false,
             "2": false,
             "3": false,
-            "4": false
+            "4": false,
+            "5": false
           },
           "tipp_pro_spiel": {
             "0": "1:1",
@@ -6839,14 +6859,16 @@
             "1": 4,
             "2": 3,
             "3": 4,
-            "4": 2
+            "4": 2,
+            "5": 0
           },
           "exakt_pro_spiel": {
             "0": false,
             "1": true,
             "2": false,
             "3": true,
-            "4": false
+            "4": false,
+            "5": false
           },
           "tipp_pro_spiel": {
             "0": "3:0",
