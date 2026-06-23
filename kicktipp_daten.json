@@ -1,6 +1,6 @@
 {
   "community": "stb-tipprunde",
-  "zuletzt_aktualisiert": "2026-06-23T19:31:32",
+  "zuletzt_aktualisiert": "2026-06-23T19:45:15",
   "spieltage": [
     {
       "name": "1. Spieltag",
@@ -5904,20 +5904,20 @@
         {
           "platz": 1,
           "name": "Rosellen",
-          "gesamt": 91,
+          "gesamt": 89,
           "punkte_pro_spiel": {
             "0": 3,
             "1": 2,
             "2": 3,
             "3": 3,
-            "4": 4
+            "4": 2
           },
           "exakt_pro_spiel": {
             "0": false,
             "1": false,
             "2": false,
             "3": false,
-            "4": true
+            "4": false
           },
           "tipp_pro_spiel": {
             "0": "3:1",
@@ -6090,20 +6090,20 @@
         {
           "platz": 3,
           "name": "Senge",
-          "gesamt": 86,
+          "gesamt": 84,
           "punkte_pro_spiel": {
             "0": 3,
             "1": 2,
             "2": 0,
             "3": 4,
-            "4": 4
+            "4": 2
           },
           "exakt_pro_spiel": {
             "0": false,
             "1": false,
             "2": false,
             "3": true,
-            "4": true
+            "4": false
           },
           "tipp_pro_spiel": {
             "0": "3:1",
@@ -6183,20 +6183,20 @@
         {
           "platz": 4,
           "name": "Benjamin",
-          "gesamt": 82,
+          "gesamt": 80,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 4,
             "2": 0,
             "3": 2,
-            "4": 4
+            "4": 2
           },
           "exakt_pro_spiel": {
             "0": false,
             "1": true,
             "2": false,
             "3": false,
-            "4": true
+            "4": false
           },
           "tipp_pro_spiel": {
             "0": "2:1",
@@ -6368,107 +6368,14 @@
         },
         {
           "platz": 6,
-          "name": "KNALLentin",
-          "gesamt": 79,
-          "punkte_pro_spiel": {
-            "0": 0,
-            "1": 2,
-            "2": 0,
-            "3": 3,
-            "4": 4
-          },
-          "exakt_pro_spiel": {
-            "0": false,
-            "1": false,
-            "2": false,
-            "3": false,
-            "4": true
-          },
-          "tipp_pro_spiel": {
-            "0": "1:1",
-            "1": "4:0",
-            "2": "1:1",
-            "3": "0:1",
-            "4": "2:0",
-            "5": "-:-",
-            "6": "-:-",
-            "7": "-:-"
-          },
-          "allein_punkte": 0,
-          "bonus": 12,
-          "bonus_detail": {
-            "Tor---": {
-              "tipp": "FRA",
-              "punkte": 0
-            },
-            "HF---": {
-              "tipp": "SPA",
-              "punkte": 0
-            },
-            "Gr AMEX": {
-              "tipp": "MEX",
-              "punkte": 4
-            },
-            "Gr B---": {
-              "tipp": "BIH",
-              "punkte": 0
-            },
-            "Gr C---": {
-              "tipp": "BRA",
-              "punkte": 0
-            },
-            "Gr DUSA": {
-              "tipp": "TUR",
-              "punkte": 0
-            },
-            "Gr EDEU": {
-              "tipp": "DEU",
-              "punkte": 4
-            },
-            "Gr F---": {
-              "tipp": "JAP",
-              "punkte": 0
-            },
-            "Gr G---": {
-              "tipp": "BEL",
-              "punkte": 0
-            },
-            "Gr H---": {
-              "tipp": "SPA",
-              "punkte": 0
-            },
-            "Gr I---": {
-              "tipp": "FRA",
-              "punkte": 0
-            },
-            "Gr JARG": {
-              "tipp": "ARG",
-              "punkte": 4
-            },
-            "Gr K---": {
-              "tipp": "POR",
-              "punkte": 0
-            },
-            "Gr L---": {
-              "tipp": "ENG",
-              "punkte": 0
-            },
-            "WM---": {
-              "tipp": "ENG",
-              "punkte": 0
-            }
-          }
-        },
-        {
-          "platz": 7,
           "name": "SR",
-          "gesamt": 77,
+          "gesamt": 78,
           "punkte_pro_spiel": {
             "0": 0,
             "1": 2,
             "2": 0,
             "3": 4,
-            "4": 2
+            "4": 3
           },
           "exakt_pro_spiel": {
             "0": false,
@@ -6552,15 +6459,201 @@
           }
         },
         {
+          "platz": 7,
+          "name": "KNALLentin",
+          "gesamt": 77,
+          "punkte_pro_spiel": {
+            "0": 0,
+            "1": 2,
+            "2": 0,
+            "3": 3,
+            "4": 2
+          },
+          "exakt_pro_spiel": {
+            "0": false,
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "tipp_pro_spiel": {
+            "0": "1:1",
+            "1": "4:0",
+            "2": "1:1",
+            "3": "0:1",
+            "4": "2:0",
+            "5": "-:-",
+            "6": "-:-",
+            "7": "-:-"
+          },
+          "allein_punkte": 0,
+          "bonus": 12,
+          "bonus_detail": {
+            "Tor---": {
+              "tipp": "FRA",
+              "punkte": 0
+            },
+            "HF---": {
+              "tipp": "SPA",
+              "punkte": 0
+            },
+            "Gr AMEX": {
+              "tipp": "MEX",
+              "punkte": 4
+            },
+            "Gr B---": {
+              "tipp": "BIH",
+              "punkte": 0
+            },
+            "Gr C---": {
+              "tipp": "BRA",
+              "punkte": 0
+            },
+            "Gr DUSA": {
+              "tipp": "TUR",
+              "punkte": 0
+            },
+            "Gr EDEU": {
+              "tipp": "DEU",
+              "punkte": 4
+            },
+            "Gr F---": {
+              "tipp": "JAP",
+              "punkte": 0
+            },
+            "Gr G---": {
+              "tipp": "BEL",
+              "punkte": 0
+            },
+            "Gr H---": {
+              "tipp": "SPA",
+              "punkte": 0
+            },
+            "Gr I---": {
+              "tipp": "FRA",
+              "punkte": 0
+            },
+            "Gr JARG": {
+              "tipp": "ARG",
+              "punkte": 4
+            },
+            "Gr K---": {
+              "tipp": "POR",
+              "punkte": 0
+            },
+            "Gr L---": {
+              "tipp": "ENG",
+              "punkte": 0
+            },
+            "WM---": {
+              "tipp": "ENG",
+              "punkte": 0
+            }
+          }
+        },
+        {
           "platz": 8,
+          "name": "Pechnic90",
+          "gesamt": 75,
+          "punkte_pro_spiel": {
+            "0": 3,
+            "1": 2,
+            "2": 3,
+            "3": 3,
+            "4": 4
+          },
+          "exakt_pro_spiel": {
+            "0": false,
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": true
+          },
+          "tipp_pro_spiel": {
+            "0": "3:1",
+            "1": "4:0",
+            "2": "2:1",
+            "3": "0:1",
+            "4": "3:0",
+            "5": "-:-",
+            "6": "-:-",
+            "7": "-:-"
+          },
+          "allein_punkte": 0,
+          "bonus": 8,
+          "bonus_detail": {
+            "Tor---": {
+              "tipp": "FRA",
+              "punkte": 0
+            },
+            "HF---": {
+              "tipp": "SPA",
+              "punkte": 0
+            },
+            "Gr AMEX": {
+              "tipp": "SKOR",
+              "punkte": 0
+            },
+            "Gr B---": {
+              "tipp": "CH",
+              "punkte": 0
+            },
+            "Gr C---": {
+              "tipp": "MAR",
+              "punkte": 0
+            },
+            "Gr DUSA": {
+              "tipp": "TUR",
+              "punkte": 0
+            },
+            "Gr EDEU": {
+              "tipp": "DEU",
+              "punkte": 4
+            },
+            "Gr F---": {
+              "tipp": "NIE",
+              "punkte": 0
+            },
+            "Gr G---": {
+              "tipp": "BEL",
+              "punkte": 0
+            },
+            "Gr H---": {
+              "tipp": "SPA",
+              "punkte": 0
+            },
+            "Gr I---": {
+              "tipp": "FRA",
+              "punkte": 0
+            },
+            "Gr JARG": {
+              "tipp": "ARG",
+              "punkte": 4
+            },
+            "Gr K---": {
+              "tipp": "POR",
+              "punkte": 0
+            },
+            "Gr L---": {
+              "tipp": "ENG",
+              "punkte": 0
+            },
+            "WM---": {
+              "tipp": "FRA",
+              "punkte": 0
+            }
+          }
+        },
+        {
+          "platz": 9,
           "name": "Kolle",
-          "gesamt": 76,
+          "gesamt": 75,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
             "2": 3,
             "3": 2,
-            "4": 3
+            "4": 2
           },
           "exakt_pro_spiel": {
             "0": false,
@@ -6640,99 +6733,6 @@
             },
             "WM---": {
               "tipp": "DEU",
-              "punkte": 0
-            }
-          }
-        },
-        {
-          "platz": 9,
-          "name": "Pechnic90",
-          "gesamt": 73,
-          "punkte_pro_spiel": {
-            "0": 3,
-            "1": 2,
-            "2": 3,
-            "3": 3,
-            "4": 2
-          },
-          "exakt_pro_spiel": {
-            "0": false,
-            "1": false,
-            "2": false,
-            "3": false,
-            "4": false
-          },
-          "tipp_pro_spiel": {
-            "0": "3:1",
-            "1": "4:0",
-            "2": "2:1",
-            "3": "0:1",
-            "4": "3:0",
-            "5": "-:-",
-            "6": "-:-",
-            "7": "-:-"
-          },
-          "allein_punkte": 0,
-          "bonus": 8,
-          "bonus_detail": {
-            "Tor---": {
-              "tipp": "FRA",
-              "punkte": 0
-            },
-            "HF---": {
-              "tipp": "SPA",
-              "punkte": 0
-            },
-            "Gr AMEX": {
-              "tipp": "SKOR",
-              "punkte": 0
-            },
-            "Gr B---": {
-              "tipp": "CH",
-              "punkte": 0
-            },
-            "Gr C---": {
-              "tipp": "MAR",
-              "punkte": 0
-            },
-            "Gr DUSA": {
-              "tipp": "TUR",
-              "punkte": 0
-            },
-            "Gr EDEU": {
-              "tipp": "DEU",
-              "punkte": 4
-            },
-            "Gr F---": {
-              "tipp": "NIE",
-              "punkte": 0
-            },
-            "Gr G---": {
-              "tipp": "BEL",
-              "punkte": 0
-            },
-            "Gr H---": {
-              "tipp": "SPA",
-              "punkte": 0
-            },
-            "Gr I---": {
-              "tipp": "FRA",
-              "punkte": 0
-            },
-            "Gr JARG": {
-              "tipp": "ARG",
-              "punkte": 4
-            },
-            "Gr K---": {
-              "tipp": "POR",
-              "punkte": 0
-            },
-            "Gr L---": {
-              "tipp": "ENG",
-              "punkte": 0
-            },
-            "WM---": {
-              "tipp": "FRA",
               "punkte": 0
             }
           }
@@ -6833,20 +6833,20 @@
         {
           "platz": 11,
           "name": "Chris",
-          "gesamt": 64,
+          "gesamt": 66,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 4,
             "2": 3,
             "3": 4,
-            "4": 2
+            "4": 4
           },
           "exakt_pro_spiel": {
             "0": false,
             "1": true,
             "2": false,
             "3": true,
-            "4": false
+            "4": true
           },
           "tipp_pro_spiel": {
             "0": "3:0",
