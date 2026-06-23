@@ -179,13 +179,17 @@ def erstelle_tabelle_html(rang):
 # ── WM-News ─────────────────────────────────────────────────────
 
 def hole_wm_news():
-    datum = datetime.now(MESZ).strftime("%d.%m.%Y")
+    heute = datetime.now(MESZ)
+    datum_str = heute.strftime("%d.%m.%Y")
+    gestern_str = (heute - timedelta(days=1)).strftime("%d.%m.%Y")
     result = api_call({
         "model": "claude-haiku-4-5-20251001",
-        "max_tokens": 400,
+        "max_tokens": 300,
         "tools": [{"type": "web_search_20250305", "name": "web_search"}],
         "messages": [{"role": "user", "content":
-            f"WM 2026 Neuigkeiten letzte 24h ({datum}): Gib mir maximal 4 kurze Stichpunkte auf Deutsch. Tore, Ueberraschungen, Aufreger, besondere Spieler. Nur Text, keine Formatierung, max 100 Woerter."
+            f"WM 2026 Ergebnisse und Highlights vom {gestern_str} und {datum_str}. "
+            f"Nur Ereignisse dieser zwei Tage, keine älteren Spiele. "
+            f"Max 3 Stichpunkte auf Deutsch, je 1 Satz. Keine Formatierung."
         }]
     })
     return text_aus_response(result) or "Keine aktuellen WM-News."
@@ -202,36 +206,29 @@ def generiere_html(kontext, wm_news, tabelle_html=""):
         "July","Juli").replace("August","August").replace("September","September").replace(
         "October","Oktober").replace("November","November").replace("December","Dezember")
 
-    prompt = f"""Du bist Bot-Valentin, der tägliche Kommentator der STB-Tipprunde WM 2026. {datum}.
+    prompt = f"""Morning Briefing STB-Tipprunde WM 2026, {datum}.
 
-Dein Charakter: Irgendwo zwischen Mario Basler (zynisch, direkt, kein Blatt vor den Mund) und einem 11-Freunde-Autor (fussballverliebter Stil, echter Enthusiasmus fuer das Spiel). Du kennst jeden Tipper persoenlich und nimmst kein Blatt vor den Mund. Immer mit Augenzwinkern, nie boshaft. Du liebst Fussball zu sehr um ueber schlechte Tipps hinwegzusehen.
+CHARAKTER Bot-Valentin: Fußballbegeistert, pointiert, mit Augenzwinkern. Stil: 11-Freunde-Kolumne trifft Basler-Direktheit. Nie boshaft, aber kein Blatt vor den Mund bei schlechten Tipps. Korrekte deutsche Rechtschreibung, alle Umlaute ausschreiben.
 
-WM-NEWS:
+WM-NEWS (nur diese Fakten verwenden, keine älteren Spiele erfinden):
 {wm_news}
 
 TIPPRUNDE:
 {kontext}
 
-Struktur:
-1. Begruessung im Charakter (1-2 Saetze, direkt, pointiert)
-2. WM-Highlights (max 2-3 Saetze, Basler-Style: kurz, trocken, auf den Punkt)
-3. Tipprunden-Stand: Schreibe exakt den Platzhalter ##TABELLE## (wird automatisch ersetzt) gefolgt von 2-3 Saetzen mit zugespitzten Kommentaren zu einzelnen Tippern. Wer war gestern gut? Wer hat wieder versagt? Besondere Tipps oder Tabellenbewegungen mit Meinung kommentieren.
-4. Ausblick heutige Spiele (1 Satz, Prognose im Basler-Ton)
-5. Signatur: "Bot-Valentin" (Pflicht, immer am Ende)
+AUFBAU:
+1. Kurze Begrüßung (1 Sätze)
+2. WM-Highlights aus den NEWS oben (2-3 Sätze, nur was dort steht)
+3. ##TABELLE## dann 2-3 Sätze Kommentar zu Tippern: wer war gut, wer schlecht, besondere Tipps, Tabellenbewegungen
+4. Ausblick heute (1 Satz)
+5. "Greets, Bot-Valentin" als Abschluss
 
-Strenge Regeln:
-- KEIN Preisgeld erwaehnen
-- KEINE Gedankenstriche (weder - noch --)
-- KEINE Aufzaehlungen mit Bindestrich
-- Ton laut TONHINWEIS anpassen
-- Kein abschliessender Spruch oder Zitat
-- Keine Links
-- WICHTIG: Ausgabe MUSS direkt mit einem HTML-Tag beginnen. KEIN ```html, KEIN Markdown, NUR reines HTML mit Inline-CSS.
-Dunkel: bg #1a1a1a, text #f0f0f0, akzent #c01c00. Max 300 Woerter."""
+VERBOTEN: Gedankenstriche (- oder --), Bindestrich-Listen, Preisgeld erwähnen, Zitate, Links, Spiele die nicht in WM-NEWS stehen.
+OUTPUT: Direkt mit HTML-Tag beginnen, kein ```html. Inline-CSS. bg #1a1a1a, text #f0f0f0, akzent #c01c00. Max 280 Wörter."""
 
     result = api_call({
-        "model": "claude-haiku-4-5-20251001",
-        "max_tokens": 1200,
+        "model": "claude-sonnet-4-6",
+        "max_tokens": 1000,
         "messages": [{"role": "user", "content": prompt}]
     })
     html = text_aus_response(result)
