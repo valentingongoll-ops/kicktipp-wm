@@ -216,19 +216,26 @@ WM-NEWS (nur diese Fakten verwenden, keine älteren Spiele erfinden):
 TIPPRUNDE:
 {kontext}
 
-AUFBAU:
-1. Kurze Begrüßung (1 Sätze)
-2. WM-Highlights aus den NEWS oben (2-3 Sätze, nur was dort steht)
-3. ##TABELLE## dann 2-3 Sätze Kommentar zu Tippern: wer war gut, wer schlecht, besondere Tipps, Tabellenbewegungen
-4. Ausblick heute (1 Satz)
-5. "Greets, Bot-Valentin" als Abschluss
+VERBOTEN (absolute Regeln, keine Ausnahmen):
+- Gedankenstriche (— oder – oder -- oder -) in jeglicher Form, auch nicht als Pause oder Einschub
+- Bindestrich-Listen oder Aufzählungen mit Strich
+- Preisgeld erwähnen
+- Zitate oder Abschlusssprüche
+- Links
+- Spiele die nicht in WM-NEWS stehen
 
-VERBOTEN: Gedankenstriche (- oder --), Bindestrich-Listen, Preisgeld erwähnen, Zitate, Links, Spiele die nicht in WM-NEWS stehen.
+AUFBAU:
+1. Kurze Begrüßung (1-2 Sätze)
+2. WM-Highlights aus den NEWS oben (2-3 Sätze, nur was dort steht)
+3. Schreibe exakt ##TABELLE## auf einer eigenen Zeile, dann darunter 2-3 Sätze Kommentar zu Tippern
+4. Ausblick heute (1 Satz)
+5. "Bot-Valentin" als Abschluss
+
 OUTPUT: Direkt mit HTML-Tag beginnen, kein ```html. Inline-CSS. bg #1a1a1a, text #f0f0f0, akzent #c01c00. Max 280 Wörter."""
 
     result = api_call({
         "model": "claude-sonnet-4-6",
-        "max_tokens": 1000,
+        "max_tokens": 1500,
         "messages": [{"role": "user", "content": prompt}]
     })
     html = text_aus_response(result)
@@ -242,6 +249,8 @@ OUTPUT: Direkt mit HTML-Tag beginnen, kein ```html. Inline-CSS. bg #1a1a1a, text
     html = html.strip()
     # Platzhalter durch echte Python-generierte Tabelle ersetzen
     html = html.replace("##TABELLE##", tabelle_html)
+    # Gedankenstriche entfernen die Claude trotzdem schreibt
+    html = html.replace(" — ", " ").replace(" – ", " ").replace("—", " ").replace("–", " ")
     return html
 
 
@@ -262,12 +271,21 @@ def sende_mail(html_body):
     <span style="font-size:1.1rem;font-weight:800;color:#fff;">kicktipp</span>
     <span style="color:rgba(255,255,255,.55);font-size:.8rem;"> STB-Tipprunde WM 2026</span>
   </div>
-  <div style="background:#1a1a1a;border:1px solid #333;border-top:none;padding:20px;">
+  <div style="background:#1a1a1a;border:1px solid #333;border-top:none;border-bottom:none;padding:20px 20px 10px 20px;">
     {html_body}
   </div>
-  <div style="background:#1a1a1a;border:1px solid #333;border-top:1px solid #2a2a2a;border-radius:0 0 10px 10px;padding:16px 20px;display:flex;gap:10px;">
-    <a href="https://valentingongoll-ops.github.io/kicktipp-wm/" style="flex:1;display:block;text-align:center;background:#c01c00;color:#fff;text-decoration:none;padding:11px;border-radius:7px;font-weight:700;font-size:.82rem;">📊 Leaderboard</a>
-    <a href="https://www.kicktipp.de" style="flex:1;display:block;text-align:center;background:#2a2a2a;color:#f0f0f0;text-decoration:none;border:1px solid #444;padding:11px;border-radius:7px;font-weight:700;font-size:.82rem;">⚽ Tipps abgeben</a>
+  <div style="background:#1a1a1a;border:1px solid #333;border-top:none;border-radius:0 0 10px 10px;padding:16px 20px;">
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+      <tr>
+        <td width="49%" style="padding-right:4px">
+          <a href="https://valentingongoll-ops.github.io/kicktipp-wm/" style="display:block;text-align:center;background:#c01c00;color:#fff;text-decoration:none;padding:11px;border-radius:7px;font-weight:700;font-size:.82rem;">📊 Leaderboard</a>
+        </td>
+        <td width="2%"></td>
+        <td width="49%" style="padding-left:4px">
+          <a href="https://www.kicktipp.de" style="display:block;text-align:center;background:#2a2a2a;color:#f0f0f0;text-decoration:none;border:1px solid #444;padding:11px;border-radius:7px;font-weight:700;font-size:.82rem;">⚽ Tipps abgeben</a>
+        </td>
+      </tr>
+    </table>
   </div>
   <div style="text-align:center;padding:12px;color:#444;font-size:.68rem;">Automatisch generiert {datum}</div>
 </div>
