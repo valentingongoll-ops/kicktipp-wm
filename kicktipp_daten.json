@@ -1,6 +1,6 @@
 {
   "community": "stb-tipprunde",
-  "zuletzt_aktualisiert": "2026-06-24T05:45:12",
+  "zuletzt_aktualisiert": "2026-06-24T06:00:13",
   "spieltage": [
     {
       "name": "1. Spieltag",
@@ -5876,8 +5876,8 @@
         {
           "col_idx": 7,
           "label": "KOL–COD",
-          "abgeschlossen": false,
-          "ergebnis": null
+          "abgeschlossen": true,
+          "ergebnis": "1:0"
         }
       ],
       "bonus_fragen": [
@@ -6604,7 +6604,8 @@
             "3": 3,
             "4": 2,
             "5": 0,
-            "6": 2
+            "6": 2,
+            "7": 0
           },
           "exakt_pro_spiel": {
             "0": false,
@@ -6613,7 +6614,8 @@
             "3": false,
             "4": false,
             "5": false,
-            "6": false
+            "6": false,
+            "7": false
           },
           "tipp_pro_spiel": {
             "0": "1:1",
@@ -6800,7 +6802,8 @@
             "3": 0,
             "4": 2,
             "5": 0,
-            "6": 3
+            "6": 3,
+            "7": 0
           },
           "exakt_pro_spiel": {
             "0": false,
@@ -6809,7 +6812,8 @@
             "3": false,
             "4": false,
             "5": false,
-            "6": false
+            "6": false,
+            "7": false
           },
           "tipp_pro_spiel": {
             "0": "1:1",
