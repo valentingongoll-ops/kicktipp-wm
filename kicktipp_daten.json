@@ -1,6 +1,6 @@
 {
   "community": "stb-tipprunde",
-  "zuletzt_aktualisiert": "2026-06-24T03:45:10",
+  "zuletzt_aktualisiert": "2026-06-24T04:00:11",
   "spieltage": [
     {
       "name": "1. Spieltag",
@@ -5931,7 +5931,7 @@
             "4": "2:0",
             "5": "3:0",
             "6": "1:3",
-            "7": "-:-"
+            "7": "2:0"
           },
           "allein_punkte": 0,
           "bonus": 16,
@@ -6028,7 +6028,7 @@
             "4": "2:1",
             "5": "2:1",
             "6": "0:2",
-            "7": "-:-"
+            "7": "2:1"
           },
           "allein_punkte": 0,
           "bonus": 12,
@@ -6125,7 +6125,7 @@
             "4": "2:0",
             "5": "4:1",
             "6": "1:2",
-            "7": "-:-"
+            "7": "2:0"
           },
           "allein_punkte": 0,
           "bonus": 12,
@@ -6222,7 +6222,7 @@
             "4": "2:0",
             "5": "2:0",
             "6": "0:2",
-            "7": "-:-"
+            "7": "2:0"
           },
           "allein_punkte": 0,
           "bonus": 16,
@@ -6319,7 +6319,7 @@
             "4": "4:0",
             "5": "4:1",
             "6": "1:3",
-            "7": "-:-"
+            "7": "2:1"
           },
           "allein_punkte": 0,
           "bonus": 12,
@@ -6388,104 +6388,8 @@
         },
         {
           "platz": 6,
-          "name": "SR",
-          "gesamt": 80,
-          "punkte_pro_spiel": {
-            "0": 0,
-            "1": 2,
-            "2": 0,
-            "3": 4,
-            "4": 2,
-            "5": 0,
-            "6": 3
-          },
-          "exakt_pro_spiel": {
-            "0": false,
-            "1": false,
-            "2": false,
-            "3": true,
-            "4": false,
-            "5": false,
-            "6": false
-          },
-          "tipp_pro_spiel": {
-            "1": "4:0",
-            "2": "1:2",
-            "3": "1:2",
-            "4": "4:1",
-            "5": "2:1",
-            "6": "1:2",
-            "7": "-:-"
-          },
-          "allein_punkte": 0,
-          "bonus": 16,
-          "bonus_detail": {
-            "Tor---": {
-              "tipp": "BRA",
-              "punkte": 0
-            },
-            "HF---": {
-              "tipp": "SPA",
-              "punkte": 0
-            },
-            "Gr AMEX": {
-              "tipp": "MEX",
-              "punkte": 4
-            },
-            "Gr B---": {
-              "tipp": "KAN",
-              "punkte": 0
-            },
-            "Gr C---": {
-              "tipp": "BRA",
-              "punkte": 0
-            },
-            "Gr DUSA": {
-              "tipp": "USA",
-              "punkte": 4
-            },
-            "Gr EDEU": {
-              "tipp": "DEU",
-              "punkte": 4
-            },
-            "Gr F---": {
-              "tipp": "NIE",
-              "punkte": 0
-            },
-            "Gr G---": {
-              "tipp": "BEL",
-              "punkte": 0
-            },
-            "Gr H---": {
-              "tipp": "SPA",
-              "punkte": 0
-            },
-            "Gr I---": {
-              "tipp": "FRA",
-              "punkte": 0
-            },
-            "Gr JARG": {
-              "tipp": "ARG",
-              "punkte": 4
-            },
-            "Gr K---": {
-              "tipp": "POR",
-              "punkte": 0
-            },
-            "Gr L---": {
-              "tipp": "ENG",
-              "punkte": 0
-            },
-            "WM---": {
-              "tipp": "DEU",
-              "punkte": 0
-            }
-          }
-        },
-        {
-          "platz": 7,
           "name": "KNALLentin",
-          "gesamt": 79,
+          "gesamt": 81,
           "punkte_pro_spiel": {
             "0": 0,
             "1": 2,
@@ -6493,7 +6397,8 @@
             "3": 3,
             "4": 2,
             "5": 0,
-            "6": 2
+            "6": 2,
+            "7": 2
           },
           "exakt_pro_spiel": {
             "0": false,
@@ -6502,7 +6407,8 @@
             "3": false,
             "4": false,
             "5": false,
-            "6": false
+            "6": false,
+            "7": false
           },
           "tipp_pro_spiel": {
             "0": "1:1",
@@ -6512,7 +6418,7 @@
             "4": "2:0",
             "5": "3:1",
             "6": "0:3",
-            "7": "-:-"
+            "7": "2:2"
           },
           "allein_punkte": 0,
           "bonus": 12,
@@ -6580,6 +6486,102 @@
           }
         },
         {
+          "platz": 7,
+          "name": "SR",
+          "gesamt": 80,
+          "punkte_pro_spiel": {
+            "0": 0,
+            "1": 2,
+            "2": 0,
+            "3": 4,
+            "4": 2,
+            "5": 0,
+            "6": 3
+          },
+          "exakt_pro_spiel": {
+            "0": false,
+            "1": false,
+            "2": false,
+            "3": true,
+            "4": false,
+            "5": false,
+            "6": false
+          },
+          "tipp_pro_spiel": {
+            "1": "4:0",
+            "2": "1:2",
+            "3": "1:2",
+            "4": "4:1",
+            "5": "2:1",
+            "6": "1:2",
+            "7": "2:1"
+          },
+          "allein_punkte": 0,
+          "bonus": 16,
+          "bonus_detail": {
+            "Tor---": {
+              "tipp": "BRA",
+              "punkte": 0
+            },
+            "HF---": {
+              "tipp": "SPA",
+              "punkte": 0
+            },
+            "Gr AMEX": {
+              "tipp": "MEX",
+              "punkte": 4
+            },
+            "Gr B---": {
+              "tipp": "KAN",
+              "punkte": 0
+            },
+            "Gr C---": {
+              "tipp": "BRA",
+              "punkte": 0
+            },
+            "Gr DUSA": {
+              "tipp": "USA",
+              "punkte": 4
+            },
+            "Gr EDEU": {
+              "tipp": "DEU",
+              "punkte": 4
+            },
+            "Gr F---": {
+              "tipp": "NIE",
+              "punkte": 0
+            },
+            "Gr G---": {
+              "tipp": "BEL",
+              "punkte": 0
+            },
+            "Gr H---": {
+              "tipp": "SPA",
+              "punkte": 0
+            },
+            "Gr I---": {
+              "tipp": "FRA",
+              "punkte": 0
+            },
+            "Gr JARG": {
+              "tipp": "ARG",
+              "punkte": 4
+            },
+            "Gr K---": {
+              "tipp": "POR",
+              "punkte": 0
+            },
+            "Gr L---": {
+              "tipp": "ENG",
+              "punkte": 0
+            },
+            "WM---": {
+              "tipp": "DEU",
+              "punkte": 0
+            }
+          }
+        },
+        {
           "platz": 8,
           "name": "Kolle",
           "gesamt": 78,
@@ -6609,7 +6611,7 @@
             "4": "3:1",
             "5": "2:1",
             "6": "1:2",
-            "7": "-:-"
+            "7": "2:1"
           },
           "allein_punkte": 0,
           "bonus": 16,
@@ -6706,7 +6708,7 @@
             "4": "3:0",
             "5": "3:1",
             "6": "0:2",
-            "7": "-:-"
+            "7": "2:1"
           },
           "allein_punkte": 0,
           "bonus": 8,
@@ -6776,7 +6778,7 @@
         {
           "platz": 10,
           "name": "Henning",
-          "gesamt": 72,
+          "gesamt": 74,
           "punkte_pro_spiel": {
             "0": 0,
             "1": 2,
@@ -6784,7 +6786,8 @@
             "3": 0,
             "4": 2,
             "5": 0,
-            "6": 3
+            "6": 3,
+            "7": 2
           },
           "exakt_pro_spiel": {
             "0": false,
@@ -6793,7 +6796,8 @@
             "3": false,
             "4": false,
             "5": false,
-            "6": false
+            "6": false,
+            "7": false
           },
           "tipp_pro_spiel": {
             "0": "1:1",
@@ -6803,7 +6807,7 @@
             "4": "2:1",
             "5": "0:1",
             "6": "2:3",
-            "7": "-:-"
+            "7": "1:1"
           },
           "allein_punkte": 0,
           "bonus": 12,
@@ -6900,7 +6904,7 @@
             "4": "3:0",
             "5": "3:1",
             "6": "0:3",
-            "7": "-:-"
+            "7": "2:0"
           },
           "allein_punkte": 0,
           "bonus": 4,
