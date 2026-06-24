@@ -1,6 +1,6 @@
 {
   "community": "stb-tipprunde",
-  "zuletzt_aktualisiert": "2026-06-24T02:45:15",
+  "zuletzt_aktualisiert": "2026-06-24T03:00:12",
   "spieltage": [
     {
       "name": "1. Spieltag",
@@ -5870,8 +5870,8 @@
         {
           "col_idx": 6,
           "label": "PAN–KRO",
-          "abgeschlossen": false,
-          "ergebnis": null
+          "abgeschlossen": true,
+          "ergebnis": "0:1"
         },
         {
           "col_idx": 7,
