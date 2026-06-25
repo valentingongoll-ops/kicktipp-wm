@@ -43,15 +43,12 @@ def text_aus_response(result):
 
 
 def kumuliert(spieltage, name, bis_idx):
-    total = 0
-    for st in spieltage[:bis_idx + 1]:
-        p = next((x for x in st["spieler"] if x["name"] == name), None)
-        if not p:
-            continue
-        for sp in st["spiele"]:
-            if sp["abgeschlossen"]:
-                total += p["punkte_pro_spiel"].get(str(sp["col_idx"]), 0)
-    return total
+    """Gibt den offiziellen Kicktipp-Gesamtstand inkl. Bonuspunkte zurück."""
+    if bis_idx < 0 or bis_idx >= len(spieltage):
+        return 0
+    st = spieltage[bis_idx]
+    p = next((x for x in st["spieler"] if x["name"] == name), None)
+    return p["gesamt"] if p else 0
 
 
 # ── Kontext aufbereiten ─────────────────────────────────────────
@@ -324,12 +321,7 @@ def main():
     namen     = sorted({p["name"] for st in aktive_st for p in st["spieler"]})
     letzter_idx = len(aktive_st) - 1
     rang = sorted(
-        [{"name": n, "pts": sum(
-            p["punkte_pro_spiel"].get(str(sp["col_idx"]), 0)
-            for st in aktive_st[:letzter_idx+1]
-            for sp in st["spiele"] if sp["abgeschlossen"]
-            for p in st["spieler"] if p["name"] == n
-        )} for n in namen],
+        [{"name": n, "pts": kumuliert(aktive_st, n, letzter_idx)} for n in namen],
         key=lambda x: -x["pts"]
     )
     tabelle_html = erstelle_tabelle_html(rang)
