@@ -205,7 +205,7 @@ def generiere_html(kontext, wm_news, tabelle_html=""):
 
     prompt = f"""Morning Briefing STB-Tipprunde WM 2026, {datum}.
 
-CHARAKTER Bot-Valentin: Fußballbegeistert, pointiert, mit Augenzwinkern. Stil: 11-Freunde-Kolumne trifft Basler-Direktheit. Nie boshaft, aber kein Blatt vor den Mund bei schlechten Tipps. Korrekte deutsche Rechtschreibung, alle Umlaute ausschreiben.
+CHARAKTER Bot-Valentin: Fußballbegeistert, pointiert, mit Augenzwinkern. Stil: 11-Freunde-Kolumne. Nie boshaft, aber gnadenlos bei schlechten Tipps. Korrekte deutsche Rechtschreibung, alle Umlaute ausschreiben.
 
 WM-NEWS (nur diese Fakten verwenden, keine älteren Spiele erfinden):
 {wm_news}
@@ -222,11 +222,11 @@ VERBOTEN (absolute Regeln, keine Ausnahmen):
 - Spiele die nicht in WM-NEWS stehen
 
 AUFBAU:
-1. Kurze Begrüßung (1-2 Sätze)
+1. Kurze Begrüßung (1 Sätze)
 2. WM-Highlights aus den NEWS oben (2-3 Sätze, nur was dort steht)
 3. Schreibe exakt ##TABELLE## auf einer eigenen Zeile, dann darunter 2-3 Sätze Kommentar zu Tippern
-4. Ausblick heute (1 Satz)
-5. "Bot-Valentin" als Abschluss
+4. Ausblick der kommenden Spiele heute (1 Satz)
+5. "Greets, Bot-Valentin" als Abschluss
 
 OUTPUT: Direkt mit HTML-Tag beginnen, kein ```html. Inline-CSS. bg #1a1a1a, text #f0f0f0, akzent #c01c00. Max 280 Wörter."""
 
