@@ -1,6 +1,6 @@
 {
   "community": "stb-tipprunde",
-  "zuletzt_aktualisiert": "2026-06-26T23:00:12",
+  "zuletzt_aktualisiert": "2026-06-26T23:15:10",
   "spieltage": [
     {
       "name": "1. Spieltag",
@@ -9178,8 +9178,8 @@
         {
           "col_idx": 1,
           "label": "SEN–IRK",
-          "abgeschlossen": false,
-          "ergebnis": null
+          "abgeschlossen": true,
+          "ergebnis": "5:0"
         },
         {
           "col_idx": 2,
