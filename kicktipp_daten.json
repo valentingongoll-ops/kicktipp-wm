@@ -1,6 +1,6 @@
 {
   "community": "stb-tipprunde",
-  "zuletzt_aktualisiert": "2026-06-27T07:15:11",
+  "zuletzt_aktualisiert": "2026-06-27T07:30:13",
   "spieltage": [
     {
       "name": "1. Spieltag",
@@ -79,7 +79,7 @@
         {
           "platz": 1,
           "name": "Benjamin",
-          "gesamt": 48,
+          "gesamt": 52,
           "punkte_pro_spiel": {
             "0": 4,
             "1": 0,
@@ -178,7 +178,7 @@
         {
           "platz": 2,
           "name": "SR",
-          "gesamt": 44,
+          "gesamt": 48,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 0,
@@ -277,7 +277,7 @@
         {
           "platz": 2,
           "name": "Nalewaja",
-          "gesamt": 44,
+          "gesamt": 48,
           "punkte_pro_spiel": {
             "0": 4,
             "1": 4,
@@ -376,7 +376,7 @@
         {
           "platz": 4,
           "name": "Kolle",
-          "gesamt": 43,
+          "gesamt": 47,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 0,
@@ -475,7 +475,7 @@
         {
           "platz": 5,
           "name": "Henning",
-          "gesamt": 42,
+          "gesamt": 46,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 3,
@@ -574,7 +574,7 @@
         {
           "platz": 6,
           "name": "Lukas",
-          "gesamt": 38,
+          "gesamt": 42,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 0,
@@ -673,7 +673,7 @@
         {
           "platz": 7,
           "name": "Senge",
-          "gesamt": 37,
+          "gesamt": 41,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 4,
@@ -772,7 +772,7 @@
         {
           "platz": 7,
           "name": "Rosellen",
-          "gesamt": 37,
+          "gesamt": 41,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -871,7 +871,7 @@
         {
           "platz": 9,
           "name": "KNALLentin",
-          "gesamt": 36,
+          "gesamt": 40,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 0,
@@ -970,7 +970,7 @@
         {
           "platz": 10,
           "name": "Pechnic90",
-          "gesamt": 32,
+          "gesamt": 36,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 0,
@@ -1069,7 +1069,7 @@
         {
           "platz": 11,
           "name": "Chris",
-          "gesamt": 28,
+          "gesamt": 32,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 0,
@@ -1244,7 +1244,7 @@
         {
           "platz": 1,
           "name": "Nalewaja",
-          "gesamt": 54,
+          "gesamt": 58,
           "punkte_pro_spiel": {
             "0": 3,
             "1": 0,
@@ -1343,7 +1343,7 @@
         {
           "platz": 2,
           "name": "Benjamin",
-          "gesamt": 52,
+          "gesamt": 56,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 0,
@@ -1442,7 +1442,7 @@
         {
           "platz": 3,
           "name": "SR",
-          "gesamt": 48,
+          "gesamt": 52,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 0,
@@ -1541,7 +1541,7 @@
         {
           "platz": 4,
           "name": "Kolle",
-          "gesamt": 47,
+          "gesamt": 51,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 0,
@@ -1640,7 +1640,7 @@
         {
           "platz": 5,
           "name": "Henning",
-          "gesamt": 46,
+          "gesamt": 50,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 0,
@@ -1739,7 +1739,7 @@
         {
           "platz": 6,
           "name": "Senge",
-          "gesamt": 44,
+          "gesamt": 48,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 0,
@@ -1838,7 +1838,7 @@
         {
           "platz": 7,
           "name": "KNALLentin",
-          "gesamt": 42,
+          "gesamt": 46,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 0,
@@ -1937,7 +1937,7 @@
         {
           "platz": 8,
           "name": "Lukas",
-          "gesamt": 42,
+          "gesamt": 46,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 0,
@@ -2036,7 +2036,7 @@
         {
           "platz": 9,
           "name": "Rosellen",
-          "gesamt": 41,
+          "gesamt": 45,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 0,
@@ -2135,7 +2135,7 @@
         {
           "platz": 10,
           "name": "Pechnic90",
-          "gesamt": 36,
+          "gesamt": 40,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 0,
@@ -2234,7 +2234,7 @@
         {
           "platz": 11,
           "name": "Chris",
-          "gesamt": 35,
+          "gesamt": 39,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 0,
@@ -2409,7 +2409,7 @@
         {
           "platz": 1,
           "name": "Nalewaja",
-          "gesamt": 71,
+          "gesamt": 75,
           "punkte_pro_spiel": {
             "0": 4,
             "1": 2,
@@ -2508,7 +2508,7 @@
         {
           "platz": 2,
           "name": "Benjamin",
-          "gesamt": 68,
+          "gesamt": 72,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -2607,7 +2607,7 @@
         {
           "platz": 3,
           "name": "SR",
-          "gesamt": 62,
+          "gesamt": 66,
           "punkte_pro_spiel": {
             "0": 3,
             "1": 2,
@@ -2706,7 +2706,7 @@
         {
           "platz": 4,
           "name": "Kolle",
-          "gesamt": 60,
+          "gesamt": 64,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -2805,7 +2805,7 @@
         {
           "platz": 5,
           "name": "KNALLentin",
-          "gesamt": 58,
+          "gesamt": 62,
           "punkte_pro_spiel": {
             "0": 3,
             "1": 3,
@@ -2904,7 +2904,7 @@
         {
           "platz": 6,
           "name": "Henning",
-          "gesamt": 58,
+          "gesamt": 62,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -3003,7 +3003,7 @@
         {
           "platz": 7,
           "name": "Lukas",
-          "gesamt": 57,
+          "gesamt": 61,
           "punkte_pro_spiel": {
             "0": 4,
             "1": 2,
@@ -3102,7 +3102,7 @@
         {
           "platz": 8,
           "name": "Senge",
-          "gesamt": 56,
+          "gesamt": 60,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -3201,7 +3201,7 @@
         {
           "platz": 8,
           "name": "Rosellen",
-          "gesamt": 56,
+          "gesamt": 60,
           "punkte_pro_spiel": {
             "0": 3,
             "1": 3,
@@ -3300,7 +3300,7 @@
         {
           "platz": 10,
           "name": "Pechnic90",
-          "gesamt": 53,
+          "gesamt": 57,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 3,
@@ -3399,7 +3399,7 @@
         {
           "platz": 11,
           "name": "Chris",
-          "gesamt": 49,
+          "gesamt": 53,
           "punkte_pro_spiel": {
             "0": 4,
             "1": 2,
@@ -3574,7 +3574,7 @@
         {
           "platz": 1,
           "name": "Nalewaja",
-          "gesamt": 85,
+          "gesamt": 89,
           "punkte_pro_spiel": {
             "0": 0,
             "1": 0,
@@ -3673,7 +3673,7 @@
         {
           "platz": 2,
           "name": "Benjamin",
-          "gesamt": 80,
+          "gesamt": 84,
           "punkte_pro_spiel": {
             "0": 0,
             "1": 0,
@@ -3772,7 +3772,7 @@
         {
           "platz": 3,
           "name": "Senge",
-          "gesamt": 77,
+          "gesamt": 81,
           "punkte_pro_spiel": {
             "0": 4,
             "1": 2,
@@ -3871,7 +3871,7 @@
         {
           "platz": 3,
           "name": "Rosellen",
-          "gesamt": 77,
+          "gesamt": 81,
           "punkte_pro_spiel": {
             "0": 4,
             "1": 2,
@@ -3970,7 +3970,7 @@
         {
           "platz": 5,
           "name": "SR",
-          "gesamt": 77,
+          "gesamt": 81,
           "punkte_pro_spiel": {
             "0": 0,
             "1": 2,
@@ -4069,7 +4069,7 @@
         {
           "platz": 6,
           "name": "Lukas",
-          "gesamt": 74,
+          "gesamt": 78,
           "punkte_pro_spiel": {
             "0": 0,
             "1": 2,
@@ -4168,7 +4168,7 @@
         {
           "platz": 7,
           "name": "Kolle",
-          "gesamt": 72,
+          "gesamt": 76,
           "punkte_pro_spiel": {
             "0": 0,
             "1": 2,
@@ -4267,7 +4267,7 @@
         {
           "platz": 8,
           "name": "Henning",
-          "gesamt": 71,
+          "gesamt": 75,
           "punkte_pro_spiel": {
             "0": 0,
             "1": 2,
@@ -4366,7 +4366,7 @@
         {
           "platz": 9,
           "name": "Pechnic90",
-          "gesamt": 66,
+          "gesamt": 70,
           "punkte_pro_spiel": {
             "0": 0,
             "1": 2,
@@ -4465,7 +4465,7 @@
         {
           "platz": 10,
           "name": "KNALLentin",
-          "gesamt": 66,
+          "gesamt": 70,
           "punkte_pro_spiel": {
             "0": 0,
             "1": 0,
@@ -4564,7 +4564,7 @@
         {
           "platz": 11,
           "name": "Chris",
-          "gesamt": 57,
+          "gesamt": 61,
           "punkte_pro_spiel": {
             "0": 0,
             "1": 2,
@@ -4739,7 +4739,7 @@
         {
           "platz": 1,
           "name": "Nalewaja",
-          "gesamt": 96,
+          "gesamt": 100,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -4838,7 +4838,7 @@
         {
           "platz": 2,
           "name": "Benjamin",
-          "gesamt": 90,
+          "gesamt": 94,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -4937,7 +4937,7 @@
         {
           "platz": 3,
           "name": "Senge",
-          "gesamt": 89,
+          "gesamt": 93,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 3,
@@ -5036,7 +5036,7 @@
         {
           "platz": 4,
           "name": "Rosellen",
-          "gesamt": 88,
+          "gesamt": 92,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -5135,7 +5135,7 @@
         {
           "platz": 5,
           "name": "SR",
-          "gesamt": 85,
+          "gesamt": 89,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -5234,7 +5234,7 @@
         {
           "platz": 6,
           "name": "Henning",
-          "gesamt": 85,
+          "gesamt": 89,
           "punkte_pro_spiel": {
             "0": 0,
             "1": 2,
@@ -5333,7 +5333,7 @@
         {
           "platz": 7,
           "name": "Kolle",
-          "gesamt": 84,
+          "gesamt": 88,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -5432,7 +5432,7 @@
         {
           "platz": 8,
           "name": "Lukas",
-          "gesamt": 84,
+          "gesamt": 88,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -5531,7 +5531,7 @@
         {
           "platz": 9,
           "name": "KNALLentin",
-          "gesamt": 82,
+          "gesamt": 86,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 4,
@@ -5630,7 +5630,7 @@
         {
           "platz": 10,
           "name": "Pechnic90",
-          "gesamt": 76,
+          "gesamt": 80,
           "punkte_pro_spiel": {
             "0": 0,
             "1": 2,
@@ -5729,7 +5729,7 @@
         {
           "platz": 11,
           "name": "Chris",
-          "gesamt": 69,
+          "gesamt": 73,
           "punkte_pro_spiel": {
             "0": 0,
             "1": 4,
@@ -5904,7 +5904,7 @@
         {
           "platz": 1,
           "name": "Nalewaja",
-          "gesamt": 113,
+          "gesamt": 117,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -6003,7 +6003,7 @@
         {
           "platz": 2,
           "name": "Senge",
-          "gesamt": 105,
+          "gesamt": 109,
           "punkte_pro_spiel": {
             "0": 3,
             "1": 2,
@@ -6102,7 +6102,7 @@
         {
           "platz": 2,
           "name": "Rosellen",
-          "gesamt": 105,
+          "gesamt": 109,
           "punkte_pro_spiel": {
             "0": 3,
             "1": 2,
@@ -6201,7 +6201,7 @@
         {
           "platz": 4,
           "name": "Benjamin",
-          "gesamt": 104,
+          "gesamt": 108,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 4,
@@ -6300,7 +6300,7 @@
         {
           "platz": 5,
           "name": "Kolle",
-          "gesamt": 101,
+          "gesamt": 105,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -6399,7 +6399,7 @@
         {
           "platz": 6,
           "name": "Lukas",
-          "gesamt": 101,
+          "gesamt": 105,
           "punkte_pro_spiel": {
             "0": 3,
             "1": 2,
@@ -6498,7 +6498,7 @@
         {
           "platz": 7,
           "name": "SR",
-          "gesamt": 99,
+          "gesamt": 103,
           "punkte_pro_spiel": {
             "0": 0,
             "1": 2,
@@ -6596,7 +6596,7 @@
         {
           "platz": 8,
           "name": "Pechnic90",
-          "gesamt": 94,
+          "gesamt": 98,
           "punkte_pro_spiel": {
             "0": 3,
             "1": 2,
@@ -6695,7 +6695,7 @@
         {
           "platz": 9,
           "name": "Henning",
-          "gesamt": 92,
+          "gesamt": 96,
           "punkte_pro_spiel": {
             "0": 0,
             "1": 2,
@@ -6794,7 +6794,7 @@
         {
           "platz": 10,
           "name": "KNALLentin",
-          "gesamt": 91,
+          "gesamt": 95,
           "punkte_pro_spiel": {
             "0": 0,
             "1": 2,
@@ -6893,7 +6893,7 @@
         {
           "platz": 11,
           "name": "Chris",
-          "gesamt": 88,
+          "gesamt": 92,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 4,
@@ -7056,7 +7056,7 @@
         {
           "platz": 1,
           "name": "Nalewaja",
-          "gesamt": 125,
+          "gesamt": 129,
           "punkte_pro_spiel": {
             "0": 4,
             "1": 4,
@@ -7149,7 +7149,7 @@
         {
           "platz": 2,
           "name": "Rosellen",
-          "gesamt": 117,
+          "gesamt": 121,
           "punkte_pro_spiel": {
             "0": 3,
             "1": 0,
@@ -7242,7 +7242,7 @@
         {
           "platz": 3,
           "name": "Senge",
-          "gesamt": 116,
+          "gesamt": 120,
           "punkte_pro_spiel": {
             "0": 3,
             "1": 4,
@@ -7335,7 +7335,7 @@
         {
           "platz": 4,
           "name": "Benjamin",
-          "gesamt": 111,
+          "gesamt": 115,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 0,
@@ -7428,7 +7428,7 @@
         {
           "platz": 5,
           "name": "Kolle",
-          "gesamt": 111,
+          "gesamt": 115,
           "punkte_pro_spiel": {
             "0": 4,
             "1": 0,
@@ -7521,7 +7521,7 @@
         {
           "platz": 6,
           "name": "Lukas",
-          "gesamt": 110,
+          "gesamt": 114,
           "punkte_pro_spiel": {
             "0": 3,
             "1": 0,
@@ -7614,7 +7614,7 @@
         {
           "platz": 7,
           "name": "SR",
-          "gesamt": 108,
+          "gesamt": 112,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 0,
@@ -7707,7 +7707,7 @@
         {
           "platz": 8,
           "name": "Pechnic90",
-          "gesamt": 102,
+          "gesamt": 106,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 0,
@@ -7800,7 +7800,7 @@
         {
           "platz": 9,
           "name": "Henning",
-          "gesamt": 100,
+          "gesamt": 104,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 0,
@@ -7893,7 +7893,7 @@
         {
           "platz": 10,
           "name": "KNALLentin",
-          "gesamt": 99,
+          "gesamt": 103,
           "punkte_pro_spiel": {
             "0": 3,
             "1": 0,
@@ -7986,7 +7986,7 @@
         {
           "platz": 11,
           "name": "Chris",
-          "gesamt": 99,
+          "gesamt": 103,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 4,
@@ -8143,7 +8143,7 @@
         {
           "platz": 1,
           "name": "Nalewaja",
-          "gesamt": 133,
+          "gesamt": 137,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 0,
@@ -8236,7 +8236,7 @@
         {
           "platz": 2,
           "name": "Senge",
-          "gesamt": 124,
+          "gesamt": 128,
           "punkte_pro_spiel": {
             "0": 4,
             "1": 0,
@@ -8329,7 +8329,7 @@
         {
           "platz": 3,
           "name": "Rosellen",
-          "gesamt": 123,
+          "gesamt": 127,
           "punkte_pro_spiel": {
             "0": 4,
             "1": 0,
@@ -8422,7 +8422,7 @@
         {
           "platz": 4,
           "name": "Benjamin",
-          "gesamt": 123,
+          "gesamt": 127,
           "punkte_pro_spiel": {
             "0": 4,
             "1": 0,
@@ -8515,7 +8515,7 @@
         {
           "platz": 5,
           "name": "Kolle",
-          "gesamt": 118,
+          "gesamt": 122,
           "punkte_pro_spiel": {
             "0": 3,
             "1": 0,
@@ -8608,7 +8608,7 @@
         {
           "platz": 6,
           "name": "Lukas",
-          "gesamt": 118,
+          "gesamt": 122,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 0,
@@ -8701,7 +8701,7 @@
         {
           "platz": 7,
           "name": "SR",
-          "gesamt": 115,
+          "gesamt": 119,
           "punkte_pro_spiel": {
             "0": 3,
             "1": 0,
@@ -8794,7 +8794,7 @@
         {
           "platz": 8,
           "name": "KNALLentin",
-          "gesamt": 112,
+          "gesamt": 116,
           "punkte_pro_spiel": {
             "0": 4,
             "1": 0,
@@ -8887,7 +8887,7 @@
         {
           "platz": 9,
           "name": "Pechnic90",
-          "gesamt": 106,
+          "gesamt": 110,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 0,
@@ -8980,7 +8980,7 @@
         {
           "platz": 10,
           "name": "Chris",
-          "gesamt": 105,
+          "gesamt": 109,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 0,
@@ -9073,7 +9073,7 @@
         {
           "platz": 11,
           "name": "Henning",
-          "gesamt": 104,
+          "gesamt": 108,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 0,
@@ -9230,7 +9230,7 @@
         {
           "platz": 1,
           "name": "Nalewaja",
-          "gesamt": 142,
+          "gesamt": 146,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -9323,7 +9323,7 @@
         {
           "platz": 2,
           "name": "Benjamin",
-          "gesamt": 138,
+          "gesamt": 142,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -9416,7 +9416,7 @@
         {
           "platz": 3,
           "name": "Senge",
-          "gesamt": 134,
+          "gesamt": 138,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -9509,7 +9509,7 @@
         {
           "platz": 4,
           "name": "Kolle",
-          "gesamt": 130,
+          "gesamt": 134,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -9602,7 +9602,7 @@
         {
           "platz": 5,
           "name": "Rosellen",
-          "gesamt": 129,
+          "gesamt": 133,
           "punkte_pro_spiel": {
             "0": 0,
             "1": 2,
@@ -9695,7 +9695,7 @@
         {
           "platz": 6,
           "name": "Lukas",
-          "gesamt": 128,
+          "gesamt": 132,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -9788,7 +9788,7 @@
         {
           "platz": 7,
           "name": "KNALLentin",
-          "gesamt": 124,
+          "gesamt": 128,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -9881,7 +9881,7 @@
         {
           "platz": 8,
           "name": "SR",
-          "gesamt": 124,
+          "gesamt": 128,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -9974,7 +9974,7 @@
         {
           "platz": 9,
           "name": "Pechnic90",
-          "gesamt": 116,
+          "gesamt": 120,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -10067,7 +10067,7 @@
         {
           "platz": 10,
           "name": "Henning",
-          "gesamt": 114,
+          "gesamt": 118,
           "punkte_pro_spiel": {
             "0": 3,
             "1": 2,
@@ -10160,7 +10160,7 @@
         {
           "platz": 11,
           "name": "Chris",
-          "gesamt": 113,
+          "gesamt": 117,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
