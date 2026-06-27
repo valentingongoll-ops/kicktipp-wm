@@ -1,6 +1,6 @@
 {
   "community": "stb-tipprunde",
-  "zuletzt_aktualisiert": "2026-06-27T04:00:12",
+  "zuletzt_aktualisiert": "2026-06-27T04:15:13",
   "spieltage": [
     {
       "name": "1. Spieltag",
@@ -68,7 +68,7 @@
         "Gr EDEU",
         "Gr FNIE",
         "Gr G---",
-        "Gr H---",
+        "Gr HSPA",
         "Gr IFRA",
         "Gr JARG",
         "Gr K---",
@@ -111,7 +111,7 @@
             "7": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 32,
+          "bonus": 36,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -149,9 +149,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -210,7 +210,7 @@
             "7": "1:0"
           },
           "allein_punkte": 2,
-          "bonus": 28,
+          "bonus": 32,
           "bonus_detail": {
             "Tor---": {
               "tipp": "BRA",
@@ -248,9 +248,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -309,7 +309,7 @@
             "7": "1:3"
           },
           "allein_punkte": 0,
-          "bonus": 28,
+          "bonus": 32,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -347,9 +347,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -408,7 +408,7 @@
             "7": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 32,
+          "bonus": 36,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -446,9 +446,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -507,7 +507,7 @@
             "7": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 28,
+          "bonus": 32,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -545,9 +545,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -606,7 +606,7 @@
             "7": "1:3"
           },
           "allein_punkte": 0,
-          "bonus": 24,
+          "bonus": 28,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -644,9 +644,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -705,7 +705,7 @@
             "7": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 24,
+          "bonus": 28,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -743,9 +743,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -804,7 +804,7 @@
             "7": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 24,
+          "bonus": 28,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -842,9 +842,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "NOR",
@@ -903,7 +903,7 @@
             "7": "0:2"
           },
           "allein_punkte": 0,
-          "bonus": 20,
+          "bonus": 24,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -941,9 +941,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -1002,7 +1002,7 @@
             "7": "0:2"
           },
           "allein_punkte": 0,
-          "bonus": 20,
+          "bonus": 24,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -1040,9 +1040,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -1101,7 +1101,7 @@
             "7": "0:2"
           },
           "allein_punkte": 0,
-          "bonus": 20,
+          "bonus": 24,
           "bonus_detail": {
             "Tor---": {
               "tipp": "SPA",
@@ -1139,9 +1139,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -1233,7 +1233,7 @@
         "Gr EDEU",
         "Gr FNIE",
         "Gr G---",
-        "Gr H---",
+        "Gr HSPA",
         "Gr IFRA",
         "Gr JARG",
         "Gr K---",
@@ -1276,7 +1276,7 @@
             "7": "1:1"
           },
           "allein_punkte": 1,
-          "bonus": 28,
+          "bonus": 32,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -1314,9 +1314,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -1375,7 +1375,7 @@
             "7": "1:0"
           },
           "allein_punkte": 0,
-          "bonus": 32,
+          "bonus": 36,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -1413,9 +1413,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -1474,7 +1474,7 @@
             "7": "0:2"
           },
           "allein_punkte": 0,
-          "bonus": 28,
+          "bonus": 32,
           "bonus_detail": {
             "Tor---": {
               "tipp": "BRA",
@@ -1512,9 +1512,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -1573,7 +1573,7 @@
             "7": "2:1"
           },
           "allein_punkte": 0,
-          "bonus": 32,
+          "bonus": 36,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -1611,9 +1611,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -1672,7 +1672,7 @@
             "7": "2:1"
           },
           "allein_punkte": 0,
-          "bonus": 28,
+          "bonus": 32,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -1710,9 +1710,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -1771,7 +1771,7 @@
             "7": "2:1"
           },
           "allein_punkte": 0,
-          "bonus": 24,
+          "bonus": 28,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -1809,9 +1809,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -1870,7 +1870,7 @@
             "7": "1:0"
           },
           "allein_punkte": 1,
-          "bonus": 20,
+          "bonus": 24,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -1908,9 +1908,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -1969,7 +1969,7 @@
             "7": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 24,
+          "bonus": 28,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -2007,9 +2007,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -2068,7 +2068,7 @@
             "7": "0:2"
           },
           "allein_punkte": 0,
-          "bonus": 24,
+          "bonus": 28,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -2106,9 +2106,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "NOR",
@@ -2167,7 +2167,7 @@
             "7": "2:1"
           },
           "allein_punkte": 0,
-          "bonus": 20,
+          "bonus": 24,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -2205,9 +2205,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -2266,7 +2266,7 @@
             "7": "2:1"
           },
           "allein_punkte": 0,
-          "bonus": 20,
+          "bonus": 24,
           "bonus_detail": {
             "Tor---": {
               "tipp": "SPA",
@@ -2304,9 +2304,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -2398,7 +2398,7 @@
         "Gr EDEU",
         "Gr FNIE",
         "Gr G---",
-        "Gr H---",
+        "Gr HSPA",
         "Gr IFRA",
         "Gr JARG",
         "Gr K---",
@@ -2441,7 +2441,7 @@
             "7": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 28,
+          "bonus": 32,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -2479,9 +2479,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -2540,7 +2540,7 @@
             "7": "0:2"
           },
           "allein_punkte": 0,
-          "bonus": 32,
+          "bonus": 36,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -2578,9 +2578,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -2639,7 +2639,7 @@
             "7": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 28,
+          "bonus": 32,
           "bonus_detail": {
             "Tor---": {
               "tipp": "BRA",
@@ -2677,9 +2677,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -2738,7 +2738,7 @@
             "7": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 32,
+          "bonus": 36,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -2776,9 +2776,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -2837,7 +2837,7 @@
             "7": "0:2"
           },
           "allein_punkte": 0,
-          "bonus": 20,
+          "bonus": 24,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -2875,9 +2875,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -2936,7 +2936,7 @@
             "7": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 28,
+          "bonus": 32,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -2974,9 +2974,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -3035,7 +3035,7 @@
             "7": "0:2"
           },
           "allein_punkte": 0,
-          "bonus": 24,
+          "bonus": 28,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -3073,9 +3073,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -3134,7 +3134,7 @@
             "7": "0:2"
           },
           "allein_punkte": 0,
-          "bonus": 24,
+          "bonus": 28,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -3172,9 +3172,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -3233,7 +3233,7 @@
             "7": "0:3"
           },
           "allein_punkte": 0,
-          "bonus": 24,
+          "bonus": 28,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -3271,9 +3271,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "NOR",
@@ -3332,7 +3332,7 @@
             "7": "0:2"
           },
           "allein_punkte": 0,
-          "bonus": 20,
+          "bonus": 24,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -3370,9 +3370,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -3431,7 +3431,7 @@
             "7": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 20,
+          "bonus": 24,
           "bonus_detail": {
             "Tor---": {
               "tipp": "SPA",
@@ -3469,9 +3469,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -3563,7 +3563,7 @@
         "Gr EDEU",
         "Gr FNIE",
         "Gr G---",
-        "Gr H---",
+        "Gr HSPA",
         "Gr IFRA",
         "Gr JARG",
         "Gr K---",
@@ -3606,7 +3606,7 @@
             "7": "2:1"
           },
           "allein_punkte": 0,
-          "bonus": 28,
+          "bonus": 32,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -3644,9 +3644,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -3705,7 +3705,7 @@
             "7": "1:1"
           },
           "allein_punkte": 0,
-          "bonus": 32,
+          "bonus": 36,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -3743,9 +3743,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -3804,7 +3804,7 @@
             "7": "2:1"
           },
           "allein_punkte": 0,
-          "bonus": 24,
+          "bonus": 28,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -3842,9 +3842,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -3903,7 +3903,7 @@
             "7": "1:1"
           },
           "allein_punkte": 0,
-          "bonus": 24,
+          "bonus": 28,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -3941,9 +3941,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "NOR",
@@ -4002,7 +4002,7 @@
             "7": "1:1"
           },
           "allein_punkte": 0,
-          "bonus": 28,
+          "bonus": 32,
           "bonus_detail": {
             "Tor---": {
               "tipp": "BRA",
@@ -4040,9 +4040,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -4101,7 +4101,7 @@
             "7": "1:0"
           },
           "allein_punkte": 0,
-          "bonus": 24,
+          "bonus": 28,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -4139,9 +4139,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -4200,7 +4200,7 @@
             "7": "3:1"
           },
           "allein_punkte": 0,
-          "bonus": 32,
+          "bonus": 36,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -4238,9 +4238,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -4299,7 +4299,7 @@
             "7": "1:1"
           },
           "allein_punkte": 0,
-          "bonus": 28,
+          "bonus": 32,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -4337,9 +4337,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -4398,7 +4398,7 @@
             "7": "2:1"
           },
           "allein_punkte": 0,
-          "bonus": 20,
+          "bonus": 24,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -4436,9 +4436,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -4497,7 +4497,7 @@
             "7": "1:1"
           },
           "allein_punkte": 0,
-          "bonus": 20,
+          "bonus": 24,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -4535,9 +4535,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -4596,7 +4596,7 @@
             "7": "2:2"
           },
           "allein_punkte": 0,
-          "bonus": 20,
+          "bonus": 24,
           "bonus_detail": {
             "Tor---": {
               "tipp": "SPA",
@@ -4634,9 +4634,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -4728,7 +4728,7 @@
         "Gr EDEU",
         "Gr FNIE",
         "Gr G---",
-        "Gr H---",
+        "Gr HSPA",
         "Gr IFRA",
         "Gr JARG",
         "Gr K---",
@@ -4771,7 +4771,7 @@
             "7": "0:2"
           },
           "allein_punkte": 0,
-          "bonus": 28,
+          "bonus": 32,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -4809,9 +4809,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -4870,7 +4870,7 @@
             "7": "0:1"
           },
           "allein_punkte": 0,
-          "bonus": 32,
+          "bonus": 36,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -4908,9 +4908,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -4969,7 +4969,7 @@
             "7": "0:2"
           },
           "allein_punkte": 0,
-          "bonus": 24,
+          "bonus": 28,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -5007,9 +5007,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -5068,7 +5068,7 @@
             "7": "0:2"
           },
           "allein_punkte": 0,
-          "bonus": 24,
+          "bonus": 28,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -5106,9 +5106,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "NOR",
@@ -5167,7 +5167,7 @@
             "7": "1:0"
           },
           "allein_punkte": 0,
-          "bonus": 28,
+          "bonus": 32,
           "bonus_detail": {
             "Tor---": {
               "tipp": "BRA",
@@ -5205,9 +5205,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -5266,7 +5266,7 @@
             "7": "1:3"
           },
           "allein_punkte": 0,
-          "bonus": 28,
+          "bonus": 32,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -5304,9 +5304,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -5365,7 +5365,7 @@
             "7": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 32,
+          "bonus": 36,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -5403,9 +5403,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -5464,7 +5464,7 @@
             "7": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 24,
+          "bonus": 28,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -5502,9 +5502,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -5563,7 +5563,7 @@
             "7": "0:3"
           },
           "allein_punkte": 0,
-          "bonus": 20,
+          "bonus": 24,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -5601,9 +5601,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -5662,7 +5662,7 @@
             "7": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 20,
+          "bonus": 24,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -5700,9 +5700,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -5761,7 +5761,7 @@
             "7": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 20,
+          "bonus": 24,
           "bonus_detail": {
             "Tor---": {
               "tipp": "SPA",
@@ -5799,9 +5799,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -5893,7 +5893,7 @@
         "Gr EDEU",
         "Gr FNIE",
         "Gr G---",
-        "Gr H---",
+        "Gr HSPA",
         "Gr IFRA",
         "Gr JARG",
         "Gr K---",
@@ -5936,7 +5936,7 @@
             "7": "2:1"
           },
           "allein_punkte": 0,
-          "bonus": 28,
+          "bonus": 32,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -5974,9 +5974,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -6035,7 +6035,7 @@
             "7": "2:0"
           },
           "allein_punkte": 0,
-          "bonus": 24,
+          "bonus": 28,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -6073,9 +6073,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -6134,7 +6134,7 @@
             "7": "2:0"
           },
           "allein_punkte": 0,
-          "bonus": 24,
+          "bonus": 28,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -6172,9 +6172,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "NOR",
@@ -6233,7 +6233,7 @@
             "7": "2:0"
           },
           "allein_punkte": 0,
-          "bonus": 32,
+          "bonus": 36,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -6271,9 +6271,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -6332,7 +6332,7 @@
             "7": "2:1"
           },
           "allein_punkte": 0,
-          "bonus": 32,
+          "bonus": 36,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -6370,9 +6370,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -6431,7 +6431,7 @@
             "7": "2:1"
           },
           "allein_punkte": 0,
-          "bonus": 24,
+          "bonus": 28,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -6469,9 +6469,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -6529,7 +6529,7 @@
             "7": "2:1"
           },
           "allein_punkte": 0,
-          "bonus": 28,
+          "bonus": 32,
           "bonus_detail": {
             "Tor---": {
               "tipp": "BRA",
@@ -6567,9 +6567,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -6628,7 +6628,7 @@
             "7": "2:1"
           },
           "allein_punkte": 0,
-          "bonus": 20,
+          "bonus": 24,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -6666,9 +6666,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -6727,7 +6727,7 @@
             "7": "1:1"
           },
           "allein_punkte": 0,
-          "bonus": 28,
+          "bonus": 32,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -6765,9 +6765,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -6826,7 +6826,7 @@
             "7": "2:2"
           },
           "allein_punkte": 0,
-          "bonus": 20,
+          "bonus": 24,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -6864,9 +6864,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -6925,7 +6925,7 @@
             "7": "2:0"
           },
           "allein_punkte": 0,
-          "bonus": 20,
+          "bonus": 24,
           "bonus_detail": {
             "Tor---": {
               "tipp": "SPA",
@@ -6963,9 +6963,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -7045,7 +7045,7 @@
         "Gr EDEU",
         "Gr FNIE",
         "Gr G---",
-        "Gr H---",
+        "Gr HSPA",
         "Gr IFRA",
         "Gr JARG",
         "Gr K---",
@@ -7082,7 +7082,7 @@
             "5": "1:1"
           },
           "allein_punkte": 0,
-          "bonus": 28,
+          "bonus": 32,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -7120,9 +7120,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -7175,7 +7175,7 @@
             "5": "0:3"
           },
           "allein_punkte": 0,
-          "bonus": 24,
+          "bonus": 28,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -7213,9 +7213,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "NOR",
@@ -7268,7 +7268,7 @@
             "5": "2:2"
           },
           "allein_punkte": 0,
-          "bonus": 24,
+          "bonus": 28,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -7306,9 +7306,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -7361,7 +7361,7 @@
             "5": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 32,
+          "bonus": 36,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -7399,9 +7399,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -7454,7 +7454,7 @@
             "5": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 32,
+          "bonus": 36,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -7492,9 +7492,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -7547,7 +7547,7 @@
             "5": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 24,
+          "bonus": 28,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -7585,9 +7585,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -7640,7 +7640,7 @@
             "5": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 28,
+          "bonus": 32,
           "bonus_detail": {
             "Tor---": {
               "tipp": "BRA",
@@ -7678,9 +7678,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -7733,7 +7733,7 @@
             "5": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 20,
+          "bonus": 24,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -7771,9 +7771,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -7826,7 +7826,7 @@
             "5": "0:1"
           },
           "allein_punkte": 0,
-          "bonus": 28,
+          "bonus": 32,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -7864,9 +7864,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -7919,7 +7919,7 @@
             "5": "0:0"
           },
           "allein_punkte": 0,
-          "bonus": 20,
+          "bonus": 24,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -7957,9 +7957,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -8012,7 +8012,7 @@
             "5": "1:1"
           },
           "allein_punkte": 0,
-          "bonus": 20,
+          "bonus": 24,
           "bonus_detail": {
             "Tor---": {
               "tipp": "SPA",
@@ -8050,9 +8050,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -8132,7 +8132,7 @@
         "Gr EDEU",
         "Gr FNIE",
         "Gr G---",
-        "Gr H---",
+        "Gr HSPA",
         "Gr IFRA",
         "Gr JARG",
         "Gr K---",
@@ -8169,7 +8169,7 @@
             "5": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 28,
+          "bonus": 32,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -8207,9 +8207,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -8262,7 +8262,7 @@
             "5": "0:2"
           },
           "allein_punkte": 0,
-          "bonus": 24,
+          "bonus": 28,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -8300,9 +8300,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -8355,7 +8355,7 @@
             "5": "0:2"
           },
           "allein_punkte": 0,
-          "bonus": 24,
+          "bonus": 28,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -8393,9 +8393,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "NOR",
@@ -8448,7 +8448,7 @@
             "5": "1:1"
           },
           "allein_punkte": 0,
-          "bonus": 32,
+          "bonus": 36,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -8486,9 +8486,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -8541,7 +8541,7 @@
             "5": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 32,
+          "bonus": 36,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -8579,9 +8579,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -8634,7 +8634,7 @@
             "5": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 24,
+          "bonus": 28,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -8672,9 +8672,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -8727,7 +8727,7 @@
             "5": "2:2"
           },
           "allein_punkte": 0,
-          "bonus": 28,
+          "bonus": 32,
           "bonus_detail": {
             "Tor---": {
               "tipp": "BRA",
@@ -8765,9 +8765,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -8820,7 +8820,7 @@
             "5": "1:0"
           },
           "allein_punkte": 1,
-          "bonus": 20,
+          "bonus": 24,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -8858,9 +8858,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -8913,7 +8913,7 @@
             "5": "0:1"
           },
           "allein_punkte": 0,
-          "bonus": 20,
+          "bonus": 24,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -8951,9 +8951,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -9006,7 +9006,7 @@
             "5": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 20,
+          "bonus": 24,
           "bonus_detail": {
             "Tor---": {
               "tipp": "SPA",
@@ -9044,9 +9044,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -9099,7 +9099,7 @@
             "5": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 28,
+          "bonus": 32,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -9137,9 +9137,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -9184,8 +9184,8 @@
         {
           "col_idx": 2,
           "label": "URU–SPA",
-          "abgeschlossen": false,
-          "ergebnis": null
+          "abgeschlossen": true,
+          "ergebnis": "0:1"
         },
         {
           "col_idx": 3,
@@ -9219,7 +9219,7 @@
         "Gr EDEU",
         "Gr FNIE",
         "Gr G---",
-        "Gr H---",
+        "Gr HSPA",
         "Gr IFRA",
         "Gr JARG",
         "Gr K---",
@@ -9252,7 +9252,7 @@
             "5": "-:-"
           },
           "allein_punkte": 0,
-          "bonus": 28,
+          "bonus": 32,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -9290,9 +9290,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -9341,7 +9341,7 @@
             "5": "-:-"
           },
           "allein_punkte": 0,
-          "bonus": 32,
+          "bonus": 36,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -9379,9 +9379,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -9430,7 +9430,7 @@
             "5": "-:-"
           },
           "allein_punkte": 0,
-          "bonus": 24,
+          "bonus": 28,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -9468,9 +9468,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -9519,7 +9519,7 @@
             "5": "-:-"
           },
           "allein_punkte": 0,
-          "bonus": 24,
+          "bonus": 28,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -9557,9 +9557,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "NOR",
@@ -9608,7 +9608,7 @@
             "5": "-:-"
           },
           "allein_punkte": 0,
-          "bonus": 24,
+          "bonus": 28,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -9646,9 +9646,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -9697,7 +9697,7 @@
             "5": "-:-"
           },
           "allein_punkte": 0,
-          "bonus": 32,
+          "bonus": 36,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -9735,9 +9735,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -9786,7 +9786,7 @@
             "5": "-:-"
           },
           "allein_punkte": 0,
-          "bonus": 28,
+          "bonus": 32,
           "bonus_detail": {
             "Tor---": {
               "tipp": "BRA",
@@ -9824,9 +9824,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -9875,7 +9875,7 @@
             "5": "-:-"
           },
           "allein_punkte": 0,
-          "bonus": 20,
+          "bonus": 24,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -9913,9 +9913,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -9964,7 +9964,7 @@
             "5": "-:-"
           },
           "allein_punkte": 0,
-          "bonus": 20,
+          "bonus": 24,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -10002,9 +10002,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -10053,7 +10053,7 @@
             "5": "-:-"
           },
           "allein_punkte": 0,
-          "bonus": 28,
+          "bonus": 32,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -10091,9 +10091,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
@@ -10142,7 +10142,7 @@
             "5": "-:-"
           },
           "allein_punkte": 0,
-          "bonus": 20,
+          "bonus": 24,
           "bonus_detail": {
             "Tor---": {
               "tipp": "SPA",
@@ -10180,9 +10180,9 @@
               "tipp": "BEL",
               "punkte": 0
             },
-            "Gr H---": {
+            "Gr HSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             },
             "Gr IFRA": {
               "tipp": "FRA",
