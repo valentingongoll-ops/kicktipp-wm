@@ -1,6 +1,6 @@
 {
   "community": "stb-tipprunde",
-  "zuletzt_aktualisiert": "2026-06-27T03:45:12",
+  "zuletzt_aktualisiert": "2026-06-27T04:00:12",
   "spieltage": [
     {
       "name": "1. Spieltag",
@@ -9190,8 +9190,8 @@
         {
           "col_idx": 3,
           "label": "CPV–SAR",
-          "abgeschlossen": false,
-          "ergebnis": null
+          "abgeschlossen": true,
+          "ergebnis": "0:0"
         },
         {
           "col_idx": 4,
@@ -9234,12 +9234,14 @@
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
-            "2": 3
+            "2": 3,
+            "3": 0
           },
           "exakt_pro_spiel": {
             "0": false,
             "1": false,
-            "2": false
+            "2": false,
+            "3": false
           },
           "tipp_pro_spiel": {
             "0": "1:2",
@@ -9499,12 +9501,14 @@
           "punkte_pro_spiel": {
             "0": 0,
             "1": 2,
-            "2": 2
+            "2": 2,
+            "3": 0
           },
           "exakt_pro_spiel": {
             "0": false,
             "1": false,
-            "2": false
+            "2": false,
+            "3": false
           },
           "tipp_pro_spiel": {
             "0": "2:1",
@@ -9675,12 +9679,14 @@
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
-            "2": 2
+            "2": 2,
+            "3": 0
           },
           "exakt_pro_spiel": {
             "0": false,
             "1": false,
-            "2": false
+            "2": false,
+            "3": false
           },
           "tipp_pro_spiel": {
             "0": "1:2",
@@ -9762,12 +9768,14 @@
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
-            "2": 3
+            "2": 3,
+            "3": 0
           },
           "exakt_pro_spiel": {
             "0": false,
             "1": false,
-            "2": false
+            "2": false,
+            "3": false
           },
           "tipp_pro_spiel": {
             "0": "1:2",
@@ -9849,12 +9857,14 @@
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
-            "2": 2
+            "2": 2,
+            "3": 0
           },
           "exakt_pro_spiel": {
             "0": false,
             "1": false,
-            "2": false
+            "2": false,
+            "3": false
           },
           "tipp_pro_spiel": {
             "0": "1:2",
@@ -10025,12 +10035,14 @@
           "punkte_pro_spiel": {
             "0": 3,
             "1": 2,
-            "2": 3
+            "2": 3,
+            "3": 0
           },
           "exakt_pro_spiel": {
             "0": false,
             "1": false,
-            "2": false
+            "2": false,
+            "3": false
           },
           "tipp_pro_spiel": {
             "0": "0:3",
@@ -10112,12 +10124,14 @@
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
-            "2": 2
+            "2": 2,
+            "3": 0
           },
           "exakt_pro_spiel": {
             "0": false,
             "1": false,
-            "2": false
+            "2": false,
+            "3": false
           },
           "tipp_pro_spiel": {
             "0": "1:2",
