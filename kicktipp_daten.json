@@ -1,6 +1,6 @@
 {
   "community": "stb-tipprunde",
-  "zuletzt_aktualisiert": "2026-06-27T06:45:10",
+  "zuletzt_aktualisiert": "2026-06-27T07:00:12",
   "spieltage": [
     {
       "name": "1. Spieltag",
@@ -9196,8 +9196,8 @@
         {
           "col_idx": 4,
           "label": "NZL–BEL",
-          "abgeschlossen": false,
-          "ergebnis": null
+          "abgeschlossen": true,
+          "ergebnis": "1:5"
         },
         {
           "col_idx": 5,
@@ -9414,20 +9414,20 @@
         {
           "platz": 3,
           "name": "Senge",
-          "gesamt": 136,
+          "gesamt": 134,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
             "2": 2,
             "3": 2,
-            "4": 4
+            "4": 2
           },
           "exakt_pro_spiel": {
             "0": false,
             "1": false,
             "2": false,
             "3": false,
-            "4": true
+            "4": false
           },
           "tipp_pro_spiel": {
             "0": "1:3",
