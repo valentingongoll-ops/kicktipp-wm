@@ -1,6 +1,6 @@
 {
   "community": "stb-tipprunde",
-  "zuletzt_aktualisiert": "2026-06-29T21:00:15",
+  "zuletzt_aktualisiert": "2026-06-29T21:15:15",
   "spieltage": [
     {
       "name": "1. Spieltag",
@@ -11352,8 +11352,8 @@
         {
           "col_idx": 1,
           "label": "BRA–JPN",
-          "abgeschlossen": false,
-          "ergebnis": null
+          "abgeschlossen": true,
+          "ergebnis": "2:1"
         },
         {
           "col_idx": 2,
