@@ -1,6 +1,6 @@
 {
   "community": "stb-tipprunde",
-  "zuletzt_aktualisiert": "2026-07-01T00:45:15",
+  "zuletzt_aktualisiert": "2026-07-01T01:00:10",
   "spieltage": [
     {
       "name": "1. Spieltag",
@@ -11376,8 +11376,8 @@
         {
           "col_idx": 5,
           "label": "FRA–SWE",
-          "abgeschlossen": false,
-          "ergebnis": null
+          "abgeschlossen": true,
+          "ergebnis": "3:0"
         },
         {
           "col_idx": 6,
