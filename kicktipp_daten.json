@@ -1,6 +1,6 @@
 {
   "community": "stb-tipprunde",
-  "zuletzt_aktualisiert": "2026-06-30T20:45:18",
+  "zuletzt_aktualisiert": "2026-06-30T21:00:12",
   "spieltage": [
     {
       "name": "1. Spieltag",
@@ -11370,8 +11370,8 @@
         {
           "col_idx": 4,
           "label": "CIV–NOR",
-          "abgeschlossen": false,
-          "ergebnis": null
+          "abgeschlossen": true,
+          "ergebnis": "1:2"
         },
         {
           "col_idx": 5,
@@ -12074,13 +12074,15 @@
             "0": 0,
             "1": 2,
             "2": 0,
-            "3": 3
+            "3": 3,
+            "4": 0
           },
           "exakt_pro_spiel": {
             "0": false,
             "1": false,
             "2": false,
-            "3": false
+            "3": false,
+            "4": false
           },
           "tipp_pro_spiel": {
             "1": "3:1",
