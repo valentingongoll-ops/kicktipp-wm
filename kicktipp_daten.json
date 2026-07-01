@@ -1,6 +1,6 @@
 {
   "community": "stb-tipprunde",
-  "zuletzt_aktualisiert": "2026-07-01T06:00:14",
+  "zuletzt_aktualisiert": "2026-07-01T06:15:14",
   "spieltage": [
     {
       "name": "1. Spieltag",
@@ -11382,8 +11382,8 @@
         {
           "col_idx": 6,
           "label": "MEX–ECU",
-          "abgeschlossen": false,
-          "ergebnis": null
+          "abgeschlossen": true,
+          "ergebnis": "2:0"
         },
         {
           "col_idx": 7,
