@@ -1,6 +1,6 @@
 {
   "community": "stb-tipprunde",
-  "zuletzt_aktualisiert": "2026-07-04T05:30:15",
+  "zuletzt_aktualisiert": "2026-07-04T05:45:13",
   "spieltage": [
     {
       "name": "1. Spieltag",
@@ -11436,8 +11436,8 @@
         {
           "col_idx": 15,
           "label": "KOL–GHA",
-          "abgeschlossen": false,
-          "ergebnis": null
+          "abgeschlossen": true,
+          "ergebnis": "1:0"
         }
       ],
       "bonus_fragen": [
