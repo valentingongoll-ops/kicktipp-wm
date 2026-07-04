@@ -1,6 +1,6 @@
 {
   "community": "stb-tipprunde",
-  "zuletzt_aktualisiert": "2026-07-05T01:00:10",
+  "zuletzt_aktualisiert": "2026-07-05T01:15:10",
   "spieltage": [
     {
       "name": "1. Spieltag",
@@ -12826,8 +12826,8 @@
         {
           "col_idx": 1,
           "label": "PAR–FRA",
-          "abgeschlossen": false,
-          "ergebnis": null
+          "abgeschlossen": true,
+          "ergebnis": "0:1"
         },
         {
           "col_idx": 2,
