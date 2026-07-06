@@ -1,6 +1,6 @@
 {
   "community": "stb-tipprunde",
-  "zuletzt_aktualisiert": "2026-07-06T07:00:11",
+  "zuletzt_aktualisiert": "2026-07-06T07:15:11",
   "spieltage": [
     {
       "name": "1. Spieltag",
@@ -13270,7 +13270,9 @@
             "2": "2:1",
             "3": "1:2",
             "4": "-:-",
-            "5": "-:-"
+            "5": "-:-",
+            "6": "-:-",
+            "7": "-:-"
           },
           "allein_punkte": 0,
           "bonus": 44,
