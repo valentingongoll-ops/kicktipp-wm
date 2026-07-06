@@ -1,6 +1,6 @@
 {
   "community": "stb-tipprunde",
-  "zuletzt_aktualisiert": "2026-07-06T23:00:13",
+  "zuletzt_aktualisiert": "2026-07-06T23:15:10",
   "spieltage": [
     {
       "name": "1. Spieltag",
@@ -12844,8 +12844,8 @@
         {
           "col_idx": 4,
           "label": "POR–SPA",
-          "abgeschlossen": false,
-          "ergebnis": null
+          "abgeschlossen": true,
+          "ergebnis": "0:1"
         },
         {
           "col_idx": 5,
@@ -13173,13 +13173,15 @@
             "0": 2,
             "1": 2,
             "2": 0,
-            "3": 3
+            "3": 3,
+            "4": 0
           },
           "exakt_pro_spiel": {
             "0": false,
             "1": false,
             "2": false,
-            "3": false
+            "3": false,
+            "4": false
           },
           "tipp_pro_spiel": {
             "0": "0:2",
@@ -13448,13 +13450,15 @@
             "0": 2,
             "1": 2,
             "2": 0,
-            "3": 0
+            "3": 0,
+            "4": 0
           },
           "exakt_pro_spiel": {
             "0": false,
             "1": false,
             "2": false,
-            "3": false
+            "3": false,
+            "4": false
           },
           "tipp_pro_spiel": {
             "0": "1:2",
@@ -13632,13 +13636,15 @@
             "0": 0,
             "1": 3,
             "2": 0,
-            "3": 0
+            "3": 0,
+            "4": 0
           },
           "exakt_pro_spiel": {
             "0": false,
             "1": false,
             "2": false,
-            "3": false
+            "3": false,
+            "4": false
           },
           "tipp_pro_spiel": {
             "1": "2:3",
