@@ -1,6 +1,6 @@
 {
   "community": "stb-tipprunde",
-  "zuletzt_aktualisiert": "2026-07-07T02:30:10",
+  "zuletzt_aktualisiert": "2026-07-07T02:45:13",
   "spieltage": [
     {
       "name": "1. Spieltag",
@@ -13076,14 +13076,14 @@
         {
           "platz": 3,
           "name": "Senge",
-          "gesamt": 198,
+          "gesamt": 199,
           "punkte_pro_spiel": {
             "0": 0,
             "1": 2,
             "2": 0,
             "3": 2,
             "4": 2,
-            "5": 3
+            "5": 4
           },
           "exakt_pro_spiel": {
             "0": false,
@@ -13091,7 +13091,7 @@
             "2": false,
             "3": false,
             "4": false,
-            "5": false
+            "5": true
           },
           "tipp_pro_spiel": {
             "1": "1:4",
@@ -13170,14 +13170,14 @@
         {
           "platz": 4,
           "name": "KNALLentin",
-          "gesamt": 194,
+          "gesamt": 195,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
             "2": 0,
             "3": 3,
             "4": 0,
-            "5": 3
+            "5": 4
           },
           "exakt_pro_spiel": {
             "0": false,
@@ -13185,7 +13185,7 @@
             "2": false,
             "3": false,
             "4": false,
-            "5": false
+            "5": true
           },
           "tipp_pro_spiel": {
             "0": "0:2",
@@ -13263,14 +13263,14 @@
         {
           "platz": 5,
           "name": "Kolle",
-          "gesamt": 191,
+          "gesamt": 192,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
             "2": 0,
             "3": 3,
             "4": 3,
-            "5": 3
+            "5": 4
           },
           "exakt_pro_spiel": {
             "0": false,
@@ -13278,7 +13278,7 @@
             "2": false,
             "3": false,
             "4": false,
-            "5": false
+            "5": true
           },
           "tipp_pro_spiel": {
             "0": "1:2",
@@ -13728,14 +13728,14 @@
         {
           "platz": 10,
           "name": "Henning",
-          "gesamt": 175,
+          "gesamt": 176,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
             "2": 0,
             "3": 3,
             "4": 3,
-            "5": 3
+            "5": 4
           },
           "exakt_pro_spiel": {
             "0": false,
@@ -13743,7 +13743,7 @@
             "2": false,
             "3": false,
             "4": false,
-            "5": false
+            "5": true
           },
           "tipp_pro_spiel": {
             "0": "1:2",
