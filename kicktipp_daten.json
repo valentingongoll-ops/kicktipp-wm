@@ -1,6 +1,6 @@
 {
   "community": "stb-tipprunde",
-  "zuletzt_aktualisiert": "2026-07-08T00:45:09",
+  "zuletzt_aktualisiert": "2026-07-08T01:00:11",
   "spieltage": [
     {
       "name": "1. Spieltag",
@@ -12862,8 +12862,8 @@
         {
           "col_idx": 7,
           "label": "CH–KOL",
-          "abgeschlossen": false,
-          "ergebnis": null
+          "abgeschlossen": true,
+          "ergebnis": "4:3"
         }
       ],
       "bonus_fragen": [
@@ -12898,7 +12898,8 @@
             "3": 3,
             "4": 3,
             "5": 0,
-            "6": 3
+            "6": 3,
+            "7": 0
           },
           "exakt_pro_spiel": {
             "0": false,
@@ -12907,7 +12908,8 @@
             "3": false,
             "4": false,
             "5": false,
-            "6": false
+            "6": false,
+            "7": false
           },
           "tipp_pro_spiel": {
             "0": "1:2",
@@ -12995,7 +12997,8 @@
             "3": 3,
             "4": 3,
             "5": 0,
-            "6": 2
+            "6": 2,
+            "7": 0
           },
           "exakt_pro_spiel": {
             "0": false,
@@ -13004,7 +13007,8 @@
             "3": false,
             "4": false,
             "5": false,
-            "6": false
+            "6": false,
+            "7": false
           },
           "tipp_pro_spiel": {
             "0": "1:2",
@@ -13084,7 +13088,7 @@
         {
           "platz": 3,
           "name": "Senge",
-          "gesamt": 203,
+          "gesamt": 202,
           "punkte_pro_spiel": {
             "0": 0,
             "1": 2,
@@ -13093,7 +13097,7 @@
             "4": 2,
             "5": 2,
             "6": 2,
-            "7": 4
+            "7": 3
           },
           "exakt_pro_spiel": {
             "0": false,
@@ -13103,7 +13107,7 @@
             "4": false,
             "5": false,
             "6": false,
-            "7": true
+            "7": false
           },
           "tipp_pro_spiel": {
             "1": "1:4",
@@ -13190,7 +13194,8 @@
             "3": 3,
             "4": 0,
             "5": 2,
-            "6": 2
+            "6": 2,
+            "7": 0
           },
           "exakt_pro_spiel": {
             "0": false,
@@ -13199,7 +13204,8 @@
             "3": false,
             "4": false,
             "5": false,
-            "6": false
+            "6": false,
+            "7": false
           },
           "tipp_pro_spiel": {
             "0": "0:2",
@@ -13287,7 +13293,8 @@
             "3": 3,
             "4": 3,
             "5": 2,
-            "6": 3
+            "6": 3,
+            "7": 0
           },
           "exakt_pro_spiel": {
             "0": false,
@@ -13296,7 +13303,8 @@
             "3": false,
             "4": false,
             "5": false,
-            "6": false
+            "6": false,
+            "7": false
           },
           "tipp_pro_spiel": {
             "0": "1:2",
@@ -13376,7 +13384,7 @@
         {
           "platz": 6,
           "name": "Rosellen",
-          "gesamt": 191,
+          "gesamt": 190,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -13385,7 +13393,7 @@
             "4": 2,
             "5": 0,
             "6": 2,
-            "7": 4
+            "7": 3
           },
           "exakt_pro_spiel": {
             "0": false,
@@ -13395,7 +13403,7 @@
             "4": false,
             "5": false,
             "6": false,
-            "7": true
+            "7": false
           },
           "tipp_pro_spiel": {
             "0": "1:2",
@@ -13483,7 +13491,8 @@
             "3": 0,
             "4": 0,
             "5": 0,
-            "6": 2
+            "6": 2,
+            "7": 0
           },
           "exakt_pro_spiel": {
             "0": false,
@@ -13492,7 +13501,8 @@
             "3": false,
             "4": false,
             "5": false,
-            "6": false
+            "6": false,
+            "7": false
           },
           "tipp_pro_spiel": {
             "0": "1:2",
@@ -13580,7 +13590,8 @@
             "3": 3,
             "4": 3,
             "5": 0,
-            "6": 2
+            "6": 2,
+            "7": 0
           },
           "exakt_pro_spiel": {
             "0": false,
@@ -13589,7 +13600,8 @@
             "3": false,
             "4": false,
             "5": false,
-            "6": false
+            "6": false,
+            "7": false
           },
           "tipp_pro_spiel": {
             "0": "0:2",
@@ -13873,7 +13885,8 @@
             "3": 0,
             "4": 3,
             "5": 0,
-            "6": 2
+            "6": 2,
+            "7": 0
           },
           "exakt_pro_spiel": {
             "0": false,
@@ -13882,7 +13895,8 @@
             "3": false,
             "4": false,
             "5": false,
-            "6": false
+            "6": false,
+            "7": false
           },
           "tipp_pro_spiel": {
             "0": "0:2",
