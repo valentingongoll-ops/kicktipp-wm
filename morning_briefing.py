@@ -173,28 +173,12 @@ def erstelle_tabelle_html(rang):
     )
 
 
-# ── WM-News ─────────────────────────────────────────────────────
 
-def hole_wm_news():
-    heute = datetime.now(MESZ)
-    datum_str = heute.strftime("%d.%m.%Y")
-    gestern_str = (heute - timedelta(days=1)).strftime("%d.%m.%Y")
-    result = api_call({
-        "model": "claude-haiku-4-5-20251001",
-        "max_tokens": 300,
-        "tools": [{"type": "web_search_20250305", "name": "web_search"}],
-        "messages": [{"role": "user", "content":
-            f"WM 2026 Ergebnisse und Highlights vom {gestern_str} und {datum_str}. "
-            f"Nur Ereignisse dieser zwei Tage, keine älteren Spiele. "
-            f"Max 3 Stichpunkte auf Deutsch, je 1 Satz. Keine Formatierung."
-        }]
-    })
-    return text_aus_response(result) or "Keine aktuellen WM-News."
 
 
 # ── Mail generieren ─────────────────────────────────────────────
 
-def generiere_html(kontext, wm_news, tabelle_html=""):
+def generiere_html(kontext, tabelle_html=""):
     datum = datetime.now(MESZ).strftime("%A %d. %B %Y").replace(
         "Monday","Montag").replace("Tuesday","Dienstag").replace("Wednesday","Mittwoch").replace(
         "Thursday","Donnerstag").replace("Friday","Freitag").replace("Saturday","Samstag").replace(
@@ -205,30 +189,26 @@ def generiere_html(kontext, wm_news, tabelle_html=""):
 
     prompt = f"""Morning Briefing STB-Tipprunde WM 2026, {datum}.
 
-CHARAKTER Bot-Valentin: Fußballbegeistert, pointiert, mit Augenzwinkern. Stil: 11-Freunde-Kolumne. Nie boshaft, aber gnadenlos bei schlechten Tipps. Korrekte deutsche Rechtschreibung, alle Umlaute ausschreiben.
+CHARAKTER Bot-Valentin: Pointiert, mit Augenzwinkern. Stil: 11-Freunde-Kolumne trifft Basler-Direktheit. Nie boshaft, aber kein Blatt vor den Mund bei schlechten Tipps. Korrekte deutsche Rechtschreibung, alle Umlaute.
 
-WM-NEWS (nur diese Fakten verwenden, keine älteren Spiele erfinden):
-{wm_news}
-
-TIPPRUNDE:
+TIPPRUNDE-DATEN:
 {kontext}
 
-VERBOTEN (absolute Regeln, keine Ausnahmen):
-- Gedankenstriche (— oder – oder -- oder -) in jeglicher Form, auch nicht als Pause oder Einschub
-- Bindestrich-Listen oder Aufzählungen mit Strich
+VERBOTEN (keine Ausnahmen):
+- Gedankenstriche (— oder – oder -- oder -) in jeglicher Form
+- Bindestrich-Listen
 - Preisgeld erwähnen
 - Zitate oder Abschlusssprüche
 - Links
-- Spiele die nicht in WM-NEWS stehen
 
 AUFBAU:
-1. Kurze Begrüßung (1 Sätze)
-2. WM-Highlights aus den NEWS oben (2-3 Sätze, nur was dort steht)
-3. Schreibe exakt ##TABELLE## auf einer eigenen Zeile, dann darunter 2-3 Sätze Kommentar zu Tippern
-4. Ausblick der kommenden Spiele heute (1 Satz)
-5. "Greets, Bot-Valentin" als Abschluss
+1. Kurze Begrüßung (1 Satz)
+2. Tipprunden-Highlights: Wer war gestern der Spieltagssieger und warum? Wer hat besonders gut oder schlecht getippt? Gab es überraschende Einzeltipps (allein gepunktet, Volltreffer)? Welche Tabellenbewegungen gab es? (3-5 Sätze, konkret mit Namen)
+3. Schreibe exakt ##TABELLE## auf einer eigenen Zeile
+4. 1-2 Sätze Kommentar zur aktuellen Spitze und zum Kampf um die letzten Plätze
+5. "Bot-Valentin" als Abschluss
 
-OUTPUT: Direkt mit HTML-Tag beginnen, kein ```html. Inline-CSS. bg #1a1a1a, text #f0f0f0, akzent #c01c00. Max 280 Wörter."""
+OUTPUT: Direkt mit HTML-Tag beginnen, kein ```html. Inline-CSS. bg #1a1a1a, text #f0f0f0, akzent #c01c00. Max 300 Wörter."""
 
     result = api_call({
         "model": "claude-sonnet-4-6",
@@ -308,11 +288,7 @@ def main():
         return
     print(f"Kontext: {len(kontext)} Zeichen, {total_gesp}/104 Spiele")
 
-    print("Hole WM-News...")
-    wm_news = hole_wm_news()
-    print(f"News: {wm_news[:80]}...")
-
-    # Tabelle direkt in Python generieren (nicht von Claude, damit alle Eintraege sicher drin sind)
+    # Tabelle direkt in Python generieren
     kontext_obj, _, _ = erstelle_kontext()  # reload for rang
     with open(DATEN_FILE, encoding="utf-8") as f:
         daten = json.load(f)
