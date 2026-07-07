@@ -1,6 +1,6 @@
 {
   "community": "stb-tipprunde",
-  "zuletzt_aktualisiert": "2026-07-07T19:45:11",
+  "zuletzt_aktualisiert": "2026-07-07T20:00:11",
   "spieltage": [
     {
       "name": "1. Spieltag",
@@ -12890,14 +12890,15 @@
         {
           "platz": 1,
           "name": "Benjamin",
-          "gesamt": 202,
+          "gesamt": 205,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
             "2": 3,
             "3": 3,
             "4": 3,
-            "5": 0
+            "5": 0,
+            "6": 3
           },
           "exakt_pro_spiel": {
             "0": false,
@@ -12905,7 +12906,8 @@
             "2": false,
             "3": false,
             "4": false,
-            "5": false
+            "5": false,
+            "6": false
           },
           "tipp_pro_spiel": {
             "0": "1:2",
@@ -12985,14 +12987,15 @@
         {
           "platz": 2,
           "name": "Nalewaja",
-          "gesamt": 202,
+          "gesamt": 204,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
             "2": 0,
             "3": 3,
             "4": 3,
-            "5": 0
+            "5": 0,
+            "6": 2
           },
           "exakt_pro_spiel": {
             "0": false,
@@ -13000,7 +13003,8 @@
             "2": false,
             "3": false,
             "4": false,
-            "5": false
+            "5": false,
+            "6": false
           },
           "tipp_pro_spiel": {
             "0": "1:2",
@@ -13080,14 +13084,15 @@
         {
           "platz": 3,
           "name": "Senge",
-          "gesamt": 197,
+          "gesamt": 199,
           "punkte_pro_spiel": {
             "0": 0,
             "1": 2,
             "2": 0,
             "3": 2,
             "4": 2,
-            "5": 2
+            "5": 2,
+            "6": 2
           },
           "exakt_pro_spiel": {
             "0": false,
@@ -13095,7 +13100,8 @@
             "2": false,
             "3": false,
             "4": false,
-            "5": false
+            "5": false,
+            "6": false
           },
           "tipp_pro_spiel": {
             "1": "1:4",
@@ -13174,14 +13180,15 @@
         {
           "platz": 4,
           "name": "KNALLentin",
-          "gesamt": 193,
+          "gesamt": 195,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
             "2": 0,
             "3": 3,
             "4": 0,
-            "5": 2
+            "5": 2,
+            "6": 2
           },
           "exakt_pro_spiel": {
             "0": false,
@@ -13189,7 +13196,8 @@
             "2": false,
             "3": false,
             "4": false,
-            "5": false
+            "5": false,
+            "6": false
           },
           "tipp_pro_spiel": {
             "0": "0:2",
@@ -13269,14 +13277,15 @@
         {
           "platz": 5,
           "name": "Kolle",
-          "gesamt": 190,
+          "gesamt": 193,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
             "2": 0,
             "3": 3,
             "4": 3,
-            "5": 2
+            "5": 2,
+            "6": 3
           },
           "exakt_pro_spiel": {
             "0": false,
@@ -13284,7 +13293,8 @@
             "2": false,
             "3": false,
             "4": false,
-            "5": false
+            "5": false,
+            "6": false
           },
           "tipp_pro_spiel": {
             "0": "1:2",
@@ -13364,14 +13374,15 @@
         {
           "platz": 6,
           "name": "Rosellen",
-          "gesamt": 185,
+          "gesamt": 187,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
             "2": 0,
             "3": 3,
             "4": 2,
-            "5": 0
+            "5": 0,
+            "6": 2
           },
           "exakt_pro_spiel": {
             "0": false,
@@ -13379,7 +13390,8 @@
             "2": false,
             "3": false,
             "4": false,
-            "5": false
+            "5": false,
+            "6": false
           },
           "tipp_pro_spiel": {
             "0": "1:2",
@@ -13459,14 +13471,15 @@
         {
           "platz": 7,
           "name": "Lukas",
-          "gesamt": 183,
+          "gesamt": 185,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
             "2": 0,
             "3": 0,
             "4": 0,
-            "5": 0
+            "5": 0,
+            "6": 2
           },
           "exakt_pro_spiel": {
             "0": false,
@@ -13474,7 +13487,8 @@
             "2": false,
             "3": false,
             "4": false,
-            "5": false
+            "5": false,
+            "6": false
           },
           "tipp_pro_spiel": {
             "0": "1:2",
@@ -13554,14 +13568,15 @@
         {
           "platz": 8,
           "name": "Chris",
-          "gesamt": 178,
+          "gesamt": 180,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
             "2": 0,
             "3": 3,
             "4": 3,
-            "5": 0
+            "5": 0,
+            "6": 2
           },
           "exakt_pro_spiel": {
             "0": false,
@@ -13569,7 +13584,8 @@
             "2": false,
             "3": false,
             "4": false,
-            "5": false
+            "5": false,
+            "6": false
           },
           "tipp_pro_spiel": {
             "0": "0:2",
@@ -13649,14 +13665,15 @@
         {
           "platz": 9,
           "name": "SR",
-          "gesamt": 176,
+          "gesamt": 178,
           "punkte_pro_spiel": {
             "0": 0,
             "1": 3,
             "2": 0,
             "3": 0,
             "4": 0,
-            "5": 0
+            "5": 0,
+            "6": 2
           },
           "exakt_pro_spiel": {
             "0": false,
@@ -13664,7 +13681,8 @@
             "2": false,
             "3": false,
             "4": false,
-            "5": false
+            "5": false,
+            "6": false
           },
           "tipp_pro_spiel": {
             "1": "2:3",
@@ -13742,14 +13760,15 @@
         {
           "platz": 10,
           "name": "Henning",
-          "gesamt": 174,
+          "gesamt": 176,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
             "2": 0,
             "3": 3,
             "4": 3,
-            "5": 2
+            "5": 2,
+            "6": 2
           },
           "exakt_pro_spiel": {
             "0": false,
@@ -13757,7 +13776,8 @@
             "2": false,
             "3": false,
             "4": false,
-            "5": false
+            "5": false,
+            "6": false
           },
           "tipp_pro_spiel": {
             "0": "1:2",
@@ -13837,14 +13857,15 @@
         {
           "platz": 11,
           "name": "Pechnic90",
-          "gesamt": 173,
+          "gesamt": 175,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
             "2": 0,
             "3": 0,
             "4": 3,
-            "5": 0
+            "5": 0,
+            "6": 2
           },
           "exakt_pro_spiel": {
             "0": false,
@@ -13852,7 +13873,8 @@
             "2": false,
             "3": false,
             "4": false,
-            "5": false
+            "5": false,
+            "6": false
           },
           "tipp_pro_spiel": {
             "0": "0:2",
