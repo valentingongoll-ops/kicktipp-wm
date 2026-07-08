@@ -303,7 +303,7 @@ def main():
     tabelle_html = erstelle_tabelle_html(rang)
 
     print("Generiere Mail...")
-    html = generiere_html(kontext, wm_news, tabelle_html)
+    html = generiere_html(kontext, tabelle_html)
     print(f"HTML: {len(html)} Zeichen")
 
     sende_mail(html)
