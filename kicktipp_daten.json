@@ -1,6 +1,6 @@
 {
   "community": "stb-tipprunde",
-  "zuletzt_aktualisiert": "2026-07-10T22:30:10",
+  "zuletzt_aktualisiert": "2026-07-10T23:33:01",
   "spieltage": [
     {
       "name": "1. Spieltag",
@@ -58,7 +58,7 @@
       "bonus_fragen": [
         "Tor---",
         "HFFRA",
-        "HF---",
+        "HFSPA",
         "HF---",
         "HF---",
         "Gr AMEX",
@@ -79,7 +79,7 @@
         {
           "platz": 1,
           "name": "Benjamin",
-          "gesamt": 60,
+          "gesamt": 64,
           "punkte_pro_spiel": {
             "0": 4,
             "1": 0,
@@ -111,7 +111,7 @@
             "7": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 48,
+          "bonus": 52,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -121,8 +121,12 @@
               "tipp": "FRA",
               "punkte": 4
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -182,7 +186,7 @@
         {
           "platz": 2,
           "name": "SR",
-          "gesamt": 52,
+          "gesamt": 56,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 0,
@@ -214,7 +218,7 @@
             "7": "1:0"
           },
           "allein_punkte": 2,
-          "bonus": 40,
+          "bonus": 44,
           "bonus_detail": {
             "Tor---": {
               "tipp": "BRA",
@@ -224,8 +228,12 @@
               "tipp": "ARG",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "DEU",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -285,7 +293,7 @@
         {
           "platz": 2,
           "name": "Nalewaja",
-          "gesamt": 52,
+          "gesamt": 56,
           "punkte_pro_spiel": {
             "0": 4,
             "1": 4,
@@ -317,7 +325,7 @@
             "7": "1:3"
           },
           "allein_punkte": 0,
-          "bonus": 40,
+          "bonus": 44,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -327,8 +335,12 @@
               "tipp": "ARG",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "DEU",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -388,7 +400,7 @@
         {
           "platz": 4,
           "name": "Kolle",
-          "gesamt": 51,
+          "gesamt": 55,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 0,
@@ -420,7 +432,7 @@
             "7": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 44,
+          "bonus": 48,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -430,8 +442,12 @@
               "tipp": "DEU",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -491,7 +507,7 @@
         {
           "platz": 5,
           "name": "Henning",
-          "gesamt": 50,
+          "gesamt": 54,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 3,
@@ -523,7 +539,7 @@
             "7": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 40,
+          "bonus": 44,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -533,8 +549,12 @@
               "tipp": "ARG",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "NIE",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -594,7 +614,7 @@
         {
           "platz": 6,
           "name": "Senge",
-          "gesamt": 49,
+          "gesamt": 53,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 4,
@@ -626,7 +646,7 @@
             "7": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 40,
+          "bonus": 44,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -636,8 +656,12 @@
               "tipp": "FRA",
               "punkte": 4
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "BRA",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -697,7 +721,7 @@
         {
           "platz": 7,
           "name": "KNALLentin",
-          "gesamt": 48,
+          "gesamt": 52,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 0,
@@ -729,7 +753,7 @@
             "7": "0:2"
           },
           "allein_punkte": 0,
-          "bonus": 36,
+          "bonus": 40,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -739,8 +763,12 @@
               "tipp": "FRA",
               "punkte": 4
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -800,7 +828,7 @@
         {
           "platz": 8,
           "name": "Rosellen",
-          "gesamt": 45,
+          "gesamt": 49,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -832,7 +860,7 @@
             "7": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 36,
+          "bonus": 40,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -842,8 +870,12 @@
               "tipp": "DEU",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -903,7 +935,7 @@
         {
           "platz": 9,
           "name": "Pechnic90",
-          "gesamt": 44,
+          "gesamt": 48,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 0,
@@ -935,7 +967,7 @@
             "7": "0:2"
           },
           "allein_punkte": 0,
-          "bonus": 36,
+          "bonus": 40,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -945,8 +977,12 @@
               "tipp": "FRA",
               "punkte": 4
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "NIE",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -1048,6 +1084,10 @@
               "tipp": "ARG",
               "punkte": 0
             },
+            "HFSPA": {
+              "tipp": "DEU",
+              "punkte": 0
+            },
             "HF---": {
               "tipp": "POR",
               "punkte": 0
@@ -1109,7 +1149,7 @@
         {
           "platz": 11,
           "name": "Chris",
-          "gesamt": 32,
+          "gesamt": 36,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 0,
@@ -1141,7 +1181,7 @@
             "7": "0:2"
           },
           "allein_punkte": 0,
-          "bonus": 28,
+          "bonus": 32,
           "bonus_detail": {
             "Tor---": {
               "tipp": "SPA",
@@ -1151,8 +1191,12 @@
               "tipp": "DEU",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "AUT",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -1267,7 +1311,7 @@
       "bonus_fragen": [
         "Tor---",
         "HFFRA",
-        "HF---",
+        "HFSPA",
         "HF---",
         "HF---",
         "Gr AMEX",
@@ -1288,7 +1332,7 @@
         {
           "platz": 1,
           "name": "Benjamin",
-          "gesamt": 64,
+          "gesamt": 68,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 0,
@@ -1320,7 +1364,7 @@
             "7": "1:0"
           },
           "allein_punkte": 0,
-          "bonus": 48,
+          "bonus": 52,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -1330,8 +1374,12 @@
               "tipp": "FRA",
               "punkte": 4
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -1391,7 +1439,7 @@
         {
           "platz": 2,
           "name": "Nalewaja",
-          "gesamt": 62,
+          "gesamt": 66,
           "punkte_pro_spiel": {
             "0": 3,
             "1": 0,
@@ -1423,7 +1471,7 @@
             "7": "1:1"
           },
           "allein_punkte": 1,
-          "bonus": 40,
+          "bonus": 44,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -1433,8 +1481,12 @@
               "tipp": "ARG",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "DEU",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -1494,7 +1546,7 @@
         {
           "platz": 3,
           "name": "SR",
-          "gesamt": 56,
+          "gesamt": 60,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 0,
@@ -1526,7 +1578,7 @@
             "7": "0:2"
           },
           "allein_punkte": 0,
-          "bonus": 40,
+          "bonus": 44,
           "bonus_detail": {
             "Tor---": {
               "tipp": "BRA",
@@ -1536,8 +1588,12 @@
               "tipp": "ARG",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "DEU",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -1597,7 +1653,7 @@
         {
           "platz": 4,
           "name": "Senge",
-          "gesamt": 56,
+          "gesamt": 60,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 0,
@@ -1629,7 +1685,7 @@
             "7": "2:1"
           },
           "allein_punkte": 0,
-          "bonus": 40,
+          "bonus": 44,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -1639,8 +1695,12 @@
               "tipp": "FRA",
               "punkte": 4
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "BRA",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -1700,7 +1760,7 @@
         {
           "platz": 5,
           "name": "Kolle",
-          "gesamt": 55,
+          "gesamt": 59,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 0,
@@ -1732,7 +1792,7 @@
             "7": "2:1"
           },
           "allein_punkte": 0,
-          "bonus": 44,
+          "bonus": 48,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -1742,8 +1802,12 @@
               "tipp": "DEU",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -1803,7 +1867,7 @@
         {
           "platz": 6,
           "name": "KNALLentin",
-          "gesamt": 54,
+          "gesamt": 58,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 0,
@@ -1835,7 +1899,7 @@
             "7": "1:0"
           },
           "allein_punkte": 1,
-          "bonus": 36,
+          "bonus": 40,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -1845,8 +1909,12 @@
               "tipp": "FRA",
               "punkte": 4
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -1906,7 +1974,7 @@
         {
           "platz": 7,
           "name": "Henning",
-          "gesamt": 54,
+          "gesamt": 58,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 0,
@@ -1938,7 +2006,7 @@
             "7": "2:1"
           },
           "allein_punkte": 0,
-          "bonus": 40,
+          "bonus": 44,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -1948,8 +2016,12 @@
               "tipp": "ARG",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "NIE",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -2009,7 +2081,7 @@
         {
           "platz": 8,
           "name": "Rosellen",
-          "gesamt": 49,
+          "gesamt": 53,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 0,
@@ -2041,7 +2113,7 @@
             "7": "0:2"
           },
           "allein_punkte": 0,
-          "bonus": 36,
+          "bonus": 40,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -2051,8 +2123,12 @@
               "tipp": "DEU",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -2112,7 +2188,7 @@
         {
           "platz": 9,
           "name": "Pechnic90",
-          "gesamt": 48,
+          "gesamt": 52,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 0,
@@ -2144,7 +2220,7 @@
             "7": "2:1"
           },
           "allein_punkte": 0,
-          "bonus": 36,
+          "bonus": 40,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -2154,8 +2230,12 @@
               "tipp": "FRA",
               "punkte": 4
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "NIE",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -2257,6 +2337,10 @@
               "tipp": "ARG",
               "punkte": 0
             },
+            "HFSPA": {
+              "tipp": "DEU",
+              "punkte": 0
+            },
             "HF---": {
               "tipp": "POR",
               "punkte": 0
@@ -2318,7 +2402,7 @@
         {
           "platz": 11,
           "name": "Chris",
-          "gesamt": 39,
+          "gesamt": 43,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 0,
@@ -2350,7 +2434,7 @@
             "7": "2:1"
           },
           "allein_punkte": 0,
-          "bonus": 28,
+          "bonus": 32,
           "bonus_detail": {
             "Tor---": {
               "tipp": "SPA",
@@ -2360,8 +2444,12 @@
               "tipp": "DEU",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "AUT",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -2476,7 +2564,7 @@
       "bonus_fragen": [
         "Tor---",
         "HFFRA",
-        "HF---",
+        "HFSPA",
         "HF---",
         "HF---",
         "Gr AMEX",
@@ -2497,7 +2585,7 @@
         {
           "platz": 1,
           "name": "Benjamin",
-          "gesamt": 80,
+          "gesamt": 84,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -2529,7 +2617,7 @@
             "7": "0:2"
           },
           "allein_punkte": 0,
-          "bonus": 48,
+          "bonus": 52,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -2539,8 +2627,12 @@
               "tipp": "FRA",
               "punkte": 4
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -2600,7 +2692,7 @@
         {
           "platz": 2,
           "name": "Nalewaja",
-          "gesamt": 79,
+          "gesamt": 83,
           "punkte_pro_spiel": {
             "0": 4,
             "1": 2,
@@ -2632,7 +2724,7 @@
             "7": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 40,
+          "bonus": 44,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -2642,8 +2734,12 @@
               "tipp": "ARG",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "DEU",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -2703,7 +2799,7 @@
         {
           "platz": 3,
           "name": "KNALLentin",
-          "gesamt": 70,
+          "gesamt": 74,
           "punkte_pro_spiel": {
             "0": 3,
             "1": 3,
@@ -2735,7 +2831,7 @@
             "7": "0:2"
           },
           "allein_punkte": 0,
-          "bonus": 36,
+          "bonus": 40,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -2745,8 +2841,12 @@
               "tipp": "FRA",
               "punkte": 4
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -2806,7 +2906,7 @@
         {
           "platz": 3,
           "name": "SR",
-          "gesamt": 70,
+          "gesamt": 74,
           "punkte_pro_spiel": {
             "0": 3,
             "1": 2,
@@ -2838,7 +2938,7 @@
             "7": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 40,
+          "bonus": 44,
           "bonus_detail": {
             "Tor---": {
               "tipp": "BRA",
@@ -2848,8 +2948,12 @@
               "tipp": "ARG",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "DEU",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -2909,7 +3013,7 @@
         {
           "platz": 5,
           "name": "Senge",
-          "gesamt": 68,
+          "gesamt": 72,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -2941,7 +3045,7 @@
             "7": "0:2"
           },
           "allein_punkte": 0,
-          "bonus": 40,
+          "bonus": 44,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -2951,8 +3055,12 @@
               "tipp": "FRA",
               "punkte": 4
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "BRA",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -3012,7 +3120,7 @@
         {
           "platz": 5,
           "name": "Kolle",
-          "gesamt": 68,
+          "gesamt": 72,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -3044,7 +3152,7 @@
             "7": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 44,
+          "bonus": 48,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -3054,8 +3162,12 @@
               "tipp": "DEU",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -3115,7 +3227,7 @@
         {
           "platz": 7,
           "name": "Henning",
-          "gesamt": 66,
+          "gesamt": 70,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -3147,7 +3259,7 @@
             "7": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 40,
+          "bonus": 44,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -3157,8 +3269,12 @@
               "tipp": "ARG",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "NIE",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -3218,7 +3334,7 @@
         {
           "platz": 8,
           "name": "Pechnic90",
-          "gesamt": 65,
+          "gesamt": 69,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 3,
@@ -3250,7 +3366,7 @@
             "7": "0:2"
           },
           "allein_punkte": 0,
-          "bonus": 36,
+          "bonus": 40,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -3260,8 +3376,12 @@
               "tipp": "FRA",
               "punkte": 4
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "NIE",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -3321,7 +3441,7 @@
         {
           "platz": 9,
           "name": "Rosellen",
-          "gesamt": 64,
+          "gesamt": 68,
           "punkte_pro_spiel": {
             "0": 3,
             "1": 3,
@@ -3353,7 +3473,7 @@
             "7": "0:3"
           },
           "allein_punkte": 0,
-          "bonus": 36,
+          "bonus": 40,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -3363,8 +3483,12 @@
               "tipp": "DEU",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -3466,6 +3590,10 @@
               "tipp": "ARG",
               "punkte": 0
             },
+            "HFSPA": {
+              "tipp": "DEU",
+              "punkte": 0
+            },
             "HF---": {
               "tipp": "POR",
               "punkte": 0
@@ -3527,7 +3655,7 @@
         {
           "platz": 11,
           "name": "Chris",
-          "gesamt": 53,
+          "gesamt": 57,
           "punkte_pro_spiel": {
             "0": 4,
             "1": 2,
@@ -3559,7 +3687,7 @@
             "7": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 28,
+          "bonus": 32,
           "bonus_detail": {
             "Tor---": {
               "tipp": "SPA",
@@ -3569,8 +3697,12 @@
               "tipp": "DEU",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "AUT",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -3685,7 +3817,7 @@
       "bonus_fragen": [
         "Tor---",
         "HFFRA",
-        "HF---",
+        "HFSPA",
         "HF---",
         "HF---",
         "Gr AMEX",
@@ -3706,7 +3838,7 @@
         {
           "platz": 1,
           "name": "Nalewaja",
-          "gesamt": 93,
+          "gesamt": 97,
           "punkte_pro_spiel": {
             "0": 0,
             "1": 0,
@@ -3738,7 +3870,7 @@
             "7": "2:1"
           },
           "allein_punkte": 0,
-          "bonus": 40,
+          "bonus": 44,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -3748,8 +3880,12 @@
               "tipp": "ARG",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "DEU",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -3809,7 +3945,7 @@
         {
           "platz": 2,
           "name": "Benjamin",
-          "gesamt": 92,
+          "gesamt": 96,
           "punkte_pro_spiel": {
             "0": 0,
             "1": 0,
@@ -3841,7 +3977,7 @@
             "7": "1:1"
           },
           "allein_punkte": 0,
-          "bonus": 48,
+          "bonus": 52,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -3851,8 +3987,12 @@
               "tipp": "FRA",
               "punkte": 4
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -3912,7 +4052,7 @@
         {
           "platz": 3,
           "name": "Senge",
-          "gesamt": 89,
+          "gesamt": 93,
           "punkte_pro_spiel": {
             "0": 4,
             "1": 2,
@@ -3944,7 +4084,7 @@
             "7": "2:1"
           },
           "allein_punkte": 0,
-          "bonus": 40,
+          "bonus": 44,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -3954,8 +4094,12 @@
               "tipp": "FRA",
               "punkte": 4
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "BRA",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -4015,7 +4159,7 @@
         {
           "platz": 4,
           "name": "Rosellen",
-          "gesamt": 85,
+          "gesamt": 89,
           "punkte_pro_spiel": {
             "0": 4,
             "1": 2,
@@ -4047,7 +4191,7 @@
             "7": "1:1"
           },
           "allein_punkte": 0,
-          "bonus": 36,
+          "bonus": 40,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -4057,8 +4201,12 @@
               "tipp": "DEU",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -4118,7 +4266,7 @@
         {
           "platz": 5,
           "name": "SR",
-          "gesamt": 85,
+          "gesamt": 89,
           "punkte_pro_spiel": {
             "0": 0,
             "1": 2,
@@ -4150,7 +4298,7 @@
             "7": "1:1"
           },
           "allein_punkte": 0,
-          "bonus": 40,
+          "bonus": 44,
           "bonus_detail": {
             "Tor---": {
               "tipp": "BRA",
@@ -4160,8 +4308,12 @@
               "tipp": "ARG",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "DEU",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -4221,7 +4373,7 @@
         {
           "platz": 6,
           "name": "Kolle",
-          "gesamt": 80,
+          "gesamt": 84,
           "punkte_pro_spiel": {
             "0": 0,
             "1": 2,
@@ -4253,7 +4405,7 @@
             "7": "3:1"
           },
           "allein_punkte": 0,
-          "bonus": 44,
+          "bonus": 48,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -4263,8 +4415,12 @@
               "tipp": "DEU",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -4324,7 +4480,7 @@
         {
           "platz": 7,
           "name": "Henning",
-          "gesamt": 79,
+          "gesamt": 83,
           "punkte_pro_spiel": {
             "0": 0,
             "1": 2,
@@ -4356,7 +4512,7 @@
             "7": "1:1"
           },
           "allein_punkte": 0,
-          "bonus": 40,
+          "bonus": 44,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -4366,8 +4522,12 @@
               "tipp": "ARG",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "NIE",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -4427,7 +4587,7 @@
         {
           "platz": 8,
           "name": "Pechnic90",
-          "gesamt": 78,
+          "gesamt": 82,
           "punkte_pro_spiel": {
             "0": 0,
             "1": 2,
@@ -4459,7 +4619,7 @@
             "7": "2:1"
           },
           "allein_punkte": 0,
-          "bonus": 36,
+          "bonus": 40,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -4469,8 +4629,12 @@
               "tipp": "FRA",
               "punkte": 4
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "NIE",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -4530,7 +4694,7 @@
         {
           "platz": 9,
           "name": "KNALLentin",
-          "gesamt": 78,
+          "gesamt": 82,
           "punkte_pro_spiel": {
             "0": 0,
             "1": 0,
@@ -4562,7 +4726,7 @@
             "7": "1:1"
           },
           "allein_punkte": 0,
-          "bonus": 36,
+          "bonus": 40,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -4572,8 +4736,12 @@
               "tipp": "FRA",
               "punkte": 4
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -4675,6 +4843,10 @@
               "tipp": "ARG",
               "punkte": 0
             },
+            "HFSPA": {
+              "tipp": "DEU",
+              "punkte": 0
+            },
             "HF---": {
               "tipp": "POR",
               "punkte": 0
@@ -4736,7 +4908,7 @@
         {
           "platz": 11,
           "name": "Chris",
-          "gesamt": 61,
+          "gesamt": 65,
           "punkte_pro_spiel": {
             "0": 0,
             "1": 2,
@@ -4768,7 +4940,7 @@
             "7": "2:2"
           },
           "allein_punkte": 0,
-          "bonus": 28,
+          "bonus": 32,
           "bonus_detail": {
             "Tor---": {
               "tipp": "SPA",
@@ -4778,8 +4950,12 @@
               "tipp": "DEU",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "AUT",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -4894,7 +5070,7 @@
       "bonus_fragen": [
         "Tor---",
         "HFFRA",
-        "HF---",
+        "HFSPA",
         "HF---",
         "HF---",
         "Gr AMEX",
@@ -4915,7 +5091,7 @@
         {
           "platz": 1,
           "name": "Nalewaja",
-          "gesamt": 104,
+          "gesamt": 108,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -4947,7 +5123,7 @@
             "7": "0:2"
           },
           "allein_punkte": 0,
-          "bonus": 40,
+          "bonus": 44,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -4957,8 +5133,12 @@
               "tipp": "ARG",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "DEU",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -5018,7 +5198,7 @@
         {
           "platz": 2,
           "name": "Benjamin",
-          "gesamt": 102,
+          "gesamt": 106,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -5050,7 +5230,7 @@
             "7": "0:1"
           },
           "allein_punkte": 0,
-          "bonus": 48,
+          "bonus": 52,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -5060,8 +5240,12 @@
               "tipp": "FRA",
               "punkte": 4
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -5121,7 +5305,7 @@
         {
           "platz": 3,
           "name": "Senge",
-          "gesamt": 101,
+          "gesamt": 105,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 3,
@@ -5153,7 +5337,7 @@
             "7": "0:2"
           },
           "allein_punkte": 0,
-          "bonus": 40,
+          "bonus": 44,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -5163,8 +5347,12 @@
               "tipp": "FRA",
               "punkte": 4
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "BRA",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -5224,7 +5412,7 @@
         {
           "platz": 4,
           "name": "Rosellen",
-          "gesamt": 96,
+          "gesamt": 100,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -5256,7 +5444,7 @@
             "7": "0:2"
           },
           "allein_punkte": 0,
-          "bonus": 36,
+          "bonus": 40,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -5266,8 +5454,12 @@
               "tipp": "DEU",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -5327,7 +5519,7 @@
         {
           "platz": 5,
           "name": "KNALLentin",
-          "gesamt": 94,
+          "gesamt": 98,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 4,
@@ -5359,7 +5551,7 @@
             "7": "0:3"
           },
           "allein_punkte": 0,
-          "bonus": 36,
+          "bonus": 40,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -5369,8 +5561,12 @@
               "tipp": "FRA",
               "punkte": 4
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -5430,7 +5626,7 @@
         {
           "platz": 6,
           "name": "SR",
-          "gesamt": 93,
+          "gesamt": 97,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -5462,7 +5658,7 @@
             "7": "1:0"
           },
           "allein_punkte": 0,
-          "bonus": 40,
+          "bonus": 44,
           "bonus_detail": {
             "Tor---": {
               "tipp": "BRA",
@@ -5472,8 +5668,12 @@
               "tipp": "ARG",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "DEU",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -5533,7 +5733,7 @@
         {
           "platz": 7,
           "name": "Henning",
-          "gesamt": 93,
+          "gesamt": 97,
           "punkte_pro_spiel": {
             "0": 0,
             "1": 2,
@@ -5565,7 +5765,7 @@
             "7": "1:3"
           },
           "allein_punkte": 0,
-          "bonus": 40,
+          "bonus": 44,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -5575,8 +5775,12 @@
               "tipp": "ARG",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "NIE",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -5636,7 +5840,7 @@
         {
           "platz": 8,
           "name": "Kolle",
-          "gesamt": 92,
+          "gesamt": 96,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -5668,7 +5872,7 @@
             "7": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 44,
+          "bonus": 48,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -5678,8 +5882,12 @@
               "tipp": "DEU",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -5739,7 +5947,7 @@
         {
           "platz": 9,
           "name": "Pechnic90",
-          "gesamt": 88,
+          "gesamt": 92,
           "punkte_pro_spiel": {
             "0": 0,
             "1": 2,
@@ -5771,7 +5979,7 @@
             "7": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 36,
+          "bonus": 40,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -5781,8 +5989,12 @@
               "tipp": "FRA",
               "punkte": 4
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "NIE",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -5884,6 +6096,10 @@
               "tipp": "ARG",
               "punkte": 0
             },
+            "HFSPA": {
+              "tipp": "DEU",
+              "punkte": 0
+            },
             "HF---": {
               "tipp": "POR",
               "punkte": 0
@@ -5945,7 +6161,7 @@
         {
           "platz": 11,
           "name": "Chris",
-          "gesamt": 73,
+          "gesamt": 77,
           "punkte_pro_spiel": {
             "0": 0,
             "1": 4,
@@ -5977,7 +6193,7 @@
             "7": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 28,
+          "bonus": 32,
           "bonus_detail": {
             "Tor---": {
               "tipp": "SPA",
@@ -5987,8 +6203,12 @@
               "tipp": "DEU",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "AUT",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -6103,7 +6323,7 @@
       "bonus_fragen": [
         "Tor---",
         "HFFRA",
-        "HF---",
+        "HFSPA",
         "HF---",
         "HF---",
         "Gr AMEX",
@@ -6124,7 +6344,7 @@
         {
           "platz": 1,
           "name": "Nalewaja",
-          "gesamt": 121,
+          "gesamt": 125,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -6156,7 +6376,7 @@
             "7": "2:1"
           },
           "allein_punkte": 0,
-          "bonus": 40,
+          "bonus": 44,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -6166,8 +6386,12 @@
               "tipp": "ARG",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "DEU",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -6227,7 +6451,7 @@
         {
           "platz": 2,
           "name": "Senge",
-          "gesamt": 117,
+          "gesamt": 121,
           "punkte_pro_spiel": {
             "0": 3,
             "1": 2,
@@ -6259,7 +6483,7 @@
             "7": "2:0"
           },
           "allein_punkte": 0,
-          "bonus": 40,
+          "bonus": 44,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -6269,8 +6493,12 @@
               "tipp": "FRA",
               "punkte": 4
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "BRA",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -6330,7 +6558,7 @@
         {
           "platz": 3,
           "name": "Benjamin",
-          "gesamt": 116,
+          "gesamt": 120,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 4,
@@ -6362,7 +6590,7 @@
             "7": "2:0"
           },
           "allein_punkte": 0,
-          "bonus": 48,
+          "bonus": 52,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -6372,8 +6600,12 @@
               "tipp": "FRA",
               "punkte": 4
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -6433,7 +6665,7 @@
         {
           "platz": 4,
           "name": "Rosellen",
-          "gesamt": 113,
+          "gesamt": 117,
           "punkte_pro_spiel": {
             "0": 3,
             "1": 2,
@@ -6465,7 +6697,7 @@
             "7": "2:0"
           },
           "allein_punkte": 0,
-          "bonus": 36,
+          "bonus": 40,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -6475,8 +6707,12 @@
               "tipp": "DEU",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -6536,7 +6772,7 @@
         {
           "platz": 5,
           "name": "Kolle",
-          "gesamt": 109,
+          "gesamt": 113,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -6568,7 +6804,7 @@
             "7": "2:1"
           },
           "allein_punkte": 0,
-          "bonus": 44,
+          "bonus": 48,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -6578,8 +6814,12 @@
               "tipp": "DEU",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -6639,7 +6879,7 @@
         {
           "platz": 6,
           "name": "SR",
-          "gesamt": 107,
+          "gesamt": 111,
           "punkte_pro_spiel": {
             "0": 0,
             "1": 2,
@@ -6670,7 +6910,7 @@
             "7": "2:1"
           },
           "allein_punkte": 0,
-          "bonus": 40,
+          "bonus": 44,
           "bonus_detail": {
             "Tor---": {
               "tipp": "BRA",
@@ -6680,8 +6920,12 @@
               "tipp": "ARG",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "DEU",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -6741,7 +6985,7 @@
         {
           "platz": 7,
           "name": "Pechnic90",
-          "gesamt": 106,
+          "gesamt": 110,
           "punkte_pro_spiel": {
             "0": 3,
             "1": 2,
@@ -6773,7 +7017,7 @@
             "7": "2:1"
           },
           "allein_punkte": 0,
-          "bonus": 36,
+          "bonus": 40,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -6783,8 +7027,12 @@
               "tipp": "FRA",
               "punkte": 4
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "NIE",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -6843,6 +7091,113 @@
         },
         {
           "platz": 8,
+          "name": "KNALLentin",
+          "gesamt": 107,
+          "punkte_pro_spiel": {
+            "0": 0,
+            "1": 2,
+            "2": 0,
+            "3": 3,
+            "4": 2,
+            "5": 0,
+            "6": 2,
+            "7": 0
+          },
+          "exakt_pro_spiel": {
+            "0": false,
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false,
+            "5": false,
+            "6": false,
+            "7": false
+          },
+          "tipp_pro_spiel": {
+            "0": "1:1",
+            "1": "4:0",
+            "2": "1:1",
+            "3": "0:1",
+            "4": "2:0",
+            "5": "3:1",
+            "6": "0:3",
+            "7": "2:2"
+          },
+          "allein_punkte": 0,
+          "bonus": 40,
+          "bonus_detail": {
+            "Tor---": {
+              "tipp": "FRA",
+              "punkte": 0
+            },
+            "HFFRA": {
+              "tipp": "FRA",
+              "punkte": 4
+            },
+            "HFSPA": {
+              "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
+              "punkte": 0
+            },
+            "Gr AMEX": {
+              "tipp": "MEX",
+              "punkte": 4
+            },
+            "Gr BCH": {
+              "tipp": "BIH",
+              "punkte": 0
+            },
+            "Gr CBRA": {
+              "tipp": "BRA",
+              "punkte": 4
+            },
+            "Gr DUSA": {
+              "tipp": "TUR",
+              "punkte": 0
+            },
+            "Gr EDEU": {
+              "tipp": "DEU",
+              "punkte": 4
+            },
+            "Gr FNIE": {
+              "tipp": "JAP",
+              "punkte": 0
+            },
+            "Gr GBEL": {
+              "tipp": "BEL",
+              "punkte": 4
+            },
+            "Gr HSPA": {
+              "tipp": "SPA",
+              "punkte": 4
+            },
+            "Gr IFRA": {
+              "tipp": "FRA",
+              "punkte": 4
+            },
+            "Gr JARG": {
+              "tipp": "ARG",
+              "punkte": 4
+            },
+            "Gr KKOL": {
+              "tipp": "POR",
+              "punkte": 0
+            },
+            "Gr LENG": {
+              "tipp": "ENG",
+              "punkte": 4
+            },
+            "WM---": {
+              "tipp": "ENG",
+              "punkte": 0
+            }
+          }
+        },
+        {
+          "platz": 9,
           "name": "Lukas",
           "gesamt": 105,
           "punkte_pro_spiel": {
@@ -6884,6 +7239,10 @@
             },
             "HFFRA": {
               "tipp": "ARG",
+              "punkte": 0
+            },
+            "HFSPA": {
+              "tipp": "DEU",
               "punkte": 0
             },
             "HF---": {
@@ -6945,112 +7304,9 @@
           }
         },
         {
-          "platz": 9,
-          "name": "KNALLentin",
-          "gesamt": 103,
-          "punkte_pro_spiel": {
-            "0": 0,
-            "1": 2,
-            "2": 0,
-            "3": 3,
-            "4": 2,
-            "5": 0,
-            "6": 2,
-            "7": 0
-          },
-          "exakt_pro_spiel": {
-            "0": false,
-            "1": false,
-            "2": false,
-            "3": false,
-            "4": false,
-            "5": false,
-            "6": false,
-            "7": false
-          },
-          "tipp_pro_spiel": {
-            "0": "1:1",
-            "1": "4:0",
-            "2": "1:1",
-            "3": "0:1",
-            "4": "2:0",
-            "5": "3:1",
-            "6": "0:3",
-            "7": "2:2"
-          },
-          "allein_punkte": 0,
-          "bonus": 36,
-          "bonus_detail": {
-            "Tor---": {
-              "tipp": "FRA",
-              "punkte": 0
-            },
-            "HFFRA": {
-              "tipp": "FRA",
-              "punkte": 4
-            },
-            "HF---": {
-              "tipp": "SPA",
-              "punkte": 0
-            },
-            "Gr AMEX": {
-              "tipp": "MEX",
-              "punkte": 4
-            },
-            "Gr BCH": {
-              "tipp": "BIH",
-              "punkte": 0
-            },
-            "Gr CBRA": {
-              "tipp": "BRA",
-              "punkte": 4
-            },
-            "Gr DUSA": {
-              "tipp": "TUR",
-              "punkte": 0
-            },
-            "Gr EDEU": {
-              "tipp": "DEU",
-              "punkte": 4
-            },
-            "Gr FNIE": {
-              "tipp": "JAP",
-              "punkte": 0
-            },
-            "Gr GBEL": {
-              "tipp": "BEL",
-              "punkte": 4
-            },
-            "Gr HSPA": {
-              "tipp": "SPA",
-              "punkte": 4
-            },
-            "Gr IFRA": {
-              "tipp": "FRA",
-              "punkte": 4
-            },
-            "Gr JARG": {
-              "tipp": "ARG",
-              "punkte": 4
-            },
-            "Gr KKOL": {
-              "tipp": "POR",
-              "punkte": 0
-            },
-            "Gr LENG": {
-              "tipp": "ENG",
-              "punkte": 4
-            },
-            "WM---": {
-              "tipp": "ENG",
-              "punkte": 0
-            }
-          }
-        },
-        {
           "platz": 10,
           "name": "Henning",
-          "gesamt": 100,
+          "gesamt": 104,
           "punkte_pro_spiel": {
             "0": 0,
             "1": 2,
@@ -7082,7 +7338,7 @@
             "7": "1:1"
           },
           "allein_punkte": 0,
-          "bonus": 40,
+          "bonus": 44,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -7092,8 +7348,12 @@
               "tipp": "ARG",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "NIE",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -7153,7 +7413,7 @@
         {
           "platz": 11,
           "name": "Chris",
-          "gesamt": 92,
+          "gesamt": 96,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 4,
@@ -7185,7 +7445,7 @@
             "7": "2:0"
           },
           "allein_punkte": 0,
-          "bonus": 28,
+          "bonus": 32,
           "bonus_detail": {
             "Tor---": {
               "tipp": "SPA",
@@ -7195,8 +7455,12 @@
               "tipp": "DEU",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "AUT",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -7299,7 +7563,7 @@
       "bonus_fragen": [
         "Tor---",
         "HFFRA",
-        "HF---",
+        "HFSPA",
         "HF---",
         "HF---",
         "Gr AMEX",
@@ -7320,7 +7584,7 @@
         {
           "platz": 1,
           "name": "Nalewaja",
-          "gesamt": 133,
+          "gesamt": 137,
           "punkte_pro_spiel": {
             "0": 4,
             "1": 4,
@@ -7346,7 +7610,7 @@
             "5": "1:1"
           },
           "allein_punkte": 0,
-          "bonus": 40,
+          "bonus": 44,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -7356,8 +7620,12 @@
               "tipp": "ARG",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "DEU",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -7417,7 +7685,7 @@
         {
           "platz": 2,
           "name": "Senge",
-          "gesamt": 128,
+          "gesamt": 132,
           "punkte_pro_spiel": {
             "0": 3,
             "1": 4,
@@ -7443,7 +7711,7 @@
             "5": "2:2"
           },
           "allein_punkte": 0,
-          "bonus": 40,
+          "bonus": 44,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -7453,8 +7721,12 @@
               "tipp": "FRA",
               "punkte": 4
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "BRA",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -7514,7 +7786,7 @@
         {
           "platz": 3,
           "name": "Rosellen",
-          "gesamt": 125,
+          "gesamt": 129,
           "punkte_pro_spiel": {
             "0": 3,
             "1": 0,
@@ -7540,7 +7812,7 @@
             "5": "0:3"
           },
           "allein_punkte": 0,
-          "bonus": 36,
+          "bonus": 40,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -7550,8 +7822,12 @@
               "tipp": "DEU",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -7611,7 +7887,7 @@
         {
           "platz": 4,
           "name": "Benjamin",
-          "gesamt": 123,
+          "gesamt": 127,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 0,
@@ -7637,7 +7913,7 @@
             "5": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 48,
+          "bonus": 52,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -7647,8 +7923,12 @@
               "tipp": "FRA",
               "punkte": 4
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -7708,7 +7988,7 @@
         {
           "platz": 5,
           "name": "Kolle",
-          "gesamt": 119,
+          "gesamt": 123,
           "punkte_pro_spiel": {
             "0": 4,
             "1": 0,
@@ -7734,7 +8014,7 @@
             "5": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 44,
+          "bonus": 48,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -7744,8 +8024,12 @@
               "tipp": "DEU",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -7805,7 +8089,7 @@
         {
           "platz": 6,
           "name": "SR",
-          "gesamt": 116,
+          "gesamt": 120,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 0,
@@ -7831,7 +8115,7 @@
             "5": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 40,
+          "bonus": 44,
           "bonus_detail": {
             "Tor---": {
               "tipp": "BRA",
@@ -7841,8 +8125,12 @@
               "tipp": "ARG",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "DEU",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -7902,7 +8190,7 @@
         {
           "platz": 7,
           "name": "Pechnic90",
-          "gesamt": 114,
+          "gesamt": 118,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 0,
@@ -7928,7 +8216,7 @@
             "5": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 36,
+          "bonus": 40,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -7938,8 +8226,12 @@
               "tipp": "FRA",
               "punkte": 4
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "NIE",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -7998,6 +8290,107 @@
         },
         {
           "platz": 8,
+          "name": "KNALLentin",
+          "gesamt": 115,
+          "punkte_pro_spiel": {
+            "0": 3,
+            "1": 0,
+            "2": 2,
+            "3": 3,
+            "4": 0,
+            "5": 0
+          },
+          "exakt_pro_spiel": {
+            "0": false,
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false,
+            "5": false
+          },
+          "tipp_pro_spiel": {
+            "0": "2:0",
+            "1": "2:2",
+            "2": "3:0",
+            "3": "1:4",
+            "4": "0:1",
+            "5": "0:0"
+          },
+          "allein_punkte": 0,
+          "bonus": 40,
+          "bonus_detail": {
+            "Tor---": {
+              "tipp": "FRA",
+              "punkte": 0
+            },
+            "HFFRA": {
+              "tipp": "FRA",
+              "punkte": 4
+            },
+            "HFSPA": {
+              "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
+              "punkte": 0
+            },
+            "Gr AMEX": {
+              "tipp": "MEX",
+              "punkte": 4
+            },
+            "Gr BCH": {
+              "tipp": "BIH",
+              "punkte": 0
+            },
+            "Gr CBRA": {
+              "tipp": "BRA",
+              "punkte": 4
+            },
+            "Gr DUSA": {
+              "tipp": "TUR",
+              "punkte": 0
+            },
+            "Gr EDEU": {
+              "tipp": "DEU",
+              "punkte": 4
+            },
+            "Gr FNIE": {
+              "tipp": "JAP",
+              "punkte": 0
+            },
+            "Gr GBEL": {
+              "tipp": "BEL",
+              "punkte": 4
+            },
+            "Gr HSPA": {
+              "tipp": "SPA",
+              "punkte": 4
+            },
+            "Gr IFRA": {
+              "tipp": "FRA",
+              "punkte": 4
+            },
+            "Gr JARG": {
+              "tipp": "ARG",
+              "punkte": 4
+            },
+            "Gr KKOL": {
+              "tipp": "POR",
+              "punkte": 0
+            },
+            "Gr LENG": {
+              "tipp": "ENG",
+              "punkte": 4
+            },
+            "WM---": {
+              "tipp": "ENG",
+              "punkte": 0
+            }
+          }
+        },
+        {
+          "platz": 9,
           "name": "Lukas",
           "gesamt": 114,
           "punkte_pro_spiel": {
@@ -8033,6 +8426,10 @@
             },
             "HFFRA": {
               "tipp": "ARG",
+              "punkte": 0
+            },
+            "HFSPA": {
+              "tipp": "DEU",
               "punkte": 0
             },
             "HF---": {
@@ -8094,106 +8491,9 @@
           }
         },
         {
-          "platz": 9,
-          "name": "KNALLentin",
-          "gesamt": 111,
-          "punkte_pro_spiel": {
-            "0": 3,
-            "1": 0,
-            "2": 2,
-            "3": 3,
-            "4": 0,
-            "5": 0
-          },
-          "exakt_pro_spiel": {
-            "0": false,
-            "1": false,
-            "2": false,
-            "3": false,
-            "4": false,
-            "5": false
-          },
-          "tipp_pro_spiel": {
-            "0": "2:0",
-            "1": "2:2",
-            "2": "3:0",
-            "3": "1:4",
-            "4": "0:1",
-            "5": "0:0"
-          },
-          "allein_punkte": 0,
-          "bonus": 36,
-          "bonus_detail": {
-            "Tor---": {
-              "tipp": "FRA",
-              "punkte": 0
-            },
-            "HFFRA": {
-              "tipp": "FRA",
-              "punkte": 4
-            },
-            "HF---": {
-              "tipp": "SPA",
-              "punkte": 0
-            },
-            "Gr AMEX": {
-              "tipp": "MEX",
-              "punkte": 4
-            },
-            "Gr BCH": {
-              "tipp": "BIH",
-              "punkte": 0
-            },
-            "Gr CBRA": {
-              "tipp": "BRA",
-              "punkte": 4
-            },
-            "Gr DUSA": {
-              "tipp": "TUR",
-              "punkte": 0
-            },
-            "Gr EDEU": {
-              "tipp": "DEU",
-              "punkte": 4
-            },
-            "Gr FNIE": {
-              "tipp": "JAP",
-              "punkte": 0
-            },
-            "Gr GBEL": {
-              "tipp": "BEL",
-              "punkte": 4
-            },
-            "Gr HSPA": {
-              "tipp": "SPA",
-              "punkte": 4
-            },
-            "Gr IFRA": {
-              "tipp": "FRA",
-              "punkte": 4
-            },
-            "Gr JARG": {
-              "tipp": "ARG",
-              "punkte": 4
-            },
-            "Gr KKOL": {
-              "tipp": "POR",
-              "punkte": 0
-            },
-            "Gr LENG": {
-              "tipp": "ENG",
-              "punkte": 4
-            },
-            "WM---": {
-              "tipp": "ENG",
-              "punkte": 0
-            }
-          }
-        },
-        {
           "platz": 10,
           "name": "Henning",
-          "gesamt": 108,
+          "gesamt": 112,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 0,
@@ -8219,7 +8519,7 @@
             "5": "0:1"
           },
           "allein_punkte": 0,
-          "bonus": 40,
+          "bonus": 44,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -8229,8 +8529,12 @@
               "tipp": "ARG",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "NIE",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -8290,7 +8594,7 @@
         {
           "platz": 11,
           "name": "Chris",
-          "gesamt": 103,
+          "gesamt": 107,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 4,
@@ -8316,7 +8620,7 @@
             "5": "1:1"
           },
           "allein_punkte": 0,
-          "bonus": 28,
+          "bonus": 32,
           "bonus_detail": {
             "Tor---": {
               "tipp": "SPA",
@@ -8326,8 +8630,12 @@
               "tipp": "DEU",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "AUT",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -8430,7 +8738,7 @@
       "bonus_fragen": [
         "Tor---",
         "HFFRA",
-        "HF---",
+        "HFSPA",
         "HF---",
         "HF---",
         "Gr AMEX",
@@ -8451,7 +8759,7 @@
         {
           "platz": 1,
           "name": "Nalewaja",
-          "gesamt": 141,
+          "gesamt": 145,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 0,
@@ -8477,7 +8785,7 @@
             "5": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 40,
+          "bonus": 44,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -8487,8 +8795,12 @@
               "tipp": "ARG",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "DEU",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -8548,7 +8860,7 @@
         {
           "platz": 2,
           "name": "Senge",
-          "gesamt": 136,
+          "gesamt": 140,
           "punkte_pro_spiel": {
             "0": 4,
             "1": 0,
@@ -8574,7 +8886,7 @@
             "5": "0:2"
           },
           "allein_punkte": 0,
-          "bonus": 40,
+          "bonus": 44,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -8584,8 +8896,12 @@
               "tipp": "FRA",
               "punkte": 4
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "BRA",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -8645,7 +8961,7 @@
         {
           "platz": 3,
           "name": "Benjamin",
-          "gesamt": 135,
+          "gesamt": 139,
           "punkte_pro_spiel": {
             "0": 4,
             "1": 0,
@@ -8671,7 +8987,7 @@
             "5": "1:1"
           },
           "allein_punkte": 0,
-          "bonus": 48,
+          "bonus": 52,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -8681,8 +8997,12 @@
               "tipp": "FRA",
               "punkte": 4
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -8742,7 +9062,7 @@
         {
           "platz": 4,
           "name": "Rosellen",
-          "gesamt": 131,
+          "gesamt": 135,
           "punkte_pro_spiel": {
             "0": 4,
             "1": 0,
@@ -8768,7 +9088,7 @@
             "5": "0:2"
           },
           "allein_punkte": 0,
-          "bonus": 36,
+          "bonus": 40,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -8778,8 +9098,12 @@
               "tipp": "DEU",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -8839,7 +9163,7 @@
         {
           "platz": 5,
           "name": "Kolle",
-          "gesamt": 126,
+          "gesamt": 130,
           "punkte_pro_spiel": {
             "0": 3,
             "1": 0,
@@ -8865,7 +9189,7 @@
             "5": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 44,
+          "bonus": 48,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -8875,8 +9199,12 @@
               "tipp": "DEU",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -8936,7 +9264,7 @@
         {
           "platz": 6,
           "name": "KNALLentin",
-          "gesamt": 124,
+          "gesamt": 128,
           "punkte_pro_spiel": {
             "0": 4,
             "1": 0,
@@ -8962,7 +9290,7 @@
             "5": "1:0"
           },
           "allein_punkte": 1,
-          "bonus": 36,
+          "bonus": 40,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -8972,8 +9300,12 @@
               "tipp": "FRA",
               "punkte": 4
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -9033,7 +9365,7 @@
         {
           "platz": 7,
           "name": "SR",
-          "gesamt": 123,
+          "gesamt": 127,
           "punkte_pro_spiel": {
             "0": 3,
             "1": 0,
@@ -9059,7 +9391,7 @@
             "5": "2:2"
           },
           "allein_punkte": 0,
-          "bonus": 40,
+          "bonus": 44,
           "bonus_detail": {
             "Tor---": {
               "tipp": "BRA",
@@ -9069,8 +9401,12 @@
               "tipp": "ARG",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "DEU",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -9129,6 +9465,107 @@
         },
         {
           "platz": 8,
+          "name": "Pechnic90",
+          "gesamt": 122,
+          "punkte_pro_spiel": {
+            "0": 2,
+            "1": 0,
+            "2": 0,
+            "3": 2,
+            "4": 0,
+            "5": 0
+          },
+          "exakt_pro_spiel": {
+            "0": false,
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false,
+            "5": false
+          },
+          "tipp_pro_spiel": {
+            "0": "0:3",
+            "1": "1:3",
+            "2": "2:1",
+            "3": "0:4",
+            "4": "1:2",
+            "5": "0:1"
+          },
+          "allein_punkte": 0,
+          "bonus": 40,
+          "bonus_detail": {
+            "Tor---": {
+              "tipp": "FRA",
+              "punkte": 0
+            },
+            "HFFRA": {
+              "tipp": "FRA",
+              "punkte": 4
+            },
+            "HFSPA": {
+              "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "NIE",
+              "punkte": 0
+            },
+            "Gr AMEX": {
+              "tipp": "SKOR",
+              "punkte": 0
+            },
+            "Gr BCH": {
+              "tipp": "CH",
+              "punkte": 4
+            },
+            "Gr CBRA": {
+              "tipp": "MAR",
+              "punkte": 0
+            },
+            "Gr DUSA": {
+              "tipp": "TUR",
+              "punkte": 0
+            },
+            "Gr EDEU": {
+              "tipp": "DEU",
+              "punkte": 4
+            },
+            "Gr FNIE": {
+              "tipp": "NIE",
+              "punkte": 4
+            },
+            "Gr GBEL": {
+              "tipp": "BEL",
+              "punkte": 4
+            },
+            "Gr HSPA": {
+              "tipp": "SPA",
+              "punkte": 4
+            },
+            "Gr IFRA": {
+              "tipp": "FRA",
+              "punkte": 4
+            },
+            "Gr JARG": {
+              "tipp": "ARG",
+              "punkte": 4
+            },
+            "Gr KKOL": {
+              "tipp": "POR",
+              "punkte": 0
+            },
+            "Gr LENG": {
+              "tipp": "ENG",
+              "punkte": 4
+            },
+            "WM---": {
+              "tipp": "FRA",
+              "punkte": 0
+            }
+          }
+        },
+        {
+          "platz": 9,
           "name": "Lukas",
           "gesamt": 122,
           "punkte_pro_spiel": {
@@ -9164,6 +9601,10 @@
             },
             "HFFRA": {
               "tipp": "ARG",
+              "punkte": 0
+            },
+            "HFSPA": {
+              "tipp": "DEU",
               "punkte": 0
             },
             "HF---": {
@@ -9225,106 +9666,9 @@
           }
         },
         {
-          "platz": 9,
-          "name": "Pechnic90",
-          "gesamt": 118,
-          "punkte_pro_spiel": {
-            "0": 2,
-            "1": 0,
-            "2": 0,
-            "3": 2,
-            "4": 0,
-            "5": 0
-          },
-          "exakt_pro_spiel": {
-            "0": false,
-            "1": false,
-            "2": false,
-            "3": false,
-            "4": false,
-            "5": false
-          },
-          "tipp_pro_spiel": {
-            "0": "0:3",
-            "1": "1:3",
-            "2": "2:1",
-            "3": "0:4",
-            "4": "1:2",
-            "5": "0:1"
-          },
-          "allein_punkte": 0,
-          "bonus": 36,
-          "bonus_detail": {
-            "Tor---": {
-              "tipp": "FRA",
-              "punkte": 0
-            },
-            "HFFRA": {
-              "tipp": "FRA",
-              "punkte": 4
-            },
-            "HF---": {
-              "tipp": "SPA",
-              "punkte": 0
-            },
-            "Gr AMEX": {
-              "tipp": "SKOR",
-              "punkte": 0
-            },
-            "Gr BCH": {
-              "tipp": "CH",
-              "punkte": 4
-            },
-            "Gr CBRA": {
-              "tipp": "MAR",
-              "punkte": 0
-            },
-            "Gr DUSA": {
-              "tipp": "TUR",
-              "punkte": 0
-            },
-            "Gr EDEU": {
-              "tipp": "DEU",
-              "punkte": 4
-            },
-            "Gr FNIE": {
-              "tipp": "NIE",
-              "punkte": 4
-            },
-            "Gr GBEL": {
-              "tipp": "BEL",
-              "punkte": 4
-            },
-            "Gr HSPA": {
-              "tipp": "SPA",
-              "punkte": 4
-            },
-            "Gr IFRA": {
-              "tipp": "FRA",
-              "punkte": 4
-            },
-            "Gr JARG": {
-              "tipp": "ARG",
-              "punkte": 4
-            },
-            "Gr KKOL": {
-              "tipp": "POR",
-              "punkte": 0
-            },
-            "Gr LENG": {
-              "tipp": "ENG",
-              "punkte": 4
-            },
-            "WM---": {
-              "tipp": "FRA",
-              "punkte": 0
-            }
-          }
-        },
-        {
           "platz": 10,
           "name": "Henning",
-          "gesamt": 112,
+          "gesamt": 116,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 0,
@@ -9350,7 +9694,7 @@
             "5": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 40,
+          "bonus": 44,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -9360,8 +9704,12 @@
               "tipp": "ARG",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "NIE",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -9421,7 +9769,7 @@
         {
           "platz": 11,
           "name": "Chris",
-          "gesamt": 109,
+          "gesamt": 113,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 0,
@@ -9447,7 +9795,7 @@
             "5": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 28,
+          "bonus": 32,
           "bonus_detail": {
             "Tor---": {
               "tipp": "SPA",
@@ -9457,8 +9805,12 @@
               "tipp": "DEU",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "AUT",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -9561,7 +9913,7 @@
       "bonus_fragen": [
         "Tor---",
         "HFFRA",
-        "HF---",
+        "HFSPA",
         "HF---",
         "HF---",
         "Gr AMEX",
@@ -9582,7 +9934,7 @@
         {
           "platz": 1,
           "name": "Nalewaja",
-          "gesamt": 150,
+          "gesamt": 154,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -9608,7 +9960,7 @@
             "5": "2:1"
           },
           "allein_punkte": 0,
-          "bonus": 40,
+          "bonus": 44,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -9618,8 +9970,12 @@
               "tipp": "ARG",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "DEU",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -9679,7 +10035,7 @@
         {
           "platz": 1,
           "name": "Benjamin",
-          "gesamt": 150,
+          "gesamt": 154,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -9705,7 +10061,7 @@
             "5": "1:1"
           },
           "allein_punkte": 0,
-          "bonus": 48,
+          "bonus": 52,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -9715,8 +10071,12 @@
               "tipp": "FRA",
               "punkte": 4
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -9776,7 +10136,7 @@
         {
           "platz": 3,
           "name": "Senge",
-          "gesamt": 146,
+          "gesamt": 150,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -9802,7 +10162,7 @@
             "5": "2:0"
           },
           "allein_punkte": 0,
-          "bonus": 40,
+          "bonus": 44,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -9812,8 +10172,12 @@
               "tipp": "FRA",
               "punkte": 4
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "BRA",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -9873,7 +10237,7 @@
         {
           "platz": 4,
           "name": "Kolle",
-          "gesamt": 138,
+          "gesamt": 142,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -9899,7 +10263,7 @@
             "5": "1:1"
           },
           "allein_punkte": 0,
-          "bonus": 44,
+          "bonus": 48,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -9909,8 +10273,12 @@
               "tipp": "DEU",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -9970,7 +10338,7 @@
         {
           "platz": 5,
           "name": "Rosellen",
-          "gesamt": 137,
+          "gesamt": 141,
           "punkte_pro_spiel": {
             "0": 0,
             "1": 2,
@@ -9996,7 +10364,7 @@
             "5": "1:0"
           },
           "allein_punkte": 0,
-          "bonus": 36,
+          "bonus": 40,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -10006,8 +10374,12 @@
               "tipp": "DEU",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -10067,7 +10439,7 @@
         {
           "platz": 6,
           "name": "KNALLentin",
-          "gesamt": 136,
+          "gesamt": 140,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -10093,7 +10465,7 @@
             "5": "1:1"
           },
           "allein_punkte": 0,
-          "bonus": 36,
+          "bonus": 40,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -10103,8 +10475,12 @@
               "tipp": "FRA",
               "punkte": 4
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -10164,7 +10540,7 @@
         {
           "platz": 7,
           "name": "SR",
-          "gesamt": 132,
+          "gesamt": 136,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -10190,7 +10566,7 @@
             "5": "2:1"
           },
           "allein_punkte": 0,
-          "bonus": 40,
+          "bonus": 44,
           "bonus_detail": {
             "Tor---": {
               "tipp": "BRA",
@@ -10200,8 +10576,12 @@
               "tipp": "ARG",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "DEU",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -10260,6 +10640,107 @@
         },
         {
           "platz": 8,
+          "name": "Pechnic90",
+          "gesamt": 132,
+          "punkte_pro_spiel": {
+            "0": 2,
+            "1": 2,
+            "2": 2,
+            "3": 2,
+            "4": 2,
+            "5": 0
+          },
+          "exakt_pro_spiel": {
+            "0": false,
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false,
+            "5": false
+          },
+          "tipp_pro_spiel": {
+            "0": "1:3",
+            "1": "2:1",
+            "2": "0:3",
+            "3": "1:1",
+            "4": "0:2",
+            "5": "1:0"
+          },
+          "allein_punkte": 0,
+          "bonus": 40,
+          "bonus_detail": {
+            "Tor---": {
+              "tipp": "FRA",
+              "punkte": 0
+            },
+            "HFFRA": {
+              "tipp": "FRA",
+              "punkte": 4
+            },
+            "HFSPA": {
+              "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "NIE",
+              "punkte": 0
+            },
+            "Gr AMEX": {
+              "tipp": "SKOR",
+              "punkte": 0
+            },
+            "Gr BCH": {
+              "tipp": "CH",
+              "punkte": 4
+            },
+            "Gr CBRA": {
+              "tipp": "MAR",
+              "punkte": 0
+            },
+            "Gr DUSA": {
+              "tipp": "TUR",
+              "punkte": 0
+            },
+            "Gr EDEU": {
+              "tipp": "DEU",
+              "punkte": 4
+            },
+            "Gr FNIE": {
+              "tipp": "NIE",
+              "punkte": 4
+            },
+            "Gr GBEL": {
+              "tipp": "BEL",
+              "punkte": 4
+            },
+            "Gr HSPA": {
+              "tipp": "SPA",
+              "punkte": 4
+            },
+            "Gr IFRA": {
+              "tipp": "FRA",
+              "punkte": 4
+            },
+            "Gr JARG": {
+              "tipp": "ARG",
+              "punkte": 4
+            },
+            "Gr KKOL": {
+              "tipp": "POR",
+              "punkte": 0
+            },
+            "Gr LENG": {
+              "tipp": "ENG",
+              "punkte": 4
+            },
+            "WM---": {
+              "tipp": "FRA",
+              "punkte": 0
+            }
+          }
+        },
+        {
+          "platz": 9,
           "name": "Lukas",
           "gesamt": 132,
           "punkte_pro_spiel": {
@@ -10295,6 +10776,10 @@
             },
             "HFFRA": {
               "tipp": "ARG",
+              "punkte": 0
+            },
+            "HFSPA": {
+              "tipp": "DEU",
               "punkte": 0
             },
             "HF---": {
@@ -10356,106 +10841,9 @@
           }
         },
         {
-          "platz": 9,
-          "name": "Pechnic90",
-          "gesamt": 128,
-          "punkte_pro_spiel": {
-            "0": 2,
-            "1": 2,
-            "2": 2,
-            "3": 2,
-            "4": 2,
-            "5": 0
-          },
-          "exakt_pro_spiel": {
-            "0": false,
-            "1": false,
-            "2": false,
-            "3": false,
-            "4": false,
-            "5": false
-          },
-          "tipp_pro_spiel": {
-            "0": "1:3",
-            "1": "2:1",
-            "2": "0:3",
-            "3": "1:1",
-            "4": "0:2",
-            "5": "1:0"
-          },
-          "allein_punkte": 0,
-          "bonus": 36,
-          "bonus_detail": {
-            "Tor---": {
-              "tipp": "FRA",
-              "punkte": 0
-            },
-            "HFFRA": {
-              "tipp": "FRA",
-              "punkte": 4
-            },
-            "HF---": {
-              "tipp": "SPA",
-              "punkte": 0
-            },
-            "Gr AMEX": {
-              "tipp": "SKOR",
-              "punkte": 0
-            },
-            "Gr BCH": {
-              "tipp": "CH",
-              "punkte": 4
-            },
-            "Gr CBRA": {
-              "tipp": "MAR",
-              "punkte": 0
-            },
-            "Gr DUSA": {
-              "tipp": "TUR",
-              "punkte": 0
-            },
-            "Gr EDEU": {
-              "tipp": "DEU",
-              "punkte": 4
-            },
-            "Gr FNIE": {
-              "tipp": "NIE",
-              "punkte": 4
-            },
-            "Gr GBEL": {
-              "tipp": "BEL",
-              "punkte": 4
-            },
-            "Gr HSPA": {
-              "tipp": "SPA",
-              "punkte": 4
-            },
-            "Gr IFRA": {
-              "tipp": "FRA",
-              "punkte": 4
-            },
-            "Gr JARG": {
-              "tipp": "ARG",
-              "punkte": 4
-            },
-            "Gr KKOL": {
-              "tipp": "POR",
-              "punkte": 0
-            },
-            "Gr LENG": {
-              "tipp": "ENG",
-              "punkte": 4
-            },
-            "WM---": {
-              "tipp": "FRA",
-              "punkte": 0
-            }
-          }
-        },
-        {
           "platz": 10,
           "name": "Henning",
-          "gesamt": 122,
+          "gesamt": 126,
           "punkte_pro_spiel": {
             "0": 3,
             "1": 2,
@@ -10481,7 +10869,7 @@
             "5": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 40,
+          "bonus": 44,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -10491,8 +10879,12 @@
               "tipp": "ARG",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "NIE",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -10552,7 +10944,7 @@
         {
           "platz": 11,
           "name": "Chris",
-          "gesamt": 117,
+          "gesamt": 121,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -10578,7 +10970,7 @@
             "5": "2:1"
           },
           "allein_punkte": 0,
-          "bonus": 28,
+          "bonus": 32,
           "bonus_detail": {
             "Tor---": {
               "tipp": "SPA",
@@ -10588,8 +10980,12 @@
               "tipp": "DEU",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "AUT",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -10692,7 +11088,7 @@
       "bonus_fragen": [
         "Tor---",
         "HFFRA",
-        "HF---",
+        "HFSPA",
         "HF---",
         "HF---",
         "Gr AMEX",
@@ -10713,7 +11109,7 @@
         {
           "platz": 1,
           "name": "Nalewaja",
-          "gesamt": 160,
+          "gesamt": 164,
           "punkte_pro_spiel": {
             "0": 4,
             "1": 2,
@@ -10739,7 +11135,7 @@
             "5": "0:4"
           },
           "allein_punkte": 0,
-          "bonus": 40,
+          "bonus": 44,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -10749,8 +11145,12 @@
               "tipp": "ARG",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "DEU",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -10810,7 +11210,7 @@
         {
           "platz": 2,
           "name": "Benjamin",
-          "gesamt": 156,
+          "gesamt": 160,
           "punkte_pro_spiel": {
             "0": 0,
             "1": 2,
@@ -10836,7 +11236,7 @@
             "5": "0:3"
           },
           "allein_punkte": 0,
-          "bonus": 48,
+          "bonus": 52,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -10846,8 +11246,12 @@
               "tipp": "FRA",
               "punkte": 4
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -10907,7 +11311,7 @@
         {
           "platz": 3,
           "name": "Senge",
-          "gesamt": 155,
+          "gesamt": 159,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -10933,7 +11337,7 @@
             "5": "0:3"
           },
           "allein_punkte": 0,
-          "bonus": 40,
+          "bonus": 44,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -10943,8 +11347,12 @@
               "tipp": "FRA",
               "punkte": 4
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "BRA",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -11004,7 +11412,7 @@
         {
           "platz": 4,
           "name": "KNALLentin",
-          "gesamt": 151,
+          "gesamt": 155,
           "punkte_pro_spiel": {
             "0": 3,
             "1": 4,
@@ -11030,7 +11438,7 @@
             "5": "0:3"
           },
           "allein_punkte": 0,
-          "bonus": 36,
+          "bonus": 40,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -11040,8 +11448,12 @@
               "tipp": "FRA",
               "punkte": 4
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -11101,7 +11513,7 @@
         {
           "platz": 5,
           "name": "SR",
-          "gesamt": 147,
+          "gesamt": 151,
           "punkte_pro_spiel": {
             "0": 4,
             "1": 3,
@@ -11127,7 +11539,7 @@
             "5": "1:3"
           },
           "allein_punkte": 0,
-          "bonus": 40,
+          "bonus": 44,
           "bonus_detail": {
             "Tor---": {
               "tipp": "BRA",
@@ -11137,8 +11549,12 @@
               "tipp": "ARG",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "DEU",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -11198,7 +11614,7 @@
         {
           "platz": 6,
           "name": "Kolle",
-          "gesamt": 147,
+          "gesamt": 151,
           "punkte_pro_spiel": {
             "0": 3,
             "1": 2,
@@ -11224,7 +11640,7 @@
             "5": "1:3"
           },
           "allein_punkte": 0,
-          "bonus": 44,
+          "bonus": 48,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -11234,8 +11650,12 @@
               "tipp": "DEU",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -11295,7 +11715,7 @@
         {
           "platz": 7,
           "name": "Rosellen",
-          "gesamt": 145,
+          "gesamt": 149,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -11321,7 +11741,7 @@
             "5": "0:4"
           },
           "allein_punkte": 0,
-          "bonus": 36,
+          "bonus": 40,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -11331,8 +11751,12 @@
               "tipp": "DEU",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -11428,6 +11852,10 @@
               "tipp": "ARG",
               "punkte": 0
             },
+            "HFSPA": {
+              "tipp": "DEU",
+              "punkte": 0
+            },
             "HF---": {
               "tipp": "POR",
               "punkte": 0
@@ -11489,7 +11917,7 @@
         {
           "platz": 9,
           "name": "Pechnic90",
-          "gesamt": 136,
+          "gesamt": 140,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -11515,7 +11943,7 @@
             "5": "0:4"
           },
           "allein_punkte": 0,
-          "bonus": 36,
+          "bonus": 40,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -11525,8 +11953,12 @@
               "tipp": "FRA",
               "punkte": 4
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "NIE",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -11586,7 +12018,7 @@
         {
           "platz": 10,
           "name": "Henning",
-          "gesamt": 132,
+          "gesamt": 136,
           "punkte_pro_spiel": {
             "0": 4,
             "1": 2,
@@ -11612,7 +12044,7 @@
             "5": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 40,
+          "bonus": 44,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -11622,8 +12054,12 @@
               "tipp": "ARG",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "NIE",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -11683,7 +12119,7 @@
         {
           "platz": 11,
           "name": "Chris",
-          "gesamt": 126,
+          "gesamt": 130,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 3,
@@ -11709,7 +12145,7 @@
             "5": "0:3"
           },
           "allein_punkte": 0,
-          "bonus": 28,
+          "bonus": 32,
           "bonus_detail": {
             "Tor---": {
               "tipp": "SPA",
@@ -11719,8 +12155,12 @@
               "tipp": "DEU",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "AUT",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -11883,7 +12323,7 @@
       "bonus_fragen": [
         "Tor---",
         "HFFRA",
-        "HF---",
+        "HFSPA",
         "HF---",
         "HF---",
         "Gr AMEX",
@@ -11904,7 +12344,7 @@
         {
           "platz": 1,
           "name": "Benjamin",
-          "gesamt": 193,
+          "gesamt": 197,
           "punkte_pro_spiel": {
             "0": 0,
             "1": 4,
@@ -11959,7 +12399,7 @@
             "15": "1:0"
           },
           "allein_punkte": 0,
-          "bonus": 48,
+          "bonus": 52,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -11969,8 +12409,12 @@
               "tipp": "FRA",
               "punkte": 4
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -12030,7 +12474,7 @@
         {
           "platz": 2,
           "name": "Senge",
-          "gesamt": 193,
+          "gesamt": 197,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -12086,7 +12530,7 @@
             "15": "4:2"
           },
           "allein_punkte": 0,
-          "bonus": 40,
+          "bonus": 44,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -12096,8 +12540,12 @@
               "tipp": "FRA",
               "punkte": 4
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "BRA",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -12157,7 +12605,7 @@
         {
           "platz": 3,
           "name": "Nalewaja",
-          "gesamt": 192,
+          "gesamt": 196,
           "punkte_pro_spiel": {
             "0": 3,
             "1": 2,
@@ -12213,7 +12661,7 @@
             "15": "2:0"
           },
           "allein_punkte": 0,
-          "bonus": 40,
+          "bonus": 44,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -12223,8 +12671,12 @@
               "tipp": "ARG",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "DEU",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -12284,7 +12736,7 @@
         {
           "platz": 4,
           "name": "KNALLentin",
-          "gesamt": 188,
+          "gesamt": 192,
           "punkte_pro_spiel": {
             "0": 4,
             "1": 3,
@@ -12340,7 +12792,7 @@
             "15": "2:0"
           },
           "allein_punkte": 0,
-          "bonus": 36,
+          "bonus": 40,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -12350,8 +12802,12 @@
               "tipp": "FRA",
               "punkte": 4
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -12410,6 +12866,268 @@
         },
         {
           "platz": 5,
+          "name": "Kolle",
+          "gesamt": 182,
+          "punkte_pro_spiel": {
+            "0": 3,
+            "1": 2,
+            "2": 0,
+            "3": 0,
+            "4": 4,
+            "5": 2,
+            "6": 2,
+            "7": 2,
+            "8": 3,
+            "9": 2,
+            "10": 2,
+            "11": 0,
+            "12": 2,
+            "13": 2,
+            "14": 2,
+            "15": 3
+          },
+          "exakt_pro_spiel": {
+            "0": false,
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": true,
+            "5": false,
+            "6": false,
+            "7": false,
+            "8": false,
+            "9": false,
+            "10": false,
+            "11": false,
+            "12": false,
+            "13": false,
+            "14": false,
+            "15": false
+          },
+          "tipp_pro_spiel": {
+            "0": "1:2",
+            "1": "3:1",
+            "2": "3:1",
+            "3": "2:1",
+            "4": "1:2",
+            "5": "2:0",
+            "6": "2:1",
+            "7": "3:0",
+            "8": "2:1",
+            "9": "2:1",
+            "10": "3:1",
+            "11": "1:2",
+            "12": "2:1",
+            "13": "1:2",
+            "14": "3:0",
+            "15": "2:1"
+          },
+          "allein_punkte": 0,
+          "bonus": 48,
+          "bonus_detail": {
+            "Tor---": {
+              "tipp": "ENG",
+              "punkte": 0
+            },
+            "HFFRA": {
+              "tipp": "DEU",
+              "punkte": 0
+            },
+            "HFSPA": {
+              "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
+              "punkte": 0
+            },
+            "Gr AMEX": {
+              "tipp": "MEX",
+              "punkte": 4
+            },
+            "Gr BCH": {
+              "tipp": "CH",
+              "punkte": 4
+            },
+            "Gr CBRA": {
+              "tipp": "BRA",
+              "punkte": 4
+            },
+            "Gr DUSA": {
+              "tipp": "USA",
+              "punkte": 4
+            },
+            "Gr EDEU": {
+              "tipp": "DEU",
+              "punkte": 4
+            },
+            "Gr FNIE": {
+              "tipp": "NIE",
+              "punkte": 4
+            },
+            "Gr GBEL": {
+              "tipp": "BEL",
+              "punkte": 4
+            },
+            "Gr HSPA": {
+              "tipp": "SPA",
+              "punkte": 4
+            },
+            "Gr IFRA": {
+              "tipp": "FRA",
+              "punkte": 4
+            },
+            "Gr JARG": {
+              "tipp": "ARG",
+              "punkte": 4
+            },
+            "Gr KKOL": {
+              "tipp": "POR",
+              "punkte": 0
+            },
+            "Gr LENG": {
+              "tipp": "ENG",
+              "punkte": 4
+            },
+            "WM---": {
+              "tipp": "DEU",
+              "punkte": 0
+            }
+          }
+        },
+        {
+          "platz": 6,
+          "name": "Rosellen",
+          "gesamt": 180,
+          "punkte_pro_spiel": {
+            "0": 2,
+            "1": 3,
+            "2": 0,
+            "3": 0,
+            "4": 4,
+            "5": 4,
+            "6": 2,
+            "7": 2,
+            "8": 3,
+            "9": 3,
+            "10": 2,
+            "11": 0,
+            "12": 2,
+            "13": 0,
+            "14": 2,
+            "15": 2
+          },
+          "exakt_pro_spiel": {
+            "0": false,
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": true,
+            "5": true,
+            "6": false,
+            "7": false,
+            "8": false,
+            "9": false,
+            "10": false,
+            "11": false,
+            "12": false,
+            "13": false,
+            "14": false,
+            "15": false
+          },
+          "tipp_pro_spiel": {
+            "0": "0:2",
+            "1": "1:0",
+            "2": "3:1",
+            "3": "2:1",
+            "4": "1:2",
+            "5": "3:0",
+            "6": "2:1",
+            "7": "2:0",
+            "8": "1:0",
+            "9": "3:1",
+            "10": "2:0",
+            "11": "1:2",
+            "12": "1:0",
+            "13": "2:1",
+            "14": "3:0",
+            "15": "2:0"
+          },
+          "allein_punkte": 0,
+          "bonus": 40,
+          "bonus_detail": {
+            "Tor---": {
+              "tipp": "ENG",
+              "punkte": 0
+            },
+            "HFFRA": {
+              "tipp": "DEU",
+              "punkte": 0
+            },
+            "HFSPA": {
+              "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
+              "punkte": 0
+            },
+            "Gr AMEX": {
+              "tipp": "MEX",
+              "punkte": 4
+            },
+            "Gr BCH": {
+              "tipp": "KAN",
+              "punkte": 0
+            },
+            "Gr CBRA": {
+              "tipp": "BRA",
+              "punkte": 4
+            },
+            "Gr DUSA": {
+              "tipp": "USA",
+              "punkte": 4
+            },
+            "Gr EDEU": {
+              "tipp": "DEU",
+              "punkte": 4
+            },
+            "Gr FNIE": {
+              "tipp": "NIE",
+              "punkte": 4
+            },
+            "Gr GBEL": {
+              "tipp": "BEL",
+              "punkte": 4
+            },
+            "Gr HSPA": {
+              "tipp": "SPA",
+              "punkte": 4
+            },
+            "Gr IFRA": {
+              "tipp": "NOR",
+              "punkte": 0
+            },
+            "Gr JARG": {
+              "tipp": "ARG",
+              "punkte": 4
+            },
+            "Gr KKOL": {
+              "tipp": "POR",
+              "punkte": 0
+            },
+            "Gr LENG": {
+              "tipp": "ENG",
+              "punkte": 4
+            },
+            "WM---": {
+              "tipp": "DEU",
+              "punkte": 0
+            }
+          }
+        },
+        {
+          "platz": 7,
           "name": "Lukas",
           "gesamt": 179,
           "punkte_pro_spiel": {
@@ -12477,6 +13195,10 @@
               "tipp": "ARG",
               "punkte": 0
             },
+            "HFSPA": {
+              "tipp": "DEU",
+              "punkte": 0
+            },
             "HF---": {
               "tipp": "POR",
               "punkte": 0
@@ -12536,263 +13258,9 @@
           }
         },
         {
-          "platz": 6,
-          "name": "Kolle",
-          "gesamt": 178,
-          "punkte_pro_spiel": {
-            "0": 3,
-            "1": 2,
-            "2": 0,
-            "3": 0,
-            "4": 4,
-            "5": 2,
-            "6": 2,
-            "7": 2,
-            "8": 3,
-            "9": 2,
-            "10": 2,
-            "11": 0,
-            "12": 2,
-            "13": 2,
-            "14": 2,
-            "15": 3
-          },
-          "exakt_pro_spiel": {
-            "0": false,
-            "1": false,
-            "2": false,
-            "3": false,
-            "4": true,
-            "5": false,
-            "6": false,
-            "7": false,
-            "8": false,
-            "9": false,
-            "10": false,
-            "11": false,
-            "12": false,
-            "13": false,
-            "14": false,
-            "15": false
-          },
-          "tipp_pro_spiel": {
-            "0": "1:2",
-            "1": "3:1",
-            "2": "3:1",
-            "3": "2:1",
-            "4": "1:2",
-            "5": "2:0",
-            "6": "2:1",
-            "7": "3:0",
-            "8": "2:1",
-            "9": "2:1",
-            "10": "3:1",
-            "11": "1:2",
-            "12": "2:1",
-            "13": "1:2",
-            "14": "3:0",
-            "15": "2:1"
-          },
-          "allein_punkte": 0,
-          "bonus": 44,
-          "bonus_detail": {
-            "Tor---": {
-              "tipp": "ENG",
-              "punkte": 0
-            },
-            "HFFRA": {
-              "tipp": "DEU",
-              "punkte": 0
-            },
-            "HF---": {
-              "tipp": "SPA",
-              "punkte": 0
-            },
-            "Gr AMEX": {
-              "tipp": "MEX",
-              "punkte": 4
-            },
-            "Gr BCH": {
-              "tipp": "CH",
-              "punkte": 4
-            },
-            "Gr CBRA": {
-              "tipp": "BRA",
-              "punkte": 4
-            },
-            "Gr DUSA": {
-              "tipp": "USA",
-              "punkte": 4
-            },
-            "Gr EDEU": {
-              "tipp": "DEU",
-              "punkte": 4
-            },
-            "Gr FNIE": {
-              "tipp": "NIE",
-              "punkte": 4
-            },
-            "Gr GBEL": {
-              "tipp": "BEL",
-              "punkte": 4
-            },
-            "Gr HSPA": {
-              "tipp": "SPA",
-              "punkte": 4
-            },
-            "Gr IFRA": {
-              "tipp": "FRA",
-              "punkte": 4
-            },
-            "Gr JARG": {
-              "tipp": "ARG",
-              "punkte": 4
-            },
-            "Gr KKOL": {
-              "tipp": "POR",
-              "punkte": 0
-            },
-            "Gr LENG": {
-              "tipp": "ENG",
-              "punkte": 4
-            },
-            "WM---": {
-              "tipp": "DEU",
-              "punkte": 0
-            }
-          }
-        },
-        {
-          "platz": 7,
-          "name": "Rosellen",
-          "gesamt": 176,
-          "punkte_pro_spiel": {
-            "0": 2,
-            "1": 3,
-            "2": 0,
-            "3": 0,
-            "4": 4,
-            "5": 4,
-            "6": 2,
-            "7": 2,
-            "8": 3,
-            "9": 3,
-            "10": 2,
-            "11": 0,
-            "12": 2,
-            "13": 0,
-            "14": 2,
-            "15": 2
-          },
-          "exakt_pro_spiel": {
-            "0": false,
-            "1": false,
-            "2": false,
-            "3": false,
-            "4": true,
-            "5": true,
-            "6": false,
-            "7": false,
-            "8": false,
-            "9": false,
-            "10": false,
-            "11": false,
-            "12": false,
-            "13": false,
-            "14": false,
-            "15": false
-          },
-          "tipp_pro_spiel": {
-            "0": "0:2",
-            "1": "1:0",
-            "2": "3:1",
-            "3": "2:1",
-            "4": "1:2",
-            "5": "3:0",
-            "6": "2:1",
-            "7": "2:0",
-            "8": "1:0",
-            "9": "3:1",
-            "10": "2:0",
-            "11": "1:2",
-            "12": "1:0",
-            "13": "2:1",
-            "14": "3:0",
-            "15": "2:0"
-          },
-          "allein_punkte": 0,
-          "bonus": 36,
-          "bonus_detail": {
-            "Tor---": {
-              "tipp": "ENG",
-              "punkte": 0
-            },
-            "HFFRA": {
-              "tipp": "DEU",
-              "punkte": 0
-            },
-            "HF---": {
-              "tipp": "SPA",
-              "punkte": 0
-            },
-            "Gr AMEX": {
-              "tipp": "MEX",
-              "punkte": 4
-            },
-            "Gr BCH": {
-              "tipp": "KAN",
-              "punkte": 0
-            },
-            "Gr CBRA": {
-              "tipp": "BRA",
-              "punkte": 4
-            },
-            "Gr DUSA": {
-              "tipp": "USA",
-              "punkte": 4
-            },
-            "Gr EDEU": {
-              "tipp": "DEU",
-              "punkte": 4
-            },
-            "Gr FNIE": {
-              "tipp": "NIE",
-              "punkte": 4
-            },
-            "Gr GBEL": {
-              "tipp": "BEL",
-              "punkte": 4
-            },
-            "Gr HSPA": {
-              "tipp": "SPA",
-              "punkte": 4
-            },
-            "Gr IFRA": {
-              "tipp": "NOR",
-              "punkte": 0
-            },
-            "Gr JARG": {
-              "tipp": "ARG",
-              "punkte": 4
-            },
-            "Gr KKOL": {
-              "tipp": "POR",
-              "punkte": 0
-            },
-            "Gr LENG": {
-              "tipp": "ENG",
-              "punkte": 4
-            },
-            "WM---": {
-              "tipp": "DEU",
-              "punkte": 0
-            }
-          }
-        },
-        {
           "platz": 8,
           "name": "SR",
-          "gesamt": 173,
+          "gesamt": 177,
           "punkte_pro_spiel": {
             "0": 0,
             "1": 2,
@@ -12846,7 +13314,7 @@
             "15": "2:1"
           },
           "allein_punkte": 0,
-          "bonus": 40,
+          "bonus": 44,
           "bonus_detail": {
             "Tor---": {
               "tipp": "BRA",
@@ -12856,8 +13324,12 @@
               "tipp": "ARG",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "DEU",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -12917,7 +13389,7 @@
         {
           "platz": 9,
           "name": "Pechnic90",
-          "gesamt": 170,
+          "gesamt": 174,
           "punkte_pro_spiel": {
             "0": 3,
             "1": 2,
@@ -12973,7 +13445,7 @@
             "15": "2:0"
           },
           "allein_punkte": 0,
-          "bonus": 36,
+          "bonus": 40,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -12983,8 +13455,12 @@
               "tipp": "FRA",
               "punkte": 4
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "NIE",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -13044,7 +13520,7 @@
         {
           "platz": 10,
           "name": "Chris",
-          "gesamt": 168,
+          "gesamt": 172,
           "punkte_pro_spiel": {
             "0": 3,
             "1": 4,
@@ -13100,7 +13576,7 @@
             "15": "2:0"
           },
           "allein_punkte": 0,
-          "bonus": 28,
+          "bonus": 32,
           "bonus_detail": {
             "Tor---": {
               "tipp": "SPA",
@@ -13110,8 +13586,12 @@
               "tipp": "DEU",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "AUT",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -13171,7 +13651,7 @@
         {
           "platz": 11,
           "name": "Henning",
-          "gesamt": 162,
+          "gesamt": 166,
           "punkte_pro_spiel": {
             "0": 3,
             "1": 4,
@@ -13227,7 +13707,7 @@
             "15": "2:1"
           },
           "allein_punkte": 0,
-          "bonus": 40,
+          "bonus": 44,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -13237,8 +13717,12 @@
               "tipp": "ARG",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "NIE",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -13353,7 +13837,7 @@
       "bonus_fragen": [
         "Tor---",
         "HFFRA",
-        "HF---",
+        "HFSPA",
         "HF---",
         "HF---",
         "Gr AMEX",
@@ -13374,7 +13858,7 @@
         {
           "platz": 1,
           "name": "Benjamin",
-          "gesamt": 209,
+          "gesamt": 213,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -13406,7 +13890,7 @@
             "7": "0:1"
           },
           "allein_punkte": 1,
-          "bonus": 48,
+          "bonus": 52,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -13416,8 +13900,12 @@
               "tipp": "FRA",
               "punkte": 4
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -13477,7 +13965,7 @@
         {
           "platz": 2,
           "name": "Senge",
-          "gesamt": 206,
+          "gesamt": 210,
           "punkte_pro_spiel": {
             "0": 0,
             "1": 2,
@@ -13508,7 +13996,7 @@
             "7": "2:1"
           },
           "allein_punkte": 0,
-          "bonus": 40,
+          "bonus": 44,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -13518,8 +14006,12 @@
               "tipp": "FRA",
               "punkte": 4
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "BRA",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -13579,7 +14071,7 @@
         {
           "platz": 3,
           "name": "Nalewaja",
-          "gesamt": 204,
+          "gesamt": 208,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -13611,7 +14103,7 @@
             "7": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 40,
+          "bonus": 44,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -13621,8 +14113,12 @@
               "tipp": "ARG",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "DEU",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -13682,7 +14178,7 @@
         {
           "platz": 4,
           "name": "KNALLentin",
-          "gesamt": 199,
+          "gesamt": 203,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -13714,7 +14210,7 @@
             "7": "0:1"
           },
           "allein_punkte": 0,
-          "bonus": 36,
+          "bonus": 40,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -13724,8 +14220,12 @@
               "tipp": "FRA",
               "punkte": 4
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -13785,7 +14285,7 @@
         {
           "platz": 5,
           "name": "Kolle",
-          "gesamt": 193,
+          "gesamt": 197,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -13817,7 +14317,7 @@
             "7": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 44,
+          "bonus": 48,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -13827,8 +14327,12 @@
               "tipp": "DEU",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -13888,7 +14392,7 @@
         {
           "platz": 6,
           "name": "Rosellen",
-          "gesamt": 190,
+          "gesamt": 194,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -13920,7 +14424,7 @@
             "7": "2:1"
           },
           "allein_punkte": 0,
-          "bonus": 36,
+          "bonus": 40,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -13930,8 +14434,12 @@
               "tipp": "DEU",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -14033,6 +14541,10 @@
               "tipp": "ARG",
               "punkte": 0
             },
+            "HFSPA": {
+              "tipp": "DEU",
+              "punkte": 0
+            },
             "HF---": {
               "tipp": "POR",
               "punkte": 0
@@ -14094,7 +14606,7 @@
         {
           "platz": 8,
           "name": "Chris",
-          "gesamt": 180,
+          "gesamt": 184,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -14126,7 +14638,7 @@
             "7": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 28,
+          "bonus": 32,
           "bonus_detail": {
             "Tor---": {
               "tipp": "SPA",
@@ -14136,8 +14648,12 @@
               "tipp": "DEU",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "AUT",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -14197,7 +14713,7 @@
         {
           "platz": 9,
           "name": "SR",
-          "gesamt": 180,
+          "gesamt": 184,
           "punkte_pro_spiel": {
             "0": 0,
             "1": 3,
@@ -14227,7 +14743,7 @@
             "7": "2:0"
           },
           "allein_punkte": 0,
-          "bonus": 40,
+          "bonus": 44,
           "bonus_detail": {
             "Tor---": {
               "tipp": "BRA",
@@ -14237,8 +14753,12 @@
               "tipp": "ARG",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "DEU",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -14298,7 +14818,7 @@
         {
           "platz": 10,
           "name": "Henning",
-          "gesamt": 179,
+          "gesamt": 183,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -14330,7 +14850,7 @@
             "7": "1:0"
           },
           "allein_punkte": 0,
-          "bonus": 40,
+          "bonus": 44,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -14340,8 +14860,12 @@
               "tipp": "ARG",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "NIE",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -14401,7 +14925,7 @@
         {
           "platz": 11,
           "name": "Pechnic90",
-          "gesamt": 179,
+          "gesamt": 183,
           "punkte_pro_spiel": {
             "0": 2,
             "1": 2,
@@ -14433,7 +14957,7 @@
             "7": "0:1"
           },
           "allein_punkte": 0,
-          "bonus": 36,
+          "bonus": 40,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -14443,8 +14967,12 @@
               "tipp": "FRA",
               "punkte": 4
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "NIE",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -14516,8 +15044,8 @@
         {
           "col_idx": 1,
           "label": "SPA–BEL",
-          "abgeschlossen": false,
-          "ergebnis": null
+          "abgeschlossen": true,
+          "ergebnis": "2:1"
         },
         {
           "col_idx": 2,
@@ -14535,7 +15063,7 @@
       "bonus_fragen": [
         "Tor---",
         "HFFRA",
-        "HF---",
+        "HFSPA",
         "HF---",
         "HF---",
         "Gr AMEX",
@@ -14556,12 +15084,14 @@
         {
           "platz": 1,
           "name": "Benjamin",
-          "gesamt": 211,
+          "gesamt": 218,
           "punkte_pro_spiel": {
-            "0": 2
+            "0": 2,
+            "1": 3
           },
           "exakt_pro_spiel": {
-            "0": false
+            "0": false,
+            "1": false
           },
           "tipp_pro_spiel": {
             "0": "2:1",
@@ -14570,7 +15100,7 @@
             "3": "-:-"
           },
           "allein_punkte": 0,
-          "bonus": 48,
+          "bonus": 52,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -14580,8 +15110,12 @@
               "tipp": "FRA",
               "punkte": 4
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -14641,12 +15175,14 @@
         {
           "platz": 2,
           "name": "Senge",
-          "gesamt": 209,
+          "gesamt": 217,
           "punkte_pro_spiel": {
-            "0": 3
+            "0": 3,
+            "1": 4
           },
           "exakt_pro_spiel": {
-            "0": false
+            "0": false,
+            "1": true
           },
           "tipp_pro_spiel": {
             "0": "3:1",
@@ -14655,7 +15191,7 @@
             "3": "-:-"
           },
           "allein_punkte": 0,
-          "bonus": 40,
+          "bonus": 44,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -14665,8 +15201,12 @@
               "tipp": "FRA",
               "punkte": 4
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "BRA",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -14726,12 +15266,14 @@
         {
           "platz": 3,
           "name": "Nalewaja",
-          "gesamt": 206,
+          "gesamt": 214,
           "punkte_pro_spiel": {
-            "0": 2
+            "0": 2,
+            "1": 4
           },
           "exakt_pro_spiel": {
-            "0": false
+            "0": false,
+            "1": true
           },
           "tipp_pro_spiel": {
             "0": "2:1",
@@ -14740,7 +15282,7 @@
             "3": "-:-"
           },
           "allein_punkte": 0,
-          "bonus": 40,
+          "bonus": 44,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -14750,8 +15292,12 @@
               "tipp": "ARG",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "DEU",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -14811,12 +15357,14 @@
         {
           "platz": 4,
           "name": "KNALLentin",
-          "gesamt": 202,
+          "gesamt": 210,
           "punkte_pro_spiel": {
-            "0": 3
+            "0": 3,
+            "1": 4
           },
           "exakt_pro_spiel": {
-            "0": false
+            "0": false,
+            "1": true
           },
           "tipp_pro_spiel": {
             "0": "3:1",
@@ -14825,7 +15373,7 @@
             "3": "-:-"
           },
           "allein_punkte": 0,
-          "bonus": 36,
+          "bonus": 40,
           "bonus_detail": {
             "Tor---": {
               "tipp": "FRA",
@@ -14835,8 +15383,12 @@
               "tipp": "FRA",
               "punkte": 4
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -14896,12 +15448,14 @@
         {
           "platz": 5,
           "name": "Kolle",
-          "gesamt": 195,
+          "gesamt": 203,
           "punkte_pro_spiel": {
-            "0": 2
+            "0": 2,
+            "1": 4
           },
           "exakt_pro_spiel": {
-            "0": false
+            "0": false,
+            "1": true
           },
           "tipp_pro_spiel": {
             "0": "2:1",
@@ -14910,7 +15464,7 @@
             "3": "-:-"
           },
           "allein_punkte": 0,
-          "bonus": 44,
+          "bonus": 48,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -14920,8 +15474,12 @@
               "tipp": "DEU",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -14981,12 +15539,14 @@
         {
           "platz": 6,
           "name": "Rosellen",
-          "gesamt": 192,
+          "gesamt": 198,
           "punkte_pro_spiel": {
-            "0": 2
+            "0": 2,
+            "1": 2
           },
           "exakt_pro_spiel": {
-            "0": false
+            "0": false,
+            "1": false
           },
           "tipp_pro_spiel": {
             "0": "2:1",
@@ -14995,7 +15555,7 @@
             "3": "-:-"
           },
           "allein_punkte": 0,
-          "bonus": 36,
+          "bonus": 40,
           "bonus_detail": {
             "Tor---": {
               "tipp": "ENG",
@@ -15005,8 +15565,12 @@
               "tipp": "DEU",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "POR",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -15066,12 +15630,14 @@
         {
           "platz": 7,
           "name": "Lukas",
-          "gesamt": 188,
+          "gesamt": 192,
           "punkte_pro_spiel": {
-            "0": 3
+            "0": 3,
+            "1": 4
           },
           "exakt_pro_spiel": {
-            "0": false
+            "0": false,
+            "1": true
           },
           "tipp_pro_spiel": {
             "0": "3:1",
@@ -15088,6 +15654,10 @@
             },
             "HFFRA": {
               "tipp": "ARG",
+              "punkte": 0
+            },
+            "HFSPA": {
+              "tipp": "DEU",
               "punkte": 0
             },
             "HF---": {
@@ -15150,183 +15720,15 @@
         },
         {
           "platz": 8,
-          "name": "Pechnic90",
-          "gesamt": 183,
-          "punkte_pro_spiel": {
-            "0": 4
-          },
-          "exakt_pro_spiel": {
-            "0": true
-          },
-          "tipp_pro_spiel": {
-            "0": "2:0",
-            "1": "3:1",
-            "2": "-:-",
-            "3": "-:-"
-          },
-          "allein_punkte": 0,
-          "bonus": 36,
-          "bonus_detail": {
-            "Tor---": {
-              "tipp": "FRA",
-              "punkte": 0
-            },
-            "HFFRA": {
-              "tipp": "FRA",
-              "punkte": 4
-            },
-            "HF---": {
-              "tipp": "SPA",
-              "punkte": 0
-            },
-            "Gr AMEX": {
-              "tipp": "SKOR",
-              "punkte": 0
-            },
-            "Gr BCH": {
-              "tipp": "CH",
-              "punkte": 4
-            },
-            "Gr CBRA": {
-              "tipp": "MAR",
-              "punkte": 0
-            },
-            "Gr DUSA": {
-              "tipp": "TUR",
-              "punkte": 0
-            },
-            "Gr EDEU": {
-              "tipp": "DEU",
-              "punkte": 4
-            },
-            "Gr FNIE": {
-              "tipp": "NIE",
-              "punkte": 4
-            },
-            "Gr GBEL": {
-              "tipp": "BEL",
-              "punkte": 4
-            },
-            "Gr HSPA": {
-              "tipp": "SPA",
-              "punkte": 4
-            },
-            "Gr IFRA": {
-              "tipp": "FRA",
-              "punkte": 4
-            },
-            "Gr JARG": {
-              "tipp": "ARG",
-              "punkte": 4
-            },
-            "Gr KKOL": {
-              "tipp": "POR",
-              "punkte": 0
-            },
-            "Gr LENG": {
-              "tipp": "ENG",
-              "punkte": 4
-            },
-            "WM---": {
-              "tipp": "FRA",
-              "punkte": 0
-            }
-          }
-        },
-        {
-          "platz": 9,
-          "name": "SR",
-          "gesamt": 183,
-          "punkte_pro_spiel": {
-            "0": 3
-          },
-          "exakt_pro_spiel": {
-            "0": false
-          },
-          "tipp_pro_spiel": {
-            "0": "3:1",
-            "1": "1:5",
-            "2": "-:-",
-            "3": "-:-"
-          },
-          "allein_punkte": 0,
-          "bonus": 40,
-          "bonus_detail": {
-            "Tor---": {
-              "tipp": "BRA",
-              "punkte": 0
-            },
-            "HFFRA": {
-              "tipp": "ARG",
-              "punkte": 0
-            },
-            "HF---": {
-              "tipp": "SPA",
-              "punkte": 0
-            },
-            "Gr AMEX": {
-              "tipp": "MEX",
-              "punkte": 4
-            },
-            "Gr BCH": {
-              "tipp": "KAN",
-              "punkte": 0
-            },
-            "Gr CBRA": {
-              "tipp": "BRA",
-              "punkte": 4
-            },
-            "Gr DUSA": {
-              "tipp": "USA",
-              "punkte": 4
-            },
-            "Gr EDEU": {
-              "tipp": "DEU",
-              "punkte": 4
-            },
-            "Gr FNIE": {
-              "tipp": "NIE",
-              "punkte": 4
-            },
-            "Gr GBEL": {
-              "tipp": "BEL",
-              "punkte": 4
-            },
-            "Gr HSPA": {
-              "tipp": "SPA",
-              "punkte": 4
-            },
-            "Gr IFRA": {
-              "tipp": "FRA",
-              "punkte": 4
-            },
-            "Gr JARG": {
-              "tipp": "ARG",
-              "punkte": 4
-            },
-            "Gr KKOL": {
-              "tipp": "POR",
-              "punkte": 0
-            },
-            "Gr LENG": {
-              "tipp": "ENG",
-              "punkte": 4
-            },
-            "WM---": {
-              "tipp": "DEU",
-              "punkte": 0
-            }
-          }
-        },
-        {
-          "platz": 10,
           "name": "Chris",
-          "gesamt": 182,
+          "gesamt": 190,
           "punkte_pro_spiel": {
-            "0": 2
+            "0": 2,
+            "1": 4
           },
           "exakt_pro_spiel": {
-            "0": false
+            "0": false,
+            "1": true
           },
           "tipp_pro_spiel": {
             "0": "2:1",
@@ -15335,7 +15737,7 @@
             "3": "-:-"
           },
           "allein_punkte": 0,
-          "bonus": 28,
+          "bonus": 32,
           "bonus_detail": {
             "Tor---": {
               "tipp": "SPA",
@@ -15345,8 +15747,12 @@
               "tipp": "DEU",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "AUT",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -15404,18 +15810,20 @@
           }
         },
         {
-          "platz": 11,
-          "name": "Henning",
-          "gesamt": 181,
+          "platz": 9,
+          "name": "Pechnic90",
+          "gesamt": 189,
           "punkte_pro_spiel": {
-            "0": 2
+            "0": 4,
+            "1": 2
           },
           "exakt_pro_spiel": {
-            "0": false
+            "0": true,
+            "1": false
           },
           "tipp_pro_spiel": {
-            "0": "2:1",
-            "1": "4:3",
+            "0": "2:0",
+            "1": "3:1",
             "2": "-:-",
             "3": "-:-"
           },
@@ -15427,11 +15835,106 @@
               "punkte": 0
             },
             "HFFRA": {
+              "tipp": "FRA",
+              "punkte": 4
+            },
+            "HFSPA": {
+              "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "NIE",
+              "punkte": 0
+            },
+            "Gr AMEX": {
+              "tipp": "SKOR",
+              "punkte": 0
+            },
+            "Gr BCH": {
+              "tipp": "CH",
+              "punkte": 4
+            },
+            "Gr CBRA": {
+              "tipp": "MAR",
+              "punkte": 0
+            },
+            "Gr DUSA": {
+              "tipp": "TUR",
+              "punkte": 0
+            },
+            "Gr EDEU": {
+              "tipp": "DEU",
+              "punkte": 4
+            },
+            "Gr FNIE": {
+              "tipp": "NIE",
+              "punkte": 4
+            },
+            "Gr GBEL": {
+              "tipp": "BEL",
+              "punkte": 4
+            },
+            "Gr HSPA": {
+              "tipp": "SPA",
+              "punkte": 4
+            },
+            "Gr IFRA": {
+              "tipp": "FRA",
+              "punkte": 4
+            },
+            "Gr JARG": {
+              "tipp": "ARG",
+              "punkte": 4
+            },
+            "Gr KKOL": {
+              "tipp": "POR",
+              "punkte": 0
+            },
+            "Gr LENG": {
+              "tipp": "ENG",
+              "punkte": 4
+            },
+            "WM---": {
+              "tipp": "FRA",
+              "punkte": 0
+            }
+          }
+        },
+        {
+          "platz": 10,
+          "name": "Henning",
+          "gesamt": 188,
+          "punkte_pro_spiel": {
+            "0": 2,
+            "1": 3
+          },
+          "exakt_pro_spiel": {
+            "0": false,
+            "1": false
+          },
+          "tipp_pro_spiel": {
+            "0": "2:1",
+            "1": "4:3",
+            "2": "-:-",
+            "3": "-:-"
+          },
+          "allein_punkte": 0,
+          "bonus": 44,
+          "bonus_detail": {
+            "Tor---": {
+              "tipp": "FRA",
+              "punkte": 0
+            },
+            "HFFRA": {
               "tipp": "ARG",
               "punkte": 0
             },
-            "HF---": {
+            "HFSPA": {
               "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "NIE",
               "punkte": 0
             },
             "Gr AMEX": {
@@ -15484,6 +15987,97 @@
             },
             "WM---": {
               "tipp": "SPA",
+              "punkte": 0
+            }
+          }
+        },
+        {
+          "platz": 11,
+          "name": "SR",
+          "gesamt": 187,
+          "punkte_pro_spiel": {
+            "0": 3,
+            "1": 0
+          },
+          "exakt_pro_spiel": {
+            "0": false,
+            "1": false
+          },
+          "tipp_pro_spiel": {
+            "0": "3:1",
+            "1": "1:5",
+            "2": "-:-",
+            "3": "-:-"
+          },
+          "allein_punkte": 0,
+          "bonus": 44,
+          "bonus_detail": {
+            "Tor---": {
+              "tipp": "BRA",
+              "punkte": 0
+            },
+            "HFFRA": {
+              "tipp": "ARG",
+              "punkte": 0
+            },
+            "HFSPA": {
+              "tipp": "SPA",
+              "punkte": 4
+            },
+            "HF---": {
+              "tipp": "DEU",
+              "punkte": 0
+            },
+            "Gr AMEX": {
+              "tipp": "MEX",
+              "punkte": 4
+            },
+            "Gr BCH": {
+              "tipp": "KAN",
+              "punkte": 0
+            },
+            "Gr CBRA": {
+              "tipp": "BRA",
+              "punkte": 4
+            },
+            "Gr DUSA": {
+              "tipp": "USA",
+              "punkte": 4
+            },
+            "Gr EDEU": {
+              "tipp": "DEU",
+              "punkte": 4
+            },
+            "Gr FNIE": {
+              "tipp": "NIE",
+              "punkte": 4
+            },
+            "Gr GBEL": {
+              "tipp": "BEL",
+              "punkte": 4
+            },
+            "Gr HSPA": {
+              "tipp": "SPA",
+              "punkte": 4
+            },
+            "Gr IFRA": {
+              "tipp": "FRA",
+              "punkte": 4
+            },
+            "Gr JARG": {
+              "tipp": "ARG",
+              "punkte": 4
+            },
+            "Gr KKOL": {
+              "tipp": "POR",
+              "punkte": 0
+            },
+            "Gr LENG": {
+              "tipp": "ENG",
+              "punkte": 4
+            },
+            "WM---": {
+              "tipp": "DEU",
               "punkte": 0
             }
           }
