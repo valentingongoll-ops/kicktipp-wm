@@ -1,6 +1,6 @@
 {
   "community": "stb-tipprunde",
-  "zuletzt_aktualisiert": "2026-07-15T19:45:59",
+  "zuletzt_aktualisiert": "2026-07-15T21:06:07",
   "spieltage": [
     {
       "name": "1. Spieltag",
@@ -16750,7 +16750,7 @@
           },
           "tipp_pro_spiel": {
             "0": "0:1",
-            "1": "-:-"
+            "1": "1:0"
           },
           "allein_punkte": 0,
           "bonus": 56,
@@ -16841,7 +16841,7 @@
           },
           "tipp_pro_spiel": {
             "0": "2:1",
-            "1": "-:-"
+            "1": "1:2"
           },
           "allein_punkte": 0,
           "bonus": 48,
@@ -16932,7 +16932,7 @@
           },
           "tipp_pro_spiel": {
             "0": "1:2",
-            "1": "-:-"
+            "1": "2:1"
           },
           "allein_punkte": 0,
           "bonus": 48,
@@ -17023,7 +17023,7 @@
           },
           "tipp_pro_spiel": {
             "0": "3:2",
-            "1": "-:-"
+            "1": "1:0"
           },
           "allein_punkte": 0,
           "bonus": 44,
@@ -17114,7 +17114,7 @@
           },
           "tipp_pro_spiel": {
             "0": "2:1",
-            "1": "-:-"
+            "1": "2:1"
           },
           "allein_punkte": 0,
           "bonus": 52,
@@ -17205,7 +17205,7 @@
           },
           "tipp_pro_spiel": {
             "0": "2:1",
-            "1": "-:-"
+            "1": "3:2"
           },
           "allein_punkte": 0,
           "bonus": 44,
@@ -17296,7 +17296,7 @@
           },
           "tipp_pro_spiel": {
             "0": "2:0",
-            "1": "-:-"
+            "1": "2:1"
           },
           "allein_punkte": 0,
           "bonus": 40,
@@ -17387,7 +17387,7 @@
           },
           "tipp_pro_spiel": {
             "0": "2:1",
-            "1": "-:-"
+            "1": "1:2"
           },
           "allein_punkte": 0,
           "bonus": 44,
@@ -17478,7 +17478,7 @@
           },
           "tipp_pro_spiel": {
             "0": "2:1",
-            "1": "-:-"
+            "1": "1:2"
           },
           "allein_punkte": 0,
           "bonus": 32,
@@ -17569,7 +17569,7 @@
           },
           "tipp_pro_spiel": {
             "0": "1:2",
-            "1": "-:-"
+            "1": "1:2"
           },
           "allein_punkte": 0,
           "bonus": 48,
@@ -17660,7 +17660,7 @@
           },
           "tipp_pro_spiel": {
             "0": "3:1",
-            "1": "-:-"
+            "1": "2:3"
           },
           "allein_punkte": 0,
           "bonus": 48,
