@@ -1,6 +1,6 @@
 {
   "community": "stb-tipprunde",
-  "zuletzt_aktualisiert": "2026-07-19T23:06:53",
+  "zuletzt_aktualisiert": "2026-07-20T00:08:04",
   "spieltage": [
     {
       "name": "1. Spieltag",
@@ -56,7 +56,7 @@
         }
       ],
       "bonus_fragen": [
-        "Tor---",
+        "TorFRA",
         "HFARG",
         "HFENG",
         "HFFRA",
@@ -73,7 +73,7 @@
         "Gr JARG",
         "Gr KKOL",
         "Gr LENG",
-        "WM---"
+        "WMSPA"
       ],
       "spieler": [
         {
@@ -111,11 +111,11 @@
             "7": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 56,
+          "bonus": 64,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "POR",
@@ -181,9 +181,9 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             }
           }
         },
@@ -224,7 +224,7 @@
           "allein_punkte": 2,
           "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "BRA",
               "punkte": 0
             },
@@ -292,7 +292,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -335,7 +335,7 @@
           "allein_punkte": 0,
           "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -403,7 +403,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -446,7 +446,7 @@
           "allein_punkte": 0,
           "bonus": 52,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -514,7 +514,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -555,11 +555,11 @@
             "7": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 48,
+          "bonus": 56,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "ARG",
@@ -625,9 +625,9 @@
               "tipp": "KRO",
               "punkte": 0
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             }
           }
         },
@@ -666,9 +666,9 @@
             "7": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 48,
+          "bonus": 52,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -736,9 +736,9 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             }
           }
         },
@@ -777,11 +777,11 @@
             "7": "0:2"
           },
           "allein_punkte": 0,
-          "bonus": 44,
+          "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "POR",
@@ -847,7 +847,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "ENG",
               "punkte": 0
             }
@@ -890,7 +890,7 @@
           "allein_punkte": 0,
           "bonus": 44,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -958,7 +958,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -999,11 +999,11 @@
             "7": "0:2"
           },
           "allein_punkte": 0,
-          "bonus": 44,
+          "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "ARG",
@@ -1069,7 +1069,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "FRA",
               "punkte": 0
             }
@@ -1112,7 +1112,7 @@
           "allein_punkte": 0,
           "bonus": 40,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -1180,7 +1180,7 @@
               "tipp": "KRO",
               "punkte": 0
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "POR",
               "punkte": 0
             }
@@ -1223,7 +1223,7 @@
           "allein_punkte": 0,
           "bonus": 32,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "SPA",
               "punkte": 0
             },
@@ -1291,7 +1291,7 @@
               "tipp": "KRO",
               "punkte": 0
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "FRA",
               "punkte": 0
             }
@@ -1353,7 +1353,7 @@
         }
       ],
       "bonus_fragen": [
-        "Tor---",
+        "TorFRA",
         "HFARG",
         "HFENG",
         "HFFRA",
@@ -1370,7 +1370,7 @@
         "Gr JARG",
         "Gr KKOL",
         "Gr LENG",
-        "WM---"
+        "WMSPA"
       ],
       "spieler": [
         {
@@ -1408,11 +1408,11 @@
             "7": "1:0"
           },
           "allein_punkte": 0,
-          "bonus": 56,
+          "bonus": 64,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "POR",
@@ -1478,9 +1478,9 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             }
           }
         },
@@ -1521,7 +1521,7 @@
           "allein_punkte": 1,
           "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -1589,7 +1589,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -1632,7 +1632,7 @@
           "allein_punkte": 0,
           "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "BRA",
               "punkte": 0
             },
@@ -1700,7 +1700,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -1741,9 +1741,9 @@
             "7": "2:1"
           },
           "allein_punkte": 0,
-          "bonus": 48,
+          "bonus": 52,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -1811,9 +1811,9 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             }
           }
         },
@@ -1854,7 +1854,7 @@
           "allein_punkte": 0,
           "bonus": 52,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -1922,7 +1922,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -1963,11 +1963,11 @@
             "7": "1:0"
           },
           "allein_punkte": 1,
-          "bonus": 44,
+          "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "POR",
@@ -2033,7 +2033,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "ENG",
               "punkte": 0
             }
@@ -2074,11 +2074,11 @@
             "7": "2:1"
           },
           "allein_punkte": 0,
-          "bonus": 48,
+          "bonus": 56,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "ARG",
@@ -2144,9 +2144,9 @@
               "tipp": "KRO",
               "punkte": 0
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             }
           }
         },
@@ -2187,7 +2187,7 @@
           "allein_punkte": 0,
           "bonus": 44,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -2255,7 +2255,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -2296,11 +2296,11 @@
             "7": "2:1"
           },
           "allein_punkte": 0,
-          "bonus": 44,
+          "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "ARG",
@@ -2366,7 +2366,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "FRA",
               "punkte": 0
             }
@@ -2409,7 +2409,7 @@
           "allein_punkte": 0,
           "bonus": 40,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -2477,7 +2477,7 @@
               "tipp": "KRO",
               "punkte": 0
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "POR",
               "punkte": 0
             }
@@ -2520,7 +2520,7 @@
           "allein_punkte": 0,
           "bonus": 32,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "SPA",
               "punkte": 0
             },
@@ -2588,7 +2588,7 @@
               "tipp": "KRO",
               "punkte": 0
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "FRA",
               "punkte": 0
             }
@@ -2650,7 +2650,7 @@
         }
       ],
       "bonus_fragen": [
-        "Tor---",
+        "TorFRA",
         "HFARG",
         "HFENG",
         "HFFRA",
@@ -2667,7 +2667,7 @@
         "Gr JARG",
         "Gr KKOL",
         "Gr LENG",
-        "WM---"
+        "WMSPA"
       ],
       "spieler": [
         {
@@ -2705,11 +2705,11 @@
             "7": "0:2"
           },
           "allein_punkte": 0,
-          "bonus": 56,
+          "bonus": 64,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "POR",
@@ -2775,9 +2775,9 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             }
           }
         },
@@ -2818,7 +2818,7 @@
           "allein_punkte": 0,
           "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -2886,7 +2886,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -2927,11 +2927,11 @@
             "7": "0:2"
           },
           "allein_punkte": 0,
-          "bonus": 44,
+          "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "POR",
@@ -2997,7 +2997,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "ENG",
               "punkte": 0
             }
@@ -3040,7 +3040,7 @@
           "allein_punkte": 0,
           "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "BRA",
               "punkte": 0
             },
@@ -3108,7 +3108,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -3149,9 +3149,9 @@
             "7": "0:2"
           },
           "allein_punkte": 0,
-          "bonus": 48,
+          "bonus": 52,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -3219,9 +3219,9 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             }
           }
         },
@@ -3262,7 +3262,7 @@
           "allein_punkte": 0,
           "bonus": 52,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -3330,7 +3330,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -3371,11 +3371,11 @@
             "7": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 48,
+          "bonus": 56,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "ARG",
@@ -3441,9 +3441,9 @@
               "tipp": "KRO",
               "punkte": 0
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             }
           }
         },
@@ -3482,11 +3482,11 @@
             "7": "0:2"
           },
           "allein_punkte": 0,
-          "bonus": 44,
+          "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "ARG",
@@ -3552,7 +3552,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "FRA",
               "punkte": 0
             }
@@ -3595,7 +3595,7 @@
           "allein_punkte": 0,
           "bonus": 44,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -3663,7 +3663,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -3706,7 +3706,7 @@
           "allein_punkte": 0,
           "bonus": 40,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -3774,7 +3774,7 @@
               "tipp": "KRO",
               "punkte": 0
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "POR",
               "punkte": 0
             }
@@ -3817,7 +3817,7 @@
           "allein_punkte": 0,
           "bonus": 32,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "SPA",
               "punkte": 0
             },
@@ -3885,7 +3885,7 @@
               "tipp": "KRO",
               "punkte": 0
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "FRA",
               "punkte": 0
             }
@@ -3947,7 +3947,7 @@
         }
       ],
       "bonus_fragen": [
-        "Tor---",
+        "TorFRA",
         "HFARG",
         "HFENG",
         "HFFRA",
@@ -3964,7 +3964,7 @@
         "Gr JARG",
         "Gr KKOL",
         "Gr LENG",
-        "WM---"
+        "WMSPA"
       ],
       "spieler": [
         {
@@ -4004,7 +4004,7 @@
           "allein_punkte": 0,
           "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -4072,7 +4072,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -4113,11 +4113,11 @@
             "7": "1:1"
           },
           "allein_punkte": 0,
-          "bonus": 56,
+          "bonus": 64,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "POR",
@@ -4183,9 +4183,9 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             }
           }
         },
@@ -4224,9 +4224,9 @@
             "7": "2:1"
           },
           "allein_punkte": 0,
-          "bonus": 48,
+          "bonus": 52,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -4294,9 +4294,9 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             }
           }
         },
@@ -4337,7 +4337,7 @@
           "allein_punkte": 0,
           "bonus": 44,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -4405,7 +4405,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -4448,7 +4448,7 @@
           "allein_punkte": 0,
           "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "BRA",
               "punkte": 0
             },
@@ -4516,7 +4516,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -4559,7 +4559,7 @@
           "allein_punkte": 0,
           "bonus": 52,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -4627,7 +4627,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -4668,11 +4668,11 @@
             "7": "1:1"
           },
           "allein_punkte": 0,
-          "bonus": 48,
+          "bonus": 56,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "ARG",
@@ -4738,9 +4738,9 @@
               "tipp": "KRO",
               "punkte": 0
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             }
           }
         },
@@ -4779,11 +4779,11 @@
             "7": "2:1"
           },
           "allein_punkte": 0,
-          "bonus": 44,
+          "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "ARG",
@@ -4849,7 +4849,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "FRA",
               "punkte": 0
             }
@@ -4890,11 +4890,11 @@
             "7": "1:1"
           },
           "allein_punkte": 0,
-          "bonus": 44,
+          "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "POR",
@@ -4960,7 +4960,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "ENG",
               "punkte": 0
             }
@@ -5003,7 +5003,7 @@
           "allein_punkte": 0,
           "bonus": 40,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -5071,7 +5071,7 @@
               "tipp": "KRO",
               "punkte": 0
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "POR",
               "punkte": 0
             }
@@ -5114,7 +5114,7 @@
           "allein_punkte": 0,
           "bonus": 32,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "SPA",
               "punkte": 0
             },
@@ -5182,7 +5182,7 @@
               "tipp": "KRO",
               "punkte": 0
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "FRA",
               "punkte": 0
             }
@@ -5244,7 +5244,7 @@
         }
       ],
       "bonus_fragen": [
-        "Tor---",
+        "TorFRA",
         "HFARG",
         "HFENG",
         "HFFRA",
@@ -5261,7 +5261,7 @@
         "Gr JARG",
         "Gr KKOL",
         "Gr LENG",
-        "WM---"
+        "WMSPA"
       ],
       "spieler": [
         {
@@ -5301,7 +5301,7 @@
           "allein_punkte": 0,
           "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -5369,7 +5369,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -5410,11 +5410,11 @@
             "7": "0:1"
           },
           "allein_punkte": 0,
-          "bonus": 56,
+          "bonus": 64,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "POR",
@@ -5480,9 +5480,9 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             }
           }
         },
@@ -5521,9 +5521,9 @@
             "7": "0:2"
           },
           "allein_punkte": 0,
-          "bonus": 48,
+          "bonus": 52,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -5591,9 +5591,9 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             }
           }
         },
@@ -5634,7 +5634,7 @@
           "allein_punkte": 0,
           "bonus": 44,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -5702,7 +5702,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -5743,11 +5743,11 @@
             "7": "0:3"
           },
           "allein_punkte": 0,
-          "bonus": 44,
+          "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "POR",
@@ -5813,7 +5813,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "ENG",
               "punkte": 0
             }
@@ -5856,7 +5856,7 @@
           "allein_punkte": 0,
           "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "BRA",
               "punkte": 0
             },
@@ -5924,7 +5924,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -5965,11 +5965,11 @@
             "7": "1:3"
           },
           "allein_punkte": 0,
-          "bonus": 48,
+          "bonus": 56,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "ARG",
@@ -6035,9 +6035,9 @@
               "tipp": "KRO",
               "punkte": 0
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             }
           }
         },
@@ -6078,7 +6078,7 @@
           "allein_punkte": 0,
           "bonus": 52,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -6146,7 +6146,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -6187,11 +6187,11 @@
             "7": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 44,
+          "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "ARG",
@@ -6257,7 +6257,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "FRA",
               "punkte": 0
             }
@@ -6300,7 +6300,7 @@
           "allein_punkte": 0,
           "bonus": 40,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -6368,7 +6368,7 @@
               "tipp": "KRO",
               "punkte": 0
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "POR",
               "punkte": 0
             }
@@ -6411,7 +6411,7 @@
           "allein_punkte": 0,
           "bonus": 32,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "SPA",
               "punkte": 0
             },
@@ -6479,7 +6479,7 @@
               "tipp": "KRO",
               "punkte": 0
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "FRA",
               "punkte": 0
             }
@@ -6541,7 +6541,7 @@
         }
       ],
       "bonus_fragen": [
-        "Tor---",
+        "TorFRA",
         "HFARG",
         "HFENG",
         "HFFRA",
@@ -6558,7 +6558,7 @@
         "Gr JARG",
         "Gr KKOL",
         "Gr LENG",
-        "WM---"
+        "WMSPA"
       ],
       "spieler": [
         {
@@ -6598,7 +6598,7 @@
           "allein_punkte": 0,
           "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -6666,7 +6666,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -6707,9 +6707,9 @@
             "7": "2:0"
           },
           "allein_punkte": 0,
-          "bonus": 48,
+          "bonus": 52,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -6777,9 +6777,9 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             }
           }
         },
@@ -6818,11 +6818,11 @@
             "7": "2:0"
           },
           "allein_punkte": 0,
-          "bonus": 56,
+          "bonus": 64,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "POR",
@@ -6888,9 +6888,9 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             }
           }
         },
@@ -6931,7 +6931,7 @@
           "allein_punkte": 0,
           "bonus": 44,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -6999,7 +6999,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -7042,7 +7042,7 @@
           "allein_punkte": 0,
           "bonus": 52,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -7110,7 +7110,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -7152,7 +7152,7 @@
           "allein_punkte": 0,
           "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "BRA",
               "punkte": 0
             },
@@ -7220,7 +7220,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -7261,11 +7261,11 @@
             "7": "2:1"
           },
           "allein_punkte": 0,
-          "bonus": 44,
+          "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "ARG",
@@ -7331,7 +7331,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "FRA",
               "punkte": 0
             }
@@ -7374,7 +7374,7 @@
           "allein_punkte": 0,
           "bonus": 40,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -7442,7 +7442,7 @@
               "tipp": "KRO",
               "punkte": 0
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "POR",
               "punkte": 0
             }
@@ -7483,11 +7483,11 @@
             "7": "2:2"
           },
           "allein_punkte": 0,
-          "bonus": 44,
+          "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "POR",
@@ -7553,7 +7553,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "ENG",
               "punkte": 0
             }
@@ -7594,11 +7594,11 @@
             "7": "1:1"
           },
           "allein_punkte": 0,
-          "bonus": 48,
+          "bonus": 56,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "ARG",
@@ -7664,9 +7664,9 @@
               "tipp": "KRO",
               "punkte": 0
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             }
           }
         },
@@ -7707,7 +7707,7 @@
           "allein_punkte": 0,
           "bonus": 32,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "SPA",
               "punkte": 0
             },
@@ -7775,7 +7775,7 @@
               "tipp": "KRO",
               "punkte": 0
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "FRA",
               "punkte": 0
             }
@@ -7825,7 +7825,7 @@
         }
       ],
       "bonus_fragen": [
-        "Tor---",
+        "TorFRA",
         "HFARG",
         "HFENG",
         "HFFRA",
@@ -7842,7 +7842,7 @@
         "Gr JARG",
         "Gr KKOL",
         "Gr LENG",
-        "WM---"
+        "WMSPA"
       ],
       "spieler": [
         {
@@ -7876,7 +7876,7 @@
           "allein_punkte": 0,
           "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -7944,7 +7944,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -7979,9 +7979,9 @@
             "5": "2:2"
           },
           "allein_punkte": 0,
-          "bonus": 48,
+          "bonus": 52,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -8049,9 +8049,9 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             }
           }
         },
@@ -8086,7 +8086,7 @@
           "allein_punkte": 0,
           "bonus": 44,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -8154,7 +8154,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -8189,11 +8189,11 @@
             "5": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 56,
+          "bonus": 64,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "POR",
@@ -8259,9 +8259,9 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             }
           }
         },
@@ -8296,7 +8296,7 @@
           "allein_punkte": 0,
           "bonus": 52,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -8364,7 +8364,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -8401,7 +8401,7 @@
           "allein_punkte": 0,
           "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "BRA",
               "punkte": 0
             },
@@ -8469,7 +8469,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -8504,11 +8504,11 @@
             "5": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 44,
+          "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "ARG",
@@ -8574,7 +8574,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "FRA",
               "punkte": 0
             }
@@ -8611,7 +8611,7 @@
           "allein_punkte": 0,
           "bonus": 40,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -8679,7 +8679,7 @@
               "tipp": "KRO",
               "punkte": 0
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "POR",
               "punkte": 0
             }
@@ -8714,11 +8714,11 @@
             "5": "0:0"
           },
           "allein_punkte": 0,
-          "bonus": 44,
+          "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "POR",
@@ -8784,7 +8784,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "ENG",
               "punkte": 0
             }
@@ -8819,11 +8819,11 @@
             "5": "0:1"
           },
           "allein_punkte": 0,
-          "bonus": 48,
+          "bonus": 56,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "ARG",
@@ -8889,9 +8889,9 @@
               "tipp": "KRO",
               "punkte": 0
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             }
           }
         },
@@ -8926,7 +8926,7 @@
           "allein_punkte": 0,
           "bonus": 32,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "SPA",
               "punkte": 0
             },
@@ -8994,7 +8994,7 @@
               "tipp": "KRO",
               "punkte": 0
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "FRA",
               "punkte": 0
             }
@@ -9044,7 +9044,7 @@
         }
       ],
       "bonus_fragen": [
-        "Tor---",
+        "TorFRA",
         "HFARG",
         "HFENG",
         "HFFRA",
@@ -9061,7 +9061,7 @@
         "Gr JARG",
         "Gr KKOL",
         "Gr LENG",
-        "WM---"
+        "WMSPA"
       ],
       "spieler": [
         {
@@ -9095,7 +9095,7 @@
           "allein_punkte": 0,
           "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -9163,7 +9163,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -9198,9 +9198,9 @@
             "5": "0:2"
           },
           "allein_punkte": 0,
-          "bonus": 48,
+          "bonus": 52,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -9268,9 +9268,9 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             }
           }
         },
@@ -9303,11 +9303,11 @@
             "5": "1:1"
           },
           "allein_punkte": 0,
-          "bonus": 56,
+          "bonus": 64,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "POR",
@@ -9373,9 +9373,9 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             }
           }
         },
@@ -9410,7 +9410,7 @@
           "allein_punkte": 0,
           "bonus": 44,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -9478,7 +9478,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -9515,7 +9515,7 @@
           "allein_punkte": 0,
           "bonus": 52,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -9583,7 +9583,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -9618,11 +9618,11 @@
             "5": "1:0"
           },
           "allein_punkte": 1,
-          "bonus": 44,
+          "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "POR",
@@ -9688,7 +9688,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "ENG",
               "punkte": 0
             }
@@ -9725,7 +9725,7 @@
           "allein_punkte": 0,
           "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "BRA",
               "punkte": 0
             },
@@ -9793,7 +9793,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -9830,7 +9830,7 @@
           "allein_punkte": 0,
           "bonus": 40,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -9898,7 +9898,7 @@
               "tipp": "KRO",
               "punkte": 0
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "POR",
               "punkte": 0
             }
@@ -9933,11 +9933,11 @@
             "5": "0:1"
           },
           "allein_punkte": 0,
-          "bonus": 44,
+          "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "ARG",
@@ -10003,7 +10003,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "FRA",
               "punkte": 0
             }
@@ -10038,11 +10038,11 @@
             "5": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 48,
+          "bonus": 56,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "ARG",
@@ -10108,9 +10108,9 @@
               "tipp": "KRO",
               "punkte": 0
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             }
           }
         },
@@ -10145,7 +10145,7 @@
           "allein_punkte": 0,
           "bonus": 32,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "SPA",
               "punkte": 0
             },
@@ -10213,7 +10213,7 @@
               "tipp": "KRO",
               "punkte": 0
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "FRA",
               "punkte": 0
             }
@@ -10263,7 +10263,7 @@
         }
       ],
       "bonus_fragen": [
-        "Tor---",
+        "TorFRA",
         "HFARG",
         "HFENG",
         "HFFRA",
@@ -10280,7 +10280,7 @@
         "Gr JARG",
         "Gr KKOL",
         "Gr LENG",
-        "WM---"
+        "WMSPA"
       ],
       "spieler": [
         {
@@ -10314,7 +10314,7 @@
           "allein_punkte": 0,
           "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -10382,7 +10382,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -10417,11 +10417,11 @@
             "5": "1:1"
           },
           "allein_punkte": 0,
-          "bonus": 56,
+          "bonus": 64,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "POR",
@@ -10487,9 +10487,9 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             }
           }
         },
@@ -10522,9 +10522,9 @@
             "5": "2:0"
           },
           "allein_punkte": 0,
-          "bonus": 48,
+          "bonus": 52,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -10592,9 +10592,9 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             }
           }
         },
@@ -10629,7 +10629,7 @@
           "allein_punkte": 0,
           "bonus": 52,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -10697,7 +10697,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -10734,7 +10734,7 @@
           "allein_punkte": 0,
           "bonus": 44,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -10802,7 +10802,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -10837,11 +10837,11 @@
             "5": "1:1"
           },
           "allein_punkte": 0,
-          "bonus": 44,
+          "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "POR",
@@ -10907,7 +10907,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "ENG",
               "punkte": 0
             }
@@ -10944,7 +10944,7 @@
           "allein_punkte": 0,
           "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "BRA",
               "punkte": 0
             },
@@ -11012,7 +11012,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -11049,7 +11049,7 @@
           "allein_punkte": 0,
           "bonus": 40,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -11117,7 +11117,7 @@
               "tipp": "KRO",
               "punkte": 0
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "POR",
               "punkte": 0
             }
@@ -11152,11 +11152,11 @@
             "5": "1:0"
           },
           "allein_punkte": 0,
-          "bonus": 44,
+          "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "ARG",
@@ -11222,7 +11222,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "FRA",
               "punkte": 0
             }
@@ -11257,11 +11257,11 @@
             "5": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 48,
+          "bonus": 56,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "ARG",
@@ -11327,9 +11327,9 @@
               "tipp": "KRO",
               "punkte": 0
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             }
           }
         },
@@ -11364,7 +11364,7 @@
           "allein_punkte": 0,
           "bonus": 32,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "SPA",
               "punkte": 0
             },
@@ -11432,7 +11432,7 @@
               "tipp": "KRO",
               "punkte": 0
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "FRA",
               "punkte": 0
             }
@@ -11482,7 +11482,7 @@
         }
       ],
       "bonus_fragen": [
-        "Tor---",
+        "TorFRA",
         "HFARG",
         "HFENG",
         "HFFRA",
@@ -11499,7 +11499,7 @@
         "Gr JARG",
         "Gr KKOL",
         "Gr LENG",
-        "WM---"
+        "WMSPA"
       ],
       "spieler": [
         {
@@ -11533,7 +11533,7 @@
           "allein_punkte": 0,
           "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -11601,7 +11601,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -11636,11 +11636,11 @@
             "5": "0:3"
           },
           "allein_punkte": 0,
-          "bonus": 56,
+          "bonus": 64,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "POR",
@@ -11706,9 +11706,9 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             }
           }
         },
@@ -11741,9 +11741,9 @@
             "5": "0:3"
           },
           "allein_punkte": 0,
-          "bonus": 48,
+          "bonus": 52,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -11811,9 +11811,9 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             }
           }
         },
@@ -11846,11 +11846,11 @@
             "5": "0:3"
           },
           "allein_punkte": 0,
-          "bonus": 44,
+          "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "POR",
@@ -11916,7 +11916,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "ENG",
               "punkte": 0
             }
@@ -11953,7 +11953,7 @@
           "allein_punkte": 0,
           "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "BRA",
               "punkte": 0
             },
@@ -12021,7 +12021,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -12058,7 +12058,7 @@
           "allein_punkte": 0,
           "bonus": 52,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -12126,7 +12126,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -12163,7 +12163,7 @@
           "allein_punkte": 0,
           "bonus": 44,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -12231,7 +12231,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -12268,7 +12268,7 @@
           "allein_punkte": 0,
           "bonus": 40,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -12336,7 +12336,7 @@
               "tipp": "KRO",
               "punkte": 0
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "POR",
               "punkte": 0
             }
@@ -12371,11 +12371,11 @@
             "5": "0:4"
           },
           "allein_punkte": 0,
-          "bonus": 44,
+          "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "ARG",
@@ -12441,7 +12441,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "FRA",
               "punkte": 0
             }
@@ -12476,11 +12476,11 @@
             "5": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 48,
+          "bonus": 56,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "ARG",
@@ -12546,9 +12546,9 @@
               "tipp": "KRO",
               "punkte": 0
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             }
           }
         },
@@ -12583,7 +12583,7 @@
           "allein_punkte": 0,
           "bonus": 32,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "SPA",
               "punkte": 0
             },
@@ -12651,7 +12651,7 @@
               "tipp": "KRO",
               "punkte": 0
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "FRA",
               "punkte": 0
             }
@@ -12761,7 +12761,7 @@
         }
       ],
       "bonus_fragen": [
-        "Tor---",
+        "TorFRA",
         "HFARG",
         "HFENG",
         "HFFRA",
@@ -12778,7 +12778,7 @@
         "Gr JARG",
         "Gr KKOL",
         "Gr LENG",
-        "WM---"
+        "WMSPA"
       ],
       "spieler": [
         {
@@ -12839,11 +12839,11 @@
             "15": "1:0"
           },
           "allein_punkte": 0,
-          "bonus": 56,
+          "bonus": 64,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "POR",
@@ -12909,9 +12909,9 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             }
           }
         },
@@ -12974,9 +12974,9 @@
             "15": "4:2"
           },
           "allein_punkte": 0,
-          "bonus": 48,
+          "bonus": 52,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -13044,9 +13044,9 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             }
           }
         },
@@ -13111,7 +13111,7 @@
           "allein_punkte": 0,
           "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -13179,7 +13179,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -13244,11 +13244,11 @@
             "15": "2:0"
           },
           "allein_punkte": 0,
-          "bonus": 44,
+          "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "POR",
@@ -13314,7 +13314,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "ENG",
               "punkte": 0
             }
@@ -13381,7 +13381,7 @@
           "allein_punkte": 0,
           "bonus": 40,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -13449,7 +13449,7 @@
               "tipp": "KRO",
               "punkte": 0
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "POR",
               "punkte": 0
             }
@@ -13516,7 +13516,7 @@
           "allein_punkte": 0,
           "bonus": 52,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -13584,7 +13584,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -13651,7 +13651,7 @@
           "allein_punkte": 0,
           "bonus": 44,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -13719,7 +13719,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -13784,7 +13784,7 @@
           "allein_punkte": 0,
           "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "BRA",
               "punkte": 0
             },
@@ -13852,7 +13852,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -13917,11 +13917,11 @@
             "15": "2:0"
           },
           "allein_punkte": 0,
-          "bonus": 44,
+          "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "ARG",
@@ -13987,7 +13987,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "FRA",
               "punkte": 0
             }
@@ -14054,7 +14054,7 @@
           "allein_punkte": 0,
           "bonus": 32,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "SPA",
               "punkte": 0
             },
@@ -14122,7 +14122,7 @@
               "tipp": "KRO",
               "punkte": 0
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "FRA",
               "punkte": 0
             }
@@ -14187,11 +14187,11 @@
             "15": "2:1"
           },
           "allein_punkte": 0,
-          "bonus": 48,
+          "bonus": 56,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "ARG",
@@ -14257,9 +14257,9 @@
               "tipp": "KRO",
               "punkte": 0
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             }
           }
         }
@@ -14319,7 +14319,7 @@
         }
       ],
       "bonus_fragen": [
-        "Tor---",
+        "TorFRA",
         "HFARG",
         "HFENG",
         "HFFRA",
@@ -14336,7 +14336,7 @@
         "Gr JARG",
         "Gr KKOL",
         "Gr LENG",
-        "WM---"
+        "WMSPA"
       ],
       "spieler": [
         {
@@ -14374,11 +14374,11 @@
             "7": "0:1"
           },
           "allein_punkte": 1,
-          "bonus": 56,
+          "bonus": 64,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "POR",
@@ -14444,9 +14444,9 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             }
           }
         },
@@ -14484,9 +14484,9 @@
             "7": "2:1"
           },
           "allein_punkte": 0,
-          "bonus": 48,
+          "bonus": 52,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -14554,9 +14554,9 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             }
           }
         },
@@ -14597,7 +14597,7 @@
           "allein_punkte": 0,
           "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -14665,7 +14665,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -14706,11 +14706,11 @@
             "7": "0:1"
           },
           "allein_punkte": 0,
-          "bonus": 44,
+          "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "POR",
@@ -14776,7 +14776,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "ENG",
               "punkte": 0
             }
@@ -14819,7 +14819,7 @@
           "allein_punkte": 0,
           "bonus": 52,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -14887,7 +14887,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -14930,7 +14930,7 @@
           "allein_punkte": 0,
           "bonus": 44,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -14998,7 +14998,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -15041,7 +15041,7 @@
           "allein_punkte": 0,
           "bonus": 40,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -15109,7 +15109,7 @@
               "tipp": "KRO",
               "punkte": 0
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "POR",
               "punkte": 0
             }
@@ -15150,7 +15150,7 @@
           "allein_punkte": 0,
           "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "BRA",
               "punkte": 0
             },
@@ -15218,7 +15218,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -15259,11 +15259,11 @@
             "7": "1:0"
           },
           "allein_punkte": 0,
-          "bonus": 48,
+          "bonus": 56,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "ARG",
@@ -15329,9 +15329,9 @@
               "tipp": "KRO",
               "punkte": 0
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             }
           }
         },
@@ -15370,11 +15370,11 @@
             "7": "0:1"
           },
           "allein_punkte": 0,
-          "bonus": 44,
+          "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "ARG",
@@ -15440,7 +15440,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "FRA",
               "punkte": 0
             }
@@ -15483,7 +15483,7 @@
           "allein_punkte": 0,
           "bonus": 32,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "SPA",
               "punkte": 0
             },
@@ -15551,7 +15551,7 @@
               "tipp": "KRO",
               "punkte": 0
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "FRA",
               "punkte": 0
             }
@@ -15589,7 +15589,7 @@
         }
       ],
       "bonus_fragen": [
-        "Tor---",
+        "TorFRA",
         "HFARG",
         "HFENG",
         "HFFRA",
@@ -15606,7 +15606,7 @@
         "Gr JARG",
         "Gr KKOL",
         "Gr LENG",
-        "WM---"
+        "WMSPA"
       ],
       "spieler": [
         {
@@ -15632,11 +15632,11 @@
             "3": "2:0"
           },
           "allein_punkte": 0,
-          "bonus": 56,
+          "bonus": 64,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "POR",
@@ -15702,9 +15702,9 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             }
           }
         },
@@ -15731,9 +15731,9 @@
             "3": "2:0"
           },
           "allein_punkte": 0,
-          "bonus": 48,
+          "bonus": 52,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -15801,9 +15801,9 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             }
           }
         },
@@ -15832,7 +15832,7 @@
           "allein_punkte": 0,
           "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -15900,7 +15900,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -15929,11 +15929,11 @@
             "3": "3:1"
           },
           "allein_punkte": 0,
-          "bonus": 44,
+          "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "POR",
@@ -15999,7 +15999,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "ENG",
               "punkte": 0
             }
@@ -16030,7 +16030,7 @@
           "allein_punkte": 0,
           "bonus": 52,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -16098,7 +16098,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -16129,7 +16129,7 @@
           "allein_punkte": 0,
           "bonus": 44,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -16197,7 +16197,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -16228,7 +16228,7 @@
           "allein_punkte": 0,
           "bonus": 40,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -16296,7 +16296,7 @@
               "tipp": "KRO",
               "punkte": 0
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "POR",
               "punkte": 0
             }
@@ -16325,11 +16325,11 @@
             "3": "2:0"
           },
           "allein_punkte": 0,
-          "bonus": 44,
+          "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "ARG",
@@ -16395,7 +16395,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "FRA",
               "punkte": 0
             }
@@ -16426,7 +16426,7 @@
           "allein_punkte": 0,
           "bonus": 32,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "SPA",
               "punkte": 0
             },
@@ -16494,7 +16494,7 @@
               "tipp": "KRO",
               "punkte": 0
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "FRA",
               "punkte": 0
             }
@@ -16523,11 +16523,11 @@
             "3": "1:0"
           },
           "allein_punkte": 0,
-          "bonus": 48,
+          "bonus": 56,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "ARG",
@@ -16593,9 +16593,9 @@
               "tipp": "KRO",
               "punkte": 0
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             }
           }
         },
@@ -16624,7 +16624,7 @@
           "allein_punkte": 0,
           "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "BRA",
               "punkte": 0
             },
@@ -16692,7 +16692,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -16718,7 +16718,7 @@
         }
       ],
       "bonus_fragen": [
-        "Tor---",
+        "TorFRA",
         "HFARG",
         "HFENG",
         "HFFRA",
@@ -16735,7 +16735,7 @@
         "Gr JARG",
         "Gr KKOL",
         "Gr LENG",
-        "WM---"
+        "WMSPA"
       ],
       "spieler": [
         {
@@ -16755,9 +16755,9 @@
             "1": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 48,
+          "bonus": 52,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -16825,9 +16825,9 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             }
           }
         },
@@ -16848,11 +16848,11 @@
             "1": "1:0"
           },
           "allein_punkte": 0,
-          "bonus": 56,
+          "bonus": 64,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "POR",
@@ -16918,9 +16918,9 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             }
           }
         },
@@ -16943,7 +16943,7 @@
           "allein_punkte": 0,
           "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -17011,7 +17011,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -17034,11 +17034,11 @@
             "1": "1:0"
           },
           "allein_punkte": 0,
-          "bonus": 44,
+          "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "POR",
@@ -17104,7 +17104,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "ENG",
               "punkte": 0
             }
@@ -17129,7 +17129,7 @@
           "allein_punkte": 0,
           "bonus": 52,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -17197,7 +17197,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -17222,7 +17222,7 @@
           "allein_punkte": 0,
           "bonus": 44,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -17290,7 +17290,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -17313,11 +17313,11 @@
             "1": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 44,
+          "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "ARG",
@@ -17383,7 +17383,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "FRA",
               "punkte": 0
             }
@@ -17408,7 +17408,7 @@
           "allein_punkte": 0,
           "bonus": 40,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -17476,7 +17476,7 @@
               "tipp": "KRO",
               "punkte": 0
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "POR",
               "punkte": 0
             }
@@ -17501,7 +17501,7 @@
           "allein_punkte": 0,
           "bonus": 32,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "SPA",
               "punkte": 0
             },
@@ -17569,7 +17569,7 @@
               "tipp": "KRO",
               "punkte": 0
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "FRA",
               "punkte": 0
             }
@@ -17592,11 +17592,11 @@
             "1": "1:2"
           },
           "allein_punkte": 0,
-          "bonus": 48,
+          "bonus": 56,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "ARG",
@@ -17662,9 +17662,9 @@
               "tipp": "KRO",
               "punkte": 0
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             }
           }
         },
@@ -17687,7 +17687,7 @@
           "allein_punkte": 0,
           "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "BRA",
               "punkte": 0
             },
@@ -17755,7 +17755,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -17776,12 +17776,12 @@
         {
           "col_idx": 1,
           "label": "SPA–ARG",
-          "abgeschlossen": false,
-          "ergebnis": null
+          "abgeschlossen": true,
+          "ergebnis": "1:0"
         }
       ],
       "bonus_fragen": [
-        "Tor---",
+        "TorFRA",
         "HFARG",
         "HFENG",
         "HFFRA",
@@ -17798,26 +17798,28 @@
         "Gr JARG",
         "Gr KKOL",
         "Gr LENG",
-        "WM---"
+        "WMSPA"
       ],
       "spieler": [
         {
           "platz": 1,
           "name": "Senge",
-          "gesamt": 232,
+          "gesamt": 234,
           "punkte_pro_spiel": {
-            "0": 0
+            "0": 0,
+            "1": 2
           },
           "exakt_pro_spiel": {
-            "0": false
+            "0": false,
+            "1": false
           },
           "tipp_pro_spiel": {
             "1": "2:0"
           },
           "allein_punkte": 0,
-          "bonus": 48,
+          "bonus": 52,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -17885,32 +17887,34 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             }
           }
         },
         {
           "platz": 2,
           "name": "Benjamin",
-          "gesamt": 231,
+          "gesamt": 233,
           "punkte_pro_spiel": {
-            "0": 0
+            "0": 0,
+            "1": 2
           },
           "exakt_pro_spiel": {
-            "0": false
+            "0": false,
+            "1": false
           },
           "tipp_pro_spiel": {
             "0": "2:0",
             "1": "2:0"
           },
           "allein_punkte": 0,
-          "bonus": 56,
+          "bonus": 64,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "POR",
@@ -17976,21 +17980,23 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             }
           }
         },
         {
           "platz": 3,
           "name": "Nalewaja",
-          "gesamt": 226,
+          "gesamt": 229,
           "punkte_pro_spiel": {
-            "0": 0
+            "0": 0,
+            "1": 3
           },
           "exakt_pro_spiel": {
-            "0": false
+            "0": false,
+            "1": false
           },
           "tipp_pro_spiel": {
             "0": "2:1",
@@ -17999,7 +18005,7 @@
           "allein_punkte": 0,
           "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -18067,7 +18073,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -18076,22 +18082,24 @@
         {
           "platz": 4,
           "name": "KNALLentin",
-          "gesamt": 221,
+          "gesamt": 225,
           "punkte_pro_spiel": {
-            "0": 0
+            "0": 0,
+            "1": 4
           },
           "exakt_pro_spiel": {
-            "0": false
+            "0": false,
+            "1": true
           },
           "tipp_pro_spiel": {
             "1": "1:0"
           },
           "allein_punkte": 0,
-          "bonus": 44,
+          "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "POR",
@@ -18157,7 +18165,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "ENG",
               "punkte": 0
             }
@@ -18166,12 +18174,14 @@
         {
           "platz": 5,
           "name": "Kolle",
-          "gesamt": 213,
+          "gesamt": 216,
           "punkte_pro_spiel": {
-            "0": 0
+            "0": 0,
+            "1": 3
           },
           "exakt_pro_spiel": {
-            "0": false
+            "0": false,
+            "1": false
           },
           "tipp_pro_spiel": {
             "0": "2:1",
@@ -18180,7 +18190,7 @@
           "allein_punkte": 0,
           "bonus": 52,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -18248,7 +18258,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -18257,12 +18267,14 @@
         {
           "platz": 6,
           "name": "Rosellen",
-          "gesamt": 212,
+          "gesamt": 215,
           "punkte_pro_spiel": {
-            "0": 2
+            "0": 2,
+            "1": 3
           },
           "exakt_pro_spiel": {
-            "0": false
+            "0": false,
+            "1": false
           },
           "tipp_pro_spiel": {
             "0": "1:2",
@@ -18271,7 +18283,7 @@
           "allein_punkte": 1,
           "bonus": 44,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -18339,7 +18351,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
@@ -18348,23 +18360,25 @@
         {
           "platz": 7,
           "name": "Pechnic90",
-          "gesamt": 204,
+          "gesamt": 207,
           "punkte_pro_spiel": {
-            "0": 0
+            "0": 0,
+            "1": 3
           },
           "exakt_pro_spiel": {
-            "0": false
+            "0": false,
+            "1": false
           },
           "tipp_pro_spiel": {
             "0": "3:1",
             "1": "2:1"
           },
           "allein_punkte": 0,
-          "bonus": 44,
+          "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "ARG",
@@ -18430,7 +18444,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "FRA",
               "punkte": 0
             }
@@ -18439,12 +18453,14 @@
         {
           "platz": 8,
           "name": "Lukas",
-          "gesamt": 202,
+          "gesamt": 205,
           "punkte_pro_spiel": {
-            "0": 0
+            "0": 0,
+            "1": 3
           },
           "exakt_pro_spiel": {
-            "0": false
+            "0": false,
+            "1": false
           },
           "tipp_pro_spiel": {
             "0": "3:1",
@@ -18453,7 +18469,7 @@
           "allein_punkte": 0,
           "bonus": 40,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "ENG",
               "punkte": 0
             },
@@ -18521,7 +18537,7 @@
               "tipp": "KRO",
               "punkte": 0
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "POR",
               "punkte": 0
             }
@@ -18530,12 +18546,14 @@
         {
           "platz": 9,
           "name": "Chris",
-          "gesamt": 201,
+          "gesamt": 204,
           "punkte_pro_spiel": {
-            "0": 0
+            "0": 0,
+            "1": 3
           },
           "exakt_pro_spiel": {
-            "0": false
+            "0": false,
+            "1": false
           },
           "tipp_pro_spiel": {
             "0": "2:1",
@@ -18544,7 +18562,7 @@
           "allein_punkte": 0,
           "bonus": 32,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "SPA",
               "punkte": 0
             },
@@ -18612,7 +18630,7 @@
               "tipp": "KRO",
               "punkte": 0
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "FRA",
               "punkte": 0
             }
@@ -18623,21 +18641,23 @@
           "name": "Henning",
           "gesamt": 200,
           "punkte_pro_spiel": {
-            "0": 0
+            "0": 0,
+            "1": 0
           },
           "exakt_pro_spiel": {
-            "0": false
+            "0": false,
+            "1": false
           },
           "tipp_pro_spiel": {
             "0": "2:1",
             "1": "1:3"
           },
           "allein_punkte": 0,
-          "bonus": 48,
+          "bonus": 56,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "FRA",
-              "punkte": 0
+              "punkte": 4
             },
             "HFARG": {
               "tipp": "ARG",
@@ -18703,9 +18723,9 @@
               "tipp": "KRO",
               "punkte": 0
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "SPA",
-              "punkte": 0
+              "punkte": 4
             }
           }
         },
@@ -18714,10 +18734,12 @@
           "name": "SR",
           "gesamt": 194,
           "punkte_pro_spiel": {
-            "0": 0
+            "0": 0,
+            "1": 0
           },
           "exakt_pro_spiel": {
-            "0": false
+            "0": false,
+            "1": false
           },
           "tipp_pro_spiel": {
             "0": "2:1",
@@ -18726,7 +18748,7 @@
           "allein_punkte": 0,
           "bonus": 48,
           "bonus_detail": {
-            "Tor---": {
+            "TorFRA": {
               "tipp": "BRA",
               "punkte": 0
             },
@@ -18794,7 +18816,7 @@
               "tipp": "ENG",
               "punkte": 4
             },
-            "WM---": {
+            "WMSPA": {
               "tipp": "DEU",
               "punkte": 0
             }
